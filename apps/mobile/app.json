@@ -6,7 +6,6 @@
     "orientation": "portrait",
     "scheme": "betty",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "ios": {
       "bundleIdentifier": "com.betty.billing",
       "supportsTablet": false
