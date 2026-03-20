@@ -1,0 +1,13 @@
+{
+  "name": "betty-billing",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev:api": "bun run --filter @betty/api dev",
+    "dev:mobile": "bun run --filter @betty/mobile start",
+    "typecheck": "bun run --filter '*' typecheck",
+    "db:generate": "bun run --filter @betty/api db:generate",
+    "db:migrate": "bun run --filter @betty/api db:migrate",
+    "db:seed": "bun run --filter @betty/api db:seed"
+  }
+}

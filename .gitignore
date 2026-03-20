@@ -9,6 +9,12 @@ node_modules/
 # Build outputs
 dist/
 build/
+.next/
+
+# Expo
+.expo/
+ios/
+android/
 
 # IDE
 .vscode/
@@ -21,3 +27,10 @@ Thumbs.db
 # Logs
 *.log
 npm-debug.log*
+
+# Data files (fee code CSVs etc)
+data/*.csv
+data/*.xlsx
+
+# Drizzle
+drizzle/
