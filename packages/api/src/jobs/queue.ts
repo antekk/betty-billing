@@ -17,9 +17,7 @@ export function getQueue(): Queue {
   return new Queue(QUEUE_NAME, { connection: getConnection() });
 }
 
-export function createWorker(
-  processor: (job: Job) => Promise<void>
-): Worker {
+export function createWorker(processor: (job: Job) => Promise<void>): Worker {
   return new Worker(QUEUE_NAME, processor, {
     connection: getConnection(),
     concurrency: 1,

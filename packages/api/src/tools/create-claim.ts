@@ -144,10 +144,7 @@ export async function handleCreateClaim(
 
   // Update widget data with claim ID
   widgetData.claimId = claim.id;
-  await db
-    .update(timelineEntries)
-    .set({ widgetData })
-    .where(eq(timelineEntries.id, entry.id));
+  await db.update(timelineEntries).set({ widgetData }).where(eq(timelineEntries.id, entry.id));
 
   // Audit log
   await auditLog(userId, "claim_created", "claim", claim.id, {

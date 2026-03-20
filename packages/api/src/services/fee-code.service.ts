@@ -15,10 +15,7 @@ export interface FeeCodeSearchResult {
 /**
  * Search fee codes by text query (searches code and description).
  */
-export async function searchFeeCodes(
-  query: string,
-  limit = 20
-): Promise<FeeCodeSearchResult[]> {
+export async function searchFeeCodes(query: string, limit = 20): Promise<FeeCodeSearchResult[]> {
   const today = new Date().toISOString().slice(0, 10);
 
   // Try exact code match first
@@ -45,10 +42,7 @@ export async function searchFeeCodes(
     .from(feeCodes)
     .where(
       and(
-        or(
-          ilike(feeCodes.code, pattern),
-          ilike(feeCodes.description, pattern)
-        ),
+        or(ilike(feeCodes.code, pattern), ilike(feeCodes.description, pattern)),
         lte(feeCodes.effectiveDate, today),
         gte(feeCodes.endDate, today)
       )
@@ -61,9 +55,7 @@ export async function searchFeeCodes(
 /**
  * Look up a specific fee code by exact code.
  */
-export async function getFeeCode(
-  code: string
-): Promise<FeeCodeSearchResult | null> {
+export async function getFeeCode(code: string): Promise<FeeCodeSearchResult | null> {
   const today = new Date().toISOString().slice(0, 10);
 
   const [result] = await db

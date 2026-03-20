@@ -1,11 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-import {
-  apiFetch,
-  setTokens,
-  clearTokens,
-  getAccessToken,
-  API_BASE,
-} from "./api";
+import { apiFetch, setTokens, clearTokens, getAccessToken, API_BASE } from "./api";
 
 interface AuthState {
   isAuthenticated: boolean;

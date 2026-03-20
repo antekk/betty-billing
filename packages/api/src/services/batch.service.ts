@@ -14,10 +14,7 @@ export async function processBatchSubmission(): Promise<{
   rejected: number;
 }> {
   // Find all staged claims
-  const stagedClaims = await db
-    .select()
-    .from(claims)
-    .where(eq(claims.status, "staged"));
+  const stagedClaims = await db.select().from(claims).where(eq(claims.status, "staged"));
 
   if (stagedClaims.length === 0) {
     console.log("No staged claims to submit");
@@ -28,10 +25,7 @@ export async function processBatchSubmission(): Promise<{
 
   // Get user practitioner IDs
   const userIds = [...new Set(stagedClaims.map((c) => c.userId))];
-  const usersList = await db
-    .select()
-    .from(users)
-    .where(inArray(users.id, userIds));
+  const usersList = await db.select().from(users).where(inArray(users.id, userIds));
 
   const userMap = new Map(usersList.map((u) => [u.id, u]));
 
@@ -53,8 +47,7 @@ export async function processBatchSubmission(): Promise<{
     phn: decrypt(claim.phn),
     serviceDate: claim.serviceDate,
     diagnosticCode: claim.diagnosticCode,
-    practitionerId:
-      userMap.get(claim.userId)?.ahcipPractitionerId || "UNKNOWN",
+    practitionerId: userMap.get(claim.userId)?.ahcipPractitionerId || "UNKNOWN",
   }));
 
   // Update claims to submitted status
@@ -114,11 +107,7 @@ export async function processBatchSubmission(): Promise<{
 
   // Update batch status
   const batchStatus =
-    rejected === 0
-      ? "completed"
-      : accepted === 0
-        ? "completed"
-        : "partial_failure";
+    rejected === 0 ? "completed" : accepted === 0 ? "completed" : "partial_failure";
 
   await db
     .update(batchSubmissions)
@@ -140,10 +129,11 @@ async function createRejectionNotification(
   claim: typeof claims.$inferSelect,
   rejectionReason: string
 ): Promise<void> {
-  const serviceDateFormatted = new Date(claim.serviceDate).toLocaleDateString(
-    "en-CA",
-    { weekday: "long", month: "short", day: "numeric" }
-  );
+  const serviceDateFormatted = new Date(claim.serviceDate).toLocaleDateString("en-CA", {
+    weekday: "long",
+    month: "short",
+    day: "numeric",
+  });
 
   await db.insert(timelineEntries).values({
     userId: claim.userId,

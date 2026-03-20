@@ -14,8 +14,7 @@ export const dateResolutionTool: Tool = {
       },
       reference_date: {
         type: "string",
-        description:
-          "Optional reference date in ISO format. Defaults to today.",
+        description: "Optional reference date in ISO format. Defaults to today.",
       },
     },
     required: ["expression"],
@@ -26,9 +25,7 @@ export async function handleDateResolution(input: {
   expression: string;
   reference_date?: string;
 }): Promise<string> {
-  const refDate = input.reference_date
-    ? new Date(input.reference_date)
-    : new Date();
+  const refDate = input.reference_date ? new Date(input.reference_date) : new Date();
 
   const parsed = chrono.parseDate(input.expression, refDate);
 
@@ -48,9 +45,7 @@ export async function handleDateResolution(input: {
   });
 
   // Sanity check: date shouldn't be more than 90 days in the past (claim-back period)
-  const daysDiff = Math.floor(
-    (refDate.getTime() - parsed.getTime()) / (1000 * 60 * 60 * 24)
-  );
+  const daysDiff = Math.floor((refDate.getTime() - parsed.getTime()) / (1000 * 60 * 60 * 24));
   let warning: string | undefined;
   if (daysDiff > 90) {
     warning =

@@ -39,9 +39,7 @@ export function useChat() {
 
     setState((prev) => ({
       ...prev,
-      entries: before
-        ? [...data.entries, ...prev.entries]
-        : data.entries,
+      entries: before ? [...data.entries, ...prev.entries] : data.entries,
     }));
 
     return data.hasMore;
@@ -212,10 +210,7 @@ export function useChat() {
     setState((prev) => ({
       ...prev,
       entries: prev.entries.map((entry) => {
-        if (
-          entry.widgetData &&
-          (entry.widgetData as Record<string, unknown>).claimId === claimId
-        ) {
+        if (entry.widgetData && (entry.widgetData as Record<string, unknown>).claimId === claimId) {
           return {
             ...entry,
             widgetData: {

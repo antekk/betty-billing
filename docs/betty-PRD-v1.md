@@ -49,6 +49,7 @@ Betty responds conversationally with the relevant code(s), fees, applicable modi
 Physician types: `"03.01AA for Uli 1111111119 on Monday"`
 
 Betty's processing steps (invisible to user):
+
 1. Resolve "Monday" to a specific date
 2. Parse or validate the PHN (1111111119)
 3. Validate the fee code (03.01AA)
@@ -92,11 +93,13 @@ Betty: I tried to submit your Monday claim for Uli but AHCIP flagged
 ### Flow 5: Proactive Engagement
 
 Betty does **not** spam notifications. She reaches out when:
+
 - A claim she submitted had an issue (see Flow 4)
 - The physician hasn't billed in an unusual amount of time
 - A task requires physician input that Betty cannot resolve alone
 
 Betty does **not** reach out for:
+
 - Marketing, tips, or feature announcements
 - Routine confirmations ("your batch was submitted successfully")
 - Anything that doesn't require action or attention
@@ -113,6 +116,7 @@ The chat is not a conversation — it is a **timeline**. Every interaction, syst
 - Important system events (flagged by rules)
 
 Hidden by default (visible via filter):
+
 - Routine system events (batch submissions, payment postings)
 - Internal notes from human agents (never visible to physician, admin-app only in future)
 
@@ -121,6 +125,7 @@ The timeline is the physician's complete record of everything Betty has done and
 ## Data Model (Core Entities)
 
 ### User (Physician)
+
 - id, name, phone, email
 - billing_preferences (optional, built up over time)
 - ahcip_practitioner_id (added when they set up claim submission)
@@ -128,6 +133,7 @@ The timeline is the physician's complete record of everything Betty has done and
 - created_at, updated_at
 
 ### TimelineEntry
+
 - id, user_id
 - type: message | widget | system_event
 - direction: inbound (physician) | outbound (betty) | system
@@ -139,6 +145,7 @@ The timeline is the physician's complete record of everything Betty has done and
 - created_at
 
 ### Claim
+
 - id, user_id
 - timeline_entry_id (links to the confirmation widget)
 - status: staged | submitted | accepted | rejected | needs_attention
@@ -151,6 +158,7 @@ The timeline is the physician's complete record of everything Betty has done and
 - created_at, updated_at
 
 ### BatchSubmission
+
 - id
 - status: pending | submitted | completed | partial_failure
 - claim_ids: array
@@ -158,6 +166,7 @@ The timeline is the physician's complete record of everything Betty has done and
 - response_data: JSON (AHCIP response)
 
 ### FeeCode (Reference Data)
+
 - code, description
 - base_fee
 - modifiers: JSON (applicable modifiers and rules)
@@ -167,6 +176,7 @@ The timeline is the physician's complete record of everything Betty has done and
 ## Technical Architecture
 
 ### Mobile App
+
 - **React Native** (Expo) — single codebase for iOS and Android
 - Chat interface as the primary (and initially only) screen
 - Widgets rendered as custom components within the chat timeline
@@ -174,13 +184,16 @@ The timeline is the physician's complete record of everything Betty has done and
 - Image/file attachment support (camera, photo library) for future multimodal input
 
 ### Backend
+
 - **Next.js API routes** or **Node.js/Express** — REST API
 - PostgreSQL database
 - AI layer: Anthropic Claude API for Betty's conversational intelligence and fee code knowledge
 - Background job system for batch claim submission (cron-based or queue-based)
 
 ### AI / Conversation Layer
+
 Betty's AI is powered by Claude with a carefully crafted system prompt that includes:
+
 - Betty's persona and voice guidelines
 - Alberta fee code reference data (loaded as context or via tool use)
 - Claim creation tool: structured tool that Betty calls when she identifies a billing intent
@@ -191,6 +204,7 @@ Betty's AI is powered by Claude with a carefully crafted system prompt that incl
 The conversation history (timeline) is sent as context with each message, windowed to a reasonable token limit with recent entries prioritized.
 
 ### Claim Submission Pipeline
+
 1. Physician confirms claim via widget → Claim created with status `staged`
 2. Background job runs on schedule (configurable — e.g., end of day, hourly)
 3. Job collects all `staged` claims, formats for AHCIP submission
@@ -201,6 +215,7 @@ The conversation history (timeline) is sent as context with each message, window
 **V1 note on AHCIP integration:** Actual HLINK/AHCIP submission is a significant integration. For v1, build the full pipeline with a **mock AHCIP adapter** that simulates submission and responses. The physician-facing experience is complete and real. The submission backend is swappable.
 
 ### PHN Validation
+
 Alberta PHNs are 9 digits with a check-digit algorithm. Betty validates format and check digit before allowing claim confirmation. On failure: `"That PHN doesn't look right — can you double-check? It should be 9 digits."`
 
 ## Betty's Voice Guidelines
@@ -230,6 +245,7 @@ For the AI system prompt:
 ## What Proves V1 Works
 
 Betty v1 is validated if:
+
 1. A physician uses Betty to ask fee code questions more than once (knowledge is useful)
 2. A physician creates a claim through natural language and taps confirm (the core interaction works)
 3. A physician comes back unprompted the next day (the habit is forming)

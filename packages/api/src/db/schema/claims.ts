@@ -28,9 +28,7 @@ export const claims = pgTable(
     userId: uuid("user_id")
       .notNull()
       .references(() => users.id),
-    timelineEntryId: uuid("timeline_entry_id").references(
-      () => timelineEntries.id
-    ),
+    timelineEntryId: uuid("timeline_entry_id").references(() => timelineEntries.id),
     status: claimStatusEnum("status").notNull().default("pending_confirmation"),
     feeCode: varchar("fee_code", { length: 20 }).notNull(),
     modifier: varchar("modifier", { length: 10 }),
@@ -43,12 +41,8 @@ export const claims = pgTable(
     rejectionReason: text("rejection_reason"),
     submittedAt: timestamp("submitted_at", { withTimezone: true }),
     resolvedAt: timestamp("resolved_at", { withTimezone: true }),
-    createdAt: timestamp("created_at", { withTimezone: true })
-      .notNull()
-      .defaultNow(),
-    updatedAt: timestamp("updated_at", { withTimezone: true })
-      .notNull()
-      .defaultNow(),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
   },
   (table) => [index("claims_user_status_idx").on(table.userId, table.status)]
 );

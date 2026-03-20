@@ -1,9 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import {
-  searchFeeCodes,
-  getFeeCode,
-  getFeeCodesByCategory,
-} from "@/services/fee-code.service";
+import { searchFeeCodes, getFeeCode, getFeeCodesByCategory } from "@/services/fee-code.service";
 
 /**
  * Public endpoint — no auth required.
@@ -18,10 +14,7 @@ export async function GET(request: NextRequest) {
   if (code) {
     const result = await getFeeCode(code);
     if (!result) {
-      return NextResponse.json(
-        { error: `Fee code "${code}" not found` },
-        { status: 404 }
-      );
+      return NextResponse.json({ error: `Fee code "${code}" not found` }, { status: 404 });
     }
     return NextResponse.json(result);
   }

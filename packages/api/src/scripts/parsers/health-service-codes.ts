@@ -70,16 +70,11 @@ export function parseHealthServiceCodes(content: string): HealthServiceCode[] {
  * Filter to only currently active codes (end_date >= today).
  * When multiple versions exist for the same code, take the latest effective one.
  */
-export function getCurrentCodes(
-  codes: HealthServiceCode[],
-  asOf?: string
-): HealthServiceCode[] {
+export function getCurrentCodes(codes: HealthServiceCode[], asOf?: string): HealthServiceCode[] {
   const today = asOf || new Date().toISOString().slice(0, 10);
 
   // Filter active codes
-  const active = codes.filter(
-    (c) => c.endDate >= today && c.effectiveDate <= today
-  );
+  const active = codes.filter((c) => c.endDate >= today && c.effectiveDate <= today);
 
   // Deduplicate: keep the latest effective date per code
   const byCode = new Map<string, HealthServiceCode>();

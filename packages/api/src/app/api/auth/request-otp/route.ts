@@ -6,9 +6,7 @@ import { z } from "zod";
 import { and, eq, gt, gte } from "drizzle-orm";
 
 const requestSchema = z.object({
-  phone: z
-    .string()
-    .regex(/^\+1\d{10}$/, "Phone must be in E.164 format (+1XXXXXXXXXX)"),
+  phone: z.string().regex(/^\+1\d{10}$/, "Phone must be in E.164 format (+1XXXXXXXXXX)"),
 });
 
 export async function POST(request: NextRequest) {
@@ -16,10 +14,7 @@ export async function POST(request: NextRequest) {
   const parsed = requestSchema.safeParse(body);
 
   if (!parsed.success) {
-    return NextResponse.json(
-      { error: parsed.error.issues[0].message },
-      { status: 400 }
-    );
+    return NextResponse.json({ error: parsed.error.issues[0].message }, { status: 400 });
   }
 
   const { phone } = parsed.data;
@@ -29,12 +24,7 @@ export async function POST(request: NextRequest) {
   const recentOtps = await db
     .select()
     .from(otpCodes)
-    .where(
-      and(
-        eq(otpCodes.phone, phone),
-        gte(otpCodes.createdAt, tenMinutesAgo)
-      )
-    );
+    .where(and(eq(otpCodes.phone, phone), gte(otpCodes.createdAt, tenMinutesAgo)));
 
   if (recentOtps.length >= 3) {
     return NextResponse.json(

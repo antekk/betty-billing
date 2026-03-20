@@ -17,9 +17,7 @@ export const phnValidationTool: Tool = {
   },
 };
 
-export async function handlePhnValidation(input: {
-  phn: string;
-}): Promise<string> {
+export async function handlePhnValidation(input: { phn: string }): Promise<string> {
   const result = validatePhn(input.phn);
   return JSON.stringify(result);
 }

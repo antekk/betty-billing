@@ -30,10 +30,7 @@ export function ActionCard({ data, onAction }: Props) {
         {data.actions.map((action, i) => (
           <TouchableOpacity
             key={i}
-            style={[
-              styles.actionButton,
-              i === 0 ? styles.primaryAction : styles.secondaryAction,
-            ]}
+            style={[styles.actionButton, i === 0 ? styles.primaryAction : styles.secondaryAction]}
             onPress={() => onAction(action.action, action.payload)}
           >
             <Text

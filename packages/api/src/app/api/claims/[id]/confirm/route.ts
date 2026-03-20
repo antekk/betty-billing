@@ -5,10 +5,7 @@ import { claims, timelineEntries } from "@/db/schema";
 import { eq, and } from "drizzle-orm";
 import { auditLog } from "@/lib/audit";
 
-export async function POST(
-  request: NextRequest,
-  { params }: { params: Promise<{ id: string }> }
-) {
+export async function POST(request: NextRequest, { params }: { params: Promise<{ id: string }> }) {
   const auth = await authenticate(request);
   if (isAuthError(auth)) return auth;
 

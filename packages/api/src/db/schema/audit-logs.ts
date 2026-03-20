@@ -1,12 +1,4 @@
-import {
-  pgTable,
-  uuid,
-  varchar,
-  text,
-  jsonb,
-  timestamp,
-  index,
-} from "drizzle-orm/pg-core";
+import { pgTable, uuid, varchar, text, jsonb, timestamp, index } from "drizzle-orm/pg-core";
 
 export const auditLogs = pgTable(
   "audit_logs",
@@ -18,12 +10,7 @@ export const auditLogs = pgTable(
     resourceId: varchar("resource_id", { length: 255 }),
     metadata: jsonb("metadata"),
     ipAddress: varchar("ip_address", { length: 45 }),
-    createdAt: timestamp("created_at", { withTimezone: true })
-      .notNull()
-      .defaultNow(),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },
-  (table) => [
-    index("audit_user_idx").on(table.userId),
-    index("audit_action_idx").on(table.action),
-  ]
+  (table) => [index("audit_user_idx").on(table.userId), index("audit_action_idx").on(table.action)]
 );

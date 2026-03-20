@@ -46,15 +46,10 @@ export function parseModifiers(content: string): FeeModifier[] {
   return results;
 }
 
-export function getCurrentModifiers(
-  modifiers: FeeModifier[],
-  asOf?: string
-): FeeModifier[] {
+export function getCurrentModifiers(modifiers: FeeModifier[], asOf?: string): FeeModifier[] {
   const today = asOf || new Date().toISOString().slice(0, 10);
 
-  const active = modifiers.filter(
-    (m) => m.endDate >= today && m.effectiveDate <= today
-  );
+  const active = modifiers.filter((m) => m.endDate >= today && m.effectiveDate <= today);
 
   // Deduplicate by code — keep latest
   const byCode = new Map<string, FeeModifier>();

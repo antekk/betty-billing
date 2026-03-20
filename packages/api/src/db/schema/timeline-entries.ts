@@ -1,13 +1,4 @@
-import {
-  pgTable,
-  uuid,
-  text,
-  jsonb,
-  boolean,
-  timestamp,
-  index,
-  pgEnum,
-} from "drizzle-orm/pg-core";
+import { pgTable, uuid, text, jsonb, boolean, timestamp, index, pgEnum } from "drizzle-orm/pg-core";
 import { users } from "./users";
 
 export const timelineEntryTypeEnum = pgEnum("timeline_entry_type", [
@@ -16,17 +7,9 @@ export const timelineEntryTypeEnum = pgEnum("timeline_entry_type", [
   "system_event",
 ]);
 
-export const directionEnum = pgEnum("direction", [
-  "inbound",
-  "outbound",
-  "system",
-]);
+export const directionEnum = pgEnum("direction", ["inbound", "outbound", "system"]);
 
-export const visibilityEnum = pgEnum("visibility", [
-  "default",
-  "filtered",
-  "internal",
-]);
+export const visibilityEnum = pgEnum("visibility", ["default", "filtered", "internal"]);
 
 export const widgetTypeEnum = pgEnum("widget_type", [
   "claim_confirmation",
@@ -48,9 +31,7 @@ export const timelineEntries = pgTable(
     widgetData: jsonb("widget_data"),
     visibility: visibilityEnum("visibility").notNull().default("default"),
     importanceFlag: boolean("importance_flag").notNull().default(false),
-    createdAt: timestamp("created_at", { withTimezone: true })
-      .notNull()
-      .defaultNow(),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },
   (table) => [index("timeline_user_created_idx").on(table.userId, table.createdAt)]
 );

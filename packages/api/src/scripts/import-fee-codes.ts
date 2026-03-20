@@ -13,10 +13,7 @@ import { resolve } from "path";
 import { drizzle } from "drizzle-orm/postgres-js";
 import postgres from "postgres";
 import { feeCodes } from "../db/schema/fee-codes";
-import {
-  parseHealthServiceCodes,
-  getCurrentCodes,
-} from "./parsers/health-service-codes";
+import { parseHealthServiceCodes, getCurrentCodes } from "./parsers/health-service-codes";
 import { parsePriceList, getCurrentPrices } from "./parsers/price-list";
 import { parseModifiers, getCurrentModifiers } from "./parsers/modifiers";
 
@@ -112,14 +109,17 @@ async function main() {
 
   for (let i = 0; i < feeCodeRecords.length; i += BATCH_SIZE) {
     const batch = feeCodeRecords.slice(i, i + BATCH_SIZE);
-    await db.insert(feeCodes).values(batch).onConflictDoUpdate({
-      target: [feeCodes.code, feeCodes.effectiveDate],
-      set: {
-        description: feeCodes.description,
-        baseFee: feeCodes.baseFee,
-        category: feeCodes.category,
-      },
-    });
+    await db
+      .insert(feeCodes)
+      .values(batch)
+      .onConflictDoUpdate({
+        target: [feeCodes.code, feeCodes.effectiveDate],
+        set: {
+          description: feeCodes.description,
+          baseFee: feeCodes.baseFee,
+          category: feeCodes.category,
+        },
+      });
     imported += batch.length;
     process.stdout.write(`\r  Imported ${imported}/${feeCodeRecords.length}`);
   }
@@ -132,9 +132,7 @@ async function main() {
     categories.set(fc.category, (categories.get(fc.category) || 0) + 1);
   }
   console.log("\nBy category:");
-  for (const [cat, count] of [...categories.entries()].sort(
-    (a, b) => b[1] - a[1]
-  )) {
+  for (const [cat, count] of [...categories.entries()].sort((a, b) => b[1] - a[1])) {
     console.log(`  ${cat}: ${count}`);
   }
 

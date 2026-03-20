@@ -34,9 +34,7 @@ export function ClaimConfirmation({ data, onConfirm }: Props) {
 
   return (
     <View style={styles.card}>
-      <Text style={styles.title}>
-        {isConfirmed ? "Claim Submitted" : "Claim Ready to Submit"}
-      </Text>
+      <Text style={styles.title}>{isConfirmed ? "Claim Submitted" : "Claim Ready to Submit"}</Text>
 
       <View style={styles.row}>
         <Text style={styles.label}>Patient</Text>
@@ -69,9 +67,7 @@ export function ClaimConfirmation({ data, onConfirm }: Props) {
 
       <View style={styles.row}>
         <Text style={styles.label}>Expected</Text>
-        <Text style={styles.fee}>
-          ${parseFloat(data.expectedFee).toFixed(2)}
-        </Text>
+        <Text style={styles.fee}>${parseFloat(data.expectedFee).toFixed(2)}</Text>
       </View>
 
       {isConfirmed ? (

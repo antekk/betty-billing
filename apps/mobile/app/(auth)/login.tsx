@@ -34,10 +34,7 @@ export default function LoginScreen() {
         params: { phone: fullPhone },
       });
     } catch (error) {
-      Alert.alert(
-        "Error",
-        error instanceof Error ? error.message : "Failed to send code"
-      );
+      Alert.alert("Error", error instanceof Error ? error.message : "Failed to send code");
     } finally {
       setIsLoading(false);
     }
@@ -73,9 +70,7 @@ export default function LoginScreen() {
             onPress={handleSendCode}
             disabled={isLoading}
           >
-            <Text style={styles.buttonText}>
-              {isLoading ? "Sending..." : "Send Code"}
-            </Text>
+            <Text style={styles.buttonText}>{isLoading ? "Sending..." : "Send Code"}</Text>
           </TouchableOpacity>
         </View>
       </View>

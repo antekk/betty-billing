@@ -7,9 +7,7 @@ const AUTH_TAG_LENGTH = 16;
 function getKey(): Buffer {
   const key = process.env.ENCRYPTION_KEY;
   if (!key || key.length !== 64) {
-    throw new Error(
-      "ENCRYPTION_KEY must be a 64-character hex string (32 bytes)"
-    );
+    throw new Error("ENCRYPTION_KEY must be a 64-character hex string (32 bytes)");
   }
   return Buffer.from(key, "hex");
 }
@@ -41,10 +39,7 @@ export function decrypt(encryptedBase64: string): string {
 
   const iv = combined.subarray(0, IV_LENGTH);
   const authTag = combined.subarray(combined.length - AUTH_TAG_LENGTH);
-  const encrypted = combined.subarray(
-    IV_LENGTH,
-    combined.length - AUTH_TAG_LENGTH
-  );
+  const encrypted = combined.subarray(IV_LENGTH, combined.length - AUTH_TAG_LENGTH);
 
   const decipher = createDecipheriv(ALGORITHM, key, iv);
   decipher.setAuthTag(authTag);

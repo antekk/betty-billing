@@ -50,11 +50,7 @@ export async function processMessage(
   });
 
   // 2. Load user context
-  const [user] = await db
-    .select()
-    .from(users)
-    .where(eq(users.id, userId))
-    .limit(1);
+  const [user] = await db.select().from(users).where(eq(users.id, userId)).limit(1);
 
   if (!user) {
     onEvent({ type: "error", data: { message: "User not found" } });
@@ -65,12 +61,7 @@ export async function processMessage(
   const history = await db
     .select()
     .from(timelineEntries)
-    .where(
-      and(
-        eq(timelineEntries.userId, userId),
-        ne(timelineEntries.visibility, "internal")
-      )
-    )
+    .where(and(eq(timelineEntries.userId, userId), ne(timelineEntries.visibility, "internal")))
     .orderBy(desc(timelineEntries.createdAt))
     .limit(CONTEXT_WINDOW_SIZE);
 
@@ -108,10 +99,7 @@ export async function processMessage(
     let textContent = "";
 
     for await (const event of stream) {
-      if (
-        event.type === "content_block_delta" &&
-        event.delta.type === "text_delta"
-      ) {
+      if (event.type === "content_block_delta" && event.delta.type === "text_delta") {
         textContent += event.delta.text;
         onEvent({ type: "delta", data: { text: event.delta.text } });
       }
@@ -188,9 +176,7 @@ export async function processMessage(
 /**
  * Convert timeline entries to Claude message format.
  */
-function timelineToMessages(
-  entries: (typeof timelineEntries.$inferSelect)[]
-): MessageParam[] {
+function timelineToMessages(entries: (typeof timelineEntries.$inferSelect)[]): MessageParam[] {
   const messages: MessageParam[] = [];
 
   for (const entry of entries) {

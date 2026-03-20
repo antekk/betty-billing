@@ -11,11 +11,7 @@ export const tools: Tool[] = [
   createClaimTool,
 ];
 
-export type ToolName =
-  | "fee_code_lookup"
-  | "validate_phn"
-  | "resolve_date"
-  | "create_claim";
+export type ToolName = "fee_code_lookup" | "validate_phn" | "resolve_date" | "create_claim";
 
 /**
  * Execute a tool by name and return the result as a string.
@@ -33,10 +29,7 @@ export async function executeTool(
     case "resolve_date":
       return handleDateResolution(input as Parameters<typeof handleDateResolution>[0]);
     case "create_claim":
-      return handleCreateClaim(
-        input as Parameters<typeof handleCreateClaim>[0],
-        userId
-      );
+      return handleCreateClaim(input as Parameters<typeof handleCreateClaim>[0], userId);
     default:
       return JSON.stringify({ error: `Unknown tool: ${name}` });
   }

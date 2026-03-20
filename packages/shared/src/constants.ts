@@ -15,8 +15,7 @@ export const TIMELINE_ENTRY_TYPE = {
   SYSTEM_EVENT: "system_event",
 } as const;
 
-export type TimelineEntryType =
-  (typeof TIMELINE_ENTRY_TYPE)[keyof typeof TIMELINE_ENTRY_TYPE];
+export type TimelineEntryType = (typeof TIMELINE_ENTRY_TYPE)[keyof typeof TIMELINE_ENTRY_TYPE];
 
 export const DIRECTION = {
   INBOUND: "inbound",
@@ -56,5 +55,4 @@ export const SUBSCRIPTION_STATUS = {
   ACTIVE: "active",
 } as const;
 
-export type SubscriptionStatus =
-  (typeof SUBSCRIPTION_STATUS)[keyof typeof SUBSCRIPTION_STATUS];
+export type SubscriptionStatus = (typeof SUBSCRIPTION_STATUS)[keyof typeof SUBSCRIPTION_STATUS];

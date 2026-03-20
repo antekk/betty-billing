@@ -13,13 +13,11 @@ const REJECTION_REASONS = [
   },
   {
     code: "01",
-    reason:
-      "We have no record of this person registered with this PHN.",
+    reason: "We have no record of this person registered with this PHN.",
   },
   {
     code: "05",
-    reason:
-      "This PHN is not effective for the date(s) of service submitted.",
+    reason: "This PHN is not effective for the date(s) of service submitted.",
   },
   {
     code: "CHGRQ",
@@ -55,15 +53,11 @@ export class MockAHCIPAdapter implements AHCIPAdapter {
           claimId: claim.id,
           accepted: false,
           rejectionCode: "DOCRQ",
-          rejectionReason:
-            "A diagnostic code is required for this service.",
+          rejectionReason: "A diagnostic code is required for this service.",
         };
       }
 
-      const rejection =
-        REJECTION_REASONS[
-          Math.floor(Math.random() * REJECTION_REASONS.length)
-        ];
+      const rejection = REJECTION_REASONS[Math.floor(Math.random() * REJECTION_REASONS.length)];
       return {
         claimId: claim.id,
         accepted: false,

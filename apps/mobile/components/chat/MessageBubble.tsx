@@ -19,23 +19,10 @@ export function MessageBubble({ entry }: Props) {
 
   return (
     <View
-      style={[
-        styles.container,
-        isInbound ? styles.inboundContainer : styles.outboundContainer,
-      ]}
+      style={[styles.container, isInbound ? styles.inboundContainer : styles.outboundContainer]}
     >
-      <View
-        style={[
-          styles.bubble,
-          isInbound ? styles.inboundBubble : styles.outboundBubble,
-        ]}
-      >
-        <Text
-          style={[
-            styles.text,
-            isInbound ? styles.inboundText : styles.outboundText,
-          ]}
-        >
+      <View style={[styles.bubble, isInbound ? styles.inboundBubble : styles.outboundBubble]}>
+        <Text style={[styles.text, isInbound ? styles.inboundText : styles.outboundText]}>
           {entry.content}
         </Text>
       </View>

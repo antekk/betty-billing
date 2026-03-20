@@ -14,10 +14,7 @@ function getSecret(envKey: string): Uint8Array {
   return new TextEncoder().encode(secret);
 }
 
-export async function signAccessToken(
-  userId: string,
-  phone: string
-): Promise<string> {
+export async function signAccessToken(userId: string, phone: string): Promise<string> {
   return new SignJWT({ phone } as TokenPayload)
     .setProtectedHeader({ alg: "HS256" })
     .setSubject(userId)
@@ -26,10 +23,7 @@ export async function signAccessToken(
     .sign(getSecret("JWT_SECRET"));
 }
 
-export async function signRefreshToken(
-  userId: string,
-  phone: string
-): Promise<string> {
+export async function signRefreshToken(userId: string, phone: string): Promise<string> {
   return new SignJWT({ phone } as TokenPayload)
     .setProtectedHeader({ alg: "HS256" })
     .setSubject(userId)
@@ -38,19 +32,12 @@ export async function signRefreshToken(
     .sign(getSecret("JWT_REFRESH_SECRET"));
 }
 
-export async function verifyAccessToken(
-  token: string
-): Promise<TokenPayload> {
+export async function verifyAccessToken(token: string): Promise<TokenPayload> {
   const { payload } = await jwtVerify(token, getSecret("JWT_SECRET"));
   return payload as TokenPayload;
 }
 
-export async function verifyRefreshToken(
-  token: string
-): Promise<TokenPayload> {
-  const { payload } = await jwtVerify(
-    token,
-    getSecret("JWT_REFRESH_SECRET")
-  );
+export async function verifyRefreshToken(token: string): Promise<TokenPayload> {
+  const { payload } = await jwtVerify(token, getSecret("JWT_REFRESH_SECRET"));
   return payload as TokenPayload;
 }

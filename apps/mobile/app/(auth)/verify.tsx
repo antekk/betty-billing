@@ -30,18 +30,13 @@ export default function VerifyScreen() {
       await verifyOtp(phone, code);
       router.replace("/");
     } catch (error) {
-      Alert.alert(
-        "Invalid code",
-        error instanceof Error ? error.message : "Please try again."
-      );
+      Alert.alert("Invalid code", error instanceof Error ? error.message : "Please try again.");
     } finally {
       setIsLoading(false);
     }
   };
 
-  const maskedPhone = phone
-    ? `(${phone.slice(2, 5)}) ${phone.slice(5, 8)}-${phone.slice(8)}`
-    : "";
+  const maskedPhone = phone ? `(${phone.slice(2, 5)}) ${phone.slice(5, 8)}-${phone.slice(8)}` : "";
 
   return (
     <KeyboardAvoidingView
@@ -49,17 +44,12 @@ export default function VerifyScreen() {
       behavior={Platform.OS === "ios" ? "padding" : undefined}
     >
       <View style={styles.content}>
-        <TouchableOpacity
-          style={styles.backButton}
-          onPress={() => router.back()}
-        >
+        <TouchableOpacity style={styles.backButton} onPress={() => router.back()}>
           <Text style={styles.backText}>Back</Text>
         </TouchableOpacity>
 
         <Text style={styles.title}>Enter Code</Text>
-        <Text style={styles.subtitle}>
-          Sent to {maskedPhone}
-        </Text>
+        <Text style={styles.subtitle}>Sent to {maskedPhone}</Text>
 
         <TextInput
           style={styles.codeInput}
@@ -78,9 +68,7 @@ export default function VerifyScreen() {
           onPress={handleVerify}
           disabled={isLoading}
         >
-          <Text style={styles.buttonText}>
-            {isLoading ? "Verifying..." : "Verify"}
-          </Text>
+          <Text style={styles.buttonText}>{isLoading ? "Verifying..." : "Verify"}</Text>
         </TouchableOpacity>
       </View>
     </KeyboardAvoidingView>

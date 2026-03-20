@@ -1,10 +1,4 @@
-import {
-  pgTable,
-  uuid,
-  jsonb,
-  timestamp,
-  pgEnum,
-} from "drizzle-orm/pg-core";
+import { pgTable, uuid, jsonb, timestamp, pgEnum } from "drizzle-orm/pg-core";
 
 export const batchStatusEnum = pgEnum("batch_status", [
   "pending",

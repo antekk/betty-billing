@@ -5,14 +5,8 @@ import { InputBar } from "../components/chat/InputBar";
 import { useChat } from "../services/chat";
 
 export default function ChatScreen() {
-  const {
-    entries,
-    isStreaming,
-    streamingText,
-    loadTimeline,
-    sendMessage,
-    confirmClaim,
-  } = useChat();
+  const { entries, isStreaming, streamingText, loadTimeline, sendMessage, confirmClaim } =
+    useChat();
 
   useEffect(() => {
     loadTimeline();

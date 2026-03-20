@@ -15,10 +15,10 @@ export async function POST(request: NextRequest) {
   const parsed = chatSchema.safeParse(body);
 
   if (!parsed.success) {
-    return new Response(
-      JSON.stringify({ error: parsed.error.issues[0].message }),
-      { status: 400, headers: { "Content-Type": "application/json" } }
-    );
+    return new Response(JSON.stringify({ error: parsed.error.issues[0].message }), {
+      status: 400,
+      headers: { "Content-Type": "application/json" },
+    });
   }
 
   const { message } = parsed.data;

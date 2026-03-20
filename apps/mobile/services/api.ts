@@ -9,10 +9,7 @@ export async function getAccessToken(): Promise<string | null> {
   return SecureStore.getItemAsync(TOKEN_KEY);
 }
 
-export async function setTokens(
-  accessToken: string,
-  refreshToken: string
-): Promise<void> {
+export async function setTokens(accessToken: string, refreshToken: string): Promise<void> {
   await SecureStore.setItemAsync(TOKEN_KEY, accessToken);
   await SecureStore.setItemAsync(REFRESH_KEY, refreshToken);
 }
@@ -43,10 +40,7 @@ async function refreshAccessToken(): Promise<string | null> {
   }
 }
 
-export async function apiFetch(
-  path: string,
-  options: RequestInit = {}
-): Promise<Response> {
+export async function apiFetch(path: string, options: RequestInit = {}): Promise<Response> {
   let token = await getAccessToken();
 
   const headers: Record<string, string> = {

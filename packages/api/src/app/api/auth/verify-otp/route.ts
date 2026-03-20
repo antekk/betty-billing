@@ -19,10 +19,7 @@ export async function POST(request: NextRequest) {
   const parsed = verifySchema.safeParse(body);
 
   if (!parsed.success) {
-    return NextResponse.json(
-      { error: parsed.error.issues[0].message },
-      { status: 400 }
-    );
+    return NextResponse.json({ error: parsed.error.issues[0].message }, { status: 400 });
   }
 
   const { phone, code } = parsed.data;
@@ -42,24 +39,14 @@ export async function POST(request: NextRequest) {
     .limit(1);
 
   if (!otp) {
-    return NextResponse.json(
-      { error: "Invalid or expired code" },
-      { status: 401 }
-    );
+    return NextResponse.json({ error: "Invalid or expired code" }, { status: 401 });
   }
 
   // Mark OTP as used
-  await db
-    .update(otpCodes)
-    .set({ used: true })
-    .where(eq(otpCodes.id, otp.id));
+  await db.update(otpCodes).set({ used: true }).where(eq(otpCodes.id, otp.id));
 
   // Upsert user
-  const [existingUser] = await db
-    .select()
-    .from(users)
-    .where(eq(users.phone, phone))
-    .limit(1);
+  const [existingUser] = await db.select().from(users).where(eq(users.phone, phone)).limit(1);
 
   let userId: string;
   let isNewUser = false;
@@ -67,10 +54,7 @@ export async function POST(request: NextRequest) {
   if (existingUser) {
     userId = existingUser.id;
   } else {
-    const [newUser] = await db
-      .insert(users)
-      .values({ phone })
-      .returning({ id: users.id });
+    const [newUser] = await db.insert(users).values({ phone }).returning({ id: users.id });
     userId = newUser.id;
     isNewUser = true;
 

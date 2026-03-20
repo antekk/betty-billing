@@ -9,10 +9,7 @@ export async function GET(
   const result = await getFeeCode(code);
 
   if (!result) {
-    return NextResponse.json(
-      { error: `Fee code "${code}" not found` },
-      { status: 404 }
-    );
+    return NextResponse.json({ error: `Fee code "${code}" not found` }, { status: 404 });
   }
 
   return NextResponse.json(result);

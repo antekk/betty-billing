@@ -8,10 +8,13 @@ export function createAHCIPAdapter(): AHCIPAdapter {
     case "mock":
       return new MockAHCIPAdapter();
     default:
-      throw new Error(
-        `Unknown AHCIP adapter: ${mode}. Only "mock" is supported in v1.`
-      );
+      throw new Error(`Unknown AHCIP adapter: ${mode}. Only "mock" is supported in v1.`);
   }
 }
 
-export type { AHCIPAdapter, AHCIPClaimInput, AHCIPBatchResponse, AHCIPClaimResult } from "./interface";
+export type {
+  AHCIPAdapter,
+  AHCIPClaimInput,
+  AHCIPBatchResponse,
+  AHCIPClaimResult,
+} from "./interface";
