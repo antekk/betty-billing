@@ -1,0 +1,970 @@
+1RG111                                   Alberta Health Care Insurance Plan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               Schedule Of Anaesthetic Rates Applicable To Dentistry
+
+                                                   Procedure List
+
+                                                       As Of
+
+                                                   14 March 2025
+
+1RG111                                   Alberta Health Care Insurance Plan                                   Page 1
+                               Schedule Of Anaesthetic Rates Applicable To Dentistry
+ Generated 2025/03/13                         Part D - Procedure List                              As of 2025/03/14
+
+
+                                  I. CERTAIN DIAGNOSTIC AND THERAPEUTIC PROCEDURES
+
+ 01  NONOPERATIVE ENDOSCOPY
+
+    01.0  Nonoperative endoscopy of respiratory tract
+       01.01  Rhinoscopy
+                                                                                                     BASE          ANE
+          01.01DA Sinus Endoscopy  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  106.73
+
+       01.05  Pharyngoscopy
+          01.05DA Nasendoscopy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  113.05
+
+    01.3  Other nonoperative endoscopy
+       01.32  Otoscopy
+          01.32D  Otoscopy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  111.81
+                  NOTE:  May only be claimed when performed under general anaesthesia.
+
+       01.39  Other nonoperative endoscopy NEC
+
+          01.39A  Arthroscopy temporo-mandibular joint . . . . . . . . . . . . . . . . . . . .                  111.71
+                  NOTE:  When performed via arthroscope, items 88.81A, 88.29NA, 88.29QA,
+                         92.49A, 88.29RA, 88.29SA and 88.95A may be claimed in addition to
+                         01.39A. Refer to Price List.
+
+
+                                       II.  OPERATIONS ON THE NERVOUS SYSTEM
+
+ 15  OTHER OPERATIONS ON SKULL, BRAIN, AND CEREBRAL MENINGES
+
+    15.0  Cranioplasty
+       15.03  Repair of skull with flap or graft
+          15.03A  Pericranial flap to orbit or face  . . . . . . . . . . . . . . . . . . . . .                  312.74
+                  NOTE:  When performed in conjunction with coronal approach for another
+                         procedure may be claimed at 100% (Refer to Price List).
+
+ 17  OPERATIONS ON CRANIAL AND PERIPHERAL NERVES
+
+    17.0  Incision, division, and excision of cranial and peripheral nerves
+       17.08  Other excision or avulsion of cranial and peripheral nerves
+          17.08L  Avulsion of trigeminal nerve at periphery  . . . . . . . . . . . . . . . . .                  142.97
+          17.08M  Total avulsion of a branch of trigeminal nerve . . . . . . . . . . . . . . .                  142.97
+          17.08N  Neurectomy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  142.97
+
+    17.1  Destruction of cranial and peripheral nerves
+          17.1 E  Injection into peripheral nerve (injection of trigeminal nerve for
+                  destruction) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  111.71
+
+    17.2  Suture of cranial and peripheral nerves
+          17.2 E  Micro-suturing of injured nerve  . . . . . . . . . . . . . . . . . . . . . .                  589.76
+          17.2 F  Major peripheral nerve-epineural . . . . . . . . . . . . . . . . . . . . . .                  169.77
+
+          Peripheral nerve reconstruction utilizing microsurgical technique
+          17.2 G  Minor, single cable  . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  268.07
+
+          17.2 H  Major, multiple cables . . . . . . . . . . . . . . . . . . . . . . . . . . .                  446.79
+1RG111                                   Alberta Health Care Insurance Plan                                   Page 2
+                               Schedule Of Anaesthetic Rates Applicable To Dentistry
+ Generated 2025/03/13                         Part D - Procedure List                              As of 2025/03/14
+
+
+
+                                   II.  OPERATIONS ON THE NERVOUS SYSTEM (cont'd)
+
+ 17  OPERATIONS ON CRANIAL AND PERIPHERAL NERVES (cont'd)
+
+    17.3  Freeing of adhesions and decompression of cranial and peripheral
+          nerves
+       17.32  Other cranial nerve decompression
+                                                                                                     BASE          ANE
+          17.32D  Inferior alveolar nerve in the canal . . . . . . . . . . . . . . . . . . . .                  268.07
+
+    17.5  Transposition of cranial and peripheral nerves
+          17.5 C  Transposition of mental nerve  . . . . . . . . . . . . . . . . . . . . . . .                  142.97
+
+    17.7  Injection into peripheral nerve
+          17.7 A  Alcohol  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  111.71
+          17.7 B  Diagnostic . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  111.71
+          17.7 C  Injection block, regional deep . . . . . . . . . . . . . . . . . . . . . . .                  113.05
+
+                                    VI.  OPERATIONS ON NOSE, MOUTH, AND PHARYNX
+
+ 33  OPERATIONS ON NOSE
+
+    33.0  Control of epistaxis
+
+       33.02  Control of epistaxis by posterior (and anterior) packing
+          33.02DA Control of epistaxis by posterior/ anterior packing, initial.  . . . . . . .                  142.97
+          33.02DB Control of epistaxis by posterior/ anterior packing, repeat. . . . . . . . .                  151.90
+                  NOTE:  Repeat service must be claimed if provided within 14 days of
+                         initial treatment.
+
+
+       33.05  Control of epistaxis by (transantral) ligation of the maxillary
+              artery
+          33.05DA Control of epistaxis, transantral ligation of maxillary artery.  . . . . . .                  187.66
+
+    33.4  Submucous resection of nasal septum
+          33.4 B  Submucous resection of nasal septum  . . . . . . . . . . . . . . . . . . . .                  125.10
+                  NOTE:  May only be claimed in association with cleft maxilla repair,
+                         trauma or orthognathic surgery.
+
+    33.6  Reduction of nasal fracture
+       33.61  Reduction (closed) of nasal fracture
+          33.61B  Reduction (closed) of nasal fracture . . . . . . . . . . . . . . . . . . . .                  111.71
+                  NOTE:  May only be claimed when another insured service has been provided
+                         and is not claimable for cosmetic purposes.
+
+       33.62  Open reduction of nasal fracture
+          33.62C  External or sinusal approach . . . . . . . . . . . . . . . . . . . . . . . .                  187.66
+                  NOTE:  May only be claimed with other facial fractures.
+
+          33.62E  Orbital approach with insertion of subperiosteal implant . . . . . . . . . .                  187.66
+                  NOTE:  May only be claimed in association with cleft maxilla repair,
+                         trauma or orthognathic surgery.
+
+1RG111                                   Alberta Health Care Insurance Plan                                   Page 3
+                               Schedule Of Anaesthetic Rates Applicable To Dentistry
+ Generated 2025/03/13                         Part D - Procedure List                              As of 2025/03/14
+
+
+
+                                VI.  OPERATIONS ON NOSE, MOUTH, AND PHARYNX (cont'd)
+
+ 33  OPERATIONS ON NOSE (cont'd)
+
+    33.6  Reduction of nasal fracture (cont'd)
+
+       33.62  Open reduction of nasal fracture (cont'd)
+                                                                                                     BASE          ANE
+          33.62DA Open reduction of nasal fracture and mini-plate fixation . . . . . . . . . .                  151.90
+                  NOTE:  May be claimed only when performed in conjunction with another
+                         major surgical procedure due to trauma.
+
+          33.62DB Open reduction of nasal fracture, mini-plate fixation via coronal approach.                   393.17
+                   NOTE: May be claimed only when performed in conjunction with another
+                         major surgical procedure due to trauma.
+
+
+    33.7  Repair and plastic operations on the nose
+
+       33.76  Other rhinoplasty or septoplasty
+                  NOTE:  Health service codes 33.76DA to 33.76DF may only be claimed when
+                         performed in conjunction with another insured oral surgical
+                         procedure or in the treatment of a trauma injury.
+
+          33.76DA Tip revision . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  142.97
+          33.76DB Hump removal . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  134.04
+          33.76DC Infracture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  134.04
+          33.76DD Hump removal and infracture  . . . . . . . . . . . . . . . . . . . . . . . .                  142.97
+          33.76DE Complete (hump removal, infracture and tip revision) . . . . . . . . . . . .                  169.77
+          33.76DF Complete rhinoplasty and S.M.R. (1 surgeon)  . . . . . . . . . . . . . . . .                  178.71
+          33.76DG Repair of nasal septum perforation.  . . . . . . . . . . . . . . . . . . . .                  142.97
+          33.76DH Repeat reconstructive rhinoplasty following previous complete rhinoplasty. .                  321.69
+
+ 34  OPERATIONS ON NASAL SINUSES
+
+    34.1  Intranasal antrotomy
+          34.1 B  Other invasive diagnostic procedures on nose (Nasal Antrostomy)  . . . . . .                  111.71
+                  NOTE:  May only be claimed with Caldwell-Luc procedures for foreign bodies
+                         or oroantral fistulae.
+
+    34.6  Repair and plastic operation of nasal sinus
+       34.61  Closure of sinus fistula (oroantral)
+          34.61A  Primary closure  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  162.64
+          34.61B  With an associated Caldwell-Luc procedure  . . . . . . . . . . . . . . . . .                  160.83
+          34.61C  Secondary closure with palatal flap  . . . . . . . . . . . . . . . . . . . .                  162.64
+          34.61D  Secondary closure with pharyngeal flap . . . . . . . . . . . . . . . . . . .                  160.84
+          34.61E  Secondary closure with tongue flap . . . . . . . . . . . . . . . . . . . . .                  160.84
+                  NOTE:  To be followed by 37.49A.
+
+          34.61F  Secondary closure with buccal flap . . . . . . . . . . . . . . . . . . . . .                  171.67
+1RG111                                   Alberta Health Care Insurance Plan                                   Page 4
+                               Schedule Of Anaesthetic Rates Applicable To Dentistry
+ Generated 2025/03/13                         Part D - Procedure List                              As of 2025/03/14
+
+
+
+                                VI.  OPERATIONS ON NOSE, MOUTH, AND PHARYNX (cont'd)
+
+ 35 REMOVAL AND RESTORATION OF TEETH
+
+    35.0 Forceps extraction of tooth (multiple) (single)
+                                                                                                     BASE          ANE
+          35.0 DA Dental extraction/treatment  . . . . . . . . . . . . . . . . . . . . . . . .                  111.81
+                  NOTE:  May be claimed when performed by an oral and maxillofacial surgeon
+                         on an emergency basis or when required as part of surgical repair
+                         of fractured mandible.
+
+
+ 36  OTHER OPERATIONS ON TEETH, GUMS, AND ALVEOLI
+
+    36.3  Excision of dental lesion of jaw
+                   NOTE: The biopsy is included in the benefit payable for the removal of
+                         the lesion.
+
+          36.3 B  Benign, simple soft tissue, surface  . . . . . . . . . . . . . . . . . . . .                  111.81
+          36.3 C  Benign, complicated soft tissue, surface . . . . . . . . . . . . . . . . . .                  150.73
+          36.3 D  Malignant soft tissue  . . . . . . . . . . . . . . . . . . . . . . . . . . .                  169.57
+          36.3 E  Simple cyst, bony tissue - less than 1 cm  . . . . . . . . . . . . . . . . .                  112.95
+          36.3 M  Simple cyst, bony tissue - 1 cm to 2 cm  . . . . . . . . . . . . . . . . . .                  169.57
+          36.3 F  Simple cyst, bony tissue - over 2 cm . . . . . . . . . . . . . . . . . . . .                  189.74
+          36.3 G  Bony tissue, complicated cyst  . . . . . . . . . . . . . . . . . . . . . . .                  204.97
+          36.3 H  Bony tissue, benign-fibro-osseous lesions, myxoma, most odontogenic tumors .                  207.27
+          36.3 J  Bony tissue, malignant tumor . . . . . . . . . . . . . . . . . . . . . . . .                  178.71
+          36.3 K  Bony tissue, complicated, central hemangioma, ameloblastoma  . . . . . . . .                  263.79
+          36.3 L  Bony tissue, complicated malignant tumor . . . . . . . . . . . . . . . . . .                  225.88
+
+    36.6 Application of orthodontic appliance
+          36.6 A  Application of maxillary and mandibular arch bars. . . . . . . . . . . . . .                  286.36
+                  NOTE:  May not be billed in addition to HSCs for the management of facial
+                         trauma.
+
+
+    36.7  Other orthodontic operation
+          36.7 A  Removal of wire, interosseous or bone plate  . . . . . . . . . . . . . . . .                  113.05
+          36.7 B  Removal of an arch splint  . . . . . . . . . . . . . . . . . . . . . . . . .                  113.05
+
+ 37  OPERATIONS ON TONGUE
+
+    37.1  Partial glossectomy
+          37.1 DA Partial glossectomy  . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  142.47
+          37.1 DB Hemiglossectomy  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  265.92
+
+    37.2  Complete glossectomy
+          37.2 D  Complete glossectomy . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  589.76
+
+    37.4  Repair and plastic operations on tongue
+       37.49  Other repair and plastic operations on tongue
+          37.49A  Taking down of tongue flap . . . . . . . . . . . . . . . . . . . . . . . . .                  125.09
+                  NOTE:  Procedure to follow 34.61E.
+1RG111                                   Alberta Health Care Insurance Plan                                   Page 5
+                               Schedule Of Anaesthetic Rates Applicable To Dentistry
+ Generated 2025/03/13                         Part D - Procedure List                              As of 2025/03/14
+
+
+
+                                VI.  OPERATIONS ON NOSE, MOUTH, AND PHARYNX (cont'd)
+
+ 37  OPERATIONS ON TONGUE (cont'd)
+
+    37.8  Invasive diagnostic procedures on tongue
+       37.81  Needle biopsy of tongue
+                                                                                                     BASE          ANE
+          37.81D  Needle biopsy of tongue  . . . . . . . . . . . . . . . . . . . . . . . . . .                  112.95
+
+    37.9  Other operations on tongue
+       37.91  Lingual frenotomy
+          37.91DA Release of simple tongue tie, clipping . . . . . . . . . . . . . . . . . . .                  112.95
+          37.91DB Release of complex tongue tie  . . . . . . . . . . . . . . . . . . . . . . .                  113.05
+                  That requiring Z plasty closure
+
+       37.99  Other operations on tongue NEC
+          37.99B  Ankyloglossia - frenoplasty  . . . . . . . . . . . . . . . . . . . . . . . .                  150.73
+
+ 38  OPERATIONS ON SALIVARY GLANDS AND DUCTS
+
+    38.0  Incision of salivary gland or duct
+          38.0 B  Duct orifice, sialolithotomy . . . . . . . . . . . . . . . . . . . . . . . .                  113.05
+          38.0 C  Posterior floor of mouth . . . . . . . . . . . . . . . . . . . . . . . . . .                  113.05
+          38.0 D  Calyx of gland . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  111.81
+
+    38.1  Excision of lesion of salivary gland
+       38.19  Other excision of lesion of salivary gland
+          38.19A  Mucocele . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  112.95
+          38.19B  Benign, simple - ranula  . . . . . . . . . . . . . . . . . . . . . . . . . .                  111.71
+          38.19D  Benign, complicated ranula including sublingual gland. . . . . . . . . . . .                  153.59
+
+    38.2  Sialoadenectomy
+       38.21  Sialoadenectomy, unqualified
+          38.21DA Submandibular gland  . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  171.67
+
+    38.9  Other operations on salivary gland or duct
+       38.91  Probing of salivary duct
+          38.91A  Dilation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  111.71
+
+ 39  OTHER OPERATIONS ON MOUTH AND FACE
+
+    39.0  Drainage of face or floor of mouth
+          39.0 A  Intraoral  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  150.73
+          39.0 B  Extra-oral . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  150.73
+          39.0 C  Vestibular . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  149.07
+
+    39.1  Incision of palate
+          39.1 A  Intra-oral incision and drainage . . . . . . . . . . . . . . . . . . . . . .                  111.71
+
+    39.2  Excision of lesion or tissue of palate
+       39.21  Local excision or destruction of lesion or tissue of palate
+          39.21B  Removal of torus, palate . . . . . . . . . . . . . . . . . . . . . . . . . .                  150.73
+          39.21C  Removal of torus mandible  . . . . . . . . . . . . . . . . . . . . . . . . .                  150.73
+                  Per quadrant
+1RG111                                   Alberta Health Care Insurance Plan                                   Page 6
+                               Schedule Of Anaesthetic Rates Applicable To Dentistry
+ Generated 2025/03/13                         Part D - Procedure List                              As of 2025/03/14
+
+
+
+                                VI.  OPERATIONS ON NOSE, MOUTH, AND PHARYNX (cont'd)
+
+ 39  OTHER OPERATIONS ON MOUTH AND FACE (cont'd)
+
+    39.4  Plastic repair of mouth (internal)
+                                                                                                     BASE          ANE
+          39.41   Suture of (traumatic) laceration of mouth  . . . . . . . . . . . . . . . . .                  112.95
+                  NOTE:  1.  For each layer or unit refer to Price List.
+                         2.  Fee includes primary closure of wound, normal wound care
+                             follow up and suture removal.
+                         3.  May not be claimed where the laceration is treated with the use
+                             of steri-strip or simple bandaging.
+
+    39.5  Palatoplasty
+       39.52  Correction of cleft palate
+          39.52E  Repair of primary palate (alveolar cleft)  . . . . . . . . . . . . . . . . .                  169.78
+          39.52F  Repair of secondary palate . . . . . . . . . . . . . . . . . . . . . . . . .                  196.59
+          39.52H  Closure of palatal fistulae  . . . . . . . . . . . . . . . . . . . . . . . .                  205.53
+          39.52J  Closure of labial fistulae . . . . . . . . . . . . . . . . . . . . . . . . .                  205.53
+          39.52DA Repair of cleft alveolus with bone graft . . . . . . . . . . . . . . . . . .                  339.56
+                   NOTE: HSCs 88.29DJ and 88.29DK may be claimed in addition for
+                         harvesting.
+
+          39.52DB Nasal floor reconstruction in cleft lip and palate . . . . . . . . . . . . .                  494.61
+                  NOTE:  HSCs 88.29DJ and 88.29DK may be claimed in addition for harvesting.
+
+          39.52DC Bone graft to the pyriform rim in cleft lip and palate reconstruction  . . .                  494.61
+                  NOTE:  HSCs 88.29DJ and 88.29DK may be claimed in addition for harvesting.
+
+
+       39.59  Other plastic repair of palate
+          39.59B  Repeat palatal reconstruction  . . . . . . . . . . . . . . . . . . . . . . .                  330.63
+
+    39.8  Invasive diagnostic procedures on oral cavity
+       39.83  Biopsy of unspecified structure of mouth
+          39.83C  Soft tissue when done as a separate procedure  . . . . . . . . . . . . . . .                  113.05
+          39.83D  Hard tissue when done as a separate procedure  . . . . . . . . . . . . . . .                  144.57
+
+    39.9  Other operations on mouth and face
+       39.91  Labial frenotomy
+          39.91DB Labial frenotomy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  111.71
+                  That for clipping of frenulum of lip
+          39.91DC Labial frenotomy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  113.05
+                  That for release of frenulum of lip requiring Z plasty closure
+
+       39.92  Incision of unspecified structure of mouth
+          39.92A  Removal of foreign body from soft tissue . . . . . . . . . . . . . . . . . .                  113.05
+
+       39.99  Other operations on oral cavity
+          39.99B  Design and construction of acrylic resin appliances to facilitate healing
+                  following burns involving the lips, oral cavity or paraoral structures . . .                  151.90
+1RG111                                   Alberta Health Care Insurance Plan                                   Page 7
+                               Schedule Of Anaesthetic Rates Applicable To Dentistry
+ Generated 2025/03/13                         Part D - Procedure List                              As of 2025/03/14
+
+
+
+                                VI.  OPERATIONS ON NOSE, MOUTH, AND PHARYNX (cont'd)
+
+ 41  OPERATIONS ON PHARYNX
+
+    41.3  Plastic operation on pharynx
+                                                                                                     BASE          ANE
+          41.3 C  Pharyngoplasty . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  178.71
+
+ 43  OTHER OPERATIONS ON LARYNX AND TRACHEA
+
+    43.1  Temporary tracheostomy
+          43.1 DA Temporary Tracheostomy . . . . . . . . . . . . . . . . . . . . . . . . . . .                  125.09
+          43.1 DB Emergency cricothyroidotomy  . . . . . . . . . . . . . . . . . . . . . . . .                  125.09
+
+
+ 46  OPERATIONS ON CHEST WALL, PLEURA, MEDIASTINUM, AND DIAPHRAGM
+
+    46.0  Incision of chest wall and pleura
+
+       46.04  Insertion of intercostal catheter (with water seal) for drainage
+          46.04DA Insertion of Intercostal catheter with water seal, that for conditions
+                  other than empyema . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  111.71
+
+                                   VIII.  OPERATIONS ON THE CARDIOVASCULAR SYSTEM
+
+ 51  OTHER OPERATIONS ON VESSELS
+
+    51.9  Other operations on vessels
+       51.98  Control of hemorrhage, not otherwise specified
+          51.98B  Control of hemorrhage, not otherwise specified . . . . . . . . . . . . . . .                  144.57
+
+                                   XV.  OPERATIONS ON THE MUSCULOSKELETAL SYSTEM
+
+ 88  OPERATIONS ON FACIAL BONES AND JOINTS
+
+    88.0  (Closed) reduction of facial fractures
+       88.02  (Closed) reduction of malar and zygomatic fracture
+          88.02C  Zygoma . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  111.71
+
+       88.03  (Closed) reduction of maxillary fracture
+          88.03B  Horizontal Le Fort I . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  180.72
+
+       88.04  (Closed) reduction of mandibular fracture
+          88.04C  (Closed) reduction of mandibular fracture  . . . . . . . . . . . . . . . . .                  188.43
+          88.04DB Multiple fractures, with external fixation . . . . . . . . . . . . . . . . .                  361.41
+          88.04DC Application of external fixator in complex mandibular fractures  . . . . . .                  937.16
+                  NOTE:  May not be claimed with HSC 88.04DB.
+
+       88.09  (Closed) reduction of other facial fracture
+          88.09B  Zygomatic - maxillary fracture dislocation . . . . . . . . . . . . . . . . .                  167.71
+
+    88.1  Open reduction of facial fractures
+       88.12  Open reduction of malar and zygomatic fracture
+          88.12DB With mini-plate fixation of fractured zygoma, malar, one plate . . . . . . .                  464.65
+1RG111                                   Alberta Health Care Insurance Plan                                   Page 8
+                               Schedule Of Anaesthetic Rates Applicable To Dentistry
+ Generated 2025/03/13                         Part D - Procedure List                              As of 2025/03/14
+
+
+
+                               XV.  OPERATIONS ON THE MUSCULOSKELETAL SYSTEM (cont'd)
+
+ 88  OPERATIONS ON FACIAL BONES AND JOINTS (cont'd)
+
+    88.1  Open reduction of facial fractures (cont'd)
+       88.12  Open reduction of malar and zygomatic fracture (cont'd)
+                                                                                                     BASE          ANE
+          88.12DC With mini-plate fixation of fractured zygoma, malar, more than one plate . .                  621.81
+          88.12DD With mini-plate fixation of fractured zygoma, malar, via coronal approach  .                  822.07
+                  NOTE:  15.03A can be paid in addition
+
+          88.12F  By simple elevation  . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  169.57
+          88.12G  With antrostomy and packing  . . . . . . . . . . . . . . . . . . . . . . . .                  151.90
+          88.12H  By osteosynthesis  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  151.90
+          88.12J  By sinus approach  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  151.90
+
+       88.13  Open reduction of maxillary fracture
+          88.13DC With multiple mini-plate fixation, both sides  . . . . . . . . . . . . . . .                1,197.37
+          88.13F  Horizontal Le Fort I, single . . . . . . . . . . . . . . . . . . . . . . . .                  223.38
+                  NOTE:  For second and subsequent, refer to Price List.
+
+          88.13J  With miniplate fixation  . . . . . . . . . . . . . . . . . . . . . . . . . .                  661.24
+
+       88.14  Open reduction of mandibular fracture
+          88.14DA With internal fixation, single . . . . . . . . . . . . . . . . . . . . . . .                  411.04
+          88.14DB Single and interdental fixation with splint  . . . . . . . . . . . . . . . .                  482.53
+          88.14DC Multiple and interdental fixation with splint  . . . . . . . . . . . . . . .                  524.06
+          88.14J  One miniplate or lag screw . . . . . . . . . . . . . . . . . . . . . . . . .                  451.77
+          88.14K  With miniplate fixation, more than one plate or lag screw and more than one
+                  fracture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  668.63
+          88.14L  With miniplate fixation, multiple  . . . . . . . . . . . . . . . . . . . . .                  689.45
+
+       88.16  Open reduction of orbital fracture
+          88.16DB Mini-plate fixation of fractured supraorbital ridge via coronal approach . .                  822.07
+                  NOTE:  15.03A can be paid in addition
+
+          88.16C  Exploration of orbital blowout fracture for miniplate fixation of
+                  intraorbital rim . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  178.71
+          88.16D  Exploration of orbital blowout fracture and reconstruction with insertion
+                  of subperiosteal implant . . . . . . . . . . . . . . . . . . . . . . . . . .                  178.71
+
+       88.19  Open reduction of other facial fractures
+          88.19DA With mini-plate fixation of fractured frontal bone via coronal approach  . .                1,000.79
+                  NOTE:  15.03A can be paid in addition
+
+
+    88.2  Incision of facial bone without division
+
+       88.29  Other incision of facial bone without division
+          88.29C  Removal of foreign body from bone  . . . . . . . . . . . . . . . . . . . . .                  339.56
+          88.29E  Subcondylar closed osteotomy . . . . . . . . . . . . . . . . . . . . . . . .                1,179.51
+          88.29F  Subcondylar open osteotomy . . . . . . . . . . . . . . . . . . . . . . . . .                  632.47
+          88.29H  Anterior segmental osteotomy of the mandible . . . . . . . . . . . . . . . .                  625.50
+1RG111                                   Alberta Health Care Insurance Plan                                   Page 9
+                               Schedule Of Anaesthetic Rates Applicable To Dentistry
+ Generated 2025/03/13                         Part D - Procedure List                              As of 2025/03/14
+
+
+
+                               XV.  OPERATIONS ON THE MUSCULOSKELETAL SYSTEM (cont'd)
+
+ 88  OPERATIONS ON FACIAL BONES AND JOINTS (cont'd)
+
+    88.2  Incision of facial bone without division (cont'd)
+
+       88.29  Other incision of facial bone without division (cont'd)
+                                                                                                     BASE          ANE
+          88.29M  Anterior segmental osteotomy of the maxilla  . . . . . . . . . . . . . . . .                  614.93
+          88.29T  Oblique osteotomy of ramus . . . . . . . . . . . . . . . . . . . . . . . . .                  625.50
+                  That including bone graft
+          88.29U  Osteotomy of condylar neck . . . . . . . . . . . . . . . . . . . . . . . . .                1,229.85
+          88.29V  Sagittal split osteotomy . . . . . . . . . . . . . . . . . . . . . . . . . .                  659.49
+          88.29X  Inverted L osteotomy . . . . . . . . . . . . . . . . . . . . . . . . . . . .                1,090.15
+          88.29Y  C osteotomy  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                1,108.02
+          88.29DB Inverted L osteotomy including bone graft  . . . . . . . . . . . . . . . . .                  822.08
+          88.29DC Osseodistraction and Bone Lengthening, including management of advancement .                  893.56
+          88.29DD Le Fort I  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  716.02
+          88.29DE Le Fort I with bone graft  . . . . . . . . . . . . . . . . . . . . . . . . .                  822.08
+          88.29DF Le Fort I, segmental without bone graft  . . . . . . . . . . . . . . . . . .                  679.11
+          88.29DG Le Fort I, segmental with bone graft . . . . . . . . . . . . . . . . . . . .                  782.64
+                   NOTE: 88.29DJ, 88.29DK may be claimed in addition for harvesting.
+
+          88.29CA Le Fort I in cleft palate  . . . . . . . . . . . . . . . . . . . . . . . . .                  686.70
+          88.29DA Le Fort I in cleft palate  . . . . . . . . . . . . . . . . . . . . . . . . .                  679.11
+          88.29N  Le Fort II osteotomy . . . . . . . . . . . . . . . . . . . . . . . . . . . .                1,447.58
+          88.29FA Le Fort III osteotomy  . . . . . . . . . . . . . . . . . . . . . . . . . . .                1,608.41
+          88.29GA Posterior segmental osteotomy of the mandible  . . . . . . . . . . . . . . .                  580.82
+          88.29HA Total dent-alveolar osteotomy of the mandible  . . . . . . . . . . . . . . .                1,108.03
+          88.29TA Posterior segmental osteotomy of the maxilla . . . . . . . . . . . . . . . .                  643.35
+          88.29MA Lower Border ostectomy . . . . . . . . . . . . . . . . . . . . . . . . . . .                  625.50
+          88.29NA Removal of loose bodies  . . . . . . . . . . . . . . . . . . . . . . . . . .                  160.83
+          88.29PA Surgical lavage  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  149.07
+                  NOTE:  May not be claimed with diagnostic TMJ arthroscopy.
+
+          88.29QA Surgical lysis of adhesions  . . . . . . . . . . . . . . . . . . . . . . . .                  142.97
+          88.29RA Mechanical debridement . . . . . . . . . . . . . . . . . . . . . . . . . . .                  142.97
+          88.29SA Laser debridement  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  151.90
+          88.29DH Harvesting of bone graft - Homologous graft, from the bank . . . . . . . . .                  111.71
+          88.29DJ Harvesting of bone graft - Autogenous bone graft, anterior iliac crest,
+                  tibial plateau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  111.71
+          88.29DP Harvesting of bone graft - Autogenous bone graft, posterior iliac crest. . .                  111.71
+                  NOTE:  May not be claimed in addition to HSC 88.29DJ.
+
+          88.29DK Harvesting of bone graft - Autogenous bone graft, same or other site,  . . .                  111.71
+          88.29DL Harvesting of costal chondral graft, using chest wall, minor (one rib) . . .                  134.04
+          88.29DM Harvesting of costal chondral graft, using chest wall, major (two ribs or
+                  more)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  214.44
+          88.29DN Harvesting of costal chondral graft, using chest wall, major with insertion
+                  of Marlex mesh.  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  303.79
+
+    88.4  Partial ostectomy of facial bone, except mandible
+          88.4 DA Resection of maxilla . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  428.92
+1RG111                                   Alberta Health Care Insurance Plan                                  Page 10
+                               Schedule Of Anaesthetic Rates Applicable To Dentistry
+ Generated 2025/03/13                         Part D - Procedure List                              As of 2025/03/14
+
+
+
+                               XV.  OPERATIONS ON THE MUSCULOSKELETAL SYSTEM (cont'd)
+
+ 88  OPERATIONS ON FACIAL BONES AND JOINTS (cont'd)
+
+    88.5  Excision and reconstruction of mandible
+       88.51 Partial ostectomy, mandible
+                                                                                                     BASE          ANE
+          88.51DA Resection of mandible  . . . . . . . . . . . . . . . . . . . . . . . . . . .                  937.16
+                  NOTE:  May not be claimed in addition to HSCs 33.4 B, 89.09C, 89.09D,
+                         88.4 DA, 88.29RA, 88.29SA, 98.11DB, and 98.11DC.
+
+
+    88.6  Temporomandibular arthroplasty
+          88.6 C  Meniscectomy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  134.04
+          88.6 J  Condylectomy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  187.66
+          88.6 FA Condyloplasty  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  187.66
+          88.6 P  Repair of meniscus with dermal graft . . . . . . . . . . . . . . . . . . . .                  339.56
+          88.6 Q  Plication of meniscus  . . . . . . . . . . . . . . . . . . . . . . . . . . .                  151.90
+          88.6 R  Repair of meniscus with temporalis fascia  . . . . . . . . . . . . . . . . .                  330.63
+          88.6 S  Repair of meniscus with other biological material  . . . . . . . . . . . . .                  339.56
+          88.6 U  Removal of alloplastic material  . . . . . . . . . . . . . . . . . . . . . .                  330.63
+          88.6 V  Gap Arthroplasty for Ankylosis . . . . . . . . . . . . . . . . . . . . . . .                  339.56
+          88.6 W  Coronoidectomy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  125.10
+          88.6 X  Condylar replacement . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  875.70
+          88.6 Y  Biological graft . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  214.44
+          88.6 Z  Alloplastic graft  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  160.84
+          88.6 CA Other manipulation of temporomandibular joint (manipulation under general
+                  anaesthesia) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  111.81
+          88.6 DA Reconstruction of the glenoid fossa, zygomatic arch and temporal bone  . . .                  482.53
+          88.6 EA Fossa replacements . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  500.40
+
+    88.7  Other facial bone repair and osteoplasty
+
+       88.71  Division of mandible
+          88.71B  Condylotomy  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  357.43
+          88.71C  Eminoplasty  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  330.63
+                  NOTE:  May not be claimed in addition to item 88.71D.
+
+          88.71D  Re-contour of glenoid fossa  . . . . . . . . . . . . . . . . . . . . . . . .                  196.59
+                  NOTE:  May not be claimed in addition to item 88.71C.
+
+       88.76  Reconstruction of mandible without associated resection
+          88.76B  Bone graft, mandible . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  178.71
+          88.76DA Reconstruction of mandible with bone graft.  . . . . . . . . . . . . . . . .                  679.11
+
+       88.77  Reconstruction of other facial bone without associated resection
+          88.77A  Bone graft, maxilla  . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  186.34
+          88.77DA Reconstruction of maxilla with bone graft  . . . . . . . . . . . . . . . . .                  708.09
+
+    88.8  Invasive diagnostic procedures on facial bones
+       88.81  Biopsy of facial bone
+          88.81A  Biopsy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  144.57
+1RG111                                   Alberta Health Care Insurance Plan                                  Page 11
+                               Schedule Of Anaesthetic Rates Applicable To Dentistry
+ Generated 2025/03/13                         Part D - Procedure List                              As of 2025/03/14
+
+
+
+                               XV.  OPERATIONS ON THE MUSCULOSKELETAL SYSTEM (cont'd)
+
+ 88  OPERATIONS ON FACIAL BONES AND JOINTS (cont'd)
+
+       88.92  (Closed) reduction of temporomandibular dislocation
+                                                                                                     BASE          ANE
+          88.92C  Complicated requiring sedation or general anaesthesia  . . . . . . . . . . .                  112.95
+
+        88.93  Open reduction of temporomandibular dislocation
+          88.93D  Open reduction fracture/dislocation of temporomandibular joint - single
+                  incision.  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  857.16
+          88.93E  Open reduction fracture/dislocation of temporomandibular joint - multiple
+                  incisions. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                1,197.37
+          88.93F  Reconstruction of capsule of fracture/dislocation of temporomandibular
+                  joint. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  205.53
+          88.93G  Reconstruction of meniscus and internal soft tissue of fracture/dislocation
+                  of temporomandibular joint.  . . . . . . . . . . . . . . . . . . . . . . . .                  357.43
+
+       88.97  Bone graft to facial bone
+          88.97A  Costicartilage or bone graft to nose, orbit, forehead, facial bones, etc . .                  216.84
+
+ 89  INCISION, EXCISION, AND DIVISION OF OTHER BONES
+
+    89.0  Sequestrectomy
+       89.09  Sequestrectomy, unspecified site
+          89.09C  Intra-Oral . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  178.71
+          89.09D  Extra-Oral . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  196.59
+
+ 90  OTHER OPERATIONS ON BONES EXCEPT FACIAL BONES
+
+    90.6  Removal of internal fixation device
+          90.6 DD Removal of external fixation device in complex mandibular fractures  . . . .                  339.56
+                  NOTE:  1. May only be claimed when performed in a hospital operating
+                            theatre or non-hospital surgical suite.
+                         2. May not be claimed in addition to HSC 88.29C.
+
+
+ 92  INCISION AND EXCISION OF JOINT STRUCTURES
+
+    92.4  Synovectomy
+       92.49  Synovectomy, unspecified site
+          92.49A  Synovectomy  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  169.78
+
+ 93  REPAIR AND PLASTIC OPERATIONS ON JOINT STRUCTURES
+
+    93.9  Other operations on joints
+       93.91 Arthrocentesis
+          93.91DA Arthrocentesis of the TMJ, unilateral. . . . . . . . . . . . . . . . . . . .                  468.59
+                  NOTE:  May not be claimed in addition to HSCs 01.39A, 88.81A, 88.29NA,
+                         88.29QA, 88.29RA, 88.29SA, 88.95A, and 92.49A.
+
+
+       93.96  Other repair of joint
+          93.96A  Capsulorrhaphy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  205.53
+1RG111                                   Alberta Health Care Insurance Plan                                  Page 12
+                               Schedule Of Anaesthetic Rates Applicable To Dentistry
+ Generated 2025/03/13                         Part D - Procedure List                              As of 2025/03/14
+
+
+
+                               XV.  OPERATIONS ON THE MUSCULOSKELETAL SYSTEM (cont'd)
+
+ 93  REPAIR AND PLASTIC OPERATIONS ON JOINT STRUCTURES (cont'd)
+
+    93.9  Other operations on joints (cont'd)
+
+       93.96  Other repair of joint (cont'd)
+                                                                                                     BASE          ANE
+                  NOTE:  May only be claimed as a sole procedure or with item 88.71C.
+
+
+ 95  OPERATIONS ON MUSCLES, TENDONS, FASCIA, AND BURSA, EXCEPT HAND
+
+    95.0  Incision of muscle, tendon, fascia and bursa
+       95.02  Myotomy
+          95.02B  Lateral pterygoid muscle . . . . . . . . . . . . . . . . . . . . . . . . . .                  111.71
+
+                                 XVII.  OPERATIONS ON SKIN AND SUBCUTANEOUS TISSUE
+
+ 98  OPERATIONS ON SKIN AND SUBCUTANEOUS TISSUE
+
+    98.1  Excision of skin and subcutaneous tissue
+       98.11  Debridement of wound or infected tissue
+          98.11DB Debridement of oral and perioral tissue - minor - less than 2 cm . . . . . .                  150.73
+          98.11DC Debridement of oral and perioral tissue - major - 2 cm or greater. . . . . .                  205.53
+
+       98.12  Local excision or destruction of lesion or tissue of skin and
+              subcutaneous tissue
+          98.12DN Removal of pigmented benign naevus of the face . . . . . . . . . . . . . . .                  125.09
+          98.12DP Removal of complicated naevi . . . . . . . . . . . . . . . . . . . . . . . .                  125.09
+
+       98.13  Radical excision of skin lesion
+          98.13DB Excision of large malignant facial lesion with primary closure . . . . . . .                  111.71
+
+    98.3  Relaxation of scar or contracture of skin
+          98.3 A  Revision of scar . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                  112.95
+          98.3 B  Excision of scar tissue and skin graft, one site . . . . . . . . . . . . . .                  303.80
+          98.3 C  Excision of scar tissue and skin graft, more than one site . . . . . . . . .                  415.63
+          98.3 D  Excision of scar tissue and mucosal graft, one site  . . . . . . . . . . . .                  357.43
+          98.3 E  Excision of scar tissue and mucosal graft, more than one site  . . . . . . .                  500.40
+
+    98.5  Flap or pedicle graft
+          98.5 DA Rotation or transposition flap . . . . . . . . . . . . . . . . . . . . . . .                  205.53
+1RG111                                   Alberta Health Care Insurance Plan                                  Page 13
+                               Schedule Of Anaesthetic Rates Applicable To Dentistry
+ Generated 2025/03/13                         Part D - Procedure List                              As of 2025/03/14
+
+
+
+                             XVII.  OPERATIONS ON SKIN AND SUBCUTANEOUS TISSUE (cont'd)
+
+ 98  OPERATIONS ON SKIN AND SUBCUTANEOUS TISSUE (cont'd)
+
+    98.5  Flap or pedicle graft (cont'd)
+                                                                                                     BASE          ANE
+                  NOTE:  1. Functional areas includes the head, neck, and includes coverage
+                            of exposed vital structures (bone, tendon, major vessel, nerve).
+                         2. Flap for functional areas are designated by FNCAR modifier, add
+                            50% to total benefit.
+                         3. Flap size 5-10 cms or double Z-plasty designated by 2ZPL
+                            modifier, add 25% to benefit.
+                         4. Flap size greater than 10 cms or triple Z-plasty designated by
+                            3ZPL modifer, add 50% to benefit.
+                         5. Modifiers do not apply to pedicle flaps.
+                         6. Composite tissue resection (includes bone) designated by CMPRSC
+                            modifier, add 25% to benefit.
+
+       98.51  Flap or pedicle graft, unqualified
+          98.51D  Muscle flap with single tissue (e.g. fascial cutaneous or muscle) with
+                  axial blood supply including insertion of tissue expander  . . . . . . . . .                  303.80
+
+    98.6  Plastic operations on lip and external mouth
+          98.6 DA Simple excision of carcinoma of lip (plastic repair) . . . . . . . . . . . .                  169.77
+          98.6 DB Major excision of carcinoma of lip (plastic repair)  . . . . . . . . . . . .                  169.77
+          98.6 DC Leukoplakia wedge excision of lip (plastic repair) . . . . . . . . . . . . .                  169.77
+          98.6 DD Leukoplakia vermilionectomy of lip (plastic repair)  . . . . . . . . . . . .                  160.84
+          98.6 DE Leukoplakia vermilionectomy and wedge resection of lip (plastic repair)  . .                  178.71
+          98.6 DF Removal of complicated leukoplakia of lip (plastic repair) . . . . . . . . .                  169.77
+          98.6 DG Major excision and plastic repair of lip . . . . . . . . . . . . . . . . . .                  169.77
+
+                                    XVIII.  PROCEDURES NOT ELSEWHERE CLASSIFIED
+
+ 99  PROCEDURES NOT ELSEWHERE CLASSIFIED
+
+    99.0  Ill-defined operations
+
+       99.09  Surgical procedures NOS
+          99.09S  Unlisted procedures, Oral and Facial Surgery . . . . . . . . . . . . . . . .              By Assess
+1RG111                                   Alberta Health Care Insurance Plan                                   Page i
+
+ Generated 2025/03/13                            TABLE OF CONTENTS                                 As of 2025/03/14
+
+
+
+
+                I. CERTAIN DIAGNOSTIC AND THERAPEUTIC PROCEDURES  . . . . . . . . . . . . . . . . . 1
+
+                  01  NONOPERATIVE ENDOSCOPY  . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+
+                    01.0  Nonoperative endoscopy of respiratory tract . . . . . . . . . . . . . . . 1
+
+                    01.3  Other nonoperative endoscopy  . . . . . . . . . . . . . . . . . . . . . . 1
+
+                II.  OPERATIONS ON THE NERVOUS SYSTEM . . . . . . . . . . . . . . . . . . . . . . . 1
+
+                  15  OTHER OPERATIONS ON SKULL, BRAIN, AND CEREBRAL MENINGES . . . . . . . . . . . 1
+
+                    15.0  Cranioplasty  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+
+                  17  OPERATIONS ON CRANIAL AND PERIPHERAL NERVES . . . . . . . . . . . . . . . . . 1
+
+                    17.0  Incision, division, and excision of cranial and peripheral nerves . . . . 1
+
+                    17.1  Destruction of cranial and peripheral nerves  . . . . . . . . . . . . . . 1
+
+                    17.2  Suture of cranial and peripheral nerves . . . . . . . . . . . . . . . . . 1
+
+                    17.3  Freeing of adhesions and decompression of cranial and peripheral
+                          nerves  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+
+                    17.5  Transposition of cranial and peripheral nerves  . . . . . . . . . . . . . 2
+
+                    17.7  Injection into peripheral nerve . . . . . . . . . . . . . . . . . . . . . 2
+
+                VI.  OPERATIONS ON NOSE, MOUTH, AND PHARYNX . . . . . . . . . . . . . . . . . . . . 2
+
+                  33  OPERATIONS ON NOSE  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+
+                    33.0  Control of epistaxis  . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+
+                    33.4  Submucous resection of nasal septum . . . . . . . . . . . . . . . . . . . 2
+
+                    33.6  Reduction of nasal fracture . . . . . . . . . . . . . . . . . . . . . . . 2
+
+                    33.7  Repair and plastic operations on the nose . . . . . . . . . . . . . . . . 3
+
+                  34  OPERATIONS ON NASAL SINUSES . . . . . . . . . . . . . . . . . . . . . . . . . 3
+
+                    34.1  Intranasal antrotomy  . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+
+1RG111                                   Alberta Health Care Insurance Plan                                  Page ii
+
+ Generated 2025/03/13                            TABLE OF CONTENTS                                 As of 2025/03/14
+
+
+                    34.6  Repair and plastic operation of nasal sinus . . . . . . . . . . . . . . . 3
+
+                  35 REMOVAL AND RESTORATION OF TEETH . . . . . . . . . . . . . . . . . . . . . . . 4
+
+                    35.0 Forceps extraction of tooth (multiple) (single)  . . . . . . . . . . . . . 4
+
+                  36  OTHER OPERATIONS ON TEETH, GUMS, AND ALVEOLI  . . . . . . . . . . . . . . . . 4
+
+                    36.3  Excision of dental lesion of jaw  . . . . . . . . . . . . . . . . . . . . 4
+
+                    36.6 Application of orthodontic appliance . . . . . . . . . . . . . . . . . . . 4
+
+                    36.7  Other orthodontic operation . . . . . . . . . . . . . . . . . . . . . . . 4
+
+                  37  OPERATIONS ON TONGUE  . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+
+                    37.1  Partial glossectomy . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+
+                    37.2  Complete glossectomy  . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+
+                    37.4  Repair and plastic operations on tongue . . . . . . . . . . . . . . . . . 4
+
+                    37.8  Invasive diagnostic procedures on tongue  . . . . . . . . . . . . . . . . 5
+
+                    37.9  Other operations on tongue  . . . . . . . . . . . . . . . . . . . . . . . 5
+
+                  38  OPERATIONS ON SALIVARY GLANDS AND DUCTS . . . . . . . . . . . . . . . . . . . 5
+
+                    38.0  Incision of salivary gland or duct  . . . . . . . . . . . . . . . . . . . 5
+
+                    38.1  Excision of lesion of salivary gland  . . . . . . . . . . . . . . . . . . 5
+
+                    38.2  Sialoadenectomy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+
+                    38.9  Other operations on salivary gland or duct  . . . . . . . . . . . . . . . 5
+
+                  39  OTHER OPERATIONS ON MOUTH AND FACE  . . . . . . . . . . . . . . . . . . . . . 5
+
+                    39.0  Drainage of face or floor of mouth  . . . . . . . . . . . . . . . . . . . 5
+
+                    39.1  Incision of palate  . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+
+                    39.2  Excision of lesion or tissue of palate  . . . . . . . . . . . . . . . . . 5
+
+                    39.4  Plastic repair of mouth (internal)  . . . . . . . . . . . . . . . . . . . 6
+
+1RG111                                   Alberta Health Care Insurance Plan                                 Page iii
+
+ Generated 2025/03/13                            TABLE OF CONTENTS                                 As of 2025/03/14
+
+
+                    39.5  Palatoplasty  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+
+                    39.8  Invasive diagnostic procedures on oral cavity . . . . . . . . . . . . . . 6
+
+                    39.9  Other operations on mouth and face  . . . . . . . . . . . . . . . . . . . 6
+
+                  41  OPERATIONS ON PHARYNX . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+
+                    41.3  Plastic operation on pharynx  . . . . . . . . . . . . . . . . . . . . . . 7
+
+                  43  OTHER OPERATIONS ON LARYNX AND TRACHEA  . . . . . . . . . . . . . . . . . . . 7
+
+                    43.1  Temporary tracheostomy  . . . . . . . . . . . . . . . . . . . . . . . . . 7
+
+                  46  OPERATIONS ON CHEST WALL, PLEURA, MEDIASTINUM, AND DIAPHRAGM  . . . . . . . . 7
+
+                    46.0  Incision of chest wall and pleura . . . . . . . . . . . . . . . . . . . . 7
+
+                VIII.  OPERATIONS ON THE CARDIOVASCULAR SYSTEM  . . . . . . . . . . . . . . . . . . 7
+
+                  51  OTHER OPERATIONS ON VESSELS . . . . . . . . . . . . . . . . . . . . . . . . . 7
+
+                    51.9  Other operations on vessels . . . . . . . . . . . . . . . . . . . . . . . 7
+
+                XV.  OPERATIONS ON THE MUSCULOSKELETAL SYSTEM . . . . . . . . . . . . . . . . . . . 7
+
+                  88  OPERATIONS ON FACIAL BONES AND JOINTS . . . . . . . . . . . . . . . . . . . . 7
+
+                    88.0  (Closed) reduction of facial fractures  . . . . . . . . . . . . . . . . . 7
+
+                    88.1  Open reduction of facial fractures  . . . . . . . . . . . . . . . . . . . 7
+
+                    88.2  Incision of facial bone without division  . . . . . . . . . . . . . . . . 8
+
+                    88.4  Partial ostectomy of facial bone, except mandible . . . . . . . . . . . . 9
+
+                    88.5  Excision and reconstruction of mandible . . . . . . . . . . . . . . . .  10
+
+                    88.6  Temporomandibular arthroplasty  . . . . . . . . . . . . . . . . . . . .  10
+
+                    88.7  Other facial bone repair and osteoplasty  . . . . . . . . . . . . . . .  10
+
+                    88.8  Invasive diagnostic procedures on facial bones  . . . . . . . . . . . .  10
+
+                  89  INCISION, EXCISION, AND DIVISION OF OTHER BONES . . . . . . . . . . . . . .  11
+
+1RG111                                   Alberta Health Care Insurance Plan                                  Page iv
+
+ Generated 2025/03/13                            TABLE OF CONTENTS                                 As of 2025/03/14
+
+
+                    89.0  Sequestrectomy  . . . . . . . . . . . . . . . . . . . . . . . . . . . .  11
+
+                  90  OTHER OPERATIONS ON BONES EXCEPT FACIAL BONES . . . . . . . . . . . . . . .  11
+
+                    90.6  Removal of internal fixation device . . . . . . . . . . . . . . . . . .  11
+
+                  92  INCISION AND EXCISION OF JOINT STRUCTURES . . . . . . . . . . . . . . . . .  11
+
+                    92.4  Synovectomy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  11
+
+                  93  REPAIR AND PLASTIC OPERATIONS ON JOINT STRUCTURES . . . . . . . . . . . . .  11
+
+                    93.9  Other operations on joints  . . . . . . . . . . . . . . . . . . . . . .  11
+
+                  95  OPERATIONS ON MUSCLES, TENDONS, FASCIA, AND BURSA, EXCEPT HAND  . . . . . .  12
+
+                    95.0  Incision of muscle, tendon, fascia and bursa  . . . . . . . . . . . . .  12
+
+                XVII.  OPERATIONS ON SKIN AND SUBCUTANEOUS TISSUE . . . . . . . . . . . . . . . .  12
+
+                  98  OPERATIONS ON SKIN AND SUBCUTANEOUS TISSUE  . . . . . . . . . . . . . . . .  12
+
+                    98.1  Excision of skin and subcutaneous tissue  . . . . . . . . . . . . . . .  12
+
+                    98.3  Relaxation of scar or contracture of skin . . . . . . . . . . . . . . .  12
+
+                    98.5  Flap or pedicle graft . . . . . . . . . . . . . . . . . . . . . . . . .  12
+
+                    98.6  Plastic operations on lip and external mouth  . . . . . . . . . . . . .  13
+
+                XVIII.  PROCEDURES NOT ELSEWHERE CLASSIFIED . . . . . . . . . . . . . . . . . . .  13
+
+                  99  PROCEDURES NOT ELSEWHERE CLASSIFIED . . . . . . . . . . . . . . . . . . . .  13
+
+                    99.0  Ill-defined operations  . . . . . . . . . . . . . . . . . . . . . . . .  13
+

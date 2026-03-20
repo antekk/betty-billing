@@ -1,0 +1,2157 @@
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                       Allied
+
+                                                   Procedure List
+
+                                                       As Of
+
+                                                   14 March 2025
+
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                   Page 1
+                                            Schedule of Allied Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+                                                                                                     BASE          ANE
+          NP0001  Brief assessment of a patient's condition requiring a minimal history with
+                  little or no physical examination by a nurse practitioner. . . . . . . . . .       1.00
+          NP0002  Limited assessment of a patient's condition requiring a history related to
+                  the presenting problems, appropriate records, and advice to the patient, by
+                  a nurse practitioner.  . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          NP0003  Comprehensive assessment of a patient's condition requiring a complete
+                  history, a complete physical examination, an appropriate record, and advice
+                  to the patient.  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+
+                   NOTE: May only be billed once every 365 days.
+
+          NP0004  Telephone call directly to patient, to discuss patient
+                  management/diagnostic test results, by a nurse practitioner. . . . . . . . .       1.00
+
+                   NOTE: 1. May be claimed in addition to visits or other services
+                            provided on the same day, the same physician.
+                         2. May only be claimed when communication is provided by
+                            the nurse practitioner.
+
+          NP0005  Nurse Practitioner to patient secure electronic communication. . . . . . . .       1.00
+
+                   NOTE: 1. May only be claimed for those patients where an
+                            established nurse practitioner-patient relationship
+                            exist and the nurse practitioner has seen the patient
+                            in the previous 12 months.
+                         2. May only be claimed when communication is provided by
+                            the nurse practitioner.
+
+          NP0006  Nurse practitioner to patient secure videoconference.  . . . . . . . . . . .       1.00
+
+                   NOTE: 1. May only be claimed for those patients where an
+                            established nurse practitioner-patient relationship
+                            exist and the nurse practitioner has seen the patient
+                            in the previous 12 months.
+                         2. May only be claimed when communication is provided by
+                            the nurse practitioner.
+
+          NP0007  Transfer of care of hospital in-patient, by a nurse practitioner.  . . . . .       1.00
+          NP0008  Comprehensive evaluation including completion of forms to determine
+                  capacity as defined by the Personal Directives Act (PDA), by a nurse
+                  practitioner.  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          NP0009  Comprehensive geriatric assessment,75 years or older first full 90 minutes,
+                  by a nurse practitioner. . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          NP0010  Patient care advice to paramedic - pre hospital patch, assisted
+                  living/designated assisted living and lodge staff, active treatment
+                  facility worker for hospital in-patient, long term practitioner, hospice
+                  worker, home care worker, midwife or public health nurse any day, provided
+                  via telephone or other telecommunication methods, in relation to the care
+                  and treatment of a patient, by a nurse practitioner. . . . . . . . . . . . .       1.00
+          NP0011  Patient care advice to a pharmacist provided via telephone or other
+                  telecommunication methods in relation to the care and treatment of a
+                  patient, by a nurse practitioner.  . . . . . . . . . . . . . . . . . . . . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                   Page 2
+                                            Schedule of Allied Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+                                                                                                     BASE          ANE
+
+                  NOTE:  1. It is expected that the purpose of the communication will be
+                            to seek the advice/opinion or to inform the nurse practitioner
+                            when changes such as but not limited to prescription
+                            adaptations, pharmacist initiated prescriptions, care plans or
+                            medication reviews have occurred.
+                         2. May only be claimed when the pharmacist has initiated
+                            communication and the nurse practitioner has provided an
+                            opinion or recommendation for patient treatment.
+                         3. May not be claimed where the primary purpose of the
+                            communication is to clarify, decipher or interpret the nurse
+                            practitioner's handwriting and/or written instructions.
+                         4. May not be claimed for the authorization of repeat prescriptions
+                            for which long-term repeats would more properly have been
+                            authorized at the time of writing the initial prescription.
+                         5. May not be claimed for instances where a nurse practitioner
+                            directs a patient to request the pharmacist to contact the nurse
+                            practitioner.
+                         6. May not be claimed for patients in an active treatment,
+                            auxiliary, or nursing home facility.
+                         7. May not be claimed when a proxy, e.g. nurse or clerk, provides
+                            advice to the pharmacist.
+                         8. A maximum of one (1) communication per patient per day may be
+                            claimed, regardless of the number of issues or concerns
+                            discussed with the pharmacist.
+                         9. Where more than one patient is discussed in a single
+                            communication, a claim may be submitted with respect to each
+                            patient discussed.
+                        10. May be claimed in addition to visits or other services
+                            provided on the same day, by the same nurse practitioner.
+                        11. To be claimed using the Personal Health Number of the patient.
+
+          NP0012  Nurse Practitioner to physician or podiatric surgeon telephone or
+                  telehealth videoconference or secure videoconference consultation,
+                  referring nurse practitioner.  . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          NP0013  Nurse Practitioner to Physician secure E-Consultation, referring nurse
+                  practitioner.  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          NP0014  Formal, scheduled, multiple health discipline team conference, full 15
+                  minutes or major portion thereof for the first call when only one call is
+                  claimed, by a nurse practitioner.  With para-medical personnel regarding
+                  the provision of health care where social and other issues are involved. . .       1.00
+
+                  NOTE:  May be claimed to a maximum of 12 calls or 3 hours per year
+                         (April 1 to March 31), per patient, per nurse practitioner.
+
+          NP0015  Formal, scheduled, professional interview relating to the care and
+                  treatment of a patient with other physicians, family,and/or direct
+                  therapeutic supervision of allied health professionals or community
+                  agencies, on behalf of a specific patient, full 15 minutes or major portion
+                  thereof for the first call when only one call is claimed, by a nurse
+                  practitioner.  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          NP0016  Formal, scheduled family conference relating to a specific patient, by a
+                  nurse practitioner.  . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          NP0017  Family conference with relative(s) via telephone in connection with the
+                  management of a patient, by a nurse practitioner.  . . . . . . . . . . . . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                   Page 3
+                                            Schedule of Allied Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+                                                                                                     BASE          ANE
+          NP0018  Brief assessment of a patient's condition requiring a minimal history with
+                  little or no physical examination by a nurse practitioner 1700 - 2200 hours,
+                  weekday, 0700 - 2200 hours weekend and statutory holiday.  . . . . . . . . .       1.00
+          NP0019  Limited assessment of a patient's condition requiring a history related to
+                  the presenting problems, appropriate records, and advice to the patient, by
+                  a nurse practitioner 1700 - 2200 hours weekday, 0700 - 2200 hours weekend
+                  and statutory holiday. . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          NP0020  Comprehensive assessment of a patient's condition requiring a complete
+                  history, a complete physical examination, an appropriate record, and advice
+                  to the patient 1700 - 2200 hours weekday, 0700 - 2200 hours weekend and
+                  statutory holiday. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+                  NOTE:  1. May only be billed once every 365 days.
+
+          NP0021  Telephone call directly to patient, to discuss patient management/diagnostic
+                  test results, by a nurse practitioner 1700 - 2200 hours weekday, 0700 -
+                  2200 hours weekend and statutory holiday.  . . . . . . . . . . . . . . . . .       1.00
+                  NOTE:  1. May be claimed in addition to visits or other services
+                            provided on the same day, the same physician.
+                         2. May only be claimed when communication is provided by
+                            the nurse practitioner.
+
+          NP0022  Nurse Practitioner to patient secure electronic communication 1700 - 2200
+                  hours weekday, 0700 - 2200 hours weekend and statutory holiday.  . . . . . .       1.00
+                  NOTE:  1. May only be claimed for those patients where an
+                            established nurse practitioner-patient relationship
+                            exists and the nurse practitioner has seen the patient
+                            in the previous 12 months.
+                         2. May only be claimed when communication is provided by
+                            the nurse practitioner.
+
+          NP0023  Nurse practitioner to patient secure videoconference 1700 - 2200 hours
+                  weekday, 0700 - 2200 hours weekend and statutory holiday.  . . . . . . . . .       1.00
+                  NOTE:  1. May only be claimed for those patients where an
+                            established nurse practitioner-patient relationship
+                            exists, and the nurse practitioner has seen the patient
+                            in the previous 12 months.
+                         2. May only be claimed when communication is provided by
+                            the nurse practitioner.
+
+          NP0024  Transfer of care of hospital in-patient, by a nurse practitioner 1700 -
+                  2200 hours weekday, 0700 - 2200 hours weekend and statutory holiday. . . . .       1.00
+          NP0025  Comprehensive evaluation including completion of forms to determine capacity
+                  as defined by the Personal Directives Act (PDA), by a nurse practitioner
+                  1700 - 2200 hours weekday, 0700 - 2200 hours weekend and statutory holiday.        1.00
+          NP0026  Comprehensive geriatric assessment, 75 years or older first full 90 minutes,
+                  by a nurse practitioner 1700 - 2200 hours weekday, 0700 - 2200 hours weekend
+                  and statutory holiday. . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          NP0027  Patient care advice to paramedic - pre hospital patch, assisted living/
+                  designated assisted living and lodge staff, active treatment facility worker
+                  for hospital in-patient, long term practitioner, hospice worker, home care
+                  worker, midwife or public health nurse any day, provided via telephone or
+                  other telecommunication methods, in relation to the care and treatment of a
+                  patient, by a nurse practitioner 1700 - 2200 hours weekday,  0700 - 2200
+                  hours weekend and statutory holiday. . . . . . . . . . . . . . . . . . . . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                   Page 4
+                                            Schedule of Allied Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+                                                                                                     BASE          ANE
+          NP0028  Patient care advice to a pharmacist provided via telephone or other
+                  telecommunication methods in relation to the care and treatment of a
+                  patient, by a nurse practitioner 1700 - 2200 hours weekday, 0700 - 2200
+                  hours weekend and statutory holiday. . . . . . . . . . . . . . . . . . . . .       1.00
+                  NOTE:  1. It is expected that the purpose of the communication
+                            will be to seek the advice/opinion or to inform the
+                            nurse practitioner when changes such as but not limited
+                            to prescription adaptations, pharmacist initiated
+                            prescriptions, care plans or medication reviews
+                            have occurred.
+                         2. May only be claimed when the pharmacist has initiated
+                            communication and the nurse practitioner has provided an
+                            opinion or recommendation for patient treatment.
+                         3. May not be claimed where the primary purpose of the
+                            communication is to clarify, decipher or interpret the
+                            nurse practitioner's handwriting and/or written
+                            instructions.
+                         4. May not be claimed for the authorization of repeat
+                            prescriptions for which long-term repeats would more
+                            properly have been authorized at the time of writing
+                            the initial prescription.
+                         5. May not be claimed for instances where a nurse
+                            practitioner directs a patient to request the pharmacist
+                            to contact the nurse practitioner.
+                         6. May not be claimed for patients in an active treatment,
+                            auxiliary, or nursing home facility.
+                         7. May not be claimed when a proxy, e.g. nurse or clerk,
+                            provides advice to the pharmacist.
+                         8. A maximum of one (1) communication per patient per day
+                            may be claimed, regardless of the number of issues or
+                            concerns discussed with the pharmacist.
+                         9. Where more than one patient is discussed in a single
+                            communication, a claim may be submitted with respect to
+                            each patient discussed.
+                        10. May be claimed in addition to visits or other services
+                            provided on the same day, by the same nurse
+                            practitioner.
+                        11. To be claimed using the Personal Health Number of the
+                            patient.
+
+          NP0029  Nurse Practitioner to physician or podiatric surgeon telephone or telehealth
+                  videoconference or secure videoconference consultation, referring nurse
+                  practitioner 1700 - 2200 hours weekday, 0700 - 2200 hours weekend and
+                  statutory holiday. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          NP0030  Nurse Practitioner to physician or podiatric surgeon telephone or telehealth
+                  videoconference or secure videoconference consultation, referring nurse
+                  practitioner 1700 - 2200 hours weekday, 0700 - 2200 hours weekend and
+                  statutory holiday. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          NP0031  Formal, scheduled, multiple health discipline team conference, full 15
+                  minutes or major portion thereof for the first call when only one call is
+                  claimed, by a nurse practitioner.  With para-medical personnel regarding
+                  the provision of health care where social and other issues are involved
+                  1700 - 2200 hours weekday, 0700 - 2200 hours weekend and statutory holiday.        1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                   Page 5
+                                            Schedule of Allied Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+                                                                                                     BASE          ANE
+                  NOTE:  1. May be claimed to a maximum of 12 calls or 3 hours per
+                            year (April 1 to March 31), per patient, per nurse
+                            practitioner.
+
+          NP0032  Formal, scheduled, professional interview relating to the care and treatment
+                  of a patient with other physicians, family, and/or direct therapeutic
+                  supervision of allied health professionals or community agencies, on behalf
+                  of a specific patient, full 15 minutes or major portion thereof for the
+                  first call when only one call is claimed, by a nurse practitioner 1700 -
+                  2200 hours weekday, 0700 - 2200 hours weekend and statutory holiday. . . . .       1.00
+          NP0033  Formal, scheduled family conference relating to a specific patient, by a
+                  nurse practitioner 1700 - 2200 hours weekday, 0700 - 2200 hours weekend and
+                  statutory holiday. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          NP0034  Family conference with relative(s) via telephone in connection with the
+                  management of a patient, by a nurse practitioner 1700 - 2200 hours weekday,
+                  0700 - 2200 hours weekend and statutory holiday. . . . . . . . . . . . . . .       1.00
+          NPS001  Time spent in preparation/research related to the care of a complex Patient
+                  (e.g., a Patient with co-morbidities which complicate or increase the care
+                  required by the claiming provider), per five minutes.  . . . . . . . . . . .       1.00
+                  NOTE:  1. May only be claimed on any day prior to the date that a
+                            Patient is seen.
+                         2. May not be claimed on the day that a Patient is seen as
+                            applicable health Service Codes in Schedule of Allied Benefits
+                            (SOAB) including time spent on the day that a Patient is seen.
+                         3. Must be documented in the Patient record.
+                         4. Claim using the Patient-specific unique lifetime identifier
+                            (ULI).
+
+          NPS002  Time spent waiting for a Patient who did not attend a scheduled
+                  appointment, per five minutes. . . . . . . . . . . . . . . . . . . . . . . .       1.00
+                  NOTE:  1. If being claimed, the claiming provider must be present at the
+                            Centre.
+                         2. Claim using the Patient-specific unique lifetime identifier
+                            (ULI).
+
+          NPS003  Any communication, including but not limited to, informal, non-scheduled
+                  discussions, meetings, interviews, and conferences, with a Provider, Allied
+                  Health Professional, schools, agencies, boards, committees, or relatives,
+                  regarding advice or care of a Patient, per five minutes. . . . . . . . . . .       1.00
+                  NOTE:  1. May not be claimed if current Schedule of Allied Benefits
+                            (SOAB) codes apply.
+                         2. May be claimed regardless of who initiates the communication.
+                         3. If the communication is by electronic means, may only be
+                            claimed when in compliance with the College of Physicians and
+                            Surgeons (CPSA) guidelines on secure electronic communication
+                            and when the provider/clinic has submitted a Privacy Impact
+                            Assessment for this service acceptable to the Office of the
+                            Information and Privacy Commissioner of Alberta.
+                         4. The communication must be documented in the Patient's record.
+                         5. Claim using the Patient-specific ULI.
+
+          NPS004  Any communication, including but not limited to, informal, non-scheduled
+                  discussions, meetings, interviews, and conferences, with a Provider, Allied
+                  Health Professional, schools, agencies, boards, committees, or relatives,
+                  regarding advice or care of a Patient, per five minutes. . . . . . . . . . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                   Page 6
+                                            Schedule of Allied Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+                                                                                                     BASE          ANE
+                  NOTE:  1. May be claimed regardless of who initiates the communication.
+                         2. If the communication is by electronic means, may only be
+                            claimed when in compliance with the CPSA guidelines on secure
+                            electronic communication and when the provider/clinic has
+                            submitted a Privacy Impact Assessment for this service
+                            acceptable to the Office of the Information and Privacy
+                            Commissioner of Alberta.
+                         3. The communication must be documented and made available upon
+                            request.
+                         4. Claim using the non-Patient-specific ULI.
+
+          NPS005  Report writing and other clinical documentation related to the care and
+                  treatment of a Patient, per five minutes.  . . . . . . . . . . . . . . . . .       1.00
+                  NOTE:  1. May be claimed on any day after the date that a Patient is
+                            seen.
+                         2. Claim using the Patient-specific ULI.
+                         3. This usage is solely for documenting time spent on the
+                            Patient-related activities described.
+
+          NPS006  Review of Patient lab results, consultant reports, or other care reports,
+                  per five minutes.  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+                  NOTE:  1. May be claimed on any day after the date that a Patient is
+                            seen.
+                         2. Claim using the Patient-specific ULI.
+                         3. This usage is solely for documenting time spent on the
+                            Patient-related activities described.
+
+          NPS007  Review of Patient lab results, consultant reports, or other care reports
+                  for multiple Patients, per five minutes. . . . . . . . . . . . . . . . . . .       1.00
+                  NOTE:  1. Details regarding the time claimed must be documented and
+                            made available upon request.
+                         2. Claim using the non-Patient-specific ULI.
+
+                                  I CERTAIN DIAGNOSTIC AND THERAPEUTIC PROCEDURES
+ 03 CLINICAL EVALUTION AND EXAMINATION
+    03.0 Diagnostic interview and evaluation or consultation
+
+       03.05 Other diagnostic interview and evaluation
+
+       Case Management/Team Conference
+
+          03.05SA Professional interview relating to care and treatment of a patient with
+                  other physicians, family, allied health professionals or community
+                  agencies, per 15 minutes . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05CD Professional interview relating to the care and treatment of a patient(s)
+                  with Social Worker, Dietician, Other Health Care Provider, Primary Care
+                  Nurse, Mental Health Worker, Asthmatic Educator, Nurse Practitioner, or
+                  Multi-Cultural Broker, outside of scheduled clinic hours, per 15 minutes . .       1.00
+          03.05SB Professional meetings with primary physician relating to care and treatment
+                  of a patient, per 15 minutes . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05SC Second and subsequent physician attendance at a professional interview
+                  relating to care and treatment of a patient with other physicians, family,
+                  allied health professionals or community agencies, per 15 minutes  . . . . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                   Page 7
+                                            Schedule of Allied Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+                              I CERTAIN DIAGNOSTIC AND THERAPEUTIC PROCEDURES (cont'd)
+ 03 CLINICAL EVALUTION AND EXAMINATION (cont'd)
+    03.0 Diagnostic interview and evaluation or consultation (cont'd)
+
+                                                                                                     BASE          ANE
+          03.05SD Professional interview relating to care and treatment of a patient with the
+                  Primary Health Nurse, per 15 minutes . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05SE Professional interview relating to care and treatment of a patient with the
+                  Home Care Nurses, per 15 minutes . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05TQ Professional interview relating to care and treatment of a patient with
+                  Public Health Nurse, per 15 minutes  . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05TT Professional interview relating to care and treatment of a patient with
+                  Primary Care Nurse, per 15 minutes . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05WV Professional interview relating to care and treatment of a patient with the
+                  Nurse Practitioner, per 15 minutes.  . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05SF Professional interview relating to care and treatment of a patient with
+                  Occupational Therapist(s), per 15 minutes  . . . . . . . . . . . . . . . . .       1.00
+
+          03.05SG Professional interview relating to care and treatment of a patient with
+                  Physical Therapist(s), per 15 minutes  . . . . . . . . . . . . . . . . . . .       1.00
+          03.05SH Professional interview relating to care and treatment of a patient with
+                  Respiratory Therapist(s), per 15 minutes . . . . . . . . . . . . . . . . . .       1.00
+          03.05SJ Professional interview relating to care and treatment of a patient with
+                  Recreational Therapist(s), per 15 minutes  . . . . . . . . . . . . . . . . .       1.00
+
+          03.05SK Professional interview relating to care and treatment of a patient with
+                  Psychologist(s), per 15 minutes  . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05SL Professional interview relating to care and treatment of a patient with
+                  Social Worker(s), per 15 minutes . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05TU Professional interview relating to care and treatment of a patient with
+                  Mental Health Worker, per 15 minutes . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05SM Professional interview relating to care and treatment of a patient with
+                  Dietician(s), per 15 minutes . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+
+          03.05SN Professional interview relating to care and treatment of a patient with
+                  Pharmacist(s), per 15 minutes  . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05TR Professional interview relating to care and treatment of a patient with
+                  Education Coordinator, per 15 minutes  . . . . . . . . . . . . . . . . . . .       1.00
+          03.05TS Professional interview relating to care and treatment of a patient with
+                  Diabetic Educator, per 15 minutes  . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05TV Professional interview relating to care and treatment of a patient with
+                  Asthmatic Educator, per 15 minutes . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05SP Professional interview relating to care and treatment of a patient with
+                  Other Health Provider(s), per 15 minutes . . . . . . . . . . . . . . . . . .       1.00
+          03.05TY Professional interview relating to the care and treatment of a patient with
+                  External Third Party, per 15 minutes . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05TZ Professional interview relating to the care and treatment of patient(s) by
+                  Nurse Practitioner(s), per 15 minutes  . . . . . . . . . . . . . . . . . . .       1.00
+          03.05UA Professional interview relating to the care and treatment of a patient with
+                  Addictions Counsellor(s), per 15 minutes . . . . . . . . . . . . . . . . . .       1.00
+          03.05UB Professional interview relating to the care and treatment of a patient with
+                  Multi-Cultural Broker(s), per 15 minutes . . . . . . . . . . . . . . . . . .       1.00
+          03.05UC Professional interview relating to the care and treatment of a patient with
+                  Registered Psychiatric Nurse(s), per 15 minutes  . . . . . . . . . . . . . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                   Page 8
+                                            Schedule of Allied Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+                              I CERTAIN DIAGNOSTIC AND THERAPEUTIC PROCEDURES (cont'd)
+ 03 CLINICAL EVALUTION AND EXAMINATION (cont'd)
+    03.0 Diagnostic interview and evaluation or consultation (cont'd)
+
+                                                                                                     BASE          ANE
+          03.05UD Professional interview relating to the care and treatment of a patient with
+                  Audiologist(s), per 15 minutes . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05UF Examinations or services requested by a Third Party for an uninsured
+                  service, per 15 minutes  . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05UQ Professional interview relating to care and treatment of a patient with the
+                  Clinical Coordinator, per 15 minutes . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05UR Professional interview relating to care and treatment of a patient with the
+                  Family Therapist, per 15 minutes . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05VA Informal/formal discussions (telephone or in person) with interdisciplinary
+                  team members/health professionals regarding patient care, per 15 minutes,
+                  must be claimed using the non-patient specific ULI . . . . . . . . . . . . .       1.00
+          03.05VB Informal discussion with interdisciplinary team members/health
+                  professionals, per 5 minutes. May be claimed using the non-patient specific
+                  ULI. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05WF All informal discussions, meetings etc. related to the care of identified
+                  patients, per 15 minutes . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05WJ Professional interview relating to care and treatment of a patient with the
+                  Clinic Nurse, per 15 minutes . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05WK Second and subsequent physician attendance at a formal, scheduled
+                  professional interview relating to the care and treatment of a patient with
+                  chronic pain with other physicians, family and/or direct therapeutic
+                  supervision of allied health professionals or community agencies, on behalf
+                  of a specific patient, per 15 minutes  . . . . . . . . . . . . . . . . . . .       1.00
+          03.05WM Informal/formal discussions (telephone or in-person) with non-CCPC
+                  individual relating to care and treatment of a patient, per 15 minutes . . .       1.00
+          03.05WN Informal discussion with patient, relative(s), or significant other,
+                  per 15 minutes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05NR Informal rounds/discussions with patients regarding general health and
+                  wellness per 5 min. May be claimed using the non patient specific ULI  . . .       1.00
+          03.05WU Informal rounds/discussions with patients regarding general health and
+                  wellness per 5 minutes. May be claimed using the non-patient specific ULI  .       1.00
+          03.05NP Clinical assessment of patient by Professional Nurse Practitioner, per 15
+                  minutes  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05NS Multidisciplinary Team case conference relating to the care and treatment
+                  of a patient, per 15 minutes.  . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05YV Multidisciplinary Team case conference relating to the care and treatment
+                  of patients, per 15 minutes. May be claimed using the non-patient specific
+                  ULI. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05ZY Professional interview relating to the care and treatment of a patient with
+                  other physicians, family, allied health professionals or community
+                  agencies, per 15 minutes, may be claimed using the non-patient specific ULI        1.00
+
+       Allied Practitioner Services in Support of Primary Care Initiative
+
+          03.05AO Allied visit diagnostic interview and evaluation includes limited
+                  assessment of patient includes history limited to presenting problem and
+                  examination limited to relevant body systems, an appropriate record and
+                  advice to patient  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+                  NOTE:  May only be claimed by Allied Practitioners
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                   Page 9
+                                            Schedule of Allied Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+                              I CERTAIN DIAGNOSTIC AND THERAPEUTIC PROCEDURES (cont'd)
+ 03 CLINICAL EVALUTION AND EXAMINATION (cont'd)
+    03.0 Diagnostic interview and evaluation or consultation (cont'd)
+
+       Allied Practitioner Services in Support of Primary Care Initiative (cont'd)
+
+                                                                                                     BASE          ANE
+          03.05AP Allied consultation  . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05AQ Multidisciplinary case conference relating to care and treatment of a
+                  patient with other physicians, family, allied health professionals or
+                  community agencies . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05AR Referral to another health care provider, per 5 minutes  . . . . . . . . . .       1.00
+          03.05AS Professional meeting with primary care physician relating to care and
+                  treatment of the patient . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05AT Consultation with other health care provider . . . . . . . . . . . . . . . .       1.00
+          03.05AU Telephone contact with other allied health professionals, family and
+                  agencies regarding advice or care of the patient . . . . . . . . . . . . . .       1.00
+          03.05AV Formal scheduled interview with relative(s) related to care and treatment
+                  of a patient . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05AY Advice or counseling related to care and treatment of the patient, with
+                  other physicians, family, allied health professionals, community agencies
+                  or the patient through indirect means: e.g., telephone, fax, e-mail etc. . .       1.00
+          03.05BB Telehealth clinical care with physicians and other health care professionals       1.00
+          03.05BC Telehealth teaching to patients planning . . . . . . . . . . . . . . . . . .       1.00
+          03.05BD Misc. patient paperwork review lab results, consultation reports . . . . . .       1.00
+          03.05BE Group counseling/therapy for patients in specific programs such as smoking
+                  cessation, diabetes education, chronic disease management etc. . . . . . . .       1.00
+          03.05BF General Health teaching/counseling including lectures to patient groups  . .       1.00
+          03.05BG Health promotion teaching or management regarding specific treatments
+                  provided to groups . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+
+       Patient Assessment/Evaluation
+
+          03.05VM Patient assessment, to be used by all disciplines, per 15 minutes  . . . . .       1.00
+          03.05BM Emergency visit clinic . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05BN Medication, review of patient  . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05BH Comprehensive Geriatric Assessment.  . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05BR Cognitive testing e.g. MMSE, EXIT, GDS, FAB, etc . . . . . . . . . . . . . .       1.00
+          03.05BS Foot Care  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05VN Functional Capacity Evaluation to be used by Occupational Therapist per 15
+                  minutes  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05VP Home visit/assessment- (e.g. occupational therapist, home care nurse etc.  .       1.00
+          03.05VS Formal patient care rounds, per 15 minutes . . . . . . . . . . . . . . . . .       1.00
+          03.05VR Follow-up meeting by Clinical coordinator with patient to monitor progress
+                  per 15 minutes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05WW Visit with Nurse Practitioner relating to care and treatment of patient,
+                  Brief  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05CE Discussion with nurse outside of scheduled clinic hours per 15 minutes. May
+                  be claimed using the non-patient specific ULI  . . . . . . . . . . . . . . .       1.00
+          03.05WX Visit with Nurse Practitioner relating to care and treatment of patient,
+                  Limited  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05WY Visit with Nurse Practitioner relating to care and treatment of patient,
+                  Comprehensive  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05XU Visit with alternate care provider related to the care and treatment of
+                  patient  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                  Page 10
+                                            Schedule of Allied Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+                              I CERTAIN DIAGNOSTIC AND THERAPEUTIC PROCEDURES (cont'd)
+ 03 CLINICAL EVALUTION AND EXAMINATION (cont'd)
+    03.0 Diagnostic interview and evaluation or consultation (cont'd)
+
+       Patient Assessment/Evaluation (cont'd)
+
+                                                                                                     BASE          ANE
+          03.05XV Clinical patient assessment, reassessment, and screening:  to be used by
+                  all disciplines  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+
+       Patient Assessment/Evaluation
+
+          03.01LP Unscheduled assessment at a LTC facility, followed by (or including) an
+                  admission to an Acute Care facility. 0700-1700 weekdays, per 15 minutes or
+                  portion thereof  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01LQ Unscheduled assessment at a LTC facility, followed by (or including) an
+                  admission to an Acute Care facility. 1700-2200 weekdays and 0700-2200
+                  weekends/statutory holidays, per 15 minutes or portion thereof . . . . . . .       1.00
+          03.01LR Unscheduled assessment at a  LTC facility, followed by (or including) an
+                  admission to an Acute Care facility. 2200-2400, per 15 minutes or portion
+                  thereof  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01LS Unscheduled assessment at a LTC facility, followed by (or including) an
+                  admission to an Acute Care facility. 2400-0700 per 15 minutes or portion
+                  thereof  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+
+       Telephone Contact
+
+          03.05SQ Telephone contact advice or counselling relating to care and treatment of a
+                  patient 8:00 A.M. to 5:00 P.M., per 5 minutes  . . . . . . . . . . . . . . .       1.00
+          03.05SR Telephone contact advice or counselling relating to care and treatment of a
+                  patient 5:00 P.M. to 11:00 P.M., per 5 minutes . . . . . . . . . . . . . . .       1.00
+          03.05SS Telephone contact advice or counselling relating to care and treatment of a
+                  patient 11:00 P.M. to 8:00 A.M., per 5 minutes . . . . . . . . . . . . . . .       1.00
+          03.05ST Telephone contact related to administration, per 5 minutes . . . . . . . . .       1.00
+          03.05SU Telephone contact related to any situation that cannot be classified as
+                  either "patient related" or "administration", per 5 minutes  . . . . . . . .       1.00
+          03.05UG Telephone contact related to contact with External Third Party, per 5
+                  minutes  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05UH Renewal of prescription over the telephone relating to a specific patient,
+                  per 5 minutes  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05UN Telephone contact with a Medical Health Professional regarding advise or
+                  care of a patient, per 5 minutes . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05UO Telephone contact with an Allied Health Professional regarding advise or
+                  care of a patient, per 5 minutes . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05US Phone calls related to the care of identified patients but not with the
+                  identified patient, per 15 minutes . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05UT Telephone call with patient, per 15 minutes  . . . . . . . . . . . . . . . .       1.00
+          03.05YW Telephone contact with another Physician related to care and treatment of
+                  patients, per 15 minutes. May be claimed using the non-patient specific ULI.       1.00
+          03.05ZZ Advice or counselling related to care and treatment of a patient, with
+                  other physicians, family, allied health professionals, community agencies
+                  or the patient through indirect means: e.g., telephone, fax, email, etc.
+                  Includes prescription renewals. Per 15 minutes. May be claimed using the
+                  non-patient specific ULI . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                  Page 11
+                                            Schedule of Allied Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+                              I CERTAIN DIAGNOSTIC AND THERAPEUTIC PROCEDURES (cont'd)
+ 03 CLINICAL EVALUTION AND EXAMINATION (cont'd)
+    03.0 Diagnostic interview and evaluation or consultation (cont'd)
+
+       Telephone Contact (cont'd)
+
+                                                                                                     BASE          ANE
+          03.05CC Professional interview relating to the care and treatment of a patient with
+                  other physicians, family, allied health professionals or community
+                  agencies, outside of scheduled clinic hours, per 15 minutes  . . . . . . . .       1.00
+
+       Telehealth
+
+          03.05ZS Telehealth Clinical Care, per 15 minutes. May be claimed using the
+                  non-patient specific ULI . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05ZT Telehealth Case Conference includes discharge planning, per 15 minutes . . .       1.00
+          03.05ZU Telehealth teaching, per 15 minutes.  May be claimed using the non-patient
+                  specific ULI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05ZV Telehealth Administration, per 15 minutes.  May be claimed using the
+                  non-patient specific ULI . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+
+       Contact Utilizing Fax Machine
+
+          03.05UJ Preparation and/or review of documentation relating to the care and
+                  treatment of a patient by Nursing Staff, per 5 minutes . . . . . . . . . . .       1.00
+          03.05UK Preparation and/or review of documentation relating to the care and
+                  treatment of a patient by Home Care Nurse, per 5 minutes . . . . . . . . . .       1.00
+          03.05UL Administrative time for the preparation and faxing of documents relating to
+                  a specific case, per 5 minutes . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05ZB Preparation and/or review of documentation relating to the renewal of
+                  prescription, utilizing Fax machine. May be claimed using the non-patient
+                  specific ULI, per 5 minutes  . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+
+       Family Conferences/Counselling
+
+          03.05SV Formal scheduled interview with relative(s) relating to care and treatment
+                  of a patient 8:00 A.M. to 5:00 P.M., per 15 minutes  . . . . . . . . . . . .       1.00
+          03.05SW Formal scheduled interview with relative(s) relating to care and treatment
+                  of a patient 5:00 P.M. to 11:00 P.M., per 15 minutes . . . . . . . . . . . .       1.00
+          03.05VC Direct contact with a couple relating to the care, treatment and social
+                  aspect of a patient, per 15 minutes  . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05VD Direct contact with family members relating to the care, treatment and
+                  social aspects of a patient, per 15 minutes  . . . . . . . . . . . . . . . .       1.00
+
+       Continuing Medical Education
+
+          03.05UM Continuing Medical Education, related to professional developement, per 30
+                  minutes  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05XK Preparation and delivery of Continuing Medical Education lecture, per 30
+                  minutes  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+
+       Research and Patient-Related Document Review
+
+          03.05SY Research and/or document review of specific case DURING Regular Hours, per
+                  15 minutes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                  Page 12
+                                            Schedule of Allied Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+                              I CERTAIN DIAGNOSTIC AND THERAPEUTIC PROCEDURES (cont'd)
+ 03 CLINICAL EVALUTION AND EXAMINATION (cont'd)
+    03.0 Diagnostic interview and evaluation or consultation (cont'd)
+
+       Research and Patient-Related Document Review (cont'd)
+
+                                                                                                     BASE          ANE
+          03.05SZ Research and/or document review of specific case AFTER Regular Hours, per
+                  15 minutes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05UV Preparation/research related to the care of identified patients, per 15
+                  minutes  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05UW Report writing and other clinical documentation related to care of
+                  identified patients, per 15 minutes  . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05CA Report writing and other clinical documentation related to care of
+                  identified patients, outside of scheduled clinic hours, per 15 minutes . . .       1.00
+          03.05XY Report writing and other correspondence related to patient care. May be
+                  claimed using the non-patient specific ULI, per 15 minutes . . . . . . . . .       1.00
+          03.05UX Original research conducted at the Centre, per 15 minutes. May be claimed
+                  using the non-patient specific ULI . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05UY Specifically for the 'pre-conference' to develop the patient management
+                  agreement, per 15 minutes  . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05UZ Referral processing by the Clinical Coordinators includes all elements of
+                  the processing of client referrals from the initial paper work,
+                  physician/client contact and information gathering, per 15 minutes . . . . .       1.00
+          03.05UU Chronic Pain - Non Program patient triage, with other physicians or program
+                  team professionals, per 15 minutes . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05TA Form Completions/3rd Party Reports, per 5 minutes. May be claimed using the
+                  non-patient specific ULI.  . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05WP Miscellaneous patient related paperwork: review of Lab results, consults
+                  reports, etc., per 15 minutes. May be claimed using the non-patient
+                  specific ULI.  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05CF Miscellaneous patient related paperwork: review of Lab results, consults
+                  reports, etc., outside of scheduled clinic hours per 15 minutes. May be
+                  claimed using the non-patient specific ULI . . . . . . . . . . . . . . . . .       1.00
+          03.05VZ Discussion with nurse per 15 minutes. May only be claimed using the
+                  non-patient specific ULI.  . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05BL Resident Clinic - Administrative Role Performed  . . . . . . . . . . . . . .       1.00
+
+       Prolonged Office Visit (Exceeding 15 minutes)
+
+          03.05TB Prolonged office visit, for those patients with multiple health problems,
+                  per 15 minutes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05WL Prolonged office visit for patient unable to communicate without
+                  interpreter, per 15 minutes  . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+
+       Codes for Providing Health Teaching/Promotion to an Individual Patient
+
+          03.05TC Health teaching or counselling regarding treatments, per 15 minutes  . . . .       1.00
+          03.05VE Individual treatment includes all staff: Physical Therapist, Occupational
+                  Therapist, Psychologist, Clinical Coordinator, Dieticians, Addictions
+                  Counsellor etc. per 15 minutes . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05WH Conference with patient present, per 15 minutes  . . . . . . . . . . . . . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                  Page 13
+                                            Schedule of Allied Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+                              I CERTAIN DIAGNOSTIC AND THERAPEUTIC PROCEDURES (cont'd)
+ 03 CLINICAL EVALUTION AND EXAMINATION (cont'd)
+    03.0 Diagnostic interview and evaluation or consultation (cont'd)
+
+       Professional Nurse Services
+
+                                                                                                     BASE          ANE
+          03.05TX Administering of treatment and/or medication prescribed by a physician
+                  performed by a Professional Nurse, per 15 minutes  . . . . . . . . . . . . .       1.00
+          03.05WZ Service with or about a Non resident patient (uninsured services). May be
+                  claimed using the non-patient specific ULI . . . . . . . . . . . . . . . . .       1.00
+
+       Teaching/Education to a Group
+
+       May only be claimed using the non-patient specific ULI
+          03.05TD Group counselling/therapy for patients-such as smoking cessation, physical
+                  abuse, etc. per 15 minutes . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05WR Health teaching/counselling to patient groups, per 15 minutes  . . . . . . .       1.00
+          03.05VH Group treatment, includes lectures and modules, per 15 minutes. To be used
+                  by all clinical staff. . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05XA Medical teaching with medical residents and/or medical students with
+                  patients, per 15 minutes . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05XB Medical teaching with medical residents and/or medical students non patient
+                  related, per 15 minutes  . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05XJ Teaching Nurse practitioners, family physicians, and allied health
+                  personnel, per 15 minutes  . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+
+       Health Promotion Codes for Teaching Groups-Such as Other Health Providers
+       or at Schools, or in the Community
+
+       May only be claimed using the non-patient specific ULI
+          03.05TE Health teaching or counselling regarding treatments provided to groups such
+                  as other health providers, at schools, or in the community, per 15 minutes .       1.00
+          03.05TH Health teaching or counselling regarding OCCUPATIONAL HEALTH AND SAFETY
+                  ISSUES provided to groups such as other health providers, at schools, or in
+                  the community, per 15 minutes  . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05VF Teaching/Presentations to Providers, per 15 minutes  . . . . . . . . . . . .       1.00
+          03.05VG Teaching/Presentations to General Public, per 15 minutes . . . . . . . . . .       1.00
+          03.05XC Attending/conducting practice oral examinations for medical residents
+                  and/or medical students, per 15 minutes  . . . . . . . . . . . . . . . . . .       1.00
+          03.05XD Attending and evaluation medical residents and/or medical students in OSCE,
+                  per 15 minutes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05XH Classroom medical teaching for students, including course material
+                  preparation, per 30 minutes  . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+
+       Patient Related Travel Time
+
+          03.05TJ Travel Time to visit with a patient, per 15 minutes  . . . . . . . . . . . .       1.00
+          03.05WS Non-patient specific Unscheduled time by physician, per 15 minutes . . . . .       1.00
+          03.05NW Non-Patient specific travel time (i.e. travel to clinics away from
+                  hospital), per 15 minutes  . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05ZR Travel time for "Out Reach" clinical travel, per 15 minutes.  May be
+                  claimed using the non-patient specific ULI . . . . . . . . . . . . . . . . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                  Page 14
+                                            Schedule of Allied Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+                              I CERTAIN DIAGNOSTIC AND THERAPEUTIC PROCEDURES (cont'd)
+ 03 CLINICAL EVALUTION AND EXAMINATION (cont'd)
+    03.0 Diagnostic interview and evaluation or consultation (cont'd)
+
+       Administration
+
+       May only be claimed using the non-patient specific ULI
+                                                                                                     BASE          ANE
+          03.05TK Attendance at meetings related to health services, including Board Meetings
+                  per 15 minutes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05TL Attendance at meetings related to Personal Professional Development, per 15
+                  minutes  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05UP Attendance of a meeting with a Pharmaceutical Representative per 15 minutes        1.00
+          03.05CK Attendance of a meeting with a Pharmaceutical Representative outside of
+                  scheduled clinic hours, per 15 minutes . . . . . . . . . . . . . . . . . . .       1.00
+          03.05TM Travel Time for administration such as attending meetings, per 15 minutes  .       1.00
+          03.05TN Time related to non-patient desk work, per 15 minutes  . . . . . . . . . . .       1.00
+          03.05CB Time related to non-patient desk work, outside of scheduled clinic hours,
+                  per 15 minutes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05TP Formal scheduled professional meetings related to administration, clinic
+                  management issues, per 15 minutes  . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05CH Formal scheduled professional meetings related to administration, clinic
+                  management issues, outside of scheduled clinic hours, per 15 minutes . . . .       1.00
+          03.05VJ All administrative meetings related to the operation of the centre except
+                  Quality Improvement Activities and Program Development, per 15 minutes . . .       1.00
+          03.05VK Professional Development activities such as attending formal courses,
+                  workshops and conferences and formal supervision (e.g. psychology family
+                  therapy supervision) . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05VL Self Directed learning such as reading journals and books, per 15 minutes  .       1.00
+          03.05VX Setting and evaluating clinic goals  . . . . . . . . . . . . . . . . . . . .       1.00
+
+       Legal
+
+          03.05ZW Court preparation time, per 15
+                   minutes.  May be claimed using the non-patient specific ULI . . . . . . . .       1.00
+          03.05ZX Court waiting/presentation time, per 15 minutes.  May be claimed using the
+                  non-patient specific ULI . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+
+       Procedures
+
+          03.05WA Pudendal Nerve stimulator testing, per 15 minutes  . . . . . . . . . . . . .       1.00
+          03.05WB Prolotherapy procedures, per 15 minutes  . . . . . . . . . . . . . . . . . .       1.00
+          03.05WT Time allotted for patient who did not attend appointment, per 15 minutes . .       1.00
+          03.05WQ Time allotted for patient who left without being seen therefore did not
+                  attend appointment, per 15 minutes . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05WC Pelvic pain mapping, per 15 minutes  . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05WD Osteopathic management, includes manipulation techniques, per 15 minutes . .       1.00
+          03.05WE Pudendal Nerve Block, per 15 minutes . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05WG Injection of Botulinum A Toxin for myofascial pain, 1 per muscle . . . . . .       1.00
+          03.05XP Bronchoscopy suite management, per 15 minutes  . . . . . . . . . . . . . . .       1.00
+          03.05XQ Sleep laboratory management, per 15 minutes  . . . . . . . . . . . . . . . .       1.00
+          03.05XS Bronchoscopy with lymph node biopsy, per 15 minutes  . . . . . . . . . . . .       1.00
+          03.05YA Kaofeed tube, insertion or removal, per 15 minutes . . . . . . . . . . . . .       1.00
+          03.05YB Nasojejual tube, insertion or removal, per 15 minutes  . . . . . . . . . . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                  Page 15
+                                            Schedule of Allied Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+                              I CERTAIN DIAGNOSTIC AND THERAPEUTIC PROCEDURES (cont'd)
+ 03 CLINICAL EVALUTION AND EXAMINATION (cont'd)
+    03.0 Diagnostic interview and evaluation or consultation (cont'd)
+
+       Procedures (cont'd)
+
+                                                                                                     BASE          ANE
+          03.05YC Endoclip application for hemostasis, per 15 minutes  . . . . . . . . . . . .       1.00
+          03.05YG Biliary/pancreatic stent removal, per 15 minutes . . . . . . . . . . . . . .       1.00
+          03.05YN Photodynamic therapy, per 15 minutes . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05YX EEG-video telemetry, interpretation of prolonged inpatient simultaneous EEG
+                  and video recordings, including both interictal activity and ictal events
+                  for a 24 hour recording  . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05YY EEG-video telemetry Assessment. Summation of an entire prolonged inpatient
+                  EEG-video telemetry investigation, per 15 minutes  . . . . . . . . . . . . .       1.00
+          03.05ZA SEEG telemetry assessment. Summation of an entire prolonged inpatient
+                  SEEG-video telemetry investigation, per 15 minutes . . . . . . . . . . . . .       1.00
+          03.05YZ SEEG-video telemetry, Interpretation of prolonged inpatient EEG and video
+                  recordings with intracranial electrodes (stereoencephalography or SEEG)
+                  including both interictal activity and ictal events for a 24 hour recording        1.00
+          03.05BX Syringing of ears. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05BZ enema / fecal disimpaction.  . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+
+       Procedures - Perinatal
+
+          03.05AA Intrafetal insertion of pigtail catheter . . . . . . . . . . . . . . . . . .       1.00
+          03.05AB Fetal muscle biopsy  . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05AC Bladdercentesis (without pigtail catheter) fetal megacystitis - to
+                  decompress fetal bladder . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05AD Cephalocentesis  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05AE Thoracentesis (massive hydrops)  . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05AG Drainage of amniotic fluid . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05AH Intramuscular injection into fetus under ultrasound guidance . . . . . . . .       1.00
+          03.05AJ Cardiocentesis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05AK Selective fetal reduction  . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05AL Intrauterine occlusion of umbilical cord under GA, laparoscopy/laparotomy &
+                  ligation of umbilical cord . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05BJ Gestation Ultrasound - age determination . . . . . . . . . . . . . . . . . .       1.00
+          03.05BK Limited Obstetrics Ultra Sound . . . . . . . . . . . . . . . . . . . . . . .       1.00
+
+       Program Activities
+
+       May only be claimed using the non-patient specific ULI
+          03.05VT Program development activities related to the creation or evaluation of the
+                  program of care delivered at the Centre, per 15 minutes  . . . . . . . . . .       1.00
+          03.05VU Quality Improvement Activities, per 15 minutes . . . . . . . . . . . . . . .       1.00
+          03.05VV Program Evaluation Activities, per 15 minutes  . . . . . . . . . . . . . . .       1.00
+          03.05XZ Population-based review of practice per 15 minutes.  . . . . . . . . . . . .       1.00
+
+       Facility Maintenance
+
+       May only be claimed using the non-patient specific ULI
+          03.05VW Tidying/cleaning up in the Rehab area and generally in the Centre such as
+                  the exam rooms, per 15 minutes . . . . . . . . . . . . . . . . . . . . . . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                  Page 16
+                                            Schedule of Allied Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+                              I CERTAIN DIAGNOSTIC AND THERAPEUTIC PROCEDURES (cont'd)
+ 03 CLINICAL EVALUTION AND EXAMINATION (cont'd)
+    03.0 Diagnostic interview and evaluation or consultation (cont'd)
+
+       Clinical Practice Guidelines
+
+       May only be claimed using the non-patient specific ULI
+                                                                                                     BASE          ANE
+          03.05VY Clinical Practice Guidelines - Review and implement clinical practice
+                  guidelines for the clinic. . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05ZL Administrative meetings - Participation in working groups to develop action
+                  plans in areas such as evaluation, innovation and education.  Or
+                  Psychiatrists attending additional monthly meetings to discuss case with
+                  clinicians . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05ZM Reviewing Objectives - Meetings at specified intervals to review goals
+                  mutually established to ensure that the service is meeting needs and to
+                  take into account the skill development of the family physician  . . . . . .       1.00
+          03.05ZN Program Infrastructure - Providing unique activities of the Program; travel
+                  to meetings and consultations, meetings to arrange schedules related to
+                  visits from program professionals, time provided for evaluations,
+                  questionnaires for monitoring quality  . . . . . . . . . . . . . . . . . . .       1.00
+          03.05ZP Orientation - Program orientation or to provide orientation to other
+                  physicians new to the program  . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05ZQ General Case Discussion - General discussion about a diagnosis or a group
+                  of patients where general approaches applicable to more than one patient in
+                  the family physicians practice are discussed . . . . . . . . . . . . . . . .       1.00
+
+    Research
+
+
+       Original Research
+
+       May only be claimed using the non-patient specific ULI
+          03.05NA Time related to the conception/ development/conduct/presentation of basic
+                  science research, per 15 minutes . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05NB Time related to the conception/ development/conduct/presentation of applied
+                  (clinical trials) research, per 15 minutes . . . . . . . . . . . . . . . . .       1.00
+
+       Supervision/Consultation
+
+       May only be claimed using the non-patient specific ULI
+          03.05NF Training/Supervision, of Undergraduate students, per 15 minutes  . . . . . .       1.00
+          03.05NG Training/Supervision, of Residents, per 15 minutes . . . . . . . . . . . . .       1.00
+          03.05NH Training/Supervision, of Fellows, per 15 minutes . . . . . . . . . . . . . .       1.00
+          03.05NJ Training/Supervision, of Physicians, per 15 minutes  . . . . . . . . . . . .       1.00
+
+       Administration
+
+       May only be claimed using the non-patient specific ULI
+          03.05NQ Time related to any research issues not directly involving either
+                  supervision of trainee research projects or personal research projects
+                  (e.g. related to finances, staffing and materials related infrastructure),
+                  per 15 minutes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                  Page 17
+                                            Schedule of Allied Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+                              I CERTAIN DIAGNOSTIC AND THERAPEUTIC PROCEDURES (cont'd)
+ 03 CLINICAL EVALUTION AND EXAMINATION (cont'd)
+
+    Chronic Pain
+
+
+       Clinical Care
+
+                                                                                                     BASE          ANE
+          03.01KA Chronic pain - non program patient triage/referral processing - all
+                  components with any required team member.  . . . . . . . . . . . . . . . . .       1.00
+          03.01KB Miscellaneous patient related paper work; review of lab results, consult
+                  reports, etc.  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01KC Cancellation by patient or Center. . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01KE Report writing and other clinical documentation related to the care of
+                  identified patients/preparation/research related to the care of identified
+                  patients . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01KL Initial Interdisciplinary Patient Assessment (Interdisc Ax,) simultaneous
+                  patient assessment by the physician and at least 1 other team member (e.g.
+                  physical therapy)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+                  NOTE:  Both/all individuals may elect to stagger their assessments so
+                         they only overlap for a significant portion of the assessment.
+          03.01KF Specifically for the 'pre-conference' to develop the patient management
+                  agreement  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01KG Formal scheduled evaluation or family conference with patient present
+                  attended by team of caregivers . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01KJ Individual patient discussion by the team within the context of more
+                  extensive patient care discussions (multiple patients discussed within the
+                  team rounds time)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01KM Scheduled meeting with patient for treatment, monitoring or followup by 1st
+                  caregiver. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01KN Scheduled meeting with patient for treatment, monitoring or followup by 1st
+                  caregiver - 2nd caregiver participates formally or informally, in person or
+                  by teleconference  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01KP Informal contact (telephone or in-person) with patient, relative(s), or
+                  significant other  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01KQ Informal contact (telephone or in-person) with CCPC caregiver relating to
+                  care and treatment of patient  . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01KR Informal contact (telephone or in-person) with non CCPC
+                  caregiver/individual relating to care and treatment of a patient . . . . . .       1.00
+          03.01KU Family treatment . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01KX Functional Capacity evaluation . . . . . . . . . . . . . . . . . . . . . . .       1.00
+
+       Procedures
+
+          03.01LA Pudendal nerve block . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01LF Injection of Botulinum A Toxin for myofascial pain, per 15 minutes . . . . .       1.00
+          03.01LX Injection of Botulinum A Toxin for headache, per 15 minutes  . . . . . . . .       1.00
+
+       Program Development/Administration
+
+          03.01MA Formal scheduled TEAM Program Development Meeting (Team Prgm Dev Mtg) with
+                  specific team (MSK, Pelvic Headache) members . . . . . . . . . . . . . . . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                  Page 18
+                                            Schedule of Allied Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+                              I CERTAIN DIAGNOSTIC AND THERAPEUTIC PROCEDURES (cont'd)
+ 03 CLINICAL EVALUTION AND EXAMINATION (cont'd)
+
+    Chronic Pain (cont'd)
+
+
+       Program Development/Administration (cont'd)
+
+                                                                                                     BASE          ANE
+                   NOTE: 1. Intended for developing the specific program activities.
+                         2. Intended to capture time when the entire interdisciplinary
+                            team must come together.
+          03.01MB Individual time preparing for and as a consequence of meetings (to a
+                  maximum of 8 hrs per week) or in development of: funding proposals,
+                  contracts, practice guidelines, policies & procedures (not quality
+                  improvement), other. DO NOT INCLUDE TIME SPENT IN MEETNGS IN THIS CATEGORY.        1.00
+          03.01MC Quality improvement activities including associated meetings . . . . . . . .       1.00
+          03.01MD Program evaluation activities inlcuding associated meetings  . . . . . . . .       1.00
+          03.01ME Formal scheduled CENTRE Program Development Meeting (Centre Prgm Dev Mtg)
+                  between two or more Centre staff members/physician or one Centre staff
+                  members/physician and an individual from outside of the Centre.  . . . . . .       1.00
+                   NOTE: 1. Intended for developing/advancing programming/funding within
+                            the Centre as a whole.
+                         2. Typical activities include, development of patient treatment
+                            groups by members of one or more disciplines, development of
+                            APP and other funding contracts and development of new Centre
+                            proposals.
+                         3. Does not include Team program development, quality improvement
+                            or program evaluation meetings/activities.
+          03.01MF Professional Development activities such as attending formal lectures,
+                  inservices, courses, workshops and conferences and formal supervision (eg.
+                  psychology family therapy supervision). MUST BE CRITICAL TO CCPC activities.       1.00
+          03.01MG Self-directed learning such as reading journals and books. MUST BE CRTICAL
+                  TO CCPC ACTIVITIES . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01MH Teaching/Presentations to providers (CCPC and non-CCPC). Includes
+                  preparation time.  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01MJ Teaching/Presentation to students of all disciplines (for physicians
+                  includes medical students, residents and fellows). Includes preparation
+                  time.  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01MK Teaching/Presentations to general public. Includes preparation time. . . . .       1.00
+          03.01ML Original research conducted at the Center.  MD time not funded . . . . . . .       1.00
+
+    03.05 Other diagnostic interview and evaluation
+
+       Weekly Submissions for services provided Monday to Friday
+       Weekly Submission means - Submission for services provided Monday to
+       Friday of the same week
+       May only be claimed using the non-patient specific ULI
+
+          03.05KA Training/Supervision, of Others (including other healthcare providers),
+                  submitted weekly, per 15 minutes . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05KB Teleconference contact related to Administration, submitted weekly, per 5
+                  minutes  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05KC Time related to non-patient desk work, submitted weekly, per 15 minutes  . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                  Page 19
+                                            Schedule of Allied Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+                              I CERTAIN DIAGNOSTIC AND THERAPEUTIC PROCEDURES (cont'd)
+ 03 CLINICAL EVALUTION AND EXAMINATION (cont'd)
+
+    03.05 Other diagnostic interview and evaluation (cont'd)
+
+       Weekly Submissions for services provided Monday to Friday
+       Weekly Submission means - Submission for services provided Monday to
+       Friday of the same week
+       May only be claimed using the non-patient specific ULI (cont'd)
+
+                                                                                                     BASE          ANE
+          03.05CJ Time related to non-patient desk work, outside of scheduled clinic hours,
+                  per 15 minutes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05KD Self Directed learning such as reading journals and books, submitted
+                  weekly, per 15 minutes . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05KE Tidying/cleaning up in the rehab area and generally in the Centre such as
+                  the exam rooms, submitted weekly, per 15 minutes . . . . . . . . . . . . . .       1.00
+          03.05KF Discussion with nurse, submitted weekly, per 15 minutes  . . . . . . . . . .       1.00
+          03.05KG Miscellaneous patient related paperwork: review of Lab results, consults
+                  reports, etc., submitted weekly, per 15 minutes  . . . . . . . . . . . . . .       1.00
+          03.05KH Preparation and/or review of documentation relating to the renewal of
+                  prescription, utilizing FAX machine, submitted weekly, per 5 minutes . . . .       1.00
+          03.05CG Preparation and/or review of documentation relating to the renewal of
+                  prescription, outside of scheduled clinic hours, per 5 minutes . . . . . . .       1.00
+          03.05KN Cancellation by patient or Centre, per 15 minutes  . . . . . . . . . . . . .       1.00
+          03.05KO Direct contact with individual, per 15 minutes . . . . . . . . . . . . . . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                   Page i
+
+ Generated 2025/03/13                            TABLE OF CONTENTS                                 As of 2025/03/14
+
+
+
+
+                I CERTAIN DIAGNOSTIC AND THERAPEUTIC PROCEDURES . . . . . . . . . . . . . . . . . . 6
+
+                  03 CLINICAL EVALUTION AND EXAMINATION . . . . . . . . . . . . . . . . . . . . . . 6
+
+                    03.0 Diagnostic interview and evaluation or consultation  . . . . . . . . . . . 6
+
+                    Research  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  16
+
+                    Chronic Pain  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  17
+
+                    03.05 Other diagnostic interview and evaluation . . . . . . . . . . . . . . .  18
+
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                      Medical
+
+                                                   Procedure List
+
+                                                       As Of
+
+                                                   14 March 2025
+
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                   Page 1
+                                            Schedule of Medical Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+ CLINICAL ALTERNATE RELATIONSHIP PLAN (ARP) SERVICES
+
+    Clinical ARP Services
+
+                                                                                                     BASE          ANE
+          S001    Time spent in preparation/research related to the care of a complex patient
+                  (e.g., a patient with co-morbidities which complicate or increase the care
+                  required by the claiming physician), per 5 minutes.  . . . . . . . . . . . .       1.00
+
+                  NOTE: 1. May only be claimed on any day prior to the date that a
+                           patient is seen.
+                        2. May not be claimed on the day that a patient is seen as
+                           applicable health service codes in the SOMB (and
+                           appropriate modifiers) including time spent on the day
+                           that a patient is seen.
+                        3. Must be documented in the patient record.
+                        4. Claim using the patient specific ULI.
+
+          S002    Time spent waiting for a patient who did not attend a scheduled appointment
+                  per 5 minutes. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+
+                  NOTE: 1. If being claimed under a Clinical ARP, the claiming
+                           physician must be present at the Centre, and may only be
+                           claimed up to the maximum time specified in the Clinical
+                           ARP Conditions of Payment, Schedule A, Article 3.
+                        2. Claim using the patient specific ULI.
+
+          S003    Time spent waiting for drop-in patients, per 5 minutes.  . . . . . . . . . .       1.00
+
+                  NOTE: 1. May only be claimed by ARPs authorized by Alberta Health
+                           to use this code.
+                        2. If being claimed under a Clinical ARP, the claiming
+                           physician must be present at the Centre, and may only be
+                           claimed up to the maximum time specified in the Clinical
+                           ARP Conditions of Payment, Schedule A, Article 3.
+                        3. Details regarding the time claimed must be documented and
+                           made available upon request.
+                        4. Claim using the non-patient specific ULI.
+
+          S004    Any communication, including but not limited to, informal, non-scheduled
+                  discussions, meetings, interviews, and conferences, with a physician,
+                  allied health professional, schools, agencies, boards, committees, or
+                  relatives, regarding advice or care of a patient, per 5 minutes. . . . . . .       1.00
+
+                  NOTE: 1. May not be claimed if current SOMB codes apply.
+                        2. May be claimed regardless of who initiates the communication.
+                        3. If the communication is by electronic means, may only be claimed
+                           when in compliance with the College of Physicians and Surgeons
+                           guidelines on secure electronic communication and when the
+                           physician/clinic has submitted a Privacy Impact Assessment for
+                           this service acceptable to the Office of the Information and
+                           Privacy Commissioner of Alberta.
+                        4. The communication must be documented in the patient's record.
+                        5. Claim using the patient specific ULI.
+
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                   Page 2
+                                            Schedule of Medical Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+ CLINICAL ALTERNATE RELATIONSHIP PLAN (ARP) SERVICES (cont'd)
+
+    Clinical ARP Services (cont'd)
+
+                                                                                                     BASE          ANE
+          S005    Any communication, including but not limited to, informal, non-scheduled
+                  discussions, meetings, interviews, and conferences, with a physician,
+                  allied health professional, schools, agencies, boards, committees, or
+                  relatives,regarding advice or care of a patient, per 5 minutes.  . . . . . .       1.00
+
+                  NOTE: 1. May be claimed regardless of who initiates the communication.
+                        2. If the communication is by electronic means, may only be
+                           claimed when in compliance with the CPSA guidelines on secure
+                           electronic communication and when the physician/clinic has
+                           submitted a Privacy Impact Assessment for this service acceptable
+                           to the Office of the Information and Privacy Commissioner of
+                           Alberta.
+                        3. The communication must be documented and made available upon
+                           request.
+                        4. Claim using the non-patient specific ULI.
+
+
+          S006    Second physician at a patient visit, per 5 minutes.  . . . . . . . . . . . .       1.00
+
+                   NOTE: 1. May only be claimed by ARPs authorized by Alberta Health to
+                            use this code.
+                         2. May only be claimed by the second physician involved in shared
+                            care service. The physician directly involved in the patient's
+                            care must claim the appropriate health service code in the
+                            SOMB.
+                         3. Patient must be present with at least one of the physicians.
+                         4. Claim using the patient specific ULI.
+
+          S007    Time spent delivering program services to a patient who is a resident of
+                  Alberta that would be eligible for the Alberta Health Care Insurance Plan
+                  (AHCIP) but is not enrolled in the AHCIP, per 5 minutes. . . . . . . . . . .       1.00
+
+                   NOTE: 1. May only be claimed by ARPs authorized by Alberta Health to use
+                            this code.
+                         2. Details regarding the services delivered must be documented and
+                            made available upon request.
+                         3. Claim using the non-patient specific ULI.
+
+          S008    Group health education session, per 5 minutes. . . . . . . . . . . . . . . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                   Page 3
+                                            Schedule of Medical Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+ CLINICAL ALTERNATE RELATIONSHIP PLAN (ARP) SERVICES (cont'd)
+
+    Clinical ARP Services (cont'd)
+
+                                                                                                     BASE          ANE
+
+                   NOTE: 1. May only be claimed for a session delivered to members of the
+                            public or an entirely non-program patient group.
+                         2. May not be claimed for a session delivered to other health care
+                            providers.
+                         3. May only be claimed for a topic related to services delivered by
+                            the ARP.
+                         4. May not be claimed for preparation time.
+                         5. Details of the session must be documented and made available
+                            upon request.
+                         6. Claim using the non-patient specific ULI.
+
+          S009    Report writing and other clinical documentation related to the care and
+                  treatment of a patient, per 5 minutes. . . . . . . . . . . . . . . . . . . .       1.00
+
+                   NOTE: 1. May be claimed on any day after the date that a patient is seen.
+                         2. May only be claimed on the same day that a patient is seen if:
+                            - a complex modifier has been claimed, and the time spent
+                              delivering program services exceeds the time specified by the
+                              complex modifier; or
+                            - the time spent delivering program services to a patient
+                              exceeds the time captured by the maximum number of calls
+                              available under the applicable health service code, and/or any
+                              applicable modifiers.
+                          3. Claim using the patient specific ULI.
+                          4. This usage is different from health service codes claimed as
+                             Fee-For-Service and is solely for documenting time spent on the
+                             patient-related activities described.
+
+          S010    Review of patient lab results, consultant reports, or other care reports,
+                  per 5 minutes  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+
+                   NOTE: 1. May be claimed on any day after the date that a patient is seen.
+                         2. May only be claimed on the same day that a patient is seen if:
+                            - a complex modifier has been claimed, and the time spent
+                              delivering program services exceeds the time specified by the
+                              complex modifier; or
+                            - the time spent delivering program services to a patient
+                              exceeds the time captured by the maximum number of calls
+                              available under the applicable health service code, and/or any
+                              applicable modifiers.
+                          3. Claim using the patient specific ULI.
+                          4. This usage is different from health service codes claimed as
+                             Fee-For-Service and is solely for documenting time spent on the
+                             patient-related activities described.
+
+          S011    Review of patient lab results, consultant reports, or other care reports
+                  for multiple patients, per 5 minutes.  . . . . . . . . . . . . . . . . . . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                   Page 4
+                                            Schedule of Medical Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+ CLINICAL ALTERNATE RELATIONSHIP PLAN (ARP) SERVICES (cont'd)
+
+    Clinical ARP Services (cont'd)
+
+                                                                                                     BASE          ANE
+
+                   NOTE:  1. Details regarding the time claimed must be documented and made
+                             available upon request.
+                          2. Claim using the non-patient specific ULI.
+
+          S012    Time spent for work related to ARP business, including but not limited to
+                  reporting, completing Letters of Participation, Letters of Termination,
+                  Clinical ARP Applications, meeting with Alberta Health, Alberta Health
+                  Services, or the ARP Physician Support Services, and development
+                  specifically related to the ARP, per 5 minutes.  . . . . . . . . . . . . . .       1.00
+
+                  NOTE: 1. If being claimed under a Clinical ARP:
+                           - May only be claimed by an Authorized Representative(s) for work
+                             related to ARP business and not for program meetings.
+                           - May not be claimed if the Authorized Representative(s) receives
+                             compensation from another source for work related to clinical
+                             ARP business.
+                         2. Details regarding the time claimed must be documented and made
+                            available upon request.
+                         3. Claim using the non-patient specific ULI.
+
+                                  I CERTAIN DIAGNOSTIC AND THERAPEUTIC PROCEDURES
+ 03 CLINICAL EVALUTION AND EXAMINATION
+    03.0 Diagnostic interview and evaluation or consultation
+
+       03.05 Other diagnostic interview and evaluation
+
+       Case Management/Team Conference
+
+          03.05SA Professional interview relating to care and treatment of a patient with
+                  other physicians, family, allied health professionals or community
+                  agencies, per 15 minutes . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05CD Professional interview relating to the care and treatment of a patient(s)
+                  with Social Worker, Dietician, Other Health Care Provider, Primary Care
+                  Nurse, Mental Health Worker, Asthmatic Educator, Nurse Practitioner, or
+                  Multi-Cultural Broker, outside of scheduled clinic hours, per 15 minutes . .       1.00
+          03.05SB Professional meetings with primary physician relating to care and treatment
+                  of a patient, per 15 minutes . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05SC Second and subsequent physician attendance at a professional interview
+                  relating to care and treatment of a patient with other physicians, family,
+                  allied health professionals or community agencies, per 15 minutes  . . . . .       1.00
+
+          03.05SD Professional interview relating to care and treatment of a patient with the
+                  Primary Health Nurse, per 15 minutes . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05SE Professional interview relating to care and treatment of a patient with the
+                  Home Care Nurses, per 15 minutes . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05TQ Professional interview relating to care and treatment of a patient with
+                  Public Health Nurse, per 15 minutes  . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05TT Professional interview relating to care and treatment of a patient with
+                  Primary Care Nurse, per 15 minutes . . . . . . . . . . . . . . . . . . . . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                   Page 5
+                                            Schedule of Medical Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+                              I CERTAIN DIAGNOSTIC AND THERAPEUTIC PROCEDURES (cont'd)
+ 03 CLINICAL EVALUTION AND EXAMINATION (cont'd)
+    03.0 Diagnostic interview and evaluation or consultation (cont'd)
+
+                                                                                                     BASE          ANE
+          03.05WV Professional interview relating to care and treatment of a patient with the
+                  Nurse Practitioner, per 15 minutes.  . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05SF Professional interview relating to care and treatment of a patient with
+                  Occupational Therapist(s), per 15 minutes  . . . . . . . . . . . . . . . . .       1.00
+
+          03.05SG Professional interview relating to care and treatment of a patient with
+                  Physical Therapist(s), per 15 minutes  . . . . . . . . . . . . . . . . . . .       1.00
+          03.05SH Professional interview relating to care and treatment of a patient with
+                  Respiratory Therapist(s), per 15 minutes . . . . . . . . . . . . . . . . . .       1.00
+          03.05SJ Professional interview relating to care and treatment of a patient with
+                  Recreational Therapist(s), per 15 minutes  . . . . . . . . . . . . . . . . .       1.00
+
+          03.05SK Professional interview relating to care and treatment of a patient with
+                  Psychologist(s), per 15 minutes  . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05SL Professional interview relating to care and treatment of a patient with
+                  Social Worker(s), per 15 minutes . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05TU Professional interview relating to care and treatment of a patient with
+                  Mental Health Worker, per 15 minutes . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05SM Professional interview relating to care and treatment of a patient with
+                  Dietician(s), per 15 minutes . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+
+          03.05SN Professional interview relating to care and treatment of a patient with
+                  Pharmacist(s), per 15 minutes  . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05TR Professional interview relating to care and treatment of a patient with
+                  Education Coordinator, per 15 minutes  . . . . . . . . . . . . . . . . . . .       1.00
+          03.05TS Professional interview relating to care and treatment of a patient with
+                  Diabetic Educator, per 15 minutes  . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05TV Professional interview relating to care and treatment of a patient with
+                  Asthmatic Educator, per 15 minutes . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05SP Professional interview relating to care and treatment of a patient with
+                  Other Health Provider(s), per 15 minutes . . . . . . . . . . . . . . . . . .       1.00
+          03.05TY Professional interview relating to the care and treatment of a patient with
+                  External Third Party, per 15 minutes . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05TZ Professional interview relating to the care and treatment of patient(s) by
+                  Nurse Practitioner(s), per 15 minutes  . . . . . . . . . . . . . . . . . . .       1.00
+          03.05UA Professional interview relating to the care and treatment of a patient with
+                  Addictions Counsellor(s), per 15 minutes . . . . . . . . . . . . . . . . . .       1.00
+          03.05UB Professional interview relating to the care and treatment of a patient with
+                  Multi-Cultural Broker(s), per 15 minutes . . . . . . . . . . . . . . . . . .       1.00
+          03.05UC Professional interview relating to the care and treatment of a patient with
+                  Registered Psychiatric Nurse(s), per 15 minutes  . . . . . . . . . . . . . .       1.00
+          03.05UD Professional interview relating to the care and treatment of a patient with
+                  Audiologist(s), per 15 minutes . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05UF Examinations or services requested by a Third Party for an uninsured
+                  service, per 15 minutes  . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05UQ Professional interview relating to care and treatment of a patient with the
+                  Clinical Coordinator, per 15 minutes . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05UR Professional interview relating to care and treatment of a patient with the
+                  Family Therapist, per 15 minutes . . . . . . . . . . . . . . . . . . . . . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                   Page 6
+                                            Schedule of Medical Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+                              I CERTAIN DIAGNOSTIC AND THERAPEUTIC PROCEDURES (cont'd)
+ 03 CLINICAL EVALUTION AND EXAMINATION (cont'd)
+    03.0 Diagnostic interview and evaluation or consultation (cont'd)
+
+                                                                                                     BASE          ANE
+          03.05VA Informal/formal discussions (telephone or in person) with interdisciplinary
+                  team members/health professionals regarding patient care, per 15 minutes,
+                  must be claimed using the non-patient specific ULI . . . . . . . . . . . . .       1.00
+          03.05VB Informal discussion with interdisciplinary team members/health
+                  professionals, per 5 minutes. May be claimed using the non-patient specific
+                  ULI. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05WF All informal discussions, meetings etc. related to the care of identified
+                  patients, per 15 minutes . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05WJ Professional interview relating to care and treatment of a patient with the
+                  Clinic Nurse, per 15 minutes . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05WK Second and subsequent physician attendance at a formal, scheduled
+                  professional interview relating to the care and treatment of a patient with
+                  chronic pain with other physicians, family and/or direct therapeutic
+                  supervision of allied health professionals or community agencies, on behalf
+                  of a specific patient, per 15 minutes  . . . . . . . . . . . . . . . . . . .       1.00
+          03.05WM Informal/formal discussions (telephone or in-person) with non-CCPC
+                  individual relating to care and treatment of a patient, per 15 minutes . . .       1.00
+          03.05WN Informal discussion with patient, relative(s), or significant other,
+                  per 15 minutes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05NR Informal rounds/discussions with patients regarding general health and
+                  wellness per 5 min. May be claimed using the non patient specific ULI  . . .       1.00
+          03.05WU Informal rounds/discussions with patients regarding general health and
+                  wellness per 5 minutes. May be claimed using the non-patient specific ULI  .       1.00
+          03.05NP Clinical assessment of patient by Professional Nurse Practitioner, per 15
+                  minutes  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05NS Multidisciplinary Team case conference relating to the care and treatment
+                  of a patient, per 15 minutes.  . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05YV Multidisciplinary Team case conference relating to the care and treatment
+                  of patients, per 15 minutes. May be claimed using the non-patient specific
+                  ULI. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05ZY Professional interview relating to the care and treatment of a patient with
+                  other physicians, family, allied health professionals or community
+                  agencies, per 15 minutes, may be claimed using the non-patient specific ULI        1.00
+
+       Allied Practitioner Services in Support of Primary Care Initiative
+
+          03.05AO Allied visit diagnostic interview and evaluation includes limited
+                  assessment of patient includes history limited to presenting problem and
+                  examination limited to relevant body systems, an appropriate record and
+                  advice to patient  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+                  NOTE:  May only be claimed by Allied Practitioners
+          03.05AP Allied consultation  . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05AQ Multidisciplinary case conference relating to care and treatment of a
+                  patient with other physicians, family, allied health professionals or
+                  community agencies . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05AR Referral to another health care provider, per 5 minutes  . . . . . . . . . .       1.00
+          03.05AS Professional meeting with primary care physician relating to care and
+                  treatment of the patient . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05AT Consultation with other health care provider . . . . . . . . . . . . . . . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                   Page 7
+                                            Schedule of Medical Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+                              I CERTAIN DIAGNOSTIC AND THERAPEUTIC PROCEDURES (cont'd)
+ 03 CLINICAL EVALUTION AND EXAMINATION (cont'd)
+    03.0 Diagnostic interview and evaluation or consultation (cont'd)
+
+       Allied Practitioner Services in Support of Primary Care Initiative (cont'd)
+
+                                                                                                     BASE          ANE
+          03.05AU Telephone contact with other allied health professionals, family and
+                  agencies regarding advice or care of the patient . . . . . . . . . . . . . .       1.00
+          03.05AV Formal scheduled interview with relative(s) related to care and treatment
+                  of a patient . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05AY Advice or counseling related to care and treatment of the patient, with
+                  other physicians, family, allied health professionals, community agencies
+                  or the patient through indirect means: e.g., telephone, fax, e-mail etc. . .       1.00
+          03.05BB Telehealth clinical care with physicians and other health care professionals       1.00
+          03.05BC Telehealth teaching to patients planning . . . . . . . . . . . . . . . . . .       1.00
+          03.05BD Misc. patient paperwork review lab results, consultation reports . . . . . .       1.00
+          03.05BE Group counseling/therapy for patients in specific programs such as smoking
+                  cessation, diabetes education, chronic disease management etc. . . . . . . .       1.00
+          03.05BF General Health teaching/counseling including lectures to patient groups  . .       1.00
+          03.05BG Health promotion teaching or management regarding specific treatments
+                  provided to groups . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+
+       Patient Assessment/Evaluation
+
+          03.05VM Patient assessment, to be used by all disciplines, per 15 minutes  . . . . .       1.00
+          03.05BM Emergency visit clinic . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05BN Medication, review of patient  . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05BH Comprehensive Geriatric Assessment.  . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05BR Cognitive testing e.g. MMSE, EXIT, GDS, FAB, etc . . . . . . . . . . . . . .       1.00
+          03.05BS Foot Care  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05VN Functional Capacity Evaluation to be used by Occupational Therapist per 15
+                  minutes  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05VP Home visit/assessment- (e.g. occupational therapist, home care nurse etc.  .       1.00
+          03.05VS Formal patient care rounds, per 15 minutes . . . . . . . . . . . . . . . . .       1.00
+          03.05VR Follow-up meeting by Clinical coordinator with patient to monitor progress
+                  per 15 minutes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05WW Visit with Nurse Practitioner relating to care and treatment of patient,
+                  Brief  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05CE Discussion with nurse outside of scheduled clinic hours per 15 minutes. May
+                  be claimed using the non-patient specific ULI  . . . . . . . . . . . . . . .       1.00
+          03.05WX Visit with Nurse Practitioner relating to care and treatment of patient,
+                  Limited  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05WY Visit with Nurse Practitioner relating to care and treatment of patient,
+                  Comprehensive  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05XU Visit with alternate care provider related to the care and treatment of
+                  patient  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05XV Clinical patient assessment, reassessment, and screening:  to be used by
+                  all disciplines  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+
+       Patient Assessment/Evaluation
+
+          03.01LP Unscheduled assessment at a LTC facility, followed by (or including) an
+                  admission to an Acute Care facility. 0700-1700 weekdays, per 15 minutes or
+                  portion thereof  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                   Page 8
+                                            Schedule of Medical Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+                              I CERTAIN DIAGNOSTIC AND THERAPEUTIC PROCEDURES (cont'd)
+ 03 CLINICAL EVALUTION AND EXAMINATION (cont'd)
+    03.0 Diagnostic interview and evaluation or consultation (cont'd)
+
+       Patient Assessment/Evaluation (cont'd)
+
+                                                                                                     BASE          ANE
+          03.01LQ Unscheduled assessment at a LTC facility, followed by (or including) an
+                  admission to an Acute Care facility. 1700-2200 weekdays and 0700-2200
+                  weekends/statutory holidays, per 15 minutes or portion thereof . . . . . . .       1.00
+          03.01LR Unscheduled assessment at a  LTC facility, followed by (or including) an
+                  admission to an Acute Care facility. 2200-2400, per 15 minutes or portion
+                  thereof  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01LS Unscheduled assessment at a LTC facility, followed by (or including) an
+                  admission to an Acute Care facility. 2400-0700 per 15 minutes or portion
+                  thereof  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+
+       Telephone Contact
+
+          03.05SQ Telephone contact advice or counselling relating to care and treatment of a
+                  patient 8:00 A.M. to 5:00 P.M., per 5 minutes  . . . . . . . . . . . . . . .       1.00
+          03.05SR Telephone contact advice or counselling relating to care and treatment of a
+                  patient 5:00 P.M. to 11:00 P.M., per 5 minutes . . . . . . . . . . . . . . .       1.00
+          03.05SS Telephone contact advice or counselling relating to care and treatment of a
+                  patient 11:00 P.M. to 8:00 A.M., per 5 minutes . . . . . . . . . . . . . . .       1.00
+          03.05ST Telephone contact related to administration, per 5 minutes . . . . . . . . .       1.00
+          03.05SU Telephone contact related to any situation that cannot be classified as
+                  either "patient related" or "administration", per 5 minutes  . . . . . . . .       1.00
+          03.05UG Telephone contact related to contact with External Third Party, per 5
+                  minutes  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05UH Renewal of prescription over the telephone relating to a specific patient,
+                  per 5 minutes  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05UN Telephone contact with a Medical Health Professional regarding advise or
+                  care of a patient, per 5 minutes . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05UO Telephone contact with an Allied Health Professional regarding advise or
+                  care of a patient, per 5 minutes . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05US Phone calls related to the care of identified patients but not with the
+                  identified patient, per 15 minutes . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05UT Telephone call with patient, per 15 minutes  . . . . . . . . . . . . . . . .       1.00
+          03.05YW Telephone contact with another Physician related to care and treatment of
+                  patients, per 15 minutes. May be claimed using the non-patient specific ULI.       1.00
+          03.05ZZ Advice or counselling related to care and treatment of a patient, with
+                  other physicians, family, allied health professionals, community agencies
+                  or the patient through indirect means: e.g., telephone, fax, email, etc.
+                  Includes prescription renewals. Per 15 minutes. May be claimed using the
+                  non-patient specific ULI . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05CC Professional interview relating to the care and treatment of a patient with
+                  other physicians, family, allied health professionals or community
+                  agencies, outside of scheduled clinic hours, per 15 minutes  . . . . . . . .       1.00
+
+       Telehealth
+
+          03.05ZS Telehealth Clinical Care, per 15 minutes. May be claimed using the
+                  non-patient specific ULI . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                   Page 9
+                                            Schedule of Medical Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+                              I CERTAIN DIAGNOSTIC AND THERAPEUTIC PROCEDURES (cont'd)
+ 03 CLINICAL EVALUTION AND EXAMINATION (cont'd)
+    03.0 Diagnostic interview and evaluation or consultation (cont'd)
+
+       Telehealth (cont'd)
+
+                                                                                                     BASE          ANE
+          03.05ZT Telehealth Case Conference includes discharge planning, per 15 minutes . . .       1.00
+          03.05ZU Telehealth teaching, per 15 minutes.  May be claimed using the non-patient
+                  specific ULI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05ZV Telehealth Administration, per 15 minutes.  May be claimed using the
+                  non-patient specific ULI . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+
+       Contact Utilizing Fax Machine
+
+          03.05UJ Preparation and/or review of documentation relating to the care and
+                  treatment of a patient by Nursing Staff, per 5 minutes . . . . . . . . . . .       1.00
+          03.05UK Preparation and/or review of documentation relating to the care and
+                  treatment of a patient by Home Care Nurse, per 5 minutes . . . . . . . . . .       1.00
+          03.05UL Administrative time for the preparation and faxing of documents relating to
+                  a specific case, per 5 minutes . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05ZB Preparation and/or review of documentation relating to the renewal of
+                  prescription, utilizing Fax machine. May be claimed using the non-patient
+                  specific ULI, per 5 minutes  . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+
+       Family Conferences/Counselling
+
+          03.05SV Formal scheduled interview with relative(s) relating to care and treatment
+                  of a patient 8:00 A.M. to 5:00 P.M., per 15 minutes  . . . . . . . . . . . .       1.00
+          03.05SW Formal scheduled interview with relative(s) relating to care and treatment
+                  of a patient 5:00 P.M. to 11:00 P.M., per 15 minutes . . . . . . . . . . . .       1.00
+          03.05VC Direct contact with a couple relating to the care, treatment and social
+                  aspect of a patient, per 15 minutes  . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05VD Direct contact with family members relating to the care, treatment and
+                  social aspects of a patient, per 15 minutes  . . . . . . . . . . . . . . . .       1.00
+
+       Continuing Medical Education
+
+          03.05UM Continuing Medical Education, related to professional developement, per 30
+                  minutes  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05XK Preparation and delivery of Continuing Medical Education lecture, per 30
+                  minutes  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+
+       Research and Patient-Related Document Review
+
+          03.05SY Research and/or document review of specific case DURING Regular Hours, per
+                  15 minutes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05SZ Research and/or document review of specific case AFTER Regular Hours, per
+                  15 minutes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05UV Preparation/research related to the care of identified patients, per 15
+                  minutes  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05UW Report writing and other clinical documentation related to care of
+                  identified patients, per 15 minutes  . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05CA Report writing and other clinical documentation related to care of
+                  identified patients, outside of scheduled clinic hours, per 15 minutes . . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                  Page 10
+                                            Schedule of Medical Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+                              I CERTAIN DIAGNOSTIC AND THERAPEUTIC PROCEDURES (cont'd)
+ 03 CLINICAL EVALUTION AND EXAMINATION (cont'd)
+    03.0 Diagnostic interview and evaluation or consultation (cont'd)
+
+       Research and Patient-Related Document Review (cont'd)
+
+                                                                                                     BASE          ANE
+          03.05XY Report writing and other correspondence related to patient care. May be
+                  claimed using the non-patient specific ULI, per 15 minutes . . . . . . . . .       1.00
+          03.05UX Original research conducted at the Centre, per 15 minutes. May be claimed
+                  using the non-patient specific ULI . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05UY Specifically for the 'pre-conference' to develop the patient management
+                  agreement, per 15 minutes  . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05UZ Referral processing by the Clinical Coordinators includes all elements of
+                  the processing of client referrals from the initial paper work,
+                  physician/client contact and information gathering, per 15 minutes . . . . .       1.00
+          03.05UU Chronic Pain - Non Program patient triage, with other physicians or program
+                  team professionals, per 15 minutes . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05TA Form Completions/3rd Party Reports, per 5 minutes. May be claimed using the
+                  non-patient specific ULI.  . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05WP Miscellaneous patient related paperwork: review of Lab results, consults
+                  reports, etc., per 15 minutes. May be claimed using the non-patient
+                  specific ULI.  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05CF Miscellaneous patient related paperwork: review of Lab results, consults
+                  reports, etc., outside of scheduled clinic hours per 15 minutes. May be
+                  claimed using the non-patient specific ULI . . . . . . . . . . . . . . . . .       1.00
+          03.05VZ Discussion with nurse per 15 minutes. May only be claimed using the
+                  non-patient specific ULI.  . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05BL Resident Clinic - Administrative Role Performed  . . . . . . . . . . . . . .       1.00
+
+       Prolonged Office Visit (Exceeding 15 minutes)
+
+          03.05TB Prolonged office visit, for those patients with multiple health problems,
+                  per 15 minutes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05WL Prolonged office visit for patient unable to communicate without
+                  interpreter, per 15 minutes  . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+
+       Codes for Providing Health Teaching/Promotion to an Individual Patient
+
+          03.05TC Health teaching or counselling regarding treatments, per 15 minutes  . . . .       1.00
+          03.05VE Individual treatment includes all staff: Physical Therapist, Occupational
+                  Therapist, Psychologist, Clinical Coordinator, Dieticians, Addictions
+                  Counsellor etc. per 15 minutes . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05WH Conference with patient present, per 15 minutes  . . . . . . . . . . . . . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                  Page 11
+                                            Schedule of Medical Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+                              I CERTAIN DIAGNOSTIC AND THERAPEUTIC PROCEDURES (cont'd)
+ 03 CLINICAL EVALUTION AND EXAMINATION (cont'd)
+    03.0 Diagnostic interview and evaluation or consultation (cont'd)
+
+       Professional Nurse Services
+
+                                                                                                     BASE          ANE
+          03.05TX Administering of treatment and/or medication prescribed by a physician
+                  performed by a Professional Nurse, per 15 minutes  . . . . . . . . . . . . .       1.00
+          03.05WZ Service with or about a Non resident patient (uninsured services). May be
+                  claimed using the non-patient specific ULI . . . . . . . . . . . . . . . . .       1.00
+
+       Teaching/Education to a Group
+
+       May only be claimed using the non-patient specific ULI
+          03.05TD Group counselling/therapy for patients-such as smoking cessation, physical
+                  abuse, etc. per 15 minutes . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05WR Health teaching/counselling to patient groups, per 15 minutes  . . . . . . .       1.00
+          03.05VH Group treatment, includes lectures and modules, per 15 minutes. To be used
+                  by all clinical staff. . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05XA Medical teaching with medical residents and/or medical students with
+                  patients, per 15 minutes . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05XB Medical teaching with medical residents and/or medical students non patient
+                  related, per 15 minutes  . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05XJ Teaching Nurse practitioners, family physicians, and allied health
+                  personnel, per 15 minutes  . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+
+       Health Promotion Codes for Teaching Groups-Such as Other Health Providers
+       or at Schools, or in the Community
+
+       May only be claimed using the non-patient specific ULI
+          03.05TE Health teaching or counselling regarding treatments provided to groups such
+                  as other health providers, at schools, or in the community, per 15 minutes .       1.00
+          03.05TH Health teaching or counselling regarding OCCUPATIONAL HEALTH AND SAFETY
+                  ISSUES provided to groups such as other health providers, at schools, or in
+                  the community, per 15 minutes  . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05VF Teaching/Presentations to Providers, per 15 minutes  . . . . . . . . . . . .       1.00
+          03.05VG Teaching/Presentations to General Public, per 15 minutes . . . . . . . . . .       1.00
+          03.05XC Attending/conducting practice oral examinations for medical residents
+                  and/or medical students, per 15 minutes  . . . . . . . . . . . . . . . . . .       1.00
+          03.05XD Attending and evaluation medical residents and/or medical students in OSCE,
+                  per 15 minutes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05XH Classroom medical teaching for students, including course material
+                  preparation, per 30 minutes  . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+
+       Patient Related Travel Time
+
+          03.05TJ Travel Time to visit with a patient, per 15 minutes  . . . . . . . . . . . .       1.00
+          03.05WS Non-patient specific Unscheduled time by physician, per 15 minutes . . . . .       1.00
+          03.05NW Non-Patient specific travel time (i.e. travel to clinics away from
+                  hospital), per 15 minutes  . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05ZR Travel time for "Out Reach" clinical travel, per 15 minutes.  May be
+                  claimed using the non-patient specific ULI . . . . . . . . . . . . . . . . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                  Page 12
+                                            Schedule of Medical Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+                              I CERTAIN DIAGNOSTIC AND THERAPEUTIC PROCEDURES (cont'd)
+ 03 CLINICAL EVALUTION AND EXAMINATION (cont'd)
+    03.0 Diagnostic interview and evaluation or consultation (cont'd)
+
+       Administration
+
+       May only be claimed using the non-patient specific ULI
+                                                                                                     BASE          ANE
+          03.05TK Attendance at meetings related to health services, including Board Meetings
+                  per 15 minutes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05TL Attendance at meetings related to Personal Professional Development, per 15
+                  minutes  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05UP Attendance of a meeting with a Pharmaceutical Representative per 15 minutes        1.00
+          03.05CK Attendance of a meeting with a Pharmaceutical Representative outside of
+                  scheduled clinic hours, per 15 minutes . . . . . . . . . . . . . . . . . . .       1.00
+          03.05TM Travel Time for administration such as attending meetings, per 15 minutes  .       1.00
+          03.05TN Time related to non-patient desk work, per 15 minutes  . . . . . . . . . . .       1.00
+          03.05CB Time related to non-patient desk work, outside of scheduled clinic hours,
+                  per 15 minutes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05TP Formal scheduled professional meetings related to administration, clinic
+                  management issues, per 15 minutes  . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05CH Formal scheduled professional meetings related to administration, clinic
+                  management issues, outside of scheduled clinic hours, per 15 minutes . . . .       1.00
+          03.05VJ All administrative meetings related to the operation of the centre except
+                  Quality Improvement Activities and Program Development, per 15 minutes . . .       1.00
+          03.05VK Professional Development activities such as attending formal courses,
+                  workshops and conferences and formal supervision (e.g. psychology family
+                  therapy supervision) . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05VL Self Directed learning such as reading journals and books, per 15 minutes  .       1.00
+          03.05VX Setting and evaluating clinic goals  . . . . . . . . . . . . . . . . . . . .       1.00
+
+       Legal
+
+          03.05ZW Court preparation time, per 15
+                   minutes.  May be claimed using the non-patient specific ULI . . . . . . . .       1.00
+          03.05ZX Court waiting/presentation time, per 15 minutes.  May be claimed using the
+                  non-patient specific ULI . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+
+       Procedures
+
+          03.05WA Pudendal Nerve stimulator testing, per 15 minutes  . . . . . . . . . . . . .       1.00
+          03.05WB Prolotherapy procedures, per 15 minutes  . . . . . . . . . . . . . . . . . .       1.00
+          03.05WT Time allotted for patient who did not attend appointment, per 15 minutes . .       1.00
+          03.05WQ Time allotted for patient who left without being seen therefore did not
+                  attend appointment, per 15 minutes . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05WC Pelvic pain mapping, per 15 minutes  . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05WD Osteopathic management, includes manipulation techniques, per 15 minutes . .       1.00
+          03.05WE Pudendal Nerve Block, per 15 minutes . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05WG Injection of Botulinum A Toxin for myofascial pain, 1 per muscle . . . . . .       1.00
+          03.05XP Bronchoscopy suite management, per 15 minutes  . . . . . . . . . . . . . . .       1.00
+          03.05XQ Sleep laboratory management, per 15 minutes  . . . . . . . . . . . . . . . .       1.00
+          03.05XS Bronchoscopy with lymph node biopsy, per 15 minutes  . . . . . . . . . . . .       1.00
+          03.05YA Kaofeed tube, insertion or removal, per 15 minutes . . . . . . . . . . . . .       1.00
+          03.05YB Nasojejual tube, insertion or removal, per 15 minutes  . . . . . . . . . . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                  Page 13
+                                            Schedule of Medical Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+                              I CERTAIN DIAGNOSTIC AND THERAPEUTIC PROCEDURES (cont'd)
+ 03 CLINICAL EVALUTION AND EXAMINATION (cont'd)
+    03.0 Diagnostic interview and evaluation or consultation (cont'd)
+
+       Procedures (cont'd)
+
+                                                                                                     BASE          ANE
+          03.05YC Endoclip application for hemostasis, per 15 minutes  . . . . . . . . . . . .       1.00
+          03.05YG Biliary/pancreatic stent removal, per 15 minutes . . . . . . . . . . . . . .       1.00
+          03.05YN Photodynamic therapy, per 15 minutes . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05YX EEG-video telemetry, interpretation of prolonged inpatient simultaneous EEG
+                  and video recordings, including both interictal activity and ictal events
+                  for a 24 hour recording  . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05YY EEG-video telemetry Assessment. Summation of an entire prolonged inpatient
+                  EEG-video telemetry investigation, per 15 minutes  . . . . . . . . . . . . .       1.00
+          03.05ZA SEEG telemetry assessment. Summation of an entire prolonged inpatient
+                  SEEG-video telemetry investigation, per 15 minutes . . . . . . . . . . . . .       1.00
+          03.05YZ SEEG-video telemetry, Interpretation of prolonged inpatient EEG and video
+                  recordings with intracranial electrodes (stereoencephalography or SEEG)
+                  including both interictal activity and ictal events for a 24 hour recording        1.00
+          03.05BX Syringing of ears. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05BZ enema / fecal disimpaction.  . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+
+       Procedures - Perinatal
+
+          03.05AA Intrafetal insertion of pigtail catheter . . . . . . . . . . . . . . . . . .       1.00
+          03.05AB Fetal muscle biopsy  . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05AC Bladdercentesis (without pigtail catheter) fetal megacystitis - to
+                  decompress fetal bladder . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05AD Cephalocentesis  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05AE Thoracentesis (massive hydrops)  . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05AG Drainage of amniotic fluid . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05AH Intramuscular injection into fetus under ultrasound guidance . . . . . . . .       1.00
+          03.05AJ Cardiocentesis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05AK Selective fetal reduction  . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05AL Intrauterine occlusion of umbilical cord under GA, laparoscopy/laparotomy &
+                  ligation of umbilical cord . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05BJ Gestation Ultrasound - age determination . . . . . . . . . . . . . . . . . .       1.00
+          03.05BK Limited Obstetrics Ultra Sound . . . . . . . . . . . . . . . . . . . . . . .       1.00
+
+       Program Activities
+
+       May only be claimed using the non-patient specific ULI
+          03.05VT Program development activities related to the creation or evaluation of the
+                  program of care delivered at the Centre, per 15 minutes  . . . . . . . . . .       1.00
+          03.05VU Quality Improvement Activities, per 15 minutes . . . . . . . . . . . . . . .       1.00
+          03.05VV Program Evaluation Activities, per 15 minutes  . . . . . . . . . . . . . . .       1.00
+          03.05XZ Population-based review of practice per 15 minutes.  . . . . . . . . . . . .       1.00
+
+       Facility Maintenance
+
+       May only be claimed using the non-patient specific ULI
+          03.05VW Tidying/cleaning up in the Rehab area and generally in the Centre such as
+                  the exam rooms, per 15 minutes . . . . . . . . . . . . . . . . . . . . . . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                  Page 14
+                                            Schedule of Medical Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+                              I CERTAIN DIAGNOSTIC AND THERAPEUTIC PROCEDURES (cont'd)
+ 03 CLINICAL EVALUTION AND EXAMINATION (cont'd)
+    03.0 Diagnostic interview and evaluation or consultation (cont'd)
+
+       Clinical Practice Guidelines
+
+       May only be claimed using the non-patient specific ULI
+                                                                                                     BASE          ANE
+          03.05VY Clinical Practice Guidelines - Review and implement clinical practice
+                  guidelines for the clinic. . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05ZL Administrative meetings - Participation in working groups to develop action
+                  plans in areas such as evaluation, innovation and education.  Or
+                  Psychiatrists attending additional monthly meetings to discuss case with
+                  clinicians . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05ZM Reviewing Objectives - Meetings at specified intervals to review goals
+                  mutually established to ensure that the service is meeting needs and to
+                  take into account the skill development of the family physician  . . . . . .       1.00
+          03.05ZN Program Infrastructure - Providing unique activities of the Program; travel
+                  to meetings and consultations, meetings to arrange schedules related to
+                  visits from program professionals, time provided for evaluations,
+                  questionnaires for monitoring quality  . . . . . . . . . . . . . . . . . . .       1.00
+          03.05ZP Orientation - Program orientation or to provide orientation to other
+                  physicians new to the program  . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05ZQ General Case Discussion - General discussion about a diagnosis or a group
+                  of patients where general approaches applicable to more than one patient in
+                  the family physicians practice are discussed . . . . . . . . . . . . . . . .       1.00
+
+    Research
+
+
+       Original Research
+
+       May only be claimed using the non-patient specific ULI
+          03.05NA Time related to the conception/ development/conduct/presentation of basic
+                  science research, per 15 minutes . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05NB Time related to the conception/ development/conduct/presentation of applied
+                  (clinical trials) research, per 15 minutes . . . . . . . . . . . . . . . . .       1.00
+
+       Supervision/Consultation
+
+       May only be claimed using the non-patient specific ULI
+          03.05NF Training/Supervision, of Undergraduate students, per 15 minutes  . . . . . .       1.00
+          03.05NG Training/Supervision, of Residents, per 15 minutes . . . . . . . . . . . . .       1.00
+          03.05NH Training/Supervision, of Fellows, per 15 minutes . . . . . . . . . . . . . .       1.00
+          03.05NJ Training/Supervision, of Physicians, per 15 minutes  . . . . . . . . . . . .       1.00
+
+       Administration
+
+       May only be claimed using the non-patient specific ULI
+          03.05NQ Time related to any research issues not directly involving either
+                  supervision of trainee research projects or personal research projects
+                  (e.g. related to finances, staffing and materials related infrastructure),
+                  per 15 minutes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                  Page 15
+                                            Schedule of Medical Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+                              I CERTAIN DIAGNOSTIC AND THERAPEUTIC PROCEDURES (cont'd)
+ 03 CLINICAL EVALUTION AND EXAMINATION (cont'd)
+
+    Chronic Pain
+
+
+       Clinical Care
+
+                                                                                                     BASE          ANE
+          03.01KA Chronic pain - non program patient triage/referral processing - all
+                  components with any required team member.  . . . . . . . . . . . . . . . . .       1.00
+          03.01KB Miscellaneous patient related paper work; review of lab results, consult
+                  reports, etc.  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01KC Cancellation by patient or Center. . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01KE Report writing and other clinical documentation related to the care of
+                  identified patients/preparation/research related to the care of identified
+                  patients . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01KL Initial Interdisciplinary Patient Assessment (Interdisc Ax,) simultaneous
+                  patient assessment by the physician and at least 1 other team member (e.g.
+                  physical therapy)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+                  NOTE:  Both/all individuals may elect to stagger their assessments so
+                         they only overlap for a significant portion of the assessment.
+          03.01KF Specifically for the 'pre-conference' to develop the patient management
+                  agreement  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01KG Formal scheduled evaluation or family conference with patient present
+                  attended by team of caregivers . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01KJ Individual patient discussion by the team within the context of more
+                  extensive patient care discussions (multiple patients discussed within the
+                  team rounds time)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01KM Scheduled meeting with patient for treatment, monitoring or followup by 1st
+                  caregiver. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01KN Scheduled meeting with patient for treatment, monitoring or followup by 1st
+                  caregiver - 2nd caregiver participates formally or informally, in person or
+                  by teleconference  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01KP Informal contact (telephone or in-person) with patient, relative(s), or
+                  significant other  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01KQ Informal contact (telephone or in-person) with CCPC caregiver relating to
+                  care and treatment of patient  . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01KR Informal contact (telephone or in-person) with non CCPC
+                  caregiver/individual relating to care and treatment of a patient . . . . . .       1.00
+          03.01KU Family treatment . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01KX Functional Capacity evaluation . . . . . . . . . . . . . . . . . . . . . . .       1.00
+
+       Procedures
+
+          03.01LA Pudendal nerve block . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01LF Injection of Botulinum A Toxin for myofascial pain, per 15 minutes . . . . .       1.00
+          03.01LX Injection of Botulinum A Toxin for headache, per 15 minutes  . . . . . . . .       1.00
+
+       Program Development/Administration
+
+          03.01MA Formal scheduled TEAM Program Development Meeting (Team Prgm Dev Mtg) with
+                  specific team (MSK, Pelvic Headache) members . . . . . . . . . . . . . . . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                  Page 16
+                                            Schedule of Medical Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+                              I CERTAIN DIAGNOSTIC AND THERAPEUTIC PROCEDURES (cont'd)
+ 03 CLINICAL EVALUTION AND EXAMINATION (cont'd)
+
+    Chronic Pain (cont'd)
+
+
+       Program Development/Administration (cont'd)
+
+                                                                                                     BASE          ANE
+                   NOTE: 1. Intended for developing the specific program activities.
+                         2. Intended to capture time when the entire interdisciplinary
+                            team must come together.
+          03.01MB Individual time preparing for and as a consequence of meetings (to a
+                  maximum of 8 hrs per week) or in development of: funding proposals,
+                  contracts, practice guidelines, policies & procedures (not quality
+                  improvement), other. DO NOT INCLUDE TIME SPENT IN MEETNGS IN THIS CATEGORY.        1.00
+          03.01MC Quality improvement activities including associated meetings . . . . . . . .       1.00
+          03.01MD Program evaluation activities inlcuding associated meetings  . . . . . . . .       1.00
+          03.01ME Formal scheduled CENTRE Program Development Meeting (Centre Prgm Dev Mtg)
+                  between two or more Centre staff members/physician or one Centre staff
+                  members/physician and an individual from outside of the Centre.  . . . . . .       1.00
+                   NOTE: 1. Intended for developing/advancing programming/funding within
+                            the Centre as a whole.
+                         2. Typical activities include, development of patient treatment
+                            groups by members of one or more disciplines, development of
+                            APP and other funding contracts and development of new Centre
+                            proposals.
+                         3. Does not include Team program development, quality improvement
+                            or program evaluation meetings/activities.
+          03.01MF Professional Development activities such as attending formal lectures,
+                  inservices, courses, workshops and conferences and formal supervision (eg.
+                  psychology family therapy supervision). MUST BE CRITICAL TO CCPC activities.       1.00
+          03.01MG Self-directed learning such as reading journals and books. MUST BE CRTICAL
+                  TO CCPC ACTIVITIES . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01MH Teaching/Presentations to providers (CCPC and non-CCPC). Includes
+                  preparation time.  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01MJ Teaching/Presentation to students of all disciplines (for physicians
+                  includes medical students, residents and fellows). Includes preparation
+                  time.  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.01MK Teaching/Presentations to general public. Includes preparation time. . . . .       1.00
+          03.01ML Original research conducted at the Center.  MD time not funded . . . . . . .       1.00
+
+    03.05 Other diagnostic interview and evaluation
+
+       Weekly Submissions for services provided Monday to Friday
+       Weekly Submission means - Submission for services provided Monday to
+       Friday of the same week
+       May only be claimed using the non-patient specific ULI
+
+          03.05KA Training/Supervision, of Others (including other healthcare providers),
+                  submitted weekly, per 15 minutes . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05KB Teleconference contact related to Administration, submitted weekly, per 5
+                  minutes  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05KC Time related to non-patient desk work, submitted weekly, per 15 minutes  . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                  Page 17
+                                            Schedule of Medical Benefits
+ Generated 2025/03/13                         Part B - Procedure List                              As of 2025/03/14
+
+
+                              I CERTAIN DIAGNOSTIC AND THERAPEUTIC PROCEDURES (cont'd)
+ 03 CLINICAL EVALUTION AND EXAMINATION (cont'd)
+
+    03.05 Other diagnostic interview and evaluation (cont'd)
+
+       Weekly Submissions for services provided Monday to Friday
+       Weekly Submission means - Submission for services provided Monday to
+       Friday of the same week
+       May only be claimed using the non-patient specific ULI (cont'd)
+
+                                                                                                     BASE          ANE
+          03.05CJ Time related to non-patient desk work, outside of scheduled clinic hours,
+                  per 15 minutes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05KD Self Directed learning such as reading journals and books, submitted
+                  weekly, per 15 minutes . . . . . . . . . . . . . . . . . . . . . . . . . . .       1.00
+          03.05KE Tidying/cleaning up in the rehab area and generally in the Centre such as
+                  the exam rooms, submitted weekly, per 15 minutes . . . . . . . . . . . . . .       1.00
+          03.05KF Discussion with nurse, submitted weekly, per 15 minutes  . . . . . . . . . .       1.00
+          03.05KG Miscellaneous patient related paperwork: review of Lab results, consults
+                  reports, etc., submitted weekly, per 15 minutes  . . . . . . . . . . . . . .       1.00
+          03.05KH Preparation and/or review of documentation relating to the renewal of
+                  prescription, utilizing FAX machine, submitted weekly, per 5 minutes . . . .       1.00
+          03.05CG Preparation and/or review of documentation relating to the renewal of
+                  prescription, outside of scheduled clinic hours, per 5 minutes . . . . . . .       1.00
+          03.05KN Cancellation by patient or Centre, per 15 minutes  . . . . . . . . . . . . .       1.00
+          03.05KO Direct contact with individual, per 15 minutes . . . . . . . . . . . . . . .       1.00
+1RG110                                   ALBERTA HEALTH CARE INSURANCE PLAN                                   Page i
+
+ Generated 2025/03/13                            TABLE OF CONTENTS                                 As of 2025/03/14
+
+
+
+
+                  CLINICAL ALTERNATE RELATIONSHIP PLAN (ARP) SERVICES . . . . . . . . . . . . . . . 1
+
+                    Clinical ARP Services . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+
+                I CERTAIN DIAGNOSTIC AND THERAPEUTIC PROCEDURES . . . . . . . . . . . . . . . . . . 4
+
+                  03 CLINICAL EVALUTION AND EXAMINATION . . . . . . . . . . . . . . . . . . . . . . 4
+
+                    03.0 Diagnostic interview and evaluation or consultation  . . . . . . . . . . . 4
+
+                    Research  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  14
+
+                    Chronic Pain  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  15
+
+                    03.05 Other diagnostic interview and evaluation . . . . . . . . . . . . . . .  16
+

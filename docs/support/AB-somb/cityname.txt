@@ -1,0 +1,706 @@
+Abee                          Abee
+Acadia Valley                 Acadia Valley
+Acheson                       Acheson
+Acme                          Acme
+Aden                          Aden
+Aetna                         Aetna
+Airdrie                       Airdrie
+Alberta Beach                 Alberta Beach
+Alcomdale                     Alcomdale
+Alder Flats                   Alder Flats
+Aldersyde                     Aldersyde
+Alhambra                      Alhambra
+Alix                          Alix
+Alliance                      Alliance
+Alsike                        Alsike
+Altario                       Altario
+Amisk                         Amisk
+Andrew                        Andrew
+Anzac                         Anzac
+Ardley                        Ardley
+Ardmore                       Ardmore
+Ardrossan                     Ardrossan
+Armena                        Armena
+Arrowwood                     Arrowwood
+Ashmont                       Ashmont
+Assumption Reserve            Assumption Reserve
+Athabasca                     Athabasca
+Atikameg                      Atikameg
+Atmore                        Atmore
+ARDLEY                        ARDLEY
+Balzac                        Balzac
+Banff                         Banff
+Barnwell                      Barnwell
+Barons                        Barons
+Barrhead                      Barrhead
+Bashaw                        Bashaw
+Bassano                       Bassano
+Bawlf                         Bawlf
+Bay Tree                      Bay Tree
+Bear Canyon                   Bear Canyon
+Beaumont                      Beaumont
+Beauvallon                    Beauvallon
+Beaver County                 Beaver County
+Beaver Mines                  Beaver Mines
+Beaver River                  Beaver River
+Beaverlodge                   Beaverlodge
+Beiseker                      Beiseker
+Bellevue                      Bellevue
+Bellis                        Bellis
+Benalto                       Benalto
+Bentley                       Bentley
+Berwyn                        Berwyn
+Bezanson                      Bezanson
+Big Stone                     Big Stone
+Big Valley                    Big Valley
+Bindloss                      Bindloss
+Birchcliff                    Birchcliff
+Bittern Lake                  Bittern Lake
+Black Diamond                 Black Diamond
+Blackfalds                    Blackfalds
+Blackfoot                     Blackfoot
+Blackie                       Blackie
+Blairmore                     Blairmore
+Bloomsbury                    Bloomsbury
+Blue Ridge                    Blue Ridge
+Blueberry Mountain            Blueberry Mountain
+Bluesky                       Bluesky
+Bluffton                      Bluffton
+Blumenort                     Blumenort
+Bodo                          Bodo
+Bon Accord                    Bon Accord
+Bonanza                       Bonanza
+Bonnyville                    Bonnyville
+Botha                         Botha
+Boucherville                  Boucherville
+Bow Island                    Bow Island
+Bowden                        Bowden
+Boyer River Reserve           Boyer River Reserve
+Boyle                         Boyle
+Boyne Lake                    Boyne Lake
+Bragg Creek                   Bragg Creek
+Brant                         Brant
+Brazeau County                Brazeau County
+Breton                        Breton
+Breynat                       Breynat
+Brocket                       Brocket
+Brooks                        Brooks
+Brosseau                      Brosseau
+Brownfield                    Brownfield
+Brownvale                     Brownvale
+Bruce                         Bruce
+Bruderheim                    Bruderheim
+Brule                         Brule
+Buck Creek                    Buck Creek
+Buck Lake                     Buck Lake
+Buffalo                       Buffalo
+Buffalo Head Prairie          Buffalo Head Prairie
+Buffalo Lake Metis Settlement Buffalo Lake Metis Settlement
+Burdett                       Burdett
+Busby                         Busby
+Bushe River Reserve           Bushe River Reserve
+Byemoor                       Byemoor
+BRAZEAU COUNTY                BRAZEAU COUNTY
+Cadogan                       Cadogan
+Cadomin                       Cadomin
+Cadotte Lake                  Cadotte Lake
+Calahoo                       Calahoo
+Calais                        Calais
+Calgary                       Calgary
+Calling Lake                  Calling Lake
+Calmar                        Calmar
+Camp Creek                    Camp Creek
+Camrose                       Camrose
+Camrose County                Camrose County
+Canmore                       Canmore
+Canyon Creek                  Canyon Creek
+Carbon                        Carbon
+Carcajou                      Carcajou
+Cardiff                       Cardiff
+Cardston                      Cardston
+Carmangay                     Carmangay
+Carnwood                      Carnwood
+Caroline                      Caroline
+Carrot Creek                  Carrot Creek
+Carseland                     Carseland
+Carstairs                     Carstairs
+Carvel                        Carvel
+Caslan                        Caslan
+Castor                        Castor
+Cayley                        Cayley
+Cereal                        Cereal
+Cessford                      Cessford
+Champion                      Champion
+Chard                         Chard
+Chateh                        Chateh
+Chauvin                       Chauvin
+Cheadle                       Cheadle
+Cherhill                      Cherhill
+Cherry Grove                  Cherry Grove
+Cherry Point                  Cherry Point
+Chestermere                   Chestermere
+Chestermere Lake              Chestermere Lake
+Chinook                       Chinook
+Chipman                       Chipman
+Chisholm                      Chisholm
+Chisholm Mills                Chisholm Mills
+Clairmont                     Clairmont
+Clandonald                    Clandonald
+Claresholm                    Claresholm
+Cleardale                     Cleardale
+Clearwater County             Clearwater County
+Clive                         Clive
+Cluny                         Cluny
+Clyde                         Clyde
+Coaldale                      Coaldale
+Coalhurst                     Coalhurst
+Cochrane                      Cochrane
+Cold Lake                     Cold Lake
+Coleman                       Coleman
+Colinton                      Colinton
+College Heights               College Heights
+Compeer                       Compeer
+Condor                        Condor
+Conklin                       Conklin
+Conrich                       Conrich
+Consort                       Consort
+Cooking Lake                  Cooking Lake
+Coronation                    Coronation
+County of Barrhead            County of Barrhead
+County of Grande Prairie      County of Grande Prairie
+County of Grande Prairie No.1 County of Grande Prairie No.1
+County of St. Paul            County of St. Paul
+County of Stettler            County of Stettler
+Coutts                        Coutts
+Cowley                        Cowley
+Craigmyle                     Craigmyle
+Cranford                      Cranford
+Cremona                       Cremona
+Crooked Creek                 Crooked Creek
+Crossfield                    Crossfield
+Cynthia                       Cynthia
+Cypress                       Cypress
+Cypress County                Cypress County
+Czar                          Czar
+COUNTY OF BARRHEAD            COUNTY OF BARRHEAD
+Dalemead                      Dalemead
+Dalroy                        Dalroy
+Dapp                          Dapp
+Darwell                       Darwell
+Daysland                      Daysland
+De Winton                     De Winton
+Dead Man's Flats              Dead Man's Flats
+Deadwood                      Deadwood
+Debolt                        Debolt
+Del Bonita                    Del Bonita
+Delacour                      Delacour
+Delburne                      Delburne
+Delia                         Delia
+Demmitt                       Demmitt
+Denwood                       Denwood
+Derwent                       Derwent
+Desert Blume                  Desert Blume
+Desmarais                     Desmarais
+Devon                         Devon
+Dewberry                      Dewberry
+Diamond City                  Diamond City
+Diamond Valley                Diamond Valley
+Dickson                       Dickson
+Didsbury                      Didsbury
+Dixonville                    Dixonville
+Donalda                       Donalda
+Donnelly                      Donnelly
+Dorothy                       Dorothy
+Drayton Valley                Drayton Valley
+Driftpile                     Driftpile
+Drumheller                    Drumheller
+Duchess                       Duchess
+Duffield                      Duffield
+Dunmore                       Dunmore
+Eagle Lake                    Eagle Lake
+Eaglesham                     Eaglesham
+East Coulee                   East Coulee
+Eckville                      Eckville
+Edberg                        Edberg
+Eden Valley                   Eden Valley
+Edgerton                      Edgerton
+Edmonton                      Edmonton
+Edmonton International AirportEdmonton International Airport
+Edson                         Edson
+Egremont                      Egremont
+Eleske Reserve                Eleske Reserve
+Elk Point                     Elk Point
+Elkwater                      Elkwater
+Ellscott                      Ellscott
+Elmworth                      Elmworth
+Elnora                        Elnora
+Empress                       Empress
+Enchant                       Enchant
+Endiang                       Endiang
+Enilda                        Enilda
+Enoch                         Enoch
+Entwistle                     Entwistle
+Erskine                       Erskine
+Esther                        Esther
+Etzikom                       Etzikom
+Eureka River                  Eureka River
+Evansburg                     Evansburg
+Exshaw                        Exshaw
+Fairview                      Fairview
+Falher                        Falher
+Fallis                        Fallis
+Falun                         Falun
+Faust                         Faust
+Fawcett                       Fawcett
+Fenn                          Fenn
+Ferintosh                     Ferintosh
+Finnegan                      Finnegan
+Fitzgerald                    Fitzgerald
+Flatbush                      Flatbush
+Fleet                         Fleet
+Foisy                         Foisy
+Foothills                     Foothills
+Foremost                      Foremost
+Forestburg                    Forestburg
+Fort Assiniboine              Fort Assiniboine
+Fort Chipewyan                Fort Chipewyan
+Fort Kent                     Fort Kent
+Fort Mackay                   Fort Mackay
+Fort Macleod                  Fort Macleod
+Fort Mckay                    Fort Mckay
+Fort Mcmurray 468 First NationFort Mcmurray 468 First Nation
+Fort Saskatchewan             Fort Saskatchewan
+Fort Vermilion                Fort Vermilion
+Fox Creek                     Fox Creek
+Fox Lake                      Fox Lake
+Frog Lake                     Frog Lake
+Gadsby                        Gadsby
+Gainford                      Gainford
+Galahad                       Galahad
+Garden River                  Garden River
+Garden River Reserve          Garden River Reserve
+Gem                           Gem
+Gibbons                       Gibbons
+Gift Lake                     Gift Lake
+Girouxville                   Girouxville
+Gleichen                      Gleichen
+Glendon                       Glendon
+Glenevis                      Glenevis
+Glenwood                      Glenwood
+Goodfare                      Goodfare
+Goodfish Lake                 Goodfish Lake
+Goodridge                     Goodridge
+Gordondale                    Gordondale
+Grand Centre                  Grand Centre
+Grande Cache                  Grande Cache
+Grande Prairie                Grande Prairie
+Granum                        Granum
+Grassland                     Grassland
+Grassy Lake                   Grassy Lake
+Green Court                   Green Court
+Gregoire Lake Estates         Gregoire Lake Estates
+Grimshaw                      Grimshaw
+Grouard                       Grouard
+Grovedale                     Grovedale
+Gull Lake                     Gull Lake
+Gundy                         Gundy
+Gunn                          Gunn
+Gurneyville                   Gurneyville
+Guy                           Guy
+Gwynne                        Gwynne
+Hairy Hill                    Hairy Hill
+Halfmoon Bay                  Halfmoon Bay
+Halkirk                       Halkirk
+Hanna                         Hanna
+Hardisty                      Hardisty
+Harvie Heights                Harvie Heights
+Hay Lakes                     Hay Lakes
+Hays                          Hays
+Hayter                        Hayter
+Heath                         Heath
+Heinsburg                     Heinsburg
+Heisler                       Heisler
+Heritage Pointe               Heritage Pointe
+High Level                    High Level
+High Prairie                  High Prairie
+High River                    High River
+Hilda                         Hilda
+Hill Spring                   Hill Spring
+Hillcrest Mines               Hillcrest Mines
+Hilliard                      Hilliard
+Hines Creek                   Hines Creek
+Hinton                        Hinton
+Hobbema                       Hobbema
+Holden                        Holden
+Hondo                         Hondo
+Hoselaw                       Hoselaw
+Hotchkiss                     Hotchkiss
+Hughenden                     Hughenden
+Hussar                        Hussar
+Huxley                        Huxley
+Hylo                          Hylo
+Hythe                         Hythe
+Iddesleigh                    Iddesleigh
+Indian Cabins                 Indian Cabins
+Indus                         Indus
+Innisfail                     Innisfail
+Innisfree                     Innisfree
+Irma                          Irma
+Iron River                    Iron River
+Iron Springs                  Iron Springs
+Irricana                      Irricana
+Irvine                        Irvine
+Island Lake                   Island Lake
+Island Lake South             Island Lake South
+Islay                         Islay
+James River Bridge            James River Bridge
+Jarvie                        Jarvie
+Jarvis Bay                    Jarvis Bay
+Jasper                        Jasper
+Jean Cote                     Jean Cote
+Jenner                        Jenner
+Joffre                        Joffre
+John D'Or Prairie             John D'Or Prairie
+John D'Or Prairie Reserve     John D'Or Prairie Reserve
+Joussard                      Joussard
+Kananaskis                    Kananaskis
+Kananaskis Village            Kananaskis Village
+Kapasiwin                     Kapasiwin
+Kathyrn                       Kathyrn
+Keg River                     Keg River
+Kehewin                       Kehewin
+Kelsey                        Kelsey
+Keoma                         Keoma
+Kikino                        Kikino
+Killam                        Killam
+Kingman                       Kingman
+Kinsella                      Kinsella
+Kinuso                        Kinuso
+Kipp                          Kipp
+Kirriemuir                    Kirriemuir
+Kitscoty                      Kitscoty
+Kneehill County               Kneehill County
+La Corey                      La Corey
+La Crete                      La Crete
+La Glace                      La Glace
+Lac Des Arcs                  Lac Des Arcs
+Lac La Biche                  Lac La Biche
+Lac Ste. Anne County          Lac Ste. Anne County
+Lacombe                       Lacombe
+Lacombe County                Lacombe County
+Lafond                        Lafond
+Lake Isle                     Lake Isle
+Lake Louise                   Lake Louise
+Lake Newell Resort            Lake Newell Resort
+Lamont                        Lamont
+Lamont County                 Lamont County
+Lancaster Park                Lancaster Park
+Langdon                       Langdon
+Lavoy                         Lavoy
+Leduc                         Leduc
+Leduc County                  Leduc County
+Legal                         Legal
+Leslieville                   Leslieville
+Lethbridge                    Lethbridge
+Lethbridge County             Lethbridge County
+Lindale                       Lindale
+Lindbergh                     Lindbergh
+Linden                        Linden
+Little Smoky                  Little Smoky
+Lloydminster                  Lloydminster
+Lodgepole                     Lodgepole
+Lomond                        Lomond
+Lone Pine                     Lone Pine
+Longview                      Longview
+Loon Lake                     Loon Lake
+Lougheed                      Lougheed
+Lousana                       Lousana
+Lundbreck                     Lundbreck
+Lyalta                        Lyalta
+Ma-Me-O Beach                 Ma-Me-O Beach
+Mackay                        Mackay
+Mackenzie County              Mackenzie County
+Madden                        Madden
+Magrath                       Magrath
+Maleb                         Maleb
+Mallaig                       Mallaig
+Manning                       Manning
+Mannville                     Mannville
+Manyberries                   Manyberries
+Marie Reine                   Marie Reine
+Markerville                   Markerville
+Marlboro                      Marlboro
+Marwayne                      Marwayne
+Maskwacis                     Maskwacis
+Mayerthorpe                   Mayerthorpe
+Mclennan                      Mclennan
+McLaughlin                    McLaughlin
+McRae                         McRae
+Meander River                 Meander River
+Medicine Hat                  Medicine Hat
+Medley                        Medley
+Meeting Creek                 Meeting Creek
+Metiskow                      Metiskow
+Milk River                    Milk River
+Millarville                   Millarville
+Millet                        Millet
+Millicent                     Millicent
+Milo                          Milo
+Minburn                       Minburn
+Mirror                        Mirror
+Monarch                       Monarch
+Monitor                       Monitor
+Morinville                    Morinville
+Morley                        Morley
+Morrin                        Morrin
+Mossleigh                     Mossleigh
+Mountain View                 Mountain View
+Mountain View County          Mountain View County
+Mulhurst Bay                  Mulhurst Bay
+Mundare                       Mundare
+Munson                        Munson
+Musidora                      Musidora
+Myrnam                        Myrnam
+MD of Bonnyville              MD of Bonnyville
+MD of Greenview               MD of Greenview
+Nacmine                       Nacmine
+Namaka                        Namaka
+Namao                         Namao
+Nampa                         Nampa
+Nanton                        Nanton
+Naphtha                       Naphtha
+Neerlandia                    Neerlandia
+Nestow                        Nestow
+Nevis                         Nevis
+New Brigden                   New Brigden
+New Dayton                    New Dayton
+New Norway                    New Norway
+New Sarepta                   New Sarepta
+Newbrook                      Newbrook
+Nisku                         Nisku
+Niton Junction                Niton Junction
+Nobleford                     Nobleford
+Nordegg                       Nordegg
+Norfolk                       Norfolk
+Norglenwold                   Norglenwold
+North Cooking Lake            North Cooking Lake
+North Star                    North Star
+North Tallcree Reserve        North Tallcree Reserve
+Northern Sunrise County       Northern Sunrise County
+Notikewin                     Notikewin
+Nunavut                       Nunavut
+Ohaton                        Ohaton
+Okotoks                       Okotoks
+Olds                          Olds
+Onefour                       Onefour
+Onoway                        Onoway
+Opal                          Opal
+Orion                         Orion
+Oyen                          Oyen
+Paddle Prairie                Paddle Prairie
+Paradise Valley               Paradise Valley
+Parkland                      Parkland
+Parkland County               Parkland County
+Patricia                      Patricia
+Peace River                   Peace River
+Peerless Lake                 Peerless Lake
+Peers                         Peers
+Penhold                       Penhold
+Perryvale                     Perryvale
+Pickardville                  Pickardville
+Picture Butte                 Picture Butte
+Pincher Creek                 Pincher Creek
+Pine Lake                     Pine Lake
+Plamondon                     Plamondon
+Pollockville                  Pollockville
+Ponoka                        Ponoka
+Ponoka County                 Ponoka County
+Priddis                       Priddis
+Priddis Greens                Priddis Greens
+Provost                       Provost
+Purple Springs                Purple Springs
+Radway                        Radway
+Rainbow Lake                  Rainbow Lake
+Rainier                       Rainier
+Ralston                       Ralston
+Ranfurly                      Ranfurly
+Raymond                       Raymond
+Red Deer                      Red Deer
+Red Deer County               Red Deer County
+Red Earth Creek               Red Earth Creek
+Red Willow                    Red Willow
+Redcliff                      Redcliff
+Redwater                      Redwater
+Redwood Meadows               Redwood Meadows
+Rimbey                        Rimbey
+Rivercourse                   Rivercourse
+Riviere Qui Barre             Riviere Qui Barre
+Robb                          Robb
+Rochester                     Rochester
+Rochfort Bridge               Rochfort Bridge
+Rochon Sands                  Rochon Sands
+Rocky Lane                    Rocky Lane
+Rocky Mountain House          Rocky Mountain House
+Rocky Rapids                  Rocky Rapids
+Rocky View                    Rocky View
+Rocky View County             Rocky View County
+Rockyford                     Rockyford
+Rolling Hills                 Rolling Hills
+Rolly View                    Rolly View
+Rosalind                      Rosalind
+Rosebud                       Rosebud
+Rosedale Station              Rosedale Station
+Rosedale Valley               Rosedale Valley
+Rosemary                      Rosemary
+Round Hill                    Round Hill
+Rowley                        Rowley
+Rumsey                        Rumsey
+Rural Foothills County        Rural Foothills County
+Rural Lac Ste. Anne County    Rural Lac Ste. Anne County
+Rycroft                       Rycroft
+Ryley                         Ryley
+RET                           RET
+Saddle Hills County           Saddle Hills County
+Saddle Lake                   Saddle Lake
+Sandy Beach                   Sandy Beach
+Sangudo                       Sangudo
+Scandia                       Scandia
+Schuler                       Schuler
+Seba Beach                    Seba Beach
+Sedalia                       Sedalia
+Sedgewick                     Sedgewick
+Seebe                         Seebe
+Seven Persons                 Seven Persons
+Sexsmith                      Sexsmith
+Shaughnessy                   Shaughnessy
+Sherwood Park                 Sherwood Park
+Sibbald                       Sibbald
+Siksika                       Siksika
+Silver Valley                 Silver Valley
+Skiff                         Skiff
+Slave Lake                    Slave Lake
+Smith                         Smith
+Smith's Landing Reserve       Smith's Landing Reserve
+Smoky Lake                    Smoky Lake
+South Baptiste                South Baptiste
+South Cooking Lake            South Cooking Lake
+South Tallcree Reserve        South Tallcree Reserve
+Sparwood                      Sparwood
+Spedden                       Spedden
+Spirit River                  Spirit River
+Spring Coulee                 Spring Coulee
+Spring Lake                   Spring Lake
+Springbrook                   Springbrook
+Spruce Grove                  Spruce Grove
+Spruce View                   Spruce View
+Sputinow                      Sputinow
+St Brides                     St Brides
+St Isidore                    St Isidore
+St Lina                       St Lina
+St Michael                    St Michael
+St Paul                       St Paul
+St Vincent                    St Vincent
+St. Albert                    St. Albert
+Stand Off                     Stand Off
+Standard                      Standard
+Star                          Star
+Stauffer                      Stauffer
+Stavely                       Stavely
+Steen River Reserve           Steen River Reserve
+Stettler                      Stettler
+Stirling                      Stirling
+Stony Plain                   Stony Plain
+Strathmore                    Strathmore
+Streamstown                   Streamstown
+Strome                        Strome
+Sturgeon County               Sturgeon County
+Suffield                      Suffield
+Sunbreaker Cove               Sunbreaker Cove
+Sundre                        Sundre
+Sunnybrook                    Sunnybrook
+Sunnynook                     Sunnynook
+Sunset Beach                  Sunset Beach
+Sunset House                  Sunset House
+Swalwell                      Swalwell
+Swan Hills                    Swan Hills
+Sylvan Lake                   Sylvan Lake
+Taber                         Taber
+Tangent                       Tangent
+Tawatinaw                     Tawatinaw
+Tees                          Tees
+Thorhild                      Thorhild
+Thorsby                       Thorsby
+Three Hills                   Three Hills
+Throne                        Throne
+Tiger Lily                    Tiger Lily
+Tilley                        Tilley
+Tofield                       Tofield
+Tomahawk                      Tomahawk
+Tompkins Landing              Tompkins Landing
+Torrington                    Torrington
+Trochu                        Trochu
+Trout Lake                    Trout Lake
+Tsuut'ina                     Tsuut'ina
+Tulliby Lake                  Tulliby Lake
+Turin                         Turin
+Turner Valley                 Turner Valley
+Twin Butte                    Twin Butte
+Two Hills                     Two Hills
+TSUUT'INA                     TSUUT'INA
+Valhalla Centre               Valhalla Centre
+Valleyview                    Valleyview
+Vauxhall                      Vauxhall
+Vega                          Vega
+Vegreville                    Vegreville
+Veinerville                   Veinerville
+Vermilion                     Vermilion
+Veteran                       Veteran
+Viking                        Viking
+Vilna                         Vilna
+Vimy                          Vimy
+Vulcan                        Vulcan
+Wabamun                       Wabamun
+Wabasca                       Wabasca
+Wainwright                    Wainwright
+Walsh                         Walsh
+Wandering River               Wandering River
+Wanham                        Wanham
+Warburg                       Warburg
+Wardlow                       Wardlow
+Warner                        Warner
+Warspite                      Warspite
+Waskatenau                    Waskatenau
+Water Valley                  Water Valley
+Waterford                     Waterford
+Waterton Park                 Waterton Park
+Watino                        Watino
+Welling                       Welling
+Wembley                       Wembley
+West Baptiste                 West Baptiste
+West Cove                     West Cove
+Westerose                     Westerose
+Westlock                      Westlock
+Westlock County               Westlock County
+Wetaskiwin                    Wetaskiwin
+Wheatland County              Wheatland County
+Whispering Hills              Whispering Hills
+White Gull                    White Gull
+Whitecourt                    Whitecourt
+Whitelaw                      Whitelaw
+Widewater                     Widewater
+Wildwood                      Wildwood
+Willingdon                    Willingdon
+Wimborne                      Wimborne
+Winfield                      Winfield
+Winterburn                    Winterburn
+Woking                        Woking
+Woodlands County              Woodlands County
+Worsley                       Worsley
+Wostok                        Wostok
+Wrentham                      Wrentham
+Yellowhead County             Yellowhead County
+Yellowstone                   Yellowstone
+Youngstown                    Youngstown
+Zama City                     Zama City
+100 Mile House                100 Mile House
+150 Mile House                150 Mile House

@@ -1,0 +1,1229 @@
+CHGRQ0001Change Required
+CLARQ0001Clarification Required
+DOCRQ0001Document Requirement
+EDERR0001Edit Error
+FUTR 0001Future dated transaction
+INFRC0001Recovered From Incoming Fund
+INFRC0002This amount was deducted from the funds you previously sent to Alberta
+INFRC0003Health. These funds may be a premium or claim payment.
+INFRQ0001Information Required
+QUEST0001Questionable Stakeholder
+RFUSE0001Refuse Transaction
+RTRF 0001Reassessed Transaction Refused
+RTRF 0002Your reassess transaction was reviewed and did not result in a change to
+RTRF 0003the original payment and therefore was refused.
+RVRSL0001Reversal
+RVRSL0002This is a reversal of a previously assessed item.
+XNEG 0001APP forced excluded from negation
+01   0001Not registered
+01   0002We have no record of this person registered with this PHN.
+01A  0001Not Registered
+01A  0002This person is not registered with the AHCIP.  If the patient is a newborn,
+01A  0003submit a new claim with a Person Data Segment and the appropriate newborn
+01A  0004code.
+01B  0001Non Resident
+01B  0002We cannot confirm that this patient is an Alberta resident.  Please contact
+01B  0003the patient to obtain the correct billing information.
+01C  0001Good Faith Claim
+01C  0002Payment was refused as Good Faith claims are not payable for visitors to
+01C  0003Alberta or residents covered by the federal government, such as Canadian
+01C  0004Forces members or federal penitentiary inmates.
+01C  0005Refer to the applicable Resource Guide for information regarding billing
+01C  0006alternatives.
+02   0001Registration Number/Personal Health Number Conflict
+02   0002The health registration number and the PHN submitted are not for the same
+02   0003person.
+03   0001Newborn
+03   0002The claim was refused as the AHCIP is unable to contact the parent(s) of
+03   0003this child to confirm registration.
+04   0001Donor's Personal Health Number Used
+04   0002Submit this claim using the PHN of the donor recipient.
+04A  0001Service Not Good Faith
+04A  0002The claim was applied as Non-Good Faith because the person data segment was
+04A  0003matched to an AHCIP eligible patient.
+05   0001Patient Personal Health Number - Not Effective
+05   0002This PHN is not effective for the date(s) of service submitted.
+05A  0001Invalid Personal Health Number
+05A  0002The PHN is invalid or blank.
+05AA 0001Opted Out Resident
+05AA 0002The patient has opted out of the AHCIP.  The patient has agreed to assume
+05AA 0003financial liability for all health services.  Please contact your patient
+05AA 0004regarding payment for your services.
+05B  0001Unregistered Workers' Compensation Board Claim
+05B  0002The patient is not eligible for AHCIP coverage for the date(s) of service.
+05B  0003Submit your claim directly to the WCB.
+05BA 0001Invalid/Blank Registration Number
+05BA 0002This claim was refused as the registration number is:
+05BA 0003(a) blank or
+05BA 0004(b) invalid.
+05BB 0001Invalid/Blank Unique Lifetime Identifier
+05BB 0002This claim was refused as the ULI is:
+05BB 0003(a)  blank or
+05BB 0004(b)  invalid or
+05BB 0005(c)  not valid for the service recipient.
+05C  0001Eligibility Extended Health Benefits program
+05C  0002The patient did not have coverage under the EHB Program for the date of
+05C  0003service submitted.
+05D  0001Proof Of Age
+05D  0002To date, we have not received the senior citizen's proof of age.  Have your
+05D  0003patient contact our Registration Branch.
+05E  0001E.H.B. Coverage
+05E  0002Payment has been refused as the service(s) were provided when the patient
+05E  0003did not have coverage under the Extended Health Benefits Program.
+06   0001Retroactive Eligibility Change
+06   0002Your request to change or reassess this claim was refused.  Due to a
+06   0003retroactive eligibility change, the patient is not eligible for AHCIP
+06   0004coverage for this date of service.
+07   0001New Recipient For Alternate Payment Plan Contract
+07   0002Your claim for a new recipient was paid as a FFS benefit.
+08   0001New Recipient Previously Paid For Alternate Payment Plan
+08   0002Payment was refused as a FFS benefit was previously paid for a new
+08   0003recipient.
+09   0001Initial Roster Relationship
+09   0002Payment was refused as an Initial Roster relationship exists for this
+09   0003patient.  Therefore, a FFS benefit is not payable under a Temporary Roster
+09   0004relationship.
+10   0001Ineligible Practitioner/Incorrect Submission
+10   0002We have not received notification from the governing body/licensing
+10   0003association that the practitioner is approved to perform this service.
+10A  0001Service Provider Restrictions
+10A  0002Our records indicate that the service provider is:
+10A  0003(a)  restricted to a specific facility or
+10A  0004(b)  restricted to performing specific services.
+10AA 0001Ineligible Practitioner
+10AA 0002This claim was refused as you are not entitled to payment for this type of
+10AA 0003service.
+10AB 0001Service Restrictions
+11   0001Locum Business Arrangement
+11   0002This claim was refused as the BA does not include a BA type of locum.
+20   0001Ineligible Services
+20   0002Payment was refused as the services are not eligible for AHCIP coverage.
+20   0003Refer to the general rules in the applicable benefits schedule for examples
+20   0004of ineligible services.
+20A  0001Third Party Services
+20A  0002Payment was refused as these are considered to be third party services.
+20A  0003Refer to the general rules in the applicable benefits schedule for examples
+20A  0004of third party services.
+20AB 0001Experimental/Research Services
+20AB 0002Payment was refused as the AHCIP does not pay benefits for services that
+20AB 0003are experimental and/or in the research stage.
+20B  0001Armed Forces and Federal Penitentiary
+20B  0002Armed forces members and federal penitentiary inmates are not eligible for
+20B  0003AHCIP coverage.
+20C  0001Practitioner Billing For Own Family
+20C  0002Services provided to members of your family or yourself are not a benefit
+20C  0003under the AHCIP.
+20D  0001Dental Care - Oral Surgery
+20D  0002This service is not an oral surgical procedure payable by the AHCIP.
+20E  0001Benefits Schedule
+20E  0002This is an incorrect HSC.  Please refer to the applicable benefits schedule.
+20F  0001Excluded Item
+20F  0002This service is not payable under the EHB Program.
+21   0001Workers' Compensation Board Claim
+21   0002This claim was refused as:
+21   0003(a) claim is responsibility of Workers' Compensation Board (WCB), or
+21   0004(b) WCB has paid a claim for the same date of service. If this visit is
+21   0005    unrelated to the WCB injury, submit a new claim with health service
+21   0006    code 03.01J to Alberta Health.
+21A  0001Payment Responsibility
+21A  0002The payment responsibility (Workers' Compensation Board or Alberta Health
+21A  0003Care) and Health Service Code submitted do not agree.  Verify the
+21A  0004responsibility and submit a new claim.
+21AA 0001WCB - Patient over 14 years
+21AA 0002The patient must be 14 years of age or older to qualify for a Workers'
+21AA 0003Compensation Board claim.
+21AB 0001Workers' Compensation Board Claim Submissions
+21AB 0002Payment was refused as WCB claims are to be submitted directly to the WCB.
+21AC 0001WORKERS'COMPENSATION BOARD SUPPORTING DOCUMENTATION REQUIRED
+21AC 0002Both the WCB denial letter and online remittance are required.
+21B  0001Workers' Compensation Board
+21B  0002This claim is the responsibility of another Province's Workers' Compensation
+21B  0003Board.  Please submit the claim directly to the appropriate Workers'
+21B  0004Compensation Board.
+22   0001Ineligible Patient
+22   0002Our records indicate this claim is the responsibility of another provincial
+22   0003health plan.
+23   0001Contract Services
+23   0002This service is payable only to practitioners who provide medical services
+23   0003under a written agreement with the Department of Health.
+23A  0001Prior Approval
+23A  0002Payment was refused as:
+23A  0003(a) this service requires prior approval from the patient's provincial
+23A  0004    health plan and/or
+23A  0005(b) prior approval was not received for this date of service.
+24A  0001Services Payable Only In Office
+24A  0002This service is only payable when performed in an office.
+25   0001Excluded Service - Reciprocal Programs
+25   0002Payment was refused as this service is excluded according to the Reciprocal
+25   0003Agreement.  Your claim should be billed directly to the patient or, if
+25   0004applicable, their home provincial health plan.
+25A  0001Medical Reciprocal - Incorrect Claim
+25A  0002Payment was refused as you have submitted a medical reciprocal claim for
+25A  0003services provided to an Alberta patient.
+26   0001Claims with DOS greater than Nov 30, 1993
+26   0002Claims with Dates of Service greater than November 30, 1993 must be
+26   0003submitted in the new format.  Refer to the Handbook for Claim Submissions
+26   0004and resubmit your claim.
+28   0001Opted Out Practitioner
+28   0002This service was provided by a practitioner who has opted out of the AHCIP
+28   0003and there is no indication that this was an emergency service.
+30   0001Address
+30   0002This claim was refused as the address on the Person Data Segment is invalid,
+30   0003incomplete or blank.
+30A  0001Province Code
+30A  0002This claim was refused as the province code on the Person Data Segment is
+30A  0003invalid, incomplete or blank.
+30AA 0001City Name
+30AA 0002This claim was refused as the city name on the Person Data Segment is
+30AA 0003invalid, incomplete or blank.
+30AB 0001Country Code
+30AB 0002This claim was refused as the country code on the Person Data Segment is
+30AB 0003invalid, incomplete or blank.
+30AC 0001Postal Code
+30AC 0002This claim was refused as the postal code on the Person Data Segment is
+30AC 0003invalid.
+30B  0001Date Of Birth
+30B  0002This claim was refused as the date of birth on the Person Data Segment is:
+30B  0003(a) blank or
+30B  0004(b) invalid or
+30B  0005(c) incomplete or
+30B  0006(d) after the date of service submitted.
+30BA 0001Gender
+30BA 0002This claim was refused as the gender on the Person Data Segment is invalid
+30BA 0003or blank.
+30E  0001Surname
+30E  0002This claim was refused as the surname on the Person Data Segment is invalid
+30E  0003or blank.
+30EA 0001First Name
+30EA 0002This claim was refused as the first name on the Person Data Segment is
+30EA 0003invalid or blank.
+30EB 0001Middle Name
+30EB 0002This claim was refused as the middle name on the Person Data Segment is
+30EB 0003invalid or blank.
+30F  0001Person Type
+30F  0002This claim was refused as the person type on the Person Data Segment is
+30F  0003invalid or blank.
+30G  0001Guardian/Parent Personal Health Number
+30G  0002This claim was refused as the guardian/parent PHN on the Person Data Segment
+30G  0003is invalid or blank.
+30H  0001Guardian/Parent Health Plan Number
+30H  0002This claim was refused as the guardian/parent registration number on the
+30H  0003Person Data Segment is invalid or blank.
+31   0001Incomplete Person Data
+31   0002This claim was refused as the Person Data Segment is:
+31   0003(a) required or
+31   0004(b) incomplete for the person type submitted or
+31   0005(c) required as we have no record of the PHN which was submitted.
+31A  0001Person Data Segment Conflict
+31A  0002The out of province registration number and the Person Data Segment do not
+31A  0003match the service recipient information in our files.
+31A  0004Confirm the patient's out of province health care card registration number,
+31A  0005home province/recovery code, and personal data information with the patient
+31A  0006or the patient's home provincial health plan.  If applicable, submit a new
+31A  0007claim with supporting text indicating that the physician has verified the
+31A  0008patient's personal information.
+34AA 0001Claim Current Year Segment
+34AA 0002The current year indicated within the claim number is not numeric or not the
+34AA 0003current year.
+34AB 0001Claim Sequence Number
+34AB 0002The claim sequence number indicated within the claim number is not numeric.
+34AC 0001Claim Check Digit
+34AC 0002The check digit number indicated within the claim number is invalid.
+34AD 0001Action Code
+34AD 0002The action code is inconsistent with other information segments within this
+34AD 0003transaction.
+34B  0001Extraordinary Medical Services Assessment Fund Indicator
+34B  0002The extraordinary medical services assessment fund indicator is invalid.
+34C  0001Claim Record Type
+34C  0002The record type is invalid.  To process the claim the record type must be:
+34C  0003(a) number 2 in the batch header data field or
+34C  0004(b) number 3 in the claim detailed record field or
+34C  0005(c) number 4 in the batch trailer data field.
+34C  0006Refer to the Electronic Claims Submissions Specifications Handbook.
+34DA 0001Claim Transaction Type
+34DA 0002The transaction type is not CIP1.  Refer to the Electronic Claims
+34DA 0003Submissions Specifications Handbook.
+34DB 0001Claim Segment Type
+34DB 0002The segment type must be:
+34DB 0003(a) CIB1 - Claim Regular or
+34DB 0004(b) CPD1 - Person Data Segment or
+34DB 0005(c) CST1 - Text Segment or
+34DB 0006(d) CTX1 - Text Cross Reference Segment or
+34DB 0007(e) in proper order.
+34DB 0008Refer to the Electronic Claims Submissions Specifications Handbook.
+34DC 0001Segment Sequence Number
+34DC 0002The segment sequence number is not incremental.  Refer to the Electronic
+34DC 0003Claims Submissions Specifications Handbook.
+34DD 0001CST1 Segment Required
+34DD 0002At least one CST1 segment must be submitted with an "R" (Reassess Action
+34DD 0003Code) transaction.  Refer to the Electronic Claims Submissions
+34DD 0004Specifications Handbook.
+34DE 0001Maximum CST1 Segment
+34DE 0002The maximum number of CST1 segments (500) was exceeded.
+34DF 0001CIB1 Segment Required
+34DF 0002Only provide a "CIB1" Base Claim Segment when submitting a "D" (Delete
+34DF 0003Action Code) transaction.
+34DG 0001CPD1 Segment Not Allowed
+34DG 0002A "CPD1" Person Data Segment cannot be provided when submitting an "R"
+34DG 0003(Reassess Action Code) transaction.
+34DH 0001Maximum CPD1 Segment
+34DH 0002A transaction cannot have more than one "CPD1" Person Data Segment for any
+34DH 0003one person data type.
+34EA 0001Claim Text Segment
+34EA 0002The text information you supplied is not in alpha numeric format.
+34EB 0001Claim Source Code
+34EB 0002The claim source code is invalid.  Refer to the Electronic Claims
+34EB 0003Submissions Specifications Handbook.
+34EC 0001Supporting Text Cross Reference
+34EC 0002The Supporting Text Cross Reference segment claim(s) number has failed the
+34EC 0003claim check algorithm.  Refer to the Electronic Claims Submissions
+34EC 0004Specifications Handbook.
+34ED 0001CTX1 And CST1 Segment
+34ED 0002The transaction being cross referenced and referred by a "CTX1" Text Cross
+34ED 0003Reference Segment must have a "CST1" Text Segment.
+34F  0001Chart Number
+34F  0002The chart number information was not in alpha numeric characters.  Only
+34F  0003ASCII print characters are valid for this field.
+35   0001Action Code
+35   0002This transaction was refused as:
+35   0003(a) the Action Code is invalid or
+35   0004(b) Action code "R" (Reassess) is only allowed if text is submitted and
+35   0005    the original HSC which was reduced requires reassessment or
+35   0006(c) Action Code "D" (Delete) cannot be processed when the Pay To Code is
+35   0007    not "BAPY" or
+35   0008(d) Action Code "C" (Change) cannot be processed on a refused claim.
+35A  0001Intercept
+35A  0002The intercept code is invalid.
+35B  0001Recovery Code
+35B  0002The recovery code is invalid or not allowed for this BA.
+35C  0001Reassess Reason Code
+35C  0002The reassess reason code is invalid or blank.
+35D  0001Claim Type
+35D  0002The claim type is invalid or blank.
+35E  0001Confidential Indicator Code
+35E  0002The confidential indicator code is invalid.
+35F  0001Claim Number
+35F  0002The claim number is invalid or blank.
+35FA 0001Submission Of A Claim Number
+35FA 0002The claim number submitted was previously used on:
+35FA 0003(a) refused claim or
+35FA 0004(b) claim which is being held or
+35FA 0005(c) a paid service event or claim applied at a zero amount.
+35FB 0001Unable To Process Updated Transaction
+35FB 0002The transaction to update a previously submitted claim cannot be processed
+35FB 0003as:
+35FB 0004(a) the original add transaction cannot be located or
+35FB 0005(b) the result of your original claim must be known or
+35FB 0006(c) the original claim was previously deleted.
+35FC 0001Unable to Process Add Transaction
+35FC 0002This claim number was previously used and the add "A" transaction cannot be
+35FC 0003processed.  If applicable, submit the original claim number with the
+35FC 0004appropriate action code of "R" reassess, "C" change or "D" delete.
+35G  0001Good Faith Indicator
+35G  0002The good faith indicator is invalid.
+35H  0001Supporting Documentation Indicator
+35H  0002The supporting documentation indicator is invalid.
+35J  0001Text Indicator
+35J  0002The text indicator is invalid.
+35K  0001Pay To Code
+35K  0002The pay to code is invalid or cannot be changed.
+35KA 0001Pay to Code/Pay to Unique Lifetime Identifier Conflict
+35KA 0002There is a conflict between the information shown in the pay to code and
+35KA 0003the pay to ULI. When the pay to code is "OTHR" (other) the pay to ULI
+35KA 0004cannot be:
+35KA 0005(a) the service provider or
+35KA 0006(b) the BA payee or
+35KA 0007(c) the patient or
+35KA 0008(d) the Alberta Health registration account holder responsible for the
+35KA 0009    patient.
+35L  0001Pay to Unique Lifetime Identifier
+35L  0002The pay to ULI is invalid or blank.
+35M  0001Newborn Code
+35M  0002The newborn code is invalid or not required when the patient's PHN is
+35M  0003already provided.
+36   0001Locum Business Arrangement
+36   0002The locum BA number is invalid or not required.
+36A  0001Locum/Business Arrangement Numbers
+36A  0002The locum BA and the BA fields were not completed properly.  Please refer to
+36A  0003the Physician's Resource Guide and submit a new claim.
+37   0001Business Arrangement
+37   0002The BA number is:
+37   0003(a) invalid or blank or
+37   0004(b) restricted to performing specific services or
+37   0005(c) restricted to performing services at a specific facility or
+37   0006(d) not registered with the submitter of the transaction or
+37   0007(e) restricted to patients from a specific area or
+37   0008(f) does not have a relationship with the practitioner identifier submitted.
+37A  0001Practitioner Identifier
+37A  0002The PRAC ID is blank, invalid or not effective for the date of service.
+37B  0001Skill Code
+37B  0002The skill code is invalid or blank.
+39   0001Date Of Service
+39   0002The date of service is:
+39   0003(a) invalid or blank or
+39   0004(b) more than one year from date of birth (newborn) or
+39   0005(c) in conflict with the explicit modifier indicated.
+39A  0001Date of Service Conflict
+39A  0002The date of service on the claim and the date of service indicated on the
+39A  0003supporting documentation do not match.
+39B  0001Health Service Code
+39B  0002Payment has been refused as the HSC is:
+39B  0003(a) blank or invalid or
+39B  0004(b) not listed in the applicable benefits schedule.
+39BA 0001Gender Restriction
+39BA 0002The HSC and/or diagnosis does not agree with the gender of the patient.
+39BB 0001Age Restriction
+39BB 0002The patient is not eligible for this service due to age.
+39BC 0001HEALTH SERVICE CODE NOT APPROPRIATE FOR DIAGNOSIS
+39BC 0002The HSC does not agree with the diagnosis.
+39BD 0001Date of Service/Health Service Code Date Conflict
+39BD 0002The HSC is not effective on this date of service.
+39BE 0001Conceptual/Corrected Age
+39BE 0002Payment for the additional benefit was refused as the patient is not
+39BE 0003eligible due to age.
+39C  0001Number Of Calls
+39C  0002This claim was refused as:
+39C  0003(a)  the number of calls is invalid or blank or
+39C  0004(b)  the number of calls is more than the number allowed for this service.
+39C  0005If applicable, resubmit the claim with supporting text.
+39D  0001Location of Service
+39D  0002The location of service is not appropriate for the HSC.
+39DA 0001Facility Number
+39DA 0002The facility number is invalid or blank.
+39DB 0001Functional Center Code
+39DB 0002The functional center:
+39DB 0003(a)  is blank or invalid or
+39DB 0004(b)  is not appropriate for the service submitted or
+39DB 0005(c)  does not exist for the facility submitted.
+39DC 0001Originating Facility Number
+39DC 0002The originating facility number is invalid or blank.
+39DD 0001Originating Location
+39DD 0002The originating location code is:
+39DD 0003(a)  invalid or blank or
+39DD 0004(b)  not required when the originating facility number is submitted.
+39DE 0001Originating Facility Number/Location for Pathology Services
+39DE 0002The originating facility number or the originating location code is
+39DE 0003required for pathology services (E HSCs).
+39E  0001Diagnostic Code
+39E  0002Your Diagnostic Code in association with the Health Service Code
+39E  0003submitted is:
+39E  0004    (a)  blank
+39E  0005    (b)  invalid
+39EA 0001Health service & diagnostic code in conflict
+39EA 0002The Health Service Code and Diagnostic Code are in conflict.  Please note
+39EA 0003this for your records and ensure new submissions are correct.  This is not
+39EA 0004a refusal.
+39EB 0001Diagnostic Code
+39EB 0002The diagnostic code is blank or invalid.
+39EC 0001Health Service Code and Diagnostic Code Conflict
+39EC 0002The claim was refused as the HSC and the diagnostic code are in conflict.
+39F  0001Use Claimed Amount Indicator
+39F  0002The use claimed amount indicator is invalid.
+39FA 0001AMOUNT CLAIMED/USE CLAIMED AMOUNT INDICATOR
+39FA 0002Your claim was refused as:
+39FA 0003(a) the amount claimed is blank. Claims for unlisted procedures
+39FA 0004    (HSCs in the 99.09 series) require a claimed amount and a "Y" in the
+39FA 0005    claimed amount indicator field or
+39FA 0006(b) the amount claimed is blank or invalid and the claimed amount indicator
+39FA 0007    is "Y" or
+39FA 0008(c) the amount claimed is completed, but the claimed amount indicator is
+39FA 0009    blank or invalid.
+39G  0001Modifier Code
+39G  0002The modifier code:
+39G  0003(a)  is required with the HSC submitted or
+39G  0004(b)  is invalid or
+39G  0005(c)  can only have one modifier of the same type or
+39G  0006(d)  cannot have this combination of modifiers or
+39G  0007(e)  must have a valid two digit numeric suffix when modifier type is SURT
+39G  0008     or
+39G  0009(f)  exceeded the maximum number of time units allowed for the modifier
+39G  0010     type SURT.
+39H  0001Telehealth Services
+39H  0002This claim was refused as the HSC and the modifier code are in conflict
+39H  0003because:
+39H  0004(a) the STFO modifier applies only to teledermatology and HSC 03.09B
+39H  0005    or
+39H  0006(b) the TELES modifier is not attached to this HSC.
+41   0001DOCUMENTATION INCOMPLETE/NOT RECEIVED
+41   0002The supporting documentation for this claim was incomplete or not received.
+41AB 0001Broken Eyeglasses
+41AB 0002(For dates of service up to and including December 31,1994)
+41AB 0003Use the appropriate Health Service Codes for replacement of broken
+41AB 0004eyeglasses.
+41B  0001Time/Sites - EXTENDED HEATLH BENEFTIS
+41B  0002Submit a new claim indicating the number of units, quadrants or sextants.
+42   0001Hospital Admission/Originating Encounter Date
+42   0002The hospital admission/originating encounter date is invalid or blank.
+43   0001OUT OF PROVINCE HEALTH PLAN NUMBER
+43   0002The out of province health plan number is invalid or blank.
+45   0001INVALID REFERRING PRACTITIONER IDENTIFIER
+45   0002The Referring Prac ID is:
+45   0003(a)  blank or invalid or
+45   0004(b)  not an intraspecialty or
+45   0005(c)  from a practitioner without the appropriate discipline or skill.
+45A  0001OUT OF PROVINCE REFERRAL INDICATOR
+45A  0002The out of province referral indicator is invalid.
+45AA 0001REFERRAL PRACTITIONER IDENTIFIER INVALID/UNABLE TO RESOLVE
+45AA 0002Your claim was refused as the referral PRAC ID is invalid. Contact the
+45AA 0003referring practitioner for the correct PRAC ID.
+45AB 0001Corrected Referral ULI
+45AB 0002We have corrected the referral ULI number.  The ULI number you provided was
+45AB 0003the Professional Corporation/Organization ULI number.  Contact the referring
+45AB 0004physician for the correct referral ULI number for future claim submissions.
+45B  0001Encounter Number
+45B  0002The Encounter number is invalid.
+47   0001SERVICE RECIPIENT PERSONAL HEALTH NUMBER
+47   0002This claim was refused as the service recipient PHN cannot be changed.
+47   0003Delete the original claim and submit a new claim with the correct PHN.
+48   0001PRACTITIONER IDENTIFIER
+48   0002This claim was refused as the PRAC ID cannot be changed.  Delete the
+48   0003original claim and submit a new claim with the correct PRAC ID.
+49   0001Business Arrangement/Locum Business Arrangement Number
+49   0002This claim was refused as the BA and/or locum BA number cannot be changed.
+49   0003Delete the original claim and submit a new claim with the correct BA or
+49   0004Locum BA number.
+50   0001Two Physicians - UNRELATED ABDOMINAL SURGICAL PROCEDURES
+50   0002Payment was reduced to 75% of the benefit as the full benefit for the
+50   0003major procedure was paid to the physician most responsible for the
+50   0004patient's care.
+50A  0001PROCEDURES INCLUDED IN THE MAJOR PROCEDURAL BENEFIT
+50A  0002Payment was refused as this service is included in the benefit paid for the
+50A  0003major procedure.
+50AA 0001Diagnostic Procedures Relating to surgery
+50AA 0002Payment was refused as the diagnostic procedure is included in the benefit
+50AA 0003paid for the surgical procedure when performed under the same anesthetic.
+50AB 0001Second Or Subsequent Procedure
+50AB 0002Payment for the procedure was reduced to 50% as this service was performed
+50AB 0003as a second or subsequent procedure through the same incision.
+50B  0001REPEAT CLOSED REDUCTION - SAME PRACTITIONER
+50B  0002Payment was refused as a repeat closed reduction performed by the same
+50B  0003practitioner is not payable.
+50BA 0001REPEAT CLOSED REDUCTION - DIFFERENT PRACTITIONER
+50BA 0002Payment was reduced to 50% as a different practitioner performed a repeat
+50BA 0003closed reduction for the same fracture or dislocation.
+50BB 0001CLOSED - OPEN REDUCTION - DIFFERENT PRACTITIONER
+50BB 0002Payment was reduced to 50% as a different practitioner performed an open
+50BB 0003reduction for the same fracture.
+50BC 0001Closed - Open Reduction - Same Physician
+50BC 0002Payment was refused as a closed reduction is not payable when the same
+50BC 0003practitioner performs an open reduction for the same fracture under the
+50BC 0004same anesthetic.
+51   0001PRE AND/OR POST-OPERATIVE CARE - TWO PRACTITIONERS
+51   0002Payment was reduced or refused as another Practitioner was paid for pre-and/
+51   0003or post-operative care.
+51A  0001UNILATERAL - BILATERAL PROCEDURES
+51A  0002Payment was reduced as the benefit does not increase when a bilateral
+51A  0003procedure is performed.
+51G  0001SURGICAL ASSISTS
+51G  0002Payment was refused as:
+51G  0003(a)  a surgical assist benefit is not payable for the procedure submitted or
+51G  0004(b)  a surgical procedure was not claimed for this date of service or
+51G  0005(c)  documentation was not submitted to support a claim involving unusual
+51G  0006     circumstances.
+52   0001Procedures - Repeat Services
+52   0002Payment was refused as this service cannot be paid when an associated
+52   0003procedure was claimed within 90 days.
+52   0004See the NOTE in the Schedule of Medical Benefits following the health
+52   0005service code claimed.
+52A  0001Lacerations
+52A  0002Payment was made according to the explanation following HSC 98.22B.
+52B  0001Same Physician - Two Functions
+52B  0002Payment was refused as only one benefit can be paid when both surgical
+52B  0003and anesthetic services are performed by the same physician.
+53   0001Obstetrics And Gynecology
+53   0002Payment was refused as conservative surgery for endometriosis (item 81.29C)
+53   0003must be claimed in addition to item 66.83.  Please refer to the Note in the
+53   0004Schedule under Health Service Code 81.29C.
+53A  0001Chorionic Villus Sampling
+53A  0002Payment was refused as benefits for Chorionic Villus Sampling are only
+53A  0003payable when the service is provided in a hospital.
+54   0001Included Services
+54   0002Payment was refused as the service(s) is included in the benefit paid for
+54   0003the delivery.
+54A  0001POSTNATAL MAXIMUM
+54A  0002Payment was refused as only one routine postnatal visit per physician is
+54A  0003payable.
+54B  0001PRENATAL CARE
+54B  0002Payment was refused as:
+54B  0003(a)  only one HSC 03.04B may be claimed per pregnancy per physician or
+54B  0004(b)  03.04B may not be claimed within 91 days of a major visit HSC or
+54B  0005(c)  03.03B may only be claimed for the prenatal visits and not for dates
+54B  0006     of service following a delivery.
+56   0001Procedure - Visit
+56   0002Payment was refused as:
+56   0003(a) only the greater of a minor procedure or office visit is payable
+56   0004    when the services and diagnosis are related or
+56   0005(b) only the greater of a consultation and minor procedure are payable on
+56   0006    the same date of service or
+56   0007(c) only the greater of a procedure and hospital visit are payable on the
+56   0008    same date of service.
+56A  0001Multiple Minor Surgical Procedure
+56A  0002Payment was reduced to 75% as only the greater benefit is payable in full
+56A  0003when multiple minor surgical procedures are performed.
+56B  0001Varicose Veins Injections
+56B  0002Payment was refused as the maximum for the benefit year (July 1 to June 30)
+56B  0003was paid.
+56C  0001Tray Services
+56C  0002Payment was reduced or refused according to the applicable benefits
+56C  0003schedule.
+56D  0001Fibreglass Cast
+56D  0002(a) Payment was reduced to the equivalent rate of HSC 07.53B or
+56D  0003    07.53D as the service was performed in a nursing home, general
+56D  0004    or auxiliary hospital, AACC, UCC or a facility which has a
+56D  0005    contract with an RHA or
+56D  0006(b) Payment was reduced by a rate equivalent to 07.53B or 07.53D as
+56D  0007    the benefit for the application of a cast is included in the
+56D  0008    fracture reduction HSC or
+56D  0009(c) Payment was reduced by a rate equivalent to a major tray service
+56D  0010    benefit which was paid for 07.53B or 07.53D as cast supplies are
+56D  0011    included in the benefits for 07.53H and 07.53J.
+58   0001Two Procedures
+58   0002Payment was reduced as the greater anesthetic benefit is paid at 100%
+58   0003and the lesser at 75% when two procedures are performed consecutively by
+58   0004two surgeons under the same anesthetic.
+58A  0001INCLUSIVE ANESTHETIC BENEFIT
+58A  0002Payment was refused as pre- and/or post-anesthetic visits are included in
+58A  0003the anesthetic benefit.
+58B  0001LOCAL ANESTHETIC
+58B  0002Payment was refused as only the greater benefit is payable when both the
+58B  0003local anesthetic and the procedure are claimed by the same practitioner.
+58BA 0001Simultaneous Surgery
+58BA 0002Payment was refused as only the greater anesthetic benefit is payable when
+58BA 0003two practitioners operate simultaneously.
+58C  0001Multiple Benign Skin Lesions
+58C  0002Payment was reduced or refused as only a single anesthetic benefit is
+58C  0003payable when surgical treatment of multiple benign skin lesions is
+58C  0004performed under anesthetic of less than 35 minutes duration.
+58D  0001Resuscitation
+58D  0002Payment was refused as Health Service Code 13.99E can only be paid when
+58D  0003the physician is specially called for resuscitation.  Submit a new claim
+58D  0004using the appropriate Health Service Code 13.99J or 13.99F.
+58E  0001Related Anaesthetic Code
+58E  0002Payment was made according to the information submitted on the surgeon's
+58E  0003claim.
+58F  0001Additional Age Benefit
+58F  0002Payment was reduced as only one additional anesthetic benefit per case is
+58F  0003payable regardless of the number of anesthetic services provided.
+60   0001Initial Visit - Major
+60   0002Payment was refused as an initial visit provided by the same practitioner
+60   0003may not be claimed more than once every 180 days.
+60A  0001Consultation - Inclusive Benefit
+60A  0002Payment was refused as a consultation benefit is included in the procedural
+60A  0003benefit.
+60AA 0001Consultation
+60AA 0002Payment was reduced to the rate payable for a non-referred visit HSC as:
+60AA 0003(a)  the service does not meet the requirements of a consultation or
+60AA 0004(b)  the referral was not from a physician, midwife, chiropractor,
+60AA 0005     podiatrist, dentist, optometrist, physical therapist or nurse
+60AA 0006     practitioner, or
+60AA 0007(c)  the referral was from a family member.
+60B  0001Dental Consultations
+60B  0002Payment was refused as a dental consultation is only payable when it is
+60B  0003requested by the patient's physician, dental surgeon, or oral and
+60B  0004maxillofacial surgeon and it concerns a procedure payable under the
+60B  0005Schedule of Oral and Maxillofacial Surgery Benefits.
+60C  0001Hospital Admission
+60C  0002Payment was refused as an admission is not payable when the patient was
+60C  0003seen by the same practitioner on the same day for the same or related
+60C  0004diagnosis.
+60E  0001EMERGENCY DEPARTMENT/ADVANCED AMBULATORY CARE CENTRE/URGENT
+60E  0002Payment was refused as:
+60E  0003(a)  another physician has claimed for the same service.  Submit a new
+60E  0004     claim with a DSCH modifier in accordance with General Rule 5.1.4 or
+60E  0005(b)  HSCs 03.05F, 03.05FA and 03.05FB cannot be claimed by the same
+60E  0006     physician who provided the initial assessment prior to determining
+60E  0007     the disposition status of the patient.
+60EA 0001CRITICAL CARE - EMERGENCY DEPARTMENT/ADVANCED AMBULATORY
+60EA 0002Payment was refused as the information/diagnostic code provided does not
+60EA 0003support payment under this HSC. Submit a new claim with the appropriate
+60EA 0004emergency department/AACC/UCC visit HSC.
+60EB 0001Service Unscheduled
+60EB 0002Payment was refused as the maximum benefit for unscheduled services was
+60EB 0003reached.
+60EC 0001SPECIAL CALLBACKS TO ADVANCED AMBULATORY CARE CENTRE/URGENT
+60EC 0002Payment was refused according to GR 5.2 in the Schedule of Medical Benefits
+60EC 0003or GR 17 in the Schedule of Oral and Maxillofacial and Surgery Benefits.
+60ED 0001MAXIMUMS FOR SPECIAL CALLBACKS AND SURCHAGES
+60ED 0002Your claim was refused or reduced in accordance with the general rules in
+60ED 0003the applicable benefits schedule.
+61   0001Dressing Changes - Burns
+61   0002Your claim for HSC 07.57A and/or 07.57B has been changed to a visit HSC as
+61   0003the service is not for a burn.  The corresponding tray service benefit
+61   0004has been deducted where applicable.
+61A  0001GENERALIZED DIAGNOSTIC CODES
+61A  0002Payment was refused as this service is included in the benefit paid for the
+61A  0003related surgical procedure.
+61B  0001Removal of Sutures
+61B  0002Payment was refused as the benefit for removal of sutures is included in
+61B  0003the procedural benefit.
+61C  0001NURSING HOME AND SENIOR CITIZENS HOME
+61C  0002Payment was refused as the service was not provided in a "home" location.
+61CA 0001Auxiliary Hospital Visits
+61CA 0002Payment was reduced to a lesser benefit as the service provided was a
+61CA 0003routine visit for custodial care.
+61CB 0001Auxiliary Hospital/Nursing Home Visit/Management of Dialysis
+61CB 0002Payment was refused as a visit was paid for a prior date of service during
+61CB 0003the same calendar week.
+61E  0001Concurrent Care
+61E  0002Payment was reduced or refused as services for concurrent care require
+61E  0003supporting information.
+61EA 0001Continuing Care
+61EA 0002Payment was reduced or refused in accordance with the applicable benefits
+61EA 0003schedule.
+61F  0001Conflicting Hospital Dates
+61F  0002Payment was reduced or refused as a benefit for some or all of the hospital
+61F  0003dates of service was previously paid.
+61G  0001Post-Partum Office Visits
+61G  0002Payment was refused as this service is not payable when provided to a
+61G  0003healthy newborn during the post-partum period.
+61H  0001Inclusive - Surgical Benefit - Pre/Post-Operative Care
+61H  0002Payment was refused as pre- and/or post-operative care is included in the
+61H  0003procedural benefit.
+61J  0001Diagnostic Code Restrictions
+61J  0002Your claim has been reduced or refused as the diagnostic code submitted
+61J  0003relates to a previously paid claim.
+61K  0001Immobilization of cast re Health Service Code 07.53G
+61K  0002(For dates of service up to and including June 30/1995)
+61K  0003Your claim has been reduced as Health Service Code 07.53G is only payable
+61K  0004if the cast is provided for the purpose of immobilization.
+62   0001Professional Interview/Case Conference
+62   0002Payment was refused as HSC 03.05YM may only be claimed when 03.05Y has been
+62   0003previously submitted and paid.
+63   0001Claim In Process
+63   0002Your claim is being held as:
+63   0003(a) it requires manual assessment or
+63   0004(b) the supporting information must be reviewed.
+63   0005DO NOT SUBMIT A NEW CLAIM, as notification of payment or refusal will appear
+63   0006on a future Statement of Assessment.
+63A  0001Schedule Of Benefits
+63A  0002Payment for your claim was reduced or refused in accordance with the
+63A  0003applicable benefits schedule. To view the benefits schedules, go to the
+63A  0004Alberta Health website at www.alberta.ca.
+63AA 0001Unscheduled Services & Designated Holidays
+63AA 0002Payment was reduced or refused according to the applicable benefits
+63AA 0003schedule.
+63AB 0001Direct Payment
+63AC 0001Pandemic Telephone Advice
+63AC 0002This claim was refused in accordance with the notes following HSC 03.01AD.
+63B  0001Maximum Number Of Calls
+63B  0002Payment was reduced as the maximum number of calls for the HSC was reached.
+63C  0001Inclusive Health Service Code
+63C  0002Payment was refused as there is an inclusive HSC for these services.
+64   0001Supporting Information
+64   0002Payment was refused as text information, an operative or pathology report,
+64   0003or an invoice is required to support assessment of the claim.
+64A  0001Detention Time
+64A  0002Payment was refused as supporting information must provide a breakdown of
+64A  0003the procedures performed during the time of continuous attendance spent with
+64A  0004the patient and the time of attendance during the ambulance trip, if
+64A  0005applicable.
+64AA 0001Unanswered Correspondence/Telephone Response
+64AA 0002Payment was refused as our requests for additional information were not
+64AA 0003answered.
+64AB 0001Relationship
+64AB 0002Payment was refused as the relationship of the relative being interviewed
+64AB 0003was not provided.
+64B  0001Procedures Requiring Appropriate Facility Type
+64B  0002Payment was refused as the service claimed is only payable in a hospital or
+64B  0003surgical suite.
+64C  0001Information Provided
+64C  0002The information provided has been reviewed and payment was:
+64C  0003(a) reduced or refused or
+64C  0004(b) unchanged or
+64C  0005(c) altered.
+64C  0006Future claims of this nature should be submitted under the applicable HSC.
+64C  0007HSCs under the 99.09 series (Unlisted Procedures) are to be claimed only for
+64C  0008unlisted procedures.
+64D  0001Anesthetic and Surgery Discrepancy
+64D  0002Payment was refused as there is a discrepancy between the HSCs submitted on
+64D  0003the anesthetic and the surgery claims.
+64E  0001Date Conflict
+64E  0002Payment was refused as the date of service does not agree with the
+64E  0003anesthetist's, surgical assistant's or surgeon's claim, as applicable.
+65   0001Non-Invasive Diagnostic Procedures In Hospital/AACC/UCC
+65   0002Benefits for non-invasive diagnostic procedures including laboratory and
+65   0003pathology and diagnostic radiology services performed for a hospital
+65   0004inpatient, registered outpatient, AACC or UCC patient are not payable under
+65   0005the AHCIP.  Payment for these services is the responsibility of the
+65   0006hospital/RHA.  This applies to both the technical and professional
+65   0007components.
+65A  0001Blood Specimen
+65A  0002This claim was refused as payment cannot be made:
+65A  0003(a) for both obtaining a blood specimen and a laboratory test requiring
+65A  0004    blood or
+65A  0005(b) for services performed by non-laboratory facilities.
+65AA 0001Miscellaneous Laboratory Procedures
+65AA 0002Payment was refused as:
+65AA 0003(a) claims submitted for HSC E1 and/or combination of E2, E3, E4, E5 and E7
+65AA 0004    for the same date of service are not payable in excess of the benefit
+65AA 0005    for E1 or
+65AA 0006(b) the greater benefit is paid when claims are submitted for E1 and E41 or
+65AA 0007    E400 for the same date of service or
+65AA 0008(c) the greater benefit is paid when claims are submitted for E234 and E235
+65AA 0009    for the same date of service or
+65AA 0010(d) a maximum of either one E553 and one E554 or two E553s or two E554s are
+65AA 0011    paid within a 14 day period.
+65B  0001E604-Dates of Service prior to August 1,1994
+65B  0002Your claim has been reduced or refused for one of the following reasons:
+65B  0003    (a)  Claims submitted for dates of service prior to August 1, 1994
+65B  0004         for Health Service Codes E127, E137, E176 and E81 for the same
+65B  0005         date of service, are not paid in excess of the listed benefit
+65B  0006         of E604
+65B  0007    (b)  Prior to August 1, 1994, a maximum of two E604's and one
+65B  0008         additional individual test (E76, E81, E127 or E137) may be paid for
+65B  0009         the same date of service
+65C  0001Diagnostic Ultrasound
+65C  0002Payment was refused as when claims are submitted for the same date of
+65C  0003service for combinations of:
+65C  0004(a)  X222 - X233 inclusive
+65C  0005(b)  X234 - X244 inclusive
+65C  0006     only the greater benefit is paid.  Benefits are payable for both the
+65C  0007     greater of (a) and the greater of (b) when provided on the same date
+65C  0008     of service.  Or
+65C  0009(c)  X258 is not payable in addition to X234, X235, X239A, X240, X241, X242,
+65C  0010     X243.
+65D  0001Allergy Investigations
+65D  0002Payment was reduced or refused as the maximum benefit for the 365 day period
+65D  0003was reached.
+65E  0001Detention Time
+65E  0002Payment was refused as supporting information must provide a breakdown of
+65E  0003the procedures performed during the time of continuous attendance spent with
+65E  0004the patient and the time of attendance during the ambulance trip, if
+65E  0005applicable.
+66   0001Detention time
+66   0002Payment was reduced or refused as:
+66   0003(a) when a consultation or visit is claimed in association with HSC 03.05A
+66   0004    or 13.99J during the same encounter, the consultation is considered to
+66   0005    occupy the first 30 minutes of the time spent with the patient or
+66   0006(b) the greater benefit is paid when 03.05A or 13.99J are claimed for the
+66   0007    same patient encounter.
+66A  0001Ventilatory Support
+66A  0002Payment was reduced or refused as:
+66A  0003(a) ventilatory support is payable only once every 24 hour period regardless
+66A  0004    of the number of physicians providing care or
+66A  0005(b) ventilatory support is not payable for the same date of service to the
+66A  0006    same physician who was paid for either an anesthetic or surgical
+66A  0007    procedure or
+66A  0008(c) ventilatory support is not payable unless provided in approved level
+66A  0009    2 and 3 intensive care and neonatal intensive care units.
+67   0001Multiple Charges/Same Encounter
+67   0002Payment was refused as claims for multiple services provided in the same
+67   0003encounter require supporting information.
+67A  0001Previous Payment
+67A  0002Payment for this service was refused as:
+67A  0003(a)  the claim was previously paid or
+67A  0004(b)  the claim was applied at "0" on a previous Statement of Assessment or
+67A  0005(c)  the claim was previously paid under a different HSC for the same
+67A  0006     service under another benefits schedule.
+67A  0007NOTE:  Requests for a reassessment of applied at "0" claims must be
+67A  0008submitted with the original claim number and the appropriate action code
+67A  0009of "C" (Change), "D" (Delete) or "R" (Reassess). Hospital reciprocal claims
+67A  0010are an exception and must be resubmitted as described in the Alberta Health
+67A  0011and Wellness Hospital Reciprocal Claim Submission Guide.
+67AA 0001PAYMENT TO ACCOUNT HOLDER/PATIENT
+67AA 0002Payment was refused as the benefit for this service was paid to the account
+67AA 0003holder/patient.
+67AB 0001Previous Payment - Different Health Service Code
+67AB 0002Payment was refused as a benefit was paid under a different HSC.
+67AC 0001Previous Payment
+67AC 0002Payment was refused as this benefit was paid to another practitioner.
+67AD 0001Duplicate - Different Service Date
+67AD 0002Payment was refused as this claim appears to be a duplicate of a previously
+67AD 0003paid benefit, although the dates of service do not agree. If this is not a
+67AD 0004duplicate, submit a new claim with supporting information.
+67AE 0001PREVIOUS PAYMENT WARD RATE/ICU RATE
+67AE 0002Payment for this service was refused as:
+67AE 0003a) the ward rate was previously paid or
+67AE 0004b) the ICU rate was previously paid.
+67B  0001Location Of Service Conflict
+67B  0002Payment was refused as claims were paid for services that the patient
+67B  0003received on this date at a different location/hospital.  Verify the dates
+67B  0004and resubmit applicable claims with additional details.
+67D  0001Medical Staff - Assessment
+67D  0002This claim has been assessed according to the advice received from our
+67D  0003medical staff.  A review of this assessment by the Assessment Advisory
+67D  0004Committee can be requested by submitting a new claim with relevant
+67D  0005information.
+67DA 0001Related Assessment
+67DA 0002Accounts of a similar nature have been reviewed by the Assessment Advisory
+67DA 0003Committee and this claim has been assessed according to their
+67DA 0004recommendations.
+67DB 0001Final Assessment
+67DB 0002This claim has been paid, reduced or refused as recommended by the
+67DB 0003Assessment Advisory Committee.
+68   0001Reduced Benefits For Listed Procedures
+68   0002This claim was reduced to the listed benefit as the service listed in:
+68   0003(a) General Rule 6.8.4 in the Schedule of Medical Benefits or
+68   0004(b) General Rule 16.3.5 in the Schedule of Oral and Maxillofacial Surgery
+68   0005    Benefits,
+68   0006was not provided in a hospital or approved non-hospital surgical facility.
+68A  0001PAYMENT REDUCED
+68A  0002Payment was reduced as the maximum number of claims was reached.
+68B  0001PAYMENT REDUCED
+68B  0002Payment was reduced to partial Fee-For-Service as per contract agreement.
+68C  0001PAYMENT REDUCED
+68C  0002Payment was reduced to zero as partial Fee-For-Service maximum was reached.
+69   0001Alternative Payment Plan Additional Fee for Service Payment
+69   0002An additional FFS payment was paid due to additional supporting
+69   0003documentation for special circumstances.
+70   0001Pre/Post Operative Care
+70   0002This claim was assessed in accordance with the general rules in the
+70   0003applicable benefits schedule.
+70A  0001Two Dental Procedures
+70A  0002Payment was reduced to 75% of the listed benefit as the major surgical
+70A  0003procedure was paid at the full rate.
+70AA 0001Two Dental Procedures - One Incision
+70AA 0002Services for lesser value procedures are reduced to 75% of the listed
+70AA 0003benefit, as the major surgical procedure was paid at the full rate.
+70B  0001Surgical Splints
+70B  0002The patient has had a surgical splint within 8 weeks.  Your claim has been
+70B  0003reduced or refused accordingly.
+70C  0001Orthodontic Approval
+70C  0002(For dates of service up to and including December 31,1994)
+70C  0003This service requires prior approval from the Alberta Dental Association and
+70C  0004the Plan.
+70D  0001Ineligible Dental Services
+70D  0002Payment was refused as:
+70D  0003(a)  tissue conditioning is only payable in conjunction with a denture or
+70D  0004     reline within five years and no reline or denture was claimed for this
+70D  0005     period or
+70D  0006(b)  tissue conditioning is not payable within three months of a partial or
+70D  0007     complete denture insertion as it is included in the denture insertion
+70D  0008     benefit or
+70D  0009(c)  only two tissue conditioning benefits are payable for a denture or
+70D  0010     reline within five years.  The maximum benefit has been reached.
+70E  0001Tooth Identification
+70E  0002Payment was refused as:
+70E  0003(a)  identification of tooth numbers and/or surfaces is required or
+70E  0004(b)  the tooth surface field for this procedure must be blank or
+70E  0005(c)  the tooth surface(s) indicated is not valid for the tooth code or
+70E  0006(d)  the tooth number indicated is not valid for this procedure.
+70EA 0001Dental Extraction
+70EA 0002Payment was refused as our records show this tooth was previously extracted.
+70EB 0001Tooth Surface/Tooth Code
+70EB 0002Payment was refused as the tooth surface or tooth code is invalid.
+70F  0001Dentures/Rebase/Reset
+70F  0002Payment was refused as a benefit was paid for a partial or complete denture
+70F  0003within the last five years.
+70G  0001Reline Or Rebase
+70G  0002Payment was refused as benefits were paid for a reline in the past two
+70G  0003years.
+70J  0001Inclusion Within The Composite Benefit
+70J  0002Payment was refused as the service is included in the benefit for the
+70J  0003major procedure.
+70K  0001Ineligible Dental Mechanics Services
+70K  0002Payment was reduced or refused as:
+70K  0003(a) only one oral examination per day is payable when a corresponding new
+70K  0004    denture or reline benefit is provided on or after January 1, 2001 and
+70K  0005    paid by the EHB program or
+70K  0006(b) only one oral examination is payable for each new denture or reline
+70K  0007    service provided or
+70K  0008(c) an oral examination occurred within 90 days of the denture/reline
+70K  0009    service.  The examination is included in the benefit for the
+70K  0010    denture/reline or
+70K  0011(d) an oral examination is not payable if performed more than 365 days
+70K  0012    after a denture or reline benefit was provided.
+70L  0001Dental Procedures
+70L  0002Payment was refused as when multiple services are claimed for the same date
+70L  0003of service, the following applies:
+70L  0004(a)  only the greater benefit of a minor procedure, consultation or any
+70L  0005     visit is payable when the services and diagnosis are related or
+70L  0006(b)  only the greater benefit of a minor (M or M+) procedure or a hospital
+70L  0007     visit is payable, regardless of the diagnosis or
+70L  0008(c)  only the greater benefit of a minor (M+) procedure or a visit is
+70L  0009     payable when performed in a location other than an oral and
+70L  0010     maxillofacial surgeon's or dentist's office or surgical suite,
+70L  0011     regardless of the diagnosis or
+70L  0012(d)  an office visit benefit is not payable with a minor (M+) procedure and
+70L  0013     a consultation, regardless of whether the services are performed at
+70L  0014     different encounters.
+72   0001AHC/WCB Claim For Same Visit
+72   0002Payment was refused as a benefit was paid for a Workers' Compensation Board
+72   0003claim.
+72A  0001WCB 6 Week Limit Reached - Chiropractors
+72A  0002This claim is not payable as treatment beyond 6 weeks must be authorized, in
+72A  0003writing, by the Workers' Compensation Board.
+72AB 0001Benefit Code Limits
+72AB 0002Your claim has been assessed in accordance with the limits specified in the
+72AB 0003Schedule of Benefits for this Health Service Code.
+72B  0001WCB Chiropractic Limit
+72B  0002During the first 5 treatment days of a new illness, an initial visit and up
+72B  0003to 2 visits per subsequent day may be claimed.  Your claim is reduced or
+72B  0004refused for verification that this service is for a new illness.
+72C  0001Workers' Compensation Board
+72C  0002Payment was refused as the Workers' Compensation Board will not accept
+72C  0003responsibility for this service.
+72D  0001Workers' Compensation Board Responsibility
+72D  0002The Workers' Compensation Board has accepted responsibility for this claim.
+73   0001Additional Compensation Claims
+73   0002Payment was refused as claims from non-residents, subscribers and allied
+73   0003health professionals with the exception of podiatric surgeons, do not
+73   0004qualify for additional compensation benefits.
+73A  0001Additional Compensation Committee
+73A  0002This claim was paid, reduced or refused as recommended by the Additional
+73A  0003Compensation Committee.
+73BA 0001INCORRECT ADDITIONAL COMPENSATION CLAIM SUBMISSION
+73BA 0002Payment was refused as the claim for additional compensation was submitted
+73BA 0003incorrectly.
+73BB 0001NO PAYMENT BY AHCIP
+73BB 0002Payment of the additional compensation portion of the claim was refused as
+73BB 0003there is no record of an AHCIP payment for this service.
+73BC 0001Request For Additional Compensation
+73BC 0002Payment was refused as supporting documentation is required for the
+73BC 0003additional compensation portion of the claim.
+73BD 0001Non-Insured Service
+73BD 0002Payment was refused as this service is not insured by the AHCIP.
+73BE 0001CHANGE OF PAYMENT RESPONSIBILITY
+73BE 0002This additional compensation claim was paid as an AHCIP benefit.
+73D  0001By-Assessment Health Service Codes For EMSAF
+73D  0002Payment was refused as By-Assessment Health Services do not qualify for
+73D  0003EMSAF (Extraordinary Medical Services Assessment Fund) benefits.
+80   0001Residency/Good Faith
+80   0002Payment was refused as Good Faith claims must be submitted within 30 days
+80   0003of the date of service.
+80A  0001Limit On Podiatry Treatments
+80A  0002(For dates of service up to and including June 30/1995)
+80A  0003A Podiatry benefit for a follow-up treatment will not be paid more than
+80A  0004once every 3 weeks.  Your claim has been reduced or refused accordingly.
+80B  0001Eye Examinations
+80B  0002Payment was refused as this is the second claim for this type of eye
+80B  0003examination for this patient within the benefit period (July 1 to June 30).
+80BA 0001Optometric Services
+80BA 0002Payment was refused as either a complete vision examination, a partial
+80BA 0003vision examination or a single diagnostic procedure was paid for the same
+80BA 0004date of service; or the maximum benefit allowed was reached.
+80BB 0001Optometric services default price adjustments
+80BB 0002This is a repayment of benefits that were reduced by implementation of the
+80BB 0003default price adjustment mechanism in fiscal year 2002/2003.
+80BD 0001Follow-up Visit (HSC B901) - Text Required
+80BD 0002Payment for B901 was refused as the patient received the corresponding B900
+80BD 0003within 90 days and no explanatory text was provided.  Subject to the
+80BD 0004Optometric Benefits Regulation section 12(2), a claim for a B901 performed
+80BD 0005within 90 days of a B900, where the diagnostic code falls within Optometric
+80BD 0006Benefits Regulation section 12(1), must be accompanied by explanatory text
+80BD 0007unless the resident's eye care is subject to a co-management arrangement.
+80BE 0001MAXIMUM BENEFIT REACHED
+80BE 0002Payment was refused as the patient has received the maximum benefit
+80BE 0003payable for this condition/episode subject to the rules in the Optometric
+80BE 0004Benefits Regulation sections 12(1), 12(3) and 12(4).
+80BF 0001PREVIOUS PAYMENT, SAME DATE OF SERVICE
+80BF 0002Payment was refused as:
+80BF 0003(a) a benefit was paid under a different HSC or
+80BF 0004(b) a benefit was paid to another practitioner or
+80BF 0005(c) a benefit was previously paid.
+80BH 0001Computer Assisted Visual Fields (B905) - Text Required
+80BH 0002Payment was refused as explanatory text was not provided.  Subject to the
+80BH 0003Optometric Benefits Regulation section 13(2), a claim for B905 must be
+80BH 0004accompanied by explanatory text unless the diagnostic code submitted is
+80BH 0005Glaucoma (365.0-365.8), Retina Detachments and Defects (361.0-361.3, 361.8)
+80BH 0006or Disorders of the Optic Nerve and Visual Pathways (377.0-377.7).
+80C  0001Podiatric/Dental Limits
+80C  0002This claim has been reduced or refused as:
+80C  0003(a) the yearly limit for podiatric benefits has been reached; however
+80C  0004    payment may be reviewed at a later date if changes to other related
+80C  0005    claims for this patient are received or
+80C  0006(b) the calendar year limit for the following dental service(s) has been
+80C  0007    reached:
+80C  0008    -a benefit for only two examinations of any type may be paid in a
+80C  0009     calendar year or
+80C  0010    -a benefit for only two films may be paid in a calendar year or
+80C  0011    -a benefit for panoramic x-rays may be paid once every five calendar
+80C  0012     years or
+80C  0013    -a benefit for no more than two units of time (30 minutes) for
+80C  0014     subgingival scaling/root planing may be paid in a calendar year.
+80CA 0001Limit On Daily Visit
+80CA 0002This claim has been reduced or refused as this patient has reached the
+80CA 0003limit allowed for this date of service.
+80D  0001Eyeglasses/Lenses/Frame
+80D  0002Payment has been reduced or refused as this patient has received:
+80D  0003(a) eyeglasses within the last three years or
+80D  0004(b) lenses/lens within the last three years.
+80E  0001Second Chiropractic X-Ray
+80E  0002Payment was refused as this is the second x-ray for this benefit year.
+80E  0003(July 1 to June 30.)
+80F  0001Twelve Month Limit
+80F  0002Payment has been reduced or refused as the patient has received this benefit
+80F  0003within twelve months.
+80G  0001Outdated Claims
+80G  0002Payment was refused as the time limit for submission has expired.
+80H  0001Contract Limits
+80H  0002Payment was reduced or refused as the contract limit was reached.
+80J  0001Practitioner/Business Arrangement Limits
+80J  0002Payment was reduced or refused as the limit was reached for the service
+80J  0003provider or the BA.
+80K  0001Recipient Limit Has Been Reached For Alternate Payment Plan
+80K  0002Payment was refused or reduced as the recipient has reached capitation rate.
+80L  0001Alternative Payment Plan Fee For Service
+80L  0002Payment was reduced as the capitation maximum was paid for the month of
+80L  0003service.
+80M  0001Business Cost Program
+80M  0002Payment has been reduced or applied at "0" as the cap has been reached.
+90   0001Payment Reduction
+90   0002This is an adjustment of a previously assessed item.
+90A  0001Previous Correspondence - Mutual Information
+90A  0002This claim has been assessed in accordance with correspondence or telephone
+90A  0003call.
+90B  0001Two-Line Adjustments
+90B  0002Two adjustments have been processed:
+90B  0003    (a)  one to deduct the entire amount paid
+90B  0004    (b)  the second to pay the corrected amount
+90B  0005These adjustments do not usually appear on the same statement of assessment.
+90C  0001Transfered Payment - Adjustment
+90C  0002This claim was paid to you in error
+90C  0003               or
+90C  0004This claim is now transferred to your account.
+90D  0001Adjustment, Recipient No Longer Eligible For Coverage
+90D  0002This is an adjustment to update your records only.  Payment has not been
+90D  0003deducted from your account.
+90D  0004NOTE:  The patient is not eligible for AHCIP coverage for the date of
+90D  0005       service and will be billed by the AHCIP.
+90E  0001Adjustment, Recipient Deceased
+90E  0002This is an adjustment to a previously assessed claim.  Our records indicate
+90E  0003that the patient's date of death is prior to the date of service.  Please
+90E  0004check your records to confirm the date of service.  If the wrong date of
+90E  0005service was used, submit a change transaction with the correct date of
+90E  0006service.
+95   0001Newborn
+95   0002Payment was refused as the diagnosis submitted does not agree with the ward
+95   0003rate claimed.
+95A  0001INPATIENT/OUTPATIENT SERVICES
+95A  0002Payment was refused as an inpatient and an outpatient service provided at
+95A  0003the same hospital on the same day to an individual patient is not payable.
+95B  0001Day of discharge
+95B  0002Payment has been reduced as the standard ward rate is not payable for the
+95B  0003day of discharge.
+95C  0001High Cost Procedure/Zero Ward Rate
+95C  0002Payment was refused as when a high cost procedure and an inpatient standard
+95C  0003ward rate are being claimed, two separate claims must be submitted:
+95C  0004(a) one claim showing the admission and discharge date and an inpatient
+95C  0005    standard ward rate, with the claimed amount of zero, and
+95C  0006(b) the other claim for the high cost procedure.
+95D  0001Multiple transplants same hospital day
+95D  0002Payment was refused as multiple same organ transplants within the same
+95D  0003hospital stay are not payable.
+95E  0001Reduced Benefits
+95E  0002Payment has been reduced as the number of days between the admission and
+95E  0003discharge dates do not agree with the claimed amount.
+95F  0001Outpatient services
+95F  0002Payment was refused as an outpatient hospital service has been previously
+95F  0003paid for this patient for this date of service.
+95G  0001Maximum number of services
+95G  0002Payment was refused as the maximum number of services was paid.
+95H  0001Second out-patient visit
+95H  0002Payment has been refused as, prior to April 1, 1998, a second out-patient
+95H  0003visit was not payable when the first out-patient visit has not been paid.
+95J  0001Claim adjusted
+95J  0002Your claim has been adjusted as the hospital was unable to provide a
+95J  0003completed Declaration form for this patient.
+95K  0001Claim in process
+95K  0002Hold for documentation.
+95L  0001Out of Province registration expiry date
+95L  0002Payment was refused as the out of province registration expiry date must be
+95L  0003blank if the out of province registration number is blank.
+95M  0001Unable to process updated transaction
+95M  0002The transaction to update a previously submitted claim cannot be processed
+95M  0003as:
+95M  0004(a) the original add transaction cannot be located or
+95M  0005(b) the result of your original claim is unknown, or
+95M  0006(c) the original claim was previously deleted.
+95M  0007Please review your records and resubmit, if applicable.
+95T  0001Invalid ICD10CA Diagnostic Code
+95T  0002Payment was refused as the diagnostic code is invalid.  Only the
+95T  0003International Statistical Classification of Diseases and Related Health
+95T  0004Problems, 10th Canadian Revision, diagnostic codes (ICD10CA) are acceptable
+95T  0005for hospital reciprocal inpatient billing.
+96A  0001Mother/Newborn Registration Number
+96A  0002This is an adjustment of a previously processed claim.  Payment was deducted
+96A  0003as the mother's out of province registration number may not be used for a
+96A  0004baby over the age of three months.  Please obtain the baby's correct out of
+96A  0005province number and resubmit the claim.
+96B  0001Declaration Form Incomplete/Incorrect
+96B  0002This is an adjustment of a previously processed claim. Payment was deducted
+96B  0003as the Declaration Form requested by the patient's home province was:
+96B  0004(a) not provided or
+96B  0005(b) incomplete or
+96B  0006(c) not signed by the patient or parent/guardian.
+96C  0001Out Of Province Patient Information/Claim Information
+96C  0002This is an adjustment of a previously processed claim. Payment was deducted
+96C  0003because there is a discrepancy between:
+96C  0004(a) the home province's patient registration information and the patient
+96C  0005    information submitted or
+96C  0006(b) the expiry date on the patient's health card and the expiry date
+96C  0007    submitted.
+96D  0001Out Of Province Patient's Coverage Not Effective
+96D  0002This is an adjustment of a previously processed claim. Payment was deducted
+96D  0003as the patient's home province has verified that the patient's health card
+96D  0004was not valid on:
+96D  0005(a) the date of service or
+96D  0006(b) the admission date or
+96D  0007(c) the discharge date.
+96E  0001Incorrect Claim - Alberta Responsibility
+96E  0002Our records indicate that the patient was an Alberta resident on the date of
+96E  0003service; therefore, this claim has been:
+96E  0004(a) refused or
+96E  0005(b) adjusted from your previous payment.
+96F  0001Workers' Compensation Board Responsibility
+96F  0002This is an adjustment of a previously processed claim.  Payment was deducted
+96F  0003as we have received information advising this service is the responsibility
+96F  0004of the WCB.  This claim should be submitted directly to the WCB.
+96G  0001Incorrect Service/Date of Service/Rate Claimed
+96G  0002This is an adjustment of a previously processed claim.  Payment was deducted
+96G  0003at the request of the patient's home province as an incorrect:
+96G  0004(a) service or
+96G  0005(b) date of service or
+96G  0006(c) rate
+96G  0007was claimed.  Please submit a new claim using the correct information, if
+96G  0008applicable.
+96H  0001Second Out-Patient Visit
+96H  0002This is an adjustment of a previously processed claim.  Payment was deducted
+96H  0003as multiple outpatient visits on the same day for the same patient are not
+96H  0004payable.
+96H  0005Note: Charges for additional outpatient visits may not be billed directly
+96H  0006to the patient or home province.
+97A  0001Incorrect Service/Date of Service/Rate Claimed
+97A  0002This is an adjustment of a previously processed claim.  Payment was deducted
+97A  0003at the request of the Alberta RHA/hospital as an incorrect:
+97A  0004(a) service or
+97A  0005(b) date of service or
+97A  0006(c) rate
+97A  0007was claimed.  Please submit a new claim using the correct information, if
+97A  0008applicable.
+98   0001Capitation Paid
+98   0002Payment was refused as capitation (payment in lieu of FFS benefits) was paid
+98   0003for this patient for this date of service.
+98A  0001Invalid Health Service Code
+98A  0002Payment was refused as this HSC may not be claimed by the BA indicated.
+98AA 0001FFS/APP Reassessed Claims
+98AA 0002Thank you for your payment.  Your FFS claim transactions have been
+98AA 0003reassessed and applied as APP billing.
+98B  0001Non-Patient Specific ULI - Other Interventions
+98B  0002This transaction was refused as the non patient-specific ULI must be used
+98B  0003for services defined as other interventions.
+98C  0001Locum Business Arrangement - Fee For Service
+98C  0002This transaction was refused as a practitioner with a locum BA may not be
+98C  0003paid FFS under an APP practice.
+98D  0001Other Interventions - Non-Enrolled Patients
+98D  0002This transaction was refused as services defined as other interventions may
+98D  0003not be submitted for non-enrolled patients.
+98DA 0001Other Interventions not Eligible under Good Faith
+98DA 0002This transaction was refused as services defined as other interventions may
+98DA 0003not be claimed under the Good Faith program.
+98DB 0001Ineligible Other Interventions
+98DB 0002This transaction was refused as this other intervention service may not be
+98DB 0003claimed under this APP program.
+98DC 0001Date of Service / Alternate Payment Plan Effective Date
+98DC 0002This transaction was refused as the APP program is not active for this date
+98DC 0003of service.
+98E  0001Invalid Pay To Code
+98E  0002This transaction was refused as the pay-to code must be "BAPY" (BA Payee)
+98E  0003for all APP services.
+98EA 0001Invalid Health Service Code - Non-Patient Specific ULI
+98EA 0002This transaction was refused as only HSCs that are defined as
+98EA 0003non patient-specific may be submitted under the non patient-specific ULI.
+98EB 0001Invalid Business Arrangement Number
+98EB 0002This transaction was refused as the APP BA number must be used for all
+98EB 0003services listed as other interventions.
+98F  0001Recipient Annual Capitation Limit
+98F  0002This service event was reduced or applied at zero as the patient has reached
+98F  0003 the annual capitation maximum amount payable under this Alternate Payment
+98F  0004Plan.

@@ -1,0 +1,149 @@
+ADCSAddictions Counsellor                                       2000080120801231
+ANESAnesthesiology                                              1800010120801231
+ANPAAnatomical Pathology                                        1800010120801231
+ARTHDental Arthroscopic Certification                           1995040120801231
+ASEDAsthma Educator                                             1800010120801231
+ATF Active Treatment Facility                                   1800010120801231
+ATMJArthroscopic TMJ Surgery                                    1995060120190331
+AUDIAudiology                                                   2015040120801231
+CAC Computer Assessed Certification                             1800010120121031
+CARDCardiology                                                  1800010120801231
+CESTCardiac Exercise Stress Testing                             2011110120801231
+CHIRChiropractic                                                1800010120801231
+CLCOClinical Coordinator                                        2000080120801231
+CLIMClinical Immunology & Allergy                               1800010120801231
+CLNSClinic Nurse                                                2000080120801231
+CMCECommunity Medicine - Certification                          1800010119940331
+CMSPCommunity/Public Health Preventative Medicine               1800010120801231
+CRCMCritical Care Medicine                                      1800010120801231
+CRSGCardiac Surgery                                             1994010120801231
+CTSGCardio & Thoracic Surgery                                   1800010120801231
+DBEDDiabetes Educator                                           1998010120801231
+DENTGeneral Dentistry                                           1800010120801231
+DERMDermatology                                                 1800010120801231
+DIETDietician                                                   1998010120801231
+DIRDDiagnostic Radiology                                        1800010120801231
+DTURDental Mechanic                                             1800010120801231
+E/M Endocrinology/Metabolism                                    1800010120801231
+ECG Electrocardiogram Interpretation                            1800010120801231
+ECGCElectrocardiogram Interpretation - Cardiology               1800010119970207
+ECGPElectrocardiogram Interpretation - Pediatric                1800010119970207
+ECHOEchocardiography                                            1800010120801231
+EDCOEducation Coordinator                                       1998010120801231
+EEGNElectroencephalography - Neurosurgery                       1800010120801231
+EEGPElectroencephalography - Pediatrics                         1800010120801231
+EEGRElectroencephalography - Neurology                          1800010120801231
+EEGYElectroencephalography - Psychiatry                         1800010120801231
+EMCEEmergency Medicine - Certification                          1800010118000101
+EMGHElectromyography - Physical Medicine & Rehabilitation       1800010120801231
+EMGNElectromyography - Neurosurgery                             1800010120801231
+EMGPElectromyography - Pediatrics                               1800010120801231
+EMGRElectromyography - Neurology                                1800010120801231
+EMSPEmergency Medicine - Specialty                              1800010120801231
+ENDOEndodontics                                                 1800010120801231
+EVA Evoked Response - Auditory                                  1800010120120531
+EVP Evoked Potential                                            2012060120801231
+EVR Evoked Response                                             1800010120120531
+EVS Evoked Response - Somatosensory                             1800010120120531
+EVV Evoked Response - Visual                                    1800010120120531
+EXTPExternal Third Party                                        2000080120801231
+FLURFluoroscopy                                                 2011110120801231
+FMTHFamily Therapist                                            2000080120801231
+FTERFull Time Emergency Room Physician                          2001010120801231
+GASTGastroenterology                                            1800010120801231
+GEMDGeriatric Medicine                                          1800010120801231
+GNMHGeneralists Mental Health Physicians                        1800010120801231
+GNSGGeneral Surgery                                             1800010120801231
+GP  General Practice                                            1800010120801231
+HADMHealth Administrator (APP Program)                          1998010120801231
+HCNSHome Care Nurse                                             1998010120801231
+HEM Hematology                                                  1800010120801231
+HEPAHematological Pathology                                     1800010120801231
+HLNSHealth Nurse                                                1998010120801231
+HLPNHome License Practical Nurse                                2003010120801231
+IDISInfectious Diseases                                         1800010120801231
+IMCEInternal Medicine Certification                             1994040120801231
+IMPLImpedance Plethysmography                                   1800010120801231
+INMDInternal Medicine                                           1800010120801231
+LMEYLimited Eye Examination (GP)                                1800010119970207
+LVC Low Vision Certification                                    1800010120121031
+MDBIMedical Biochemistry                                        1800010120801231
+MDGNMedical Genetics                                            1800010120801231
+MDMIMedical Microbiology                                        1800010120801231
+MDONMedical Oncology                                            1800010120801231
+MDWFMidwife                                                     1998070120801231
+MHWKMental Health Worker                                        1998010120801231
+MOHSMoh's Microscopic Surgery                                   1800010120801231
+NCMDNuclear Medicine                                            1800010120801231
+NEOPNeuro Ophthalmology                                         1998050120801231
+NEOTNeuro-otology                                               1991041120801231
+NEPHNephrology                                                  1800010120801231
+NEURNeurology                                                   1800010120801231
+NPM Neonatal Perinatal Medicine                                 2000010120801231
+NRPRNurse Practitioner                                          1998090120801231
+NUCMCertification Nuclear Medicine                              2015100120801231
+NUPANeuropathology                                              1800010120801231
+NUSGNeurosurgery                                                1800010120801231
+OBGYObstetrics & Gynecology                                     1800010120801231
+OCMDOccupational Medicine                                       1800010120801231
+OCTHOccupational Therapist                                      1998010120801231
+OCULOcular Ultrasonography                                      1800010120801231
+OPHTOphthalmology                                               1800010120801231
+OPTCOptician                                                    1800010120801231
+OPTOOptometry                                                   1800010120801231
+ORPAOral Pathology                                              1800010120801231
+ORRDOral Radiology                                              1800010120801231
+ORSGOral Maxillofacial Surgery                                  1800010120801231
+ORTDOrthodontics                                                1800010120801231
+ORTHOrthopedic Surgery                                          1800010120801231
+OTOLOtolaryngology                                              1800010120801231
+OVACOculo-visual Assessment Certification                       1800010120801231
+PATHGeneral Pathology                                           1800010120801231
+PBNSPublic Health Nurse                                         1998010120801231
+PDGEPediatric Gastroenterology                                  2003100120801231
+PDNRPediatric Neurology                                         2001010120801231
+PDSGPediatric General Surgery                                   1800010120801231
+PED Pediatrics                                                  1800010120801231
+PEDCPediatric Cardiology                                        1800010120801231
+PEDNPediatric Nephrology                                        2000010120801231
+PEDOPedodontics                                                 1800010120801231
+PERIPeriodontics                                                1800010120801231
+PHMCPharmacist                                                  1998010120801231
+PHMDPhysical Medicine and Rehabilitation                        1800010120801231
+PHTAPhysio Therapy Assistant (B)                                2003010120801231
+PHTHPhysio Therapy                                              1998010120801231
+PHYSPhysical Therapy                                            1800010120801231
+PLASPlastic Surgery                                             1800010120801231
+PMCNPrimary Care Nurse                                          1998010120801231
+POD Podiatry                                                    1800010120801231
+PODSPodiatric Surgery                                           2006060120801231
+PROSProsthodontics                                              1800010120801231
+PSCEPsychiatry - Certification                                  1800010119970207
+PSCHPsychologist                                                1998010120801231
+PSNRRegistered Psychiatric Nurse                                2009100120801231
+PSYCPsychiatry - Specialty                                      1800010120801231
+PUL2Pulmonary Function - Level 2                                1800010120801231
+PUL3Pulmonary Function - Level 3                                1800010120801231
+PUL4Pulmonary Functional Level 4                                1800010120801231
+RCTHRecreational Therapist                                      1998010120801231
+RENLRenal Scans                                                 1800010120801231
+RHEURheumatology                                                1800010120801231
+RN  Registered Nurse                                            2005010120801231
+ROCERadiation Oncology - Certification                          1800010119970207
+ROSPRadiation Oncology - Specialty                              1800010120801231
+RSMDRespiratory Medicine                                        1800010120801231
+RSTHRespiratory Therapist                                       1998010120801231
+SCWKSocial Worker                                               1998010120801231
+SLPTSpeech Language Pathologist                                 2003040120801231
+SPMHSpecialists Mental Health Physicians                        1800010120801231
+THORThoracic Surgery                                            1800010120801231
+TPACTher. Pharm. agents/Foreign body/Glaucoma co-management     1800010120130930
+TPMDTropical Medicine                                           1800010119940331
+ULTGUltrasound - Obstetrics/Gynecology                          1800010120801231
+ULTOUltrasound - Ophthalmology                                  1800010120801231
+ULTRUltrasound - FULL                                           1800010120801231
+ULTUUltrasound - Urology                                        1800010120801231
+ULTVUltrasound - Vascular                                       2009120120801231
+UROLUrology                                                     1800010120801231
+VISUVisual Fields                                               1800010120801231
+VSSGVascular Surgery                                            1800010120801231

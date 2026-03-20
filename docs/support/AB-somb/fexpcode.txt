@@ -1,0 +1,2191 @@
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN
+ 0
+ 0                                          EXPLANATORY CODES
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0                                        Explanatory Code List
+ 0
+ 0                                                As Of
+ 0
+ 0                                            14 March 2025
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                      Page 1
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                                ACRONYMS AND SPECIAL PROCESSING CODES
+ 0
+ 2        Advanced Ambulatory Care Centre (AACC)
+ 2        Alberta Health Care Insurance Plan (AHCIP)
+ 2        Alternate Payment Plan (APP)
+ 2        Business Arrangement (BA)
+ 2        Fee for Service (FFS)
+ 2        Health Service Code (HSC)
+ 2        Personal Health Number (PHN)
+ 2        Practitioner Identifier (PRAC ID)
+ 2        Regional Health Authority (RHA)
+ 2        Unique Lifetime Identifier (ULI)
+ 2        Urgent Care Centre (UCC)
+ 2        Workers' Compensation Board (WCB)
+ 0
+ 2             INFRC RECOVERED FROM INCOMING FUND
+ 0
+ 0                   This amount was deducted from the funds you previously sent to Alberta
+ 0                   Health. These funds may be a premium or claim payment.
+ 0
+ 2             RTRF  REASSESS TRANSACTION REFUSED
+ 0
+ 0                   Your reassess transaction was reviewed and did not result in a change to
+ 0                   the original payment and therefore was refused.
+ 0
+ 1
+ 2             RVRSL REVERSAL
+ 0
+ 0                   This is a reversal of a previously assessed item.
+ 0
+ 2                                         PATIENT REGISTRATION
+ 0
+ 2             01    NOT REGISTERED
+ 0
+ 0                   We have no record of this person registered with this PHN.
+ 0
+ 1
+ 2             01A   NOT REGISTERED
+ 0
+ 0                   This person is not registered with the AHCIP.  If the patient is a newborn,
+ 0                   submit a new claim with a Person Data Segment and the appropriate newborn
+ 0                   code.
+ 0
+ 1
+ 2             01B   NON RESIDENT
+ 0
+ 0                   We cannot confirm that this patient is an Alberta resident.  Please contact
+ 0                   the patient to obtain the correct billing information.
+ 0
+ 1
+ 2             01C   GOOD FAITH CLAIM
+ 0
+ 0                   Payment was refused as Good Faith claims are not payable for visitors to
+ 0                   Alberta or residents covered by the federal government, such as Canadian
+ 0                   Forces members or federal penitentiary inmates.
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                      Page 2
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                                    PATIENT REGISTRATION (cont'd)
+ 2
+ 0
+ 0                   Refer to the applicable Resource Guide for information regarding billing
+ 0                   alternatives.
+ 0
+ 1
+ 2             02    REGISTRATION NUMBER/PERSONAL HEALTH NUMBER CONFLICT
+ 0
+ 0                   The health registration number and the PHN submitted are not for the same
+ 0                   person.
+ 0
+ 1
+ 2             03    NEWBORN
+ 0
+ 0                   The claim was refused as the AHCIP is unable to contact the parent(s) of
+ 0                   this child to confirm registration.
+ 0
+ 1
+ 2             04    DONOR'S PERSONAL HEALTH NUMBER USED
+ 0
+ 0                   Submit this claim using the PHN of the donor recipient.
+ 0
+ 1
+ 2             04A   SERVICE NOT GOOD FAITH
+ 0
+ 0                   The claim was applied as Non-Good Faith because the person data segment was
+ 0                   matched to an AHCIP eligible patient.
+ 0
+ 1
+ 2             05    PATIENT PERSONAL HEALTH NUMBER - NOT EFFECTIVE
+ 0
+ 0                   This PHN is not effective for the date(s) of service submitted.
+ 0
+ 1
+ 2             05A   INVALID PERSONAL HEALTH NUMBER
+ 0
+ 0                   The PHN is invalid or blank.
+ 0
+ 1
+ 2             05AA  OPTED OUT RESIDENT
+ 0
+ 0                   The patient has opted out of the AHCIP.  The patient has agreed to assume
+ 0                   financial liability for all health services.  Please contact your patient
+ 0                   regarding payment for your services.
+ 0
+ 1
+ 2             05B   UNREGISTERED WORKERS' COMPENSATION BOARD CLAIM
+ 0
+ 0                   The patient is not eligible for AHCIP coverage for the date(s) of service.
+ 0                   Submit your claim directly to the WCB.
+ 0
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                      Page 3
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                                    PATIENT REGISTRATION (cont'd)
+ 2
+ 1
+ 2             05BA  INVALID/BLANK REGISTRATION NUMBER
+ 0
+ 0                   This claim was refused as the registration number is:
+ 0
+ 0                   (a) blank or
+ 0                   (b) invalid.
+ 0
+ 1
+ 2             05BB  INVALID/BLANK UNIQUE LIFETIME IDENTIFIER
+ 0
+ 0                   This claim was refused as the ULI is:
+ 0
+ 0                   (a)  blank or
+ 0                   (b)  invalid or
+ 0                   (c)  not valid for the service recipient.
+ 0
+ 1
+ 2             06    RETROACTIVE ELIGIBILITY CHANGE
+ 0
+ 0                   Your request to change or reassess this claim was refused.  Due to a
+ 0                   retroactive eligibility change, the patient is not eligible for AHCIP
+ 0                   coverage for this date of service.
+ 0
+ 1
+ 2             07    NEW RECIPIENT FOR ALTERNATE PAYMENT PLAN CONTRACT
+ 0
+ 0                   Your claim for a new recipient was paid as a FFS benefit.
+ 0
+ 1
+ 2             08    NEW RECIPIENT PREVIOUSLY PAID FOR ALTERNATE PAYMENT PLAN CONTRACT
+ 0
+ 0                   Payment was refused as a FFS benefit was previously paid for a new
+ 0                   recipient.
+ 0
+ 1
+ 2             09    INITIAL ROSTER RELATIONSHIP
+ 0
+ 0                   Payment was refused as an Initial Roster relationship exists for this
+ 0                   patient.  Therefore, a FFS benefit is not payable under a Temporary Roster
+ 0                   relationship.
+ 0
+ 2                                      PRACTITIONER REGISTRATION
+ 0
+ 2             10    INELIGIBLE PRACTITIONER/INCORRECT SUBMISSION
+ 0
+ 0                   We have not received notification from the governing body/licensing
+ 0                   association that the practitioner is approved to perform this service.
+ 0
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                      Page 4
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                                  PRACTITIONER REGISTRATION (cont'd)
+ 2
+ 1
+ 2             10A   SERVICE PROVIDER RESTRICTIONS
+ 0
+ 0                   Our records indicate that the service provider is:
+ 0
+ 0                   (a)  restricted to a specific facility or
+ 0                   (b)  restricted to performing specific services.
+ 0
+ 1
+ 2             10AA  INELIGIBLE PRACTITIONER
+ 0
+ 0                   This claim was refused as you are not entitled to payment for this type of
+ 0                   service.
+ 0
+ 1
+ 2             11    LOCUM BUSINESS ARRANGEMENT
+ 0
+ 0                   This claim was refused as the BA does not include a BA type of locum.
+ 0
+ 2                                         INELIGIBLE SERVICES
+ 0
+ 2             20    INELIGIBLE SERVICES
+ 0
+ 0                   Payment was refused as the services are not eligible for AHCIP coverage.
+ 0                   Refer to the general rules in the applicable benefits schedule for examples
+ 0                   of ineligible services.
+ 0
+ 1
+ 2             20A   THIRD PARTY SERVICES
+ 0
+ 0                   Payment was refused as these are considered to be third party services.
+ 0                   Refer to the general rules in the applicable benefits schedule for examples
+ 0                   of third party services.
+ 0
+ 1
+ 2             20AB  EXPERIMENTAL/RESEARCH SERVICES
+ 0
+ 0                   Payment was refused as the AHCIP does not pay benefits for services that
+ 0                   are experimental and/or in the research stage.
+ 0
+ 1
+ 2             20B   ARMED FORCES AND FEDERAL PENITENTIARY
+ 0
+ 0                   Armed forces members and federal penitentiary inmates are not eligible for
+ 0                   AHCIP coverage.
+ 0
+ 1
+ 2             20C   PRACTITIONER BILLING FOR OWN FAMILY
+ 0
+ 0                   Services provided to members of your family or yourself are not a benefit
+ 0                   under the AHCIP.
+ 0
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                      Page 5
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                                     INELIGIBLE SERVICES (cont'd)
+ 2
+ 1
+ 2             20D   DENTAL CARE - ORAL SURGERY
+ 0
+ 0                   This service is not an oral surgical procedure payable by the AHCIP.
+ 0
+ 1
+ 2             20E   BENEFITS SCHEDULE
+ 0
+ 0                   This is an incorrect HSC.  Please refer to the applicable benefits schedule.
+ 0
+ 1
+ 2             21    WORKERS' COMPENSATION BOARD CLAIM
+ 0
+ 0                   This claim was refused as:
+ 0                   (a) claim is responsibility of Workers' Compensation Board (WCB), or
+ 0                   (b) WCB has paid a claim for the same date of service. If this visit is
+ 0                       unrelated to the WCB injury, submit a new claim with health service
+ 0                       code 03.01J to Alberta Health.
+ 0
+ 1
+ 2             21AB  WORKERS' COMPENSATION BOARD CLAIM SUBMISSIONS
+ 0
+ 0                   Payment was refused as WCB claims are to be submitted directly to the WCB.
+ 0
+ 1
+ 2             21AC  WORKERS'COMPENSATION BOARD SUPPORTING DOCUMENTATION REQUIRED
+ 0
+ 0                   Both the WCB denial letter and online remittance are required.
+ 0
+ 1
+ 2             22    INELIGIBLE PATIENT
+ 0
+ 0                   Our records indicate this claim is the responsibility of another provincial
+ 0                   health plan.
+ 0
+ 1
+ 2             23A   PRIOR APPROVAL
+ 0
+ 0                   Payment was refused as:
+ 0
+ 0                   (a) this service requires prior approval from the patient's provincial
+ 0                       health plan and/or
+ 0                   (b) prior approval was not received for this date of service.
+ 0
+ 1
+ 2             25    EXCLUDED SERVICE - RECIPROCAL PROGRAMS
+ 0
+ 0                   Payment was refused as this service is excluded according to the Reciprocal
+ 0                   Agreement.  Your claim should be billed directly to the patient or, if
+ 0                   applicable, their home provincial health plan.
+ 0
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                      Page 6
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                                     INELIGIBLE SERVICES (cont'd)
+ 2
+ 1
+ 2             25A   MEDICAL RECIPROCAL - INCORRECT CLAIM
+ 0
+ 0                   Payment was refused as you have submitted a medical reciprocal claim for
+ 0                   services provided to an Alberta patient.
+ 0
+ 1
+ 2             28    OPTED OUT PRACTITIONER
+ 0
+ 0                   This service was provided by a practitioner who has opted out of the AHCIP
+ 0                   and there is no indication that this was an emergency service.
+ 0
+ 2                          INCOMPLETE CLAIMS/ADDITIONAL INFORMATION REQUIRED
+ 0
+ 2        Person Data Segment
+ 0
+ 2             30    ADDRESS
+ 0
+ 0                   This claim was refused as the address on the Person Data Segment is invalid,
+ 0                   incomplete or blank.
+ 0
+ 1
+ 2             30A   PROVINCE CODE
+ 0
+ 0                   This claim was refused as the province code on the Person Data Segment is
+ 0                   invalid, incomplete or blank.
+ 0
+ 1
+ 2             30AA  CITY NAME
+ 0
+ 0                   This claim was refused as the city name on the Person Data Segment is
+ 0                   invalid, incomplete or blank.
+ 0
+ 1
+ 2             30AB  COUNTRY CODE
+ 0
+ 0                   This claim was refused as the country code on the Person Data Segment is
+ 0                   invalid, incomplete or blank.
+ 0
+ 1
+ 2             30AC  POSTAL CODE
+ 0
+ 0                   This claim was refused as the postal code on the Person Data Segment is
+ 0                   invalid.
+ 0
+ 1
+ 2             30B   DATE OF BIRTH
+ 0
+ 0                   This claim was refused as the date of birth on the Person Data Segment is:
+ 0
+ 0                   (a) blank or
+ 0                   (b) invalid or
+ 0                   (c) incomplete or
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                      Page 7
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                      INCOMPLETE CLAIMS/ADDITIONAL INFORMATION REQUIRED (cont'd)
+ 2
+ 0                   (d) after the date of service submitted.
+ 0
+ 1
+ 2             30BA  GENDER
+ 0
+ 0                   This claim was refused as the gender on the Person Data Segment is invalid
+ 0                   or blank.
+ 0
+ 1
+ 2             30E   SURNAME
+ 0
+ 0                   This claim was refused as the surname on the Person Data Segment is invalid
+ 0                   or blank.
+ 0
+ 1
+ 2             30EA  FIRST NAME
+ 0
+ 0                   This claim was refused as the first name on the Person Data Segment is
+ 0                   invalid or blank.
+ 0
+ 1
+ 2             30EB  MIDDLE NAME
+ 0
+ 0                   This claim was refused as the middle name on the Person Data Segment is
+ 0                   invalid or blank.
+ 0
+ 1
+ 2             30F   PERSON TYPE
+ 0
+ 0                   This claim was refused as the person type on the Person Data Segment is
+ 0                   invalid or blank.
+ 0
+ 1
+ 2             30G   GUARDIAN/PARENT PERSONAL HEALTH NUMBER
+ 0
+ 0                   This claim was refused as the guardian/parent PHN on the Person Data Segment
+ 0                   is invalid or blank.
+ 0
+ 1
+ 2             30H   GUARDIAN/PARENT HEALTH PLAN NUMBER
+ 0
+ 0                   This claim was refused as the guardian/parent registration number on the
+ 0                   Person Data Segment is invalid or blank.
+ 0
+ 1
+ 2             31    INCOMPLETE PERSON DATA
+ 0
+ 0                   This claim was refused as the Person Data Segment is:
+ 0
+ 0                   (a) required or
+ 0                   (b) incomplete for the person type submitted or
+ 0                   (c) required as we have no record of the PHN which was submitted.
+ 0
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                      Page 8
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                      INCOMPLETE CLAIMS/ADDITIONAL INFORMATION REQUIRED (cont'd)
+ 2
+ 1
+ 2             31A   PERSON DATA SEGMENT CONFLICT
+ 0
+ 0                   The out of province registration number and the Person Data Segment do not
+ 0                   match the service recipient information in our files.
+ 0
+ 0                   Confirm the patient's out of province health care card registration number,
+ 0                   home province/recovery code, and personal data information with the patient
+ 0                   or the patient's home provincial health plan.  If applicable, submit a new
+ 0                   claim with supporting text indicating that the physician has verified the
+ 0                   patient's personal information.
+ 0
+ 2        Base Claim Batch Process
+ 0
+ 2             34AA  CLAIM CURRENT YEAR SEGMENT
+ 0
+ 0                   The current year indicated within the claim number is not numeric or not the
+ 0                   current year.
+ 0
+ 1
+ 2             34AB  CLAIM SEQUENCE NUMBER
+ 0
+ 0                   The claim sequence number indicated within the claim number is not numeric.
+ 0
+ 1
+ 2             34AC  CLAIM CHECK DIGIT
+ 0
+ 0                   The check digit number indicated within the claim number is invalid.
+ 0
+ 1
+ 2             34AD  ACTION CODE
+ 0
+ 0                   The action code is inconsistent with other information segments within this
+ 0                   transaction.
+ 0
+ 1
+ 2             34B   EXTRAORDINARY MEDICAL SERVICES ASSESSMENT FUND INDICATOR
+ 0
+ 0                   The extraordinary medical services assessment fund indicator is invalid.
+ 0
+ 1
+ 2             34C   CLAIM RECORD TYPE
+ 0
+ 0                   The record type is invalid.  To process the claim the record type must be:
+ 0
+ 0                   (a) number 2 in the batch header data field or
+ 0                   (b) number 3 in the claim detailed record field or
+ 0                   (c) number 4 in the batch trailer data field.
+ 0
+ 0                   Refer to the Electronic Claims Submissions Specifications Handbook.
+ 0
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                      Page 9
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                      INCOMPLETE CLAIMS/ADDITIONAL INFORMATION REQUIRED (cont'd)
+ 2
+ 1
+ 2             34DA  CLAIM TRANSACTION TYPE
+ 0
+ 0                   The transaction type is not CIP1.  Refer to the Electronic Claims
+ 0                   Submissions Specifications Handbook.
+ 0
+ 1
+ 2             34DB  CLAIM SEGMENT TYPE
+ 0
+ 0                   The segment type must be:
+ 0
+ 0                   (a) CIB1 - Claim Regular or
+ 0                   (b) CPD1 - Person Data Segment or
+ 0                   (c) CST1 - Text Segment or
+ 0                   (d) CTX1 - Text Cross Reference Segment or
+ 0                   (e) in proper order.
+ 0
+ 0                   Refer to the Electronic Claims Submissions Specifications Handbook.
+ 0
+ 1
+ 2             34DC  SEGMENT SEQUENCE NUMBER
+ 0
+ 0                   The segment sequence number is not incremental.  Refer to the Electronic
+ 0                   Claims Submissions Specifications Handbook.
+ 0
+ 1
+ 2             34DD  CST1 SEGMENT REQUIRED
+ 0
+ 0                   At least one CST1 segment must be submitted with an "R" (Reassess Action
+ 0                   Code) transaction.  Refer to the Electronic Claims Submissions
+ 0                   Specifications Handbook.
+ 0
+ 1
+ 2             34DE  MAXIMUM CST1 SEGMENT
+ 0
+ 0                   The maximum number of CST1 segments (500) was exceeded.
+ 0
+ 1
+ 2             34DF  CIB1 SEGMENT REQUIRED
+ 0
+ 0                   Only provide a "CIB1" Base Claim Segment when submitting a "D" (Delete
+ 0                   Action Code) transaction.
+ 0
+ 1
+ 2             34DG  CPD1 SEGMENT NOT ALLOWED
+ 0
+ 0                   A "CPD1" Person Data Segment cannot be provided when submitting an "R"
+ 0                   (Reassess Action Code) transaction.
+ 0
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                     Page 10
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                      INCOMPLETE CLAIMS/ADDITIONAL INFORMATION REQUIRED (cont'd)
+ 2
+ 1
+ 2             34DH  MAXIMUM CPD1 SEGMENT
+ 0
+ 0                   A transaction cannot have more than one "CPD1" Person Data Segment for any
+ 0                   one person data type.
+ 0
+ 1
+ 2             34EA  CLAIM TEXT SEGMENT
+ 0
+ 0                   The text information you supplied is not in alpha numeric format.
+ 0
+ 1
+ 2             34EB  CLAIM SOURCE CODE
+ 0
+ 0                   The claim source code is invalid.  Refer to the Electronic Claims
+ 0                   Submissions Specifications Handbook.
+ 0
+ 1
+ 2             34EC  SUPPORTING TEXT CROSS REFERENCE
+ 0
+ 0                   The Supporting Text Cross Reference segment claim(s) number has failed the
+ 0                   claim check algorithm.  Refer to the Electronic Claims Submissions
+ 0                   Specifications Handbook.
+ 0
+ 1
+ 2             34ED  CTX1 AND CST1 SEGMENT
+ 0
+ 0                   The transaction being cross referenced and referred by a "CTX1" Text Cross
+ 0                   Reference Segment must have a "CST1" Text Segment.
+ 0
+ 1
+ 2             34F   CHART NUMBER
+ 0
+ 0                   The chart number information was not in alpha numeric characters.  Only
+ 0                   ASCII print characters are valid for this field.
+ 0
+ 2        Base Claim Segment
+ 0
+ 2             35    ACTION CODE
+ 0
+ 0                   This transaction was refused as:
+ 0
+ 0                   (a) the Action Code is invalid or
+ 0                   (b) Action code "R" (Reassess) is only allowed if text is submitted and
+ 0                       the original HSC which was reduced requires reassessment or
+ 0                   (c) Action Code "D" (Delete) cannot be processed when the Pay To Code is
+ 0                       not "BAPY" or
+ 0                   (d) Action Code "C" (Change) cannot be processed on a refused claim.
+ 0
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                     Page 11
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                      INCOMPLETE CLAIMS/ADDITIONAL INFORMATION REQUIRED (cont'd)
+ 2
+ 1
+ 2             35A   INTERCEPT
+ 0
+ 0                   The intercept code is invalid.
+ 0
+ 1
+ 2             35B   RECOVERY CODE
+ 0
+ 0                   The recovery code is invalid or not allowed for this BA.
+ 0
+ 1
+ 2             35C   REASSESS REASON CODE
+ 0
+ 0                   The reassess reason code is invalid or blank.
+ 0
+ 1
+ 2             35D   CLAIM TYPE
+ 0
+ 0                   The claim type is invalid or blank.
+ 0
+ 1
+ 2             35E   CONFIDENTIAL INDICATOR CODE
+ 0
+ 0                   The confidential indicator code is invalid.
+ 0
+ 1
+ 2             35F   CLAIM NUMBER
+ 0
+ 0                   The claim number is invalid or blank.
+ 0
+ 1
+ 2             35FA  SUBMISSION OF A CLAIM NUMBER
+ 0
+ 0                   The claim number submitted was previously used on:
+ 0
+ 0                   (a) refused claim or
+ 0                   (b) claim which is being held or
+ 0                   (c) a paid service event or claim applied at a zero amount.
+ 0
+ 1
+ 2             35FB  UNABLE TO PROCESS UPDATED TRANSACTION
+ 0
+ 0                   The transaction to update a previously submitted claim cannot be processed
+ 0                   as:
+ 0
+ 0                   (a) the original add transaction cannot be located or
+ 0                   (b) the result of your original claim must be known or
+ 0                   (c) the original claim was previously deleted.
+ 0
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                     Page 12
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                      INCOMPLETE CLAIMS/ADDITIONAL INFORMATION REQUIRED (cont'd)
+ 2
+ 1
+ 2             35FC  UNABLE TO PROCESS ADD TRANSACTION
+ 0
+ 0                   This claim number was previously used and the add "A" transaction cannot be
+ 0                   processed.  If applicable, submit the original claim number with the
+ 0                   appropriate action code of "R" reassess, "C" change or "D" delete.
+ 0
+ 1
+ 2             35G   GOOD FAITH INDICATOR
+ 0
+ 0                   The good faith indicator is invalid.
+ 0
+ 1
+ 2             35H   SUPPORTING DOCUMENTATION INDICATOR
+ 0
+ 0                   The supporting documentation indicator is invalid.
+ 0
+ 1
+ 2             35J   TEXT INDICATOR
+ 0
+ 0                   The text indicator is invalid.
+ 0
+ 1
+ 1
+ 1
+ 1
+ 1
+ 1
+ 2             35K   PAY TO CODE
+ 0
+ 0                   The pay to code is invalid or cannot be changed.
+ 0
+ 1
+ 2             35KA  PAY TO CODE/PAY TO UNIQUE LIFETIME IDENTIFIER CONFLICT
+ 0
+ 0                   There is a conflict between the information shown in the pay to code and
+ 0                   the pay to ULI. When the pay to code is "OTHR" (other) the pay to ULI
+ 0                   cannot be:
+ 0                   (a) the service provider or
+ 0                   (b) the BA payee or
+ 0                   (c) the patient or
+ 0                   (d) the Alberta Health registration account holder responsible for the
+ 0                       patient.
+ 0
+ 1
+ 2             35L   PAY TO UNIQUE LIFETIME IDENTIFIER
+ 0
+ 0                   The pay to ULI is invalid or blank.
+ 0
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                     Page 13
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                      INCOMPLETE CLAIMS/ADDITIONAL INFORMATION REQUIRED (cont'd)
+ 2
+ 1
+ 2             35M   NEWBORN CODE
+ 0
+ 0                   The newborn code is invalid or not required when the patient's PHN is
+ 0                   already provided.
+ 0
+ 1
+ 2             36    LOCUM BUSINESS ARRANGEMENT
+ 0
+ 0                   The locum BA number is invalid or not required.
+ 0
+ 1
+ 2             36A   LOCUM/BUSINESS ARRANGEMENT NUMBERS
+ 0
+ 0                   The locum BA and the BA fields were not completed properly.  Please refer to
+ 0                   the Physician's Resource Guide and submit a new claim.
+ 0
+ 1
+ 2             37    BUSINESS ARRANGEMENT
+ 0
+ 0                   The BA number is:
+ 0
+ 0                   (a) invalid or blank or
+ 0                   (b) restricted to performing specific services or
+ 0                   (c) restricted to performing services at a specific facility or
+ 0                   (d) not registered with the submitter of the transaction or
+ 0                   (e) restricted to patients from a specific area or
+ 0                   (f) does not have a relationship with the practitioner identifier submitted.
+ 0
+ 1
+ 2             37A   PRACTITIONER IDENTIFIER
+ 0
+ 0                   The PRAC ID is blank, invalid or not effective for the date of service.
+ 0
+ 1
+ 2             37B   SKILL CODE
+ 0
+ 0                   The skill code is invalid or blank.
+ 0
+ 1
+ 2             39    DATE OF SERVICE
+ 0
+ 0                   The date of service is:
+ 0
+ 0                   (a) invalid or blank or
+ 0                   (b) more than one year from date of birth (newborn) or
+ 0                   (c) in conflict with the explicit modifier indicated.
+ 0
+ 1
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                     Page 14
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                      INCOMPLETE CLAIMS/ADDITIONAL INFORMATION REQUIRED (cont'd)
+ 2
+ 2             39A   DATE OF SERVICE CONFLICT
+ 0
+ 0                   The date of service on the claim and the date of service indicated on the
+ 0                   supporting documentation do not match.
+ 0
+ 1
+ 1
+ 1
+ 1
+ 1
+ 1
+ 2             39B   HEALTH SERVICE CODE
+ 0
+ 0                   Payment has been refused as the HSC is:
+ 0
+ 0                   (a) blank or invalid or
+ 0                   (b) not listed in the applicable benefits schedule.
+ 0
+ 2             39BA  GENDER RESTRICTION
+ 0
+ 0                   The HSC and/or diagnosis does not agree with the gender of the patient.
+ 0
+ 2             39BB  AGE RESTRICTION
+ 0
+ 0                   The patient is not eligible for this service due to age.
+ 0
+ 2             39BC  HEALTH SERVICE CODE NOT APPROPRIATE FOR DIAGNOSIS
+ 0
+ 0                   The HSC does not agree with the diagnosis.
+ 0
+ 2             39BD  DATE OF SERVICE/HEALTH SERVICE CODE DATE CONFLICT
+ 0
+ 0                   The HSC is not effective on this date of service.
+ 0
+ 2             39BE  CONCEPTUAL/CORRECTED AGE
+ 0
+ 0                   Payment for the additional benefit was refused as the patient is not
+ 0                   eligible due to age.
+ 0
+ 1
+ 2             39C   NUMBER OF CALLS
+ 0
+ 0                   This claim was refused as:
+ 0
+ 0                   (a)  the number of calls is invalid or blank or
+ 0                   (b)  the number of calls is more than the number allowed for this service.
+ 0
+ 0                   If applicable, resubmit the claim with supporting text.
+ 0
+ 2             39D   LOCATION OF SERVICE
+ 0
+ 0                   The location of service is not appropriate for the HSC.
+ 0
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                     Page 15
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                      INCOMPLETE CLAIMS/ADDITIONAL INFORMATION REQUIRED (cont'd)
+ 2
+ 2             39DA  FACILITY NUMBER
+ 0
+ 0                   The facility number is invalid or blank.
+ 0
+ 2             39DB  FUNCTIONAL CENTER CODE
+ 0
+ 0                   The functional center:
+ 0
+ 0                   (a)  is blank or invalid or
+ 0                   (b)  is not appropriate for the service submitted or
+ 0                   (c)  does not exist for the facility submitted.
+ 0
+ 2             39DC  ORIGINATING FACILITY NUMBER
+ 0
+ 0                   The originating facility number is invalid or blank.
+ 0
+ 2             39DD  ORIGINATING LOCATION
+ 0
+ 0                   The originating location code is:
+ 0
+ 0                   (a)  invalid or blank or
+ 0                   (b)  not required when the originating facility number is submitted.
+ 0
+ 2             39DE  ORIGINATING FACILITY NUMBER/LOCATION FOR PATHOLOGY SERVICES
+ 0
+ 0                   The originating facility number or the originating location code is
+ 0                   required for pathology services (E HSCs).
+ 0
+ 2             39EB  DIAGNOSTIC CODE
+ 0
+ 0                   The diagnostic code is blank or invalid.
+ 0
+ 1
+ 2             39EC  HEALTH SERVICE CODE AND DIAGNOSTIC CODE CONFLICT
+ 0
+ 0                   The claim was refused as the HSC and the diagnostic code are in conflict.
+ 0
+ 2             39F   USE CLAIMED AMOUNT INDICATOR
+ 0
+ 0                   The use claimed amount indicator is invalid.
+ 0
+ 2             39FA  AMOUNT CLAIMED/USE CLAIMED AMOUNT INDICATOR
+ 0
+ 0                   Your claim was refused as:
+ 0
+ 0                   (a) the amount claimed is blank. Claims for unlisted procedures
+ 0                       (HSCs in the 99.09 series) require a claimed amount and a "Y" in the
+ 0                       claimed amount indicator field or
+ 0                   (b) the amount claimed is blank or invalid and the claimed amount indicator
+ 0                       is "Y" or
+ 0                   (c) the amount claimed is completed, but the claimed amount indicator is
+ 0                       blank or invalid.
+ 0
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                     Page 16
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                      INCOMPLETE CLAIMS/ADDITIONAL INFORMATION REQUIRED (cont'd)
+ 2
+ 2             39G   MODIFIER CODE
+ 0
+ 0                   The modifier code:
+ 0
+ 0                   (a)  is required with the HSC submitted or
+ 0                   (b)  is invalid or
+ 0                   (c)  can only have one modifier of the same type or
+ 0                   (d)  cannot have this combination of modifiers or
+ 0                   (e)  must have a valid two digit numeric suffix when modifier type is SURT
+ 0                        or
+ 0                   (f)  exceeded the maximum number of time units allowed for the modifier
+ 0                        type SURT.
+ 0
+ 2             39H   TELEHEALTH SERVICES
+ 0
+ 0                   This claim was refused as the HSC and the modifier code are in conflict
+ 0                   because:
+ 0
+ 0                   (a) the STFO modifier applies only to teledermatology and HSC 03.09B
+ 0                       or
+ 0                   (b) the TELES modifier is not attached to this HSC.
+ 0
+ 2             41    DOCUMENTATION INCOMPLETE/NOT RECEIVED
+ 0
+ 0                   The supporting documentation for this claim was incomplete or not received.
+ 0
+ 1
+ 2             41B   TIME/SITES - EXTENDED HEALTH BENEFITS
+ 0
+ 0                   Submit a new claim indicating the number of units, quadrants or sextants.
+ 0
+ 2             42    HOSPITAL ADMISSION/ORIGINATING ENCOUNTER DATE
+ 0
+ 0                   The hospital admission/originating encounter date is invalid or blank.
+ 0
+ 2             43    OUT OF PROVINCE HEALTH PLAN NUMBER
+ 0
+ 0                   The out of province health plan number is invalid or blank.
+ 0
+ 2             45    INVALID REFERRING PRACTITIONER IDENTIFIER
+ 0
+ 0                   The Referring Prac ID is:
+ 0
+ 0                   (a)  blank or invalid or
+ 0                   (b)  not an intraspecialty or
+ 0                   (c)  from a practitioner without the appropriate discipline or skill.
+ 0
+ 2             45A   OUT OF PROVINCE REFERRAL INDICATOR
+ 0
+ 0                   The out of province referral indicator is invalid.
+ 0
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                     Page 17
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                      INCOMPLETE CLAIMS/ADDITIONAL INFORMATION REQUIRED (cont'd)
+ 2
+ 1
+ 2             45AA  REFERRAL PRACTITIONER IDENTIFIER INVALID/INABLE TO RESOLVE
+ 0
+ 0                   Your claim was refused as the referral PRAC ID is invalid. Contact the
+ 0                   referring practitioner for the correct PRAC ID.
+ 0
+ 2             45B   ENCOUNTER NUMBER
+ 0
+ 0                   The Encounter number is invalid.
+ 0
+ 2             47    SERVICE RECIPIENT PERSONAL HEALTH NUMBER
+ 0
+ 0                   This claim was refused as the service recipient PHN cannot be changed.
+ 0                   Delete the original claim and submit a new claim with the correct PHN.
+ 0
+ 1
+ 2             48    PRACTITIONER IDENTIFIER
+ 0
+ 0                   This claim was refused as the PRAC ID cannot be changed.  Delete the
+ 0                   original claim and submit a new claim with the correct PRAC ID.
+ 0
+ 1
+ 2             49    BUSINESS ARRANGEMENT/LOCUM BUSINESS ARRANGEMENT NUMBER
+ 0
+ 0                   This claim was refused as the BA and/or locum BA number cannot be changed.
+ 0                   Delete the original claim and submit a new claim with the correct BA or
+ 0                   Locum BA number.
+ 0
+ 2                                         SURGICAL PROCEDURES
+ 0
+ 2             50    TWO PHYSICIANS - UNRELATED ABDOMINAL SURGICAL PROCEDURES
+ 0
+ 0                   Payment was reduced to 75% of the benefit as the full benefit for the
+ 0                   major procedure was paid to the physician most responsible for the
+ 0                   patient's care.
+ 0
+ 2             50A   PROCEDURES INCLUDED IN THE MAJOR PROCEDURAL BENEFIT
+ 0
+ 0                   Payment was refused as this service is included in the benefit paid for the
+ 0                   major procedure.
+ 0
+ 2             50AA  DIAGNOSTIC PROCEDURES RELATING TO SURGERY
+ 0
+ 0                   Payment was refused as the diagnostic procedure is included in the benefit
+ 0                   paid for the surgical procedure when performed under the same anesthetic.
+ 0
+ 2             50AB  SECOND OR SUBSEQUENT PROCEDURE
+ 0
+ 0                   Payment for the procedure was reduced to 50% as this service was performed
+ 0                   as a second or subsequent procedure through the same incision.
+ 0
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                     Page 18
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                                     SURGICAL PROCEDURES (cont'd)
+ 2
+ 2             50B   REPEAT CLOSED REDUCTION - SAME PRACTITIONER
+ 0
+ 0                   Payment was refused as a repeat closed reduction performed by the same
+ 0                   practitioner is not payable.
+ 0
+ 2             50BA  REPEAT CLOSED REDUCTION - DIFFERENT PRACTITIONER
+ 0
+ 0                   Payment was reduced to 50% as a different practitioner performed a repeat
+ 0                   closed reduction for the same fracture or dislocation.
+ 0
+ 2             50BB  CLOSED - OPEN REDUCTION - DIFFERENT PRACTITIONER
+ 0
+ 0                   Payment was reduced to 50% as a different practitioner performed an open
+ 0                   reduction for the same fracture.
+ 0
+ 2             50BC  CLOSED - OPEN REDUCTION - SAME PRACTITIONER
+ 0
+ 0                   Payment was refused as a closed reduction is not payable when the same
+ 0                   practitioner performs an open reduction for the same fracture under the
+ 0                   same anesthetic.
+ 0
+ 2             51    PRE AND/OR POST-OPERATIVE CARE - TWO PRACTITIONERS
+ 0
+ 0                   Payment was reduced or refused as another Practitioner was paid for pre-and/
+ 0                   or post-operative care.
+ 0
+ 2             51A   UNILATERAL - BILATERAL PROCEDURES
+ 0
+ 0                   Payment was reduced as the benefit does not increase when a bilateral
+ 0                   procedure is performed.
+ 0
+ 1
+ 2             51G   SURGICAL ASSISTS
+ 0
+ 0                   Payment was refused as:
+ 0
+ 0                   (a)  a surgical assist benefit is not payable for the procedure submitted or
+ 0                   (b)  a surgical procedure was not claimed for this date of service or
+ 0                   (c)  documentation was not submitted to support a claim involving unusual
+ 0                        circumstances.
+ 0
+ 2             52A   LACERATIONS
+ 0
+ 0                   Payment was made according to the explanation following HSC 98.22B.
+ 0
+ 2             52B   SAME PHYSICIAN - TWO FUNCTIONS
+ 0
+ 0                   Payment was refused as only one benefit can be paid when both surgical
+ 0                   and anesthetic services are performed by the same physician.
+ 0
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                     Page 19
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                                     SURGICAL PROCEDURES (cont'd)
+ 2
+ 1
+ 2             54    INCLUDED SERVICES
+ 0
+ 0                   Payment was refused as the service(s) is included in the benefit paid for
+ 0                   the delivery.
+ 0
+ 2             54A   POSTNATAL MAXIMUM
+ 0
+ 0                   Payment was refused as only one routine postnatal visit per physician is
+ 0                   payable.
+ 0
+ 2             54B   PRENATAL CARE
+ 0
+ 0                   Payment was refused as:
+ 0
+ 0                   (a)  only one HSC 03.04B may be claimed per pregnancy per physician or
+ 0                   (b)  03.04B may not be claimed within 91 days of a major visit HSC or
+ 0                   (c)  03.03B may only be claimed for the prenatal visits and not for dates
+ 0                        of service following a delivery.
+ 0
+ 2                                           MINOR PROCEDURES
+ 0
+ 2             56    PROCEDURE - VISIT
+ 0
+ 0                   Payment was refused as:
+ 0
+ 0                   (a) only the greater of a minor procedure or office visit is payable
+ 0                       when the services and diagnosis are related or
+ 0                   (b) only the greater of a consultation and minor procedure are payable on
+ 0                       the same date of service or
+ 0                   (c) only the greater of a procedure and hospital visit are payable on the
+ 0                       same date of service.
+ 0
+ 2             56A   MULTIPLE MINOR SURGICAL PROCEDURES
+ 0
+ 0                   Payment was reduced to 75% as only the greater benefit is payable in full
+ 0                   when multiple minor surgical procedures are performed.
+ 0
+ 2             56B   VARICOSE VEINS INJECTIONS
+ 0
+ 0                   Payment was refused as the maximum for the benefit year (July 1 to June 30)
+ 0                   was paid.
+ 0
+ 2             56C   TRAY SERVICES
+ 0
+ 0                   Payment was reduced or refused according to the applicable benefits
+ 0                   schedule.
+ 0
+ 1
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                     Page 20
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                                      MINOR PROCEDURES (cont'd)
+ 2
+ 2             56D   FIBREGLASS CAST
+ 0
+ 0                   (a) Payment was reduced to the equivalent rate of HSC 07.53B or
+ 0                       07.53D as the service was performed in a nursing home, general
+ 0                       or auxiliary hospital, AACC, UCC or a facility which has a
+ 0                       contract with an RHA or
+ 0                   (b) Payment was reduced by a rate equivalent to 07.53B or 07.53D as
+ 0                       the benefit for the application of a cast is included in the
+ 0                       fracture reduction HSC or
+ 0                   (c) Payment was reduced by a rate equivalent to a major tray service
+ 0                       benefit which was paid for 07.53B or 07.53D as cast supplies are
+ 0                       included in the benefits for 07.53H and 07.53J.
+ 0
+ 2                                              ANESTHESIA
+ 0
+ 2             58    TWO PROCEDURES - TWO SURGEONS
+ 0
+ 0                   Payment was reduced as the greater anesthetic benefit is paid at 100%
+ 0                   and the lesser at 75% when two procedures are performed consecutively by
+ 0                   two surgeons under the same anesthetic.
+ 0
+ 2             58A   INCLUSIVE ANESTHETIC BENEFIT
+ 0
+ 0                   Payment was refused as pre- and/or post-anesthetic visits are included in
+ 0                   the anesthetic benefit.
+ 0
+ 2             58B   LOCAL ANESTHETIC
+ 0
+ 0                   Payment was refused as only the greater benefit is payable when both the
+ 0                   local anesthetic and the procedure are claimed by the same practitioner.
+ 0
+ 2             58BA  SIMULTANEOUS SURGERY
+ 0
+ 0                   Payment was refused as only the greater anesthetic benefit is payable when
+ 0                   two practitioners operate simultaneously.
+ 0
+ 2             58C   MULTIPLE BENIGN SKIN LESIONS
+ 0
+ 0                   Payment was reduced or refused as only a single anesthetic benefit is
+ 0                   payable when surgical treatment of multiple benign skin lesions is
+ 0                   performed under anesthetic of less than 35 minutes duration.
+ 0
+ 2             58E   RELATED ANESTHETIC CODE
+ 0
+ 0                   Payment was made according to the information submitted on the surgeon's
+ 0                   claim.
+ 0
+ 2             58F   ADDITIONAL AGE BENEFIT
+ 0
+ 0                   Payment was reduced as only one additional anesthetic benefit per case is
+ 0                   payable regardless of the number of anesthetic services provided.
+ 0
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                     Page 21
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                                         CONSULTATIONS/VISITS
+ 0
+ 2             60    INITIAL VISIT - MAJOR
+ 0
+ 0                   Payment was refused as an initial visit provided by the same practitioner
+ 0                   may not be claimed more than once every 180 days.
+ 0
+ 2             60A   CONSULTATION - INCLUSIVE BENEFIT
+ 0
+ 0                   Payment was refused as a consultation benefit is included in the procedural
+ 0                   benefit.
+ 0
+ 2             60AA  CONSULTATION
+ 0
+ 0                   Payment was reduced to the rate payable for a non-referred visit HSC as:
+ 0
+ 0                   (a)  the service does not meet the requirements of a consultation or
+ 0                   (b)  the referral was not from a physician, midwife, chiropractor,
+ 0                        podiatrist, dentist, optometrist, physical therapist or nurse
+ 0                        practitioner, or
+ 0                   (c)  the referral was from a family member.
+ 0
+ 2             60B   DENTAL CONSULTATION
+ 0
+ 0                   Payment was refused as a dental consultation is only payable when it is
+ 0                   requested by the patient's physician, dental surgeon, or oral and
+ 0                   maxillofacial surgeon and it concerns a procedure payable under the
+ 0                   Schedule of Oral and Maxillofacial Surgery Benefits.
+ 0
+ 2             60C   HOSPITAL ADMISSION
+ 0
+ 0                   Payment was refused as an admission is not payable when the patient was
+ 0                   seen by the same practitioner on the same day for the same or related
+ 0                   diagnosis.
+ 0
+ 2             60E   EMERGENCY DEPARTMENT/ADVANCED AMBULATORY CARE CENTRE/URGENT CARE CENTRE
+ 2                   VISITS
+ 0
+ 0                   Payment was refused as:
+ 0
+ 0                   (a)  another physician has claimed for the same service.  Submit a new
+ 0                        claim with a DSCH modifier in accordance with General Rule 5.1.4 or
+ 0                   (b)  HSCs 03.05F, 03.05FA and 03.05FB cannot be claimed by the same
+ 0                        physician who provided the initial assessment prior to determining
+ 0                        the disposition status of the patient.
+ 0
+ 2             60EA  CRITICAL CARE - EMERGENCY DEPARTMENT/ADVANCED AMBULATORY CARE
+ 2                   CENTRE/URGENT CARE CENTRE VISIT
+ 0
+ 0                   Payment was refused as the information/diagnostic code provided does not
+ 0                   support payment under this HSC. Submit a new claim with the appropriate
+ 0                   emergency department/AACC/UCC visit HSC.
+ 0
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                     Page 22
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                                          GENERAL ASSESSMENT
+ 0
+ 2        Explanatory Codes 60EB to 61EA
+ 0
+ 2             60EB  SERVICES UNSCHEDULED
+ 0
+ 0                   Payment was refused as the maximum benefit for unscheduled services was
+ 0                   reached.
+ 0
+ 1
+ 2             60EC  SPECIAL CALLBACKS TO ADVANCED AMBULATORY CARE CENTRE/URGENT CARE CENTRE
+ 2                   HOSPITAL EMERGENCY OUT PATIENT DEPARTMENT
+ 0
+ 0                   Payment was refused according to GR 5.2 in the Schedule of Medical Benefits
+ 0                   or GR 17 in the Schedule of Oral and Maxillofacial and Surgery Benefits.
+ 0
+ 2             60ED  MAXIMUMS FOR SPECIAL CALLBACKS AND SURCHARGES
+ 0
+ 0                   Your claim was refused or reduced in accordance with the general rules in
+ 0                   the applicable benefits schedule.
+ 0
+ 2             61    DRESSING CHANGES - BURNS
+ 0
+ 0                   Your claim for HSC 07.57A and/or 07.57B has been changed to a visit HSC as
+ 0                   the service is not for a burn.  The corresponding tray service benefit
+ 0                   has been deducted where applicable.
+ 0
+ 2             61A   GENERALIZED DIAGNOSTIC CODES
+ 0
+ 0                   Payment was refused as this service is included in the benefit paid for the
+ 0                   related surgical procedure.
+ 0
+ 2             61B   REMOVAL OF SUTURES
+ 0
+ 0                   Payment was refused as the benefit for removal of sutures is included in
+ 0                   the procedural benefit.
+ 0
+ 2             61C   NURSING HOME AND SENIOR CITIZENS HOME
+ 0
+ 0                   Payment was refused as the service was not provided in a "home" location.
+ 0
+ 2             61CA  AUXILIARY HOSPITAL VISITS
+ 0
+ 0                   Payment was reduced to a lesser benefit as the service provided was a
+ 0                   routine visit for custodial care.
+ 0
+ 1
+ 2             61CB  AUXILIARY HOSPITAL/NURSING HOME VISIT/MANAGEMENT OF DIALYSIS PATIENTS
+ 0
+ 0                   Payment was refused as a visit was paid for a prior date of service during
+ 0                   the same calendar week.
+ 0
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                     Page 23
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                                     GENERAL ASSESSMENT (cont'd)
+ 2
+ 2             61E   CONCURRENT CARE
+ 0
+ 0                   Payment was reduced or refused as services for concurrent care require
+ 0                   supporting information.
+ 0
+ 2             61EA  CONTINUING CARE
+ 0
+ 0                   Payment was reduced or refused in accordance with the applicable benefits
+ 0                   schedule.
+ 0
+ 2        Explanatory Codes 61F to 63AA
+ 0
+ 2             61F   CONFLICTING HOSPITAL DATES
+ 0
+ 0                   Payment was reduced or refused as a benefit for some or all of the hospital
+ 0                   dates of service was previously paid.
+ 0
+ 2             61G   POST-PARTUM OFFICE VISITS
+ 0
+ 0                   Payment was refused as this service is not payable when provided to a
+ 0                   healthy newborn during the post-partum period.
+ 0
+ 2             61H   INCLUSIVE - SURGICAL BENEFIT - PRE/POST-OPERATIVE CARE
+ 0
+ 0                   Payment was refused as pre- and/or post-operative care is included in the
+ 0                   procedural benefit.
+ 0
+ 2             62    PROFESSIONAL INTERVIEW/CASE CONFERENCE
+ 0
+ 0                   Payment was refused as HSC 03.05YM may only be claimed when 03.05Y has been
+ 0                   previously submitted and paid.
+ 0
+ 2             63    CLAIM IN PROCESS
+ 0
+ 0                   Your claim is being held as:
+ 0
+ 0                   (a) it requires manual assessment or
+ 0                   (b) the supporting information must be reviewed.
+ 0
+ 0                   DO NOT SUBMIT A NEW CLAIM, as notification of payment or refusal will appear
+ 0                   on a future Statement of Assessment.
+ 0
+ 1
+ 2             63A   SCHEDULE OF BENEFITS
+ 0
+ 0                   Payment for your claim was reduced or refused in accordance with the
+ 0                   applicable benefits schedule. To view the benefits schedules, go to the
+ 0                   Alberta Health website at www.alberta.ca.
+ 0
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                     Page 24
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                                     GENERAL ASSESSMENT (cont'd)
+ 2
+ 2             63AA  UNSCHEDULED SERVICES & DESIGNATED HOLIDAYS
+ 0
+ 0                   Payment was reduced or refused according to the applicable benefits
+ 0                   schedule.
+ 0
+ 2             63AC  Pandemic Telephone Advice
+ 0
+ 0                   This claim was refused in accordance with the notes following HSC 03.01AD.
+ 0
+ 2        Explanatory Codes 63B to 64AB
+ 0
+ 2             63B   MAXIMUM NUMBER OF CALLS
+ 0
+ 0                   Payment was reduced as the maximum number of calls for the HSC was reached.
+ 0
+ 2             63C   INCLUSIVE HEALTH SERVICE CODE
+ 0
+ 0                   Payment was refused as there is an inclusive HSC for these services.
+ 0
+ 1
+ 2             64    SUPPORTING INFORMATION
+ 0
+ 0                   Payment was refused as text information, an operative or pathology report,
+ 0                   or an invoice is required to support assessment of the claim.
+ 0
+ 1
+ 2             64AA  UNANSWERED CORRESPONDENCE/TELEPHONE RESPONSE
+ 0
+ 0                   Payment was refused as our requests for additional information were not
+ 0                   answered.
+ 0
+ 2             64AB  RELATIONSHIP
+ 0
+ 0                   Payment was refused as the relationship of the relative being interviewed
+ 0                   was not provided.
+ 0
+ 2        Explanatory Codes 64C to 65A
+ 0
+ 2             64C   INFORMATION PROVIDED
+ 0
+ 0                   The information provided has been reviewed and payment was:
+ 0
+ 0                   (a) reduced or refused or
+ 0                   (b) unchanged or
+ 0                   (c) altered.
+ 0
+ 0                   Future claims of this nature should be submitted under the applicable HSC.
+ 0                   HSCs under the 99.09 series (Unlisted Procedures) are to be claimed only for
+ 0                   unlisted procedures.
+ 0
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                     Page 25
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                                     GENERAL ASSESSMENT (cont'd)
+ 2
+ 1
+ 2             64D   ANESTHETIC AND SURGERY DISCREPANCY
+ 0
+ 0                   Payment was refused as there is a discrepancy between the HSCs submitted on
+ 0                   the anesthetic and the surgery claims.
+ 0
+ 2             64E   DATE CONFLICT
+ 0
+ 0                   Payment was refused as the date of service does not agree with the
+ 0                   anesthetist's, surgical assistant's or surgeon's claim, as applicable.
+ 0
+ 1
+ 2             65    NON-INVASIVE DIAGNOSTIC PROCEDURES IN HOSPITAL/ADVANCED AMBULATORY CARE
+ 2                   CENTRE/URGENT CARE CENTRE
+ 0
+ 0                   Benefits for non-invasive diagnostic procedures including laboratory and
+ 0                   pathology and diagnostic radiology services performed for a hospital
+ 0                   inpatient, registered outpatient, AACC or UCC patient are not payable under
+ 0                   the AHCIP.  Payment for these services is the responsibility of the
+ 0                   hospital/RHA.  This applies to both the technical and professional
+ 0                   components.
+ 0
+ 1
+ 2             65A   BLOOD SPECIMEN
+ 0
+ 0                   This claim was refused as payment cannot be made:
+ 0
+ 0                   (a) for both obtaining a blood specimen and a laboratory test requiring
+ 0                       blood or
+ 0                   (b) for services performed by non-laboratory facilities.
+ 0
+ 2        Explanatory Codes 65AA to 66
+ 0
+ 2             65AA  MISCELLANEOUS LABORATORY PROCEDURES
+ 0
+ 0                   Payment was refused as:
+ 0
+ 0                   (a) claims submitted for HSC E1 and/or combination of E2, E3, E4, E5 and E7
+ 0                       for the same date of service are not payable in excess of the benefit
+ 0                       for E1 or
+ 0                   (b) the greater benefit is paid when claims are submitted for E1 and E41 or
+ 0                       E400 for the same date of service or
+ 0                   (c) the greater benefit is paid when claims are submitted for E234 and E235
+ 0                       for the same date of service or
+ 0                   (d) a maximum of either one E553 and one E554 or two E553s or two E554s are
+ 0                       paid within a 14 day period.
+ 0
+ 1
+ 2             65D   ALLERGY INVESTIGATIONS
+ 0
+ 0                   Payment was reduced or refused as the maximum benefit for the 365 day period
+ 0                   was reached.
+ 0
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                     Page 26
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                                     GENERAL ASSESSMENT (cont'd)
+ 2
+ 1
+ 2             65E   DETENTION TIME
+ 0
+ 0                   Payment was refused as supporting information must provide a breakdown of
+ 0                   the procedures performed during the time of continuous attendance spent with
+ 0                   the patient and the time of attendance during the ambulance trip, if
+ 0                   applicable.
+ 0
+ 1
+ 2             66    DETENTION TIME
+ 0
+ 0                   Payment was reduced or refused as:
+ 0
+ 0                   (a) when a consultation or visit is claimed in association with HSC 03.05A
+ 0                       or 13.99J during the same encounter, the consultation is considered to
+ 0                       occupy the first 30 minutes of the time spent with the patient or
+ 0                   (b) the greater benefit is paid when 03.05A or 13.99J are claimed for the
+ 0                       same patient encounter.
+ 0
+ 2        Explanatory Codes 66A to 67AB
+ 0
+ 2             66A   VENTILATORY SUPPORT
+ 0
+ 0                   Payment was reduced or refused as:
+ 0
+ 0                   (a) ventilatory support is payable only once every 24 hour period regardless
+ 0                       of the number of physicians providing care or
+ 0                   (b) ventilatory support is not payable for the same date of service to the
+ 0                       same physician who was paid for either an anesthetic or surgical
+ 0                       procedure or
+ 0                   (c) ventilatory support is not payable unless provided in approved level
+ 0                       2 and 3 intensive care and neonatal intensive care units.
+ 0
+ 1
+ 2             67    MULTIPLE CHARGES/SAME ENCOUNTER
+ 0
+ 0                   Payment was refused as claims for multiple services provided in the same
+ 0                   encounter require supporting information.
+ 0
+ 2             67A   PREVIOUS PAYMENT
+ 0
+ 0                   Payment for this service was refused as:
+ 0
+ 0                   (a)  the claim was previously paid or
+ 0                   (b)  the claim was applied at "0" on a previous Statement of Assessment or
+ 0                   (c)  the claim was previously paid under a different HSC for the same
+ 0                        service under another benefits schedule.
+ 0
+ 0                   NOTE:  Requests for a reassessment of applied at "0" claims must be
+ 0                   submitted with the original claim number and the appropriate action code
+ 0                   of "C" (Change), "D" (Delete) or "R" (Reassess). Hospital reciprocal claims
+ 0                   are an exception and must be resubmitted as described in the Alberta Health
+ 0                   and Wellness Hospital Reciprocal Claim Submission Guide.
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                     Page 27
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                                     GENERAL ASSESSMENT (cont'd)
+ 2
+ 0
+ 2             67AA  PAYMENT TO ACCOUNT HOLDER/PATIENT
+ 0
+ 0                   Payment was refused as the benefit for this service was paid to the account
+ 0                   holder/patient.
+ 0
+ 2             67AB  PREVIOUS PAYMENT - DIFFERENT HEALTH SERVICE CODE
+ 0
+ 0                   Payment was refused as a benefit was paid under a different HSC.
+ 0
+ 2        Explanatory Codes 67AC to 69
+ 0
+ 2             67AC  PREVIOUS PAYMENT
+ 0
+ 0                   Payment was refused as this benefit was paid to another practitioner.
+ 0
+ 2             67AD  DUPLICATE  - DIFFERENT SERVICE DATE
+ 0
+ 0                   Payment was refused as this claim appears to be a duplicate of a previously
+ 0                   paid benefit, although the dates of service do not agree. If this is not a
+ 0                   duplicate, submit a new claim with supporting information.
+ 0
+ 1
+ 2             67AE  PREVIOUS PAYMENT WARD RATE/ICU RATE
+ 0
+ 0                   Payment for this service was refused as:
+ 0
+ 0                   a) the ward rate was previously paid or
+ 0                   b) the ICU rate was previously paid.
+ 0
+ 2             67B   LOCATION OF SERVICE CONFLICT
+ 0
+ 0                   Payment was refused as claims were paid for services that the patient
+ 0                   received on this date at a different location/hospital.  Verify the dates
+ 0                   and resubmit applicable claims with additional details.
+ 0
+ 2             68A   PAYMENT REDUCED
+ 0
+ 0                   Payment was reduced as the maximum number of claims was reached.
+ 0
+ 2             68B   PAYMENT REDUCED
+ 0
+ 0                   Payment was reduced to partial Fee-For-Service as per contract agreement.
+ 0
+ 2             68C   PAYMENT REDUCED
+ 0
+ 0                   Payment was reduced to zero as partial Fee-For-Service maximum was reached.
+ 0
+ 2             69    ALTERNATE PAYMENT PLAN ADDITIONAL FEE FOR SERVICE PAYMENTS
+ 0
+ 0                   An additional FFS payment was paid due to additional supporting
+ 0                   documentation for special circumstances.
+ 0
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                     Page 28
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                                          DENTAL ASSESSMENT
+ 0
+ 2             70    PRE/POST-OPERATIVE CARE
+ 0
+ 0                   This claim was assessed in accordance with the general rules in the
+ 0                   applicable benefits schedule.
+ 0
+ 2             70A   TWO DENTAL PROCEDURES
+ 0
+ 0                   Payment was reduced to 75% of the listed benefit as the major surgical
+ 0                   procedure was paid at the full rate.
+ 0
+ 2             70D   INELIGIBLE DENTAL SERVICES
+ 0
+ 0                   Payment was refused as:
+ 0
+ 0                   (a)  tissue conditioning is only payable in conjunction with a denture or
+ 0                        reline within five years and no reline or denture was claimed for this
+ 0                        period or
+ 0                   (b)  tissue conditioning is not payable within three months of a partial or
+ 0                        complete denture insertion as it is included in the denture insertion
+ 0                        benefit or
+ 0                   (c)  only two tissue conditioning benefits are payable for a denture or
+ 0                        reline within five years.  The maximum benefit has been reached.
+ 0
+ 2             70E   TOOTH IDENTIFICATION
+ 0
+ 0                   Payment was refused as:
+ 0
+ 0                   (a)  identification of tooth numbers and/or surfaces is required or
+ 0                   (b)  the tooth surface field for this procedure must be blank or
+ 0                   (c)  the tooth surface(s) indicated is not valid for the tooth code or
+ 0                   (d)  the tooth number indicated is not valid for this procedure.
+ 0
+ 2             70EA  DENTAL EXTRACTION
+ 0
+ 0                   Payment was refused as our records show this tooth was previously extracted.
+ 0
+ 2             70EB  TOOTH SURFACE/TOOTH CODE
+ 0
+ 0                   Payment was refused as the tooth surface or tooth code is invalid.
+ 0
+ 2             70F   DENTURES/REBASE/RESET
+ 0
+ 0                   Payment was refused as a benefit was paid for a partial or complete denture
+ 0                   within the last five years.
+ 0
+ 2             70G   RELINE OR REBASE
+ 0
+ 0                   Payment was refused as benefits were paid for a reline in the past two
+ 0                   years.
+ 0
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                     Page 29
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                                      DENTAL ASSESSMENT (cont'd)
+ 2
+ 1
+ 2             70J   INCLUSION WITHIN THE COMPOSITE BENEFIT
+ 0
+ 0                   Payment was refused as the service is included in the benefit for the
+ 0                   major procedure.
+ 0
+ 2             70L   DENTAL PROCEDURES
+ 0
+ 0                   Payment was refused as when multiple services are claimed for the same date
+ 0                   of service, the following applies:
+ 0
+ 0                   (a)  only the greater benefit of a minor procedure, consultation or any
+ 0                        visit is payable when the services and diagnosis are related or
+ 0                   (b)  only the greater benefit of a minor (M or M+) procedure or a hospital
+ 0                        visit is payable, regardless of the diagnosis or
+ 0                   (c)  only the greater benefit of a minor (M+) procedure or a visit is
+ 0                        payable when performed in a location other than an oral and
+ 0                        maxillofacial surgeon's or dentist's office or surgical suite,
+ 0                        regardless of the diagnosis or
+ 0                   (d)  an office visit benefit is not payable with a minor (M+) procedure and
+ 0                        a consultation, regardless of whether the services are performed at
+ 0                        different encounters.
+ 0
+ 2                          ADDITIONAL COMPENSATION IN ACCORDANCE WITH GR 2.6
+ 0
+ 2             73    ADDITIONAL COMPENSATION CLAIMS
+ 0
+ 0                   Payment was refused as claims from non-residents, subscribers and allied
+ 0                   health professionals with the exception of podiatric surgeons, do not
+ 0                   qualify for additional compensation benefits.
+ 0
+ 2             73A   ADDITIONAL COMPENSATION COMMITTEE
+ 0
+ 0                   This claim was paid, reduced or refused as recommended by the Additional
+ 0                   Compensation Committee.
+ 0
+ 2             73BA  INCORRECT ADDITIONAL COMPENSATION CLAIM SUBMISSION
+ 0
+ 0                   Payment was refused as the claim for additional compensation was submitted
+ 0                   incorrectly.
+ 0
+ 2             73BB  NO PAYMENT BY AHCIP
+ 0
+ 0                   Payment of the additional compensation portion of the claim was refused as
+ 0                   there is no record of an AHCIP payment for this service.
+ 0
+ 2             73BC  REQUEST FOR ADDITIONAL COMPENSATION
+ 0
+ 0                   Payment was refused as supporting documentation is required for the
+ 0                   additional compensation portion of the claim.
+ 0
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                     Page 30
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                      ADDITIONAL COMPENSATION IN ACCORDANCE WITH GR 2.6 (cont'd)
+ 2
+ 2             73BD  NON-INSURED SERVICE
+ 0
+ 0                   Payment was refused as this service is not insured by the AHCIP.
+ 0
+ 2             73BE  CHANGE OF PAYMENT RESPONSIBILITY
+ 0
+ 0                   This additional compensation claim was paid as an AHCIP benefit.
+ 0
+ 2             80B   EYE EXAMINATIONS
+ 0
+ 0                   Payment was refused as this is the second claim for this type of eye
+ 0                   examination for this patient within the benefit period (July 1 to June 30).
+ 0
+ 2             80BA  OPTOMETRIC SERVICES
+ 0
+ 0                   Payment was refused as either a complete vision examination, a partial
+ 0                   vision examination or a single diagnostic procedure was paid for the same
+ 0                   date of service; or the maximum benefit allowed was reached.
+ 0
+ 1
+ 2             80BD  FOLLOW-UP VISIT (HSC B901) TEST REQUIRED
+ 0
+ 0                   Payment for B901 was refused as the patient received the corresponding B900
+ 0                   within 90 days and no explanatory text was provided.  Subject to the
+ 0                   Optometric Benefits Regulation section 12(2), a claim for a B901 performed
+ 0                   within 90 days of a B900, where the diagnostic code falls within Optometric
+ 0                   Benefits Regulation section 12(1), must be accompanied by explanatory text
+ 0                   unless the resident's eye care is subject to a co-management arrangement.
+ 0
+ 2             80BE  MAXIMUM BENEFIT REACHED
+ 0
+ 0                   Payment was refused as the patient has received the maximum benefit
+ 0                   payable for this condition/episode subject to the rules in the Optometric
+ 0                   Benefits Regulation sections 12(1), 12(3) and 12(4).
+ 0
+ 2             80BF  PREVIOUS PAYMENT, SAME DATE OF SERVICE
+ 0
+ 0                   Payment was refused as:
+ 0
+ 0                   (a) a benefit was paid under a different HSC or
+ 0                   (b) a benefit was paid to another practitioner or
+ 0                   (c) a benefit was previously paid.
+ 0
+ 1
+ 2             80C   PODIATRIC/DENTAL LIMITS
+ 0
+ 0                   This claim has been reduced or refused as:
+ 0
+ 0                   (a) the yearly limit for podiatric benefits has been reached; however
+ 0                       payment may be reviewed at a later date if changes to other related
+ 0                       claims for this patient are received or
+ 0                   (b) the calendar year limit for the following dental service(s) has been
+ 0                       reached:
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                     Page 31
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                      ADDITIONAL COMPENSATION IN ACCORDANCE WITH GR 2.6 (cont'd)
+ 2
+ 0                       -a benefit for only two examinations of any type may be paid in a
+ 0                        calendar year or
+ 0                       -a benefit for only two films may be paid in a calendar year or
+ 0                       -a benefit for panoramic x-rays may be paid once every five calendar
+ 0                        years or
+ 0                       -a benefit for no more than two units of time (30 minutes) for
+ 0                        subgingival scaling/root planing may be paid in a calendar year.
+ 0
+ 2             80D   EYEGLASSES/LENSES/FRAME
+ 0
+ 0                   Payment has been reduced or refused as this patient has received:
+ 0
+ 0                   (a) eyeglasses within the last three years or
+ 0                   (b) lenses/lens within the last three years.
+ 0
+ 2             80F   TWELVE MONTH LIMIT
+ 0
+ 0                   Payment has been reduced or refused as the patient has received this benefit
+ 0                   within twelve months.
+ 0
+ 2             80G   OUTDATED CLAIMS
+ 0
+ 0                   Payment was refused as the time limit for submission has expired.
+ 0
+ 2             80H   CONTRACT LIMITS
+ 0
+ 0                   Payment was reduced or refused as the contract limit was reached.
+ 0
+ 1
+ 2             80J   PRACTITIONER/BUSINESS ARRANGEMENT LIMITS
+ 0
+ 0                   Payment was reduced or refused as the limit was reached for the service
+ 0                   provider or the BA.
+ 0
+ 2             80K   RECIPIENT LIMIT HAS BEEN REACHED FOR ALTERNATE PAYMENT PLAN CONTRACT
+ 0
+ 0                   Payment was refused or reduced as the recipient has reached capitation rate.
+ 0
+ 2             80L   ALTERNATE PAYMENT PLAN FEE FOR SERVICE
+ 0
+ 0                   Payment was reduced as the capitation maximum was paid for the month of
+ 0                   service.
+ 0
+ 2             80M   BUSINESS COST PROGRAM
+ 0
+ 0                   Payment has been reduced or applied at "0" as the cap has been reached.
+ 0
+ 2                                             ADJUSTMENTS
+ 0
+ 2             90    PAYMENT REDUCTION
+ 0
+ 0                   This is an adjustment of a previously assessed item.
+ 0
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                     Page 32
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                                         ADJUSTMENTS (cont'd)
+ 2
+ 2             90A   PREVIOUS CORRESPONDENCE - MUTUAL INFORMATION
+ 0
+ 0                   This claim has been assessed in accordance with correspondence or telephone
+ 0                   call.
+ 0
+ 2             90D   ADJUSTMENT, RECIPIENT NO LONGER ELIGIBLE FOR COVERAGE
+ 0
+ 0                   This is an adjustment to update your records only.  Payment has not been
+ 0                   deducted from your account.
+ 0
+ 0                   NOTE:  The patient is not eligible for AHCIP coverage for the date of
+ 0                          service and will be billed by the AHCIP.
+ 0
+ 1
+ 2             90E   ADJUSTMENT, RECIPIENT DECEASED
+ 0
+ 0                   This is an adjustment to a previously assessed claim.  Our records indicate
+ 0                   that the patient's date of death is prior to the date of service.  Please
+ 0                   check your records to confirm the date of service.  If the wrong date of
+ 0                   service was used, submit a change transaction with the correct date of
+ 0                   service.
+ 0
+ 2                                         HOSPITAL RECIPROCAL
+ 0
+ 2             95    NEWBORN
+ 0
+ 0                   Payment was refused as the diagnosis submitted does not agree with the ward
+ 0                   rate claimed.
+ 0
+ 2             95A   INPATIENT/OUTPATIENT SERVICES
+ 0
+ 0                   Payment was refused as an inpatient and an outpatient service provided at
+ 0                   the same hospital on the same day to an individual patient is not payable.
+ 0
+ 2             95B   DAY OF DISCHARGE
+ 0
+ 0                   Payment has been reduced as the standard ward rate is not payable for the
+ 0                   day of discharge.
+ 0
+ 2             95C   HIGH COST PROCEDURE/ZERO WARD RATE
+ 0
+ 0                   Payment was refused as when a high cost procedure and an inpatient standard
+ 0                   ward rate are being claimed, two separate claims must be submitted:
+ 0
+ 0                   (a) one claim showing the admission and discharge date and an inpatient
+ 0                       standard ward rate, with the claimed amount of zero, and
+ 0                   (b) the other claim for the high cost procedure.
+ 0
+ 2             95D   MULTIPLE TRANSPLANTS SAME HOSPITAL STAY
+ 0
+ 0                   Payment was refused as multiple same organ transplants within the same
+ 0                   hospital stay are not payable.
+ 0
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                     Page 33
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                                     HOSPITAL RECIPROCAL (cont'd)
+ 2
+ 2             95E   REDUCED BENEFITS
+ 0
+ 0                   Payment has been reduced as the number of days between the admission and
+ 0                   discharge dates do not agree with the claimed amount.
+ 0
+ 2             95F   OUTPATIENT SERVICES
+ 0
+ 0                   Payment was refused as an outpatient hospital service has been previously
+ 0                   paid for this patient for this date of service.
+ 0
+ 2             95G   MAXIMUM NUMBER OF SERVICES
+ 0
+ 0                   Payment was refused as the maximum number of services was paid.
+ 0
+ 2             95K   CLAIM IN PROCESS
+ 0
+ 0                   Hold for documentation.
+ 0
+ 2             95L   OUT OF PROVINCE REGISTRATION EXPIRY DATE
+ 0
+ 0                   Payment was refused as the out of province registration expiry date must be
+ 0                   blank if the out of province registration number is blank.
+ 0
+ 2             95M   UNABLE TO PROCESS UPDATED TRANSACTION
+ 0
+ 0                   The transaction to update a previously submitted claim cannot be processed
+ 0                   as:
+ 0
+ 0                   (a) the original add transaction cannot be located or
+ 0                   (b) the result of your original claim is unknown, or
+ 0                   (c) the original claim was previously deleted.
+ 0
+ 0                   Please review your records and resubmit, if applicable.
+ 0
+ 2             95T   INVALID ICD10CA DIAGNOSTIC CODE
+ 0
+ 0                   Payment was refused as the diagnostic code is invalid.  Only the
+ 0                   International Statistical Classification of Diseases and Related Health
+ 0                   Problems, 10th Canadian Revision, diagnostic codes (ICD10CA) are acceptable
+ 0                   for hospital reciprocal inpatient billing.
+ 0
+ 2        Adjustments Requested by Home Province
+ 0
+ 2             96A   MOTHER/NEWBORN REGISTRATION NUMBER
+ 0
+ 0                   This is an adjustment of a previously processed claim.  Payment was deducted
+ 0                   as the mother's out of province registration number may not be used for a
+ 0                   baby over the age of three months.  Please obtain the baby's correct out of
+ 0                   province number and resubmit the claim.
+ 0
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                     Page 34
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                                     HOSPITAL RECIPROCAL (cont'd)
+ 2
+ 1
+ 2             96B   DECLARATION FORM INCOMPLETE/INCORRECT
+ 0
+ 0                   This is an adjustment of a previously processed claim. Payment was deducted
+ 0                   as the Declaration Form requested by the patient's home province was:
+ 0
+ 0                   (a) not provided or
+ 0                   (b) incomplete or
+ 0                   (c) not signed by the patient or parent/guardian.
+ 0
+ 2             96C   OUT OF PROVINCE PATIENT INFORMATION/CLAIM INFORMATION DISCREPANCY
+ 0
+ 0                   This is an adjustment of a previously processed claim. Payment was deducted
+ 0                   because there is a discrepancy between:
+ 0
+ 0                   (a) the home province's patient registration information and the patient
+ 0                       information submitted or
+ 0                   (b) the expiry date on the patient's health card and the expiry date
+ 0                       submitted.
+ 0
+ 1
+ 2             96D   OUT OF PROVINCE PATIENT'S COVERAGE NOT EFFECTIVE
+ 0
+ 0                   This is an adjustment of a previously processed claim. Payment was deducted
+ 0                   as the patient's home province has verified that the patient's health card
+ 0                   was not valid on:
+ 0
+ 0                   (a) the date of service or
+ 0                   (b) the admission date or
+ 0                   (c) the discharge date.
+ 0
+ 2             96E   INCORRECT CLAIM - ALBERTA RESPONSIBILITY
+ 0
+ 0                   Our records indicate that the patient was an Alberta resident on the date of
+ 0                   service; therefore, this claim has been:
+ 0
+ 0                   (a) refused or
+ 0                   (b) adjusted from your previous payment.
+ 0
+ 2             96F   WORKERS' COMPENSATION BOARD RESPONSIBILITY
+ 0
+ 0                   This is an adjustment of a previously processed claim.  Payment was deducted
+ 0                   as we have received information advising this service is the responsibility
+ 0                   of the WCB.  This claim should be submitted directly to the WCB.
+ 0
+ 2             96G   INCORRECT SERVICE/DATE OF SERVICE/RATE CLAIMED
+ 0
+ 0                   This is an adjustment of a previously processed claim.  Payment was deducted
+ 0                   at the request of the patient's home province as an incorrect:
+ 0
+ 0                   (a) service or
+ 0                   (b) date of service or
+ 0                   (c) rate
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                     Page 35
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                                     HOSPITAL RECIPROCAL (cont'd)
+ 2
+ 0
+ 0                   was claimed.  Please submit a new claim using the correct information, if
+ 0                   applicable.
+ 0
+ 2             96H   SECOND OUTPATIENT VISIT
+ 0
+ 0                   This is an adjustment of a previously processed claim.  Payment was deducted
+ 0                   as multiple outpatient visits on the same day for the same patient are not
+ 0                   payable.
+ 0
+ 0                   Note: Charges for additional outpatient visits may not be billed directly
+ 0                   to the patient or home province.
+ 0
+ 2        Adjustments Requested by Alberta RHA/Hospital
+ 0
+ 2             97A   INCORRECT SERVICE/DATE OF SERVICE/RATE CLAIMED
+ 0
+ 0                   This is an adjustment of a previously processed claim.  Payment was deducted
+ 0                   at the request of the Alberta RHA/hospital as an incorrect:
+ 0
+ 0                   (a) service or
+ 0                   (b) date of service or
+ 0                   (c) rate
+ 0
+ 0                   was claimed.  Please submit a new claim using the correct information, if
+ 0                   applicable.
+ 0
+ 2                                        ALTERNATE PAYMENT PLAN
+ 0
+ 2             98    CAPITATION PAID
+ 0
+ 0                   Payment was refused as capitation (payment in lieu of FFS benefits) was paid
+ 0                   for this patient for this date of service.
+ 0
+ 2             98A   INVALID HEALTH SERVICE CODE
+ 0
+ 0                   Payment was refused as this HSC may not be claimed by the BA indicated.
+ 0
+ 2             98AA  FEE FOR SERVICE/ALTERNATE PAYMENT PLAN REASSESSED CLAIMS
+ 0
+ 0                   Thank you for your payment.  Your FFS claim transactions have been
+ 0                   reassessed and applied as APP billing.
+ 0
+ 2        Registration
+ 0
+ 2             98B   NON PATIENT-SPECIFIC UNIQUE LIFETIME IDENTIFIER - OTHER INTERVENTIONS
+ 0
+ 0                   This transaction was refused as the non patient-specific ULI must be used
+ 0                   for services defined as other interventions.
+ 0
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                     Page 36
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                                   ALTERNATE PAYMENT PLAN (cont'd)
+ 2
+ 2        Practitioner Registration
+ 0
+ 2             98C   LOCUM BUSINESS ARRANGEMENT - FEE FOR SERVICE
+ 0
+ 0                   This transaction was refused as a practitioner with a locum BA may not be
+ 0                   paid FFS under an APP practice.
+ 0
+ 2        Ineligible Services
+ 0
+ 2             98D   OTHER INTERVENTIONS - NON-ENROLLED PATIENTS
+ 0
+ 0                   This transaction was refused as services defined as other interventions may
+ 0                   not be submitted for non-enrolled patients.
+ 0
+ 2             98DA  OTHER INTERVENTIONS NOT ELIGIBLE UNDER GOOD FAITH
+ 0
+ 0                   This transaction was refused as services defined as other interventions may
+ 0                   not be claimed under the Good Faith program.
+ 0
+ 2             98DB  INELIGIBLE OTHER INTERVENTIONS
+ 0
+ 0                   This transaction was refused as this other intervention service may not be
+ 0                   claimed under this APP program.
+ 0
+ 2             98DC  DATE OF SERVICE/ALTERNATE PAYMENT PLAN EFFECTIVE DATE
+ 0
+ 0                   This transaction was refused as the APP program is not active for this date
+ 0                   of service.
+ 0
+ 2        Incomplete Claims / Additional Information Required
+ 0
+ 2             98E   INVALID PAY-TO CODE
+ 0
+ 0                   This transaction was refused as the pay-to code must be "BAPY" (BA Payee)
+ 0                   for all APP services.
+ 0
+ 2             98EA  INVALID HEALTH SERVICE CODE - NON PATIENT-SPECIFIC UNIQUE LIFETIME
+ 2                   IDENTIFIER
+ 0
+ 0                   This transaction was refused as only HSCs that are defined as
+ 0                   non patient-specific may be submitted under the non patient-specific ULI.
+ 0
+ 2             98EB  INVALID BUSINESS ARRANGEMENT NUMBER
+ 0
+ 0                   This transaction was refused as the APP BA number must be used for all
+ 0                   services listed as other interventions.
+ 0
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                      Page i
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                                          TABLE OF CONTENTS
+ 2
+ 0
+ 0
+ 0
+ 2        ACRONYMS AND SPECIAL PROCESSING CODES  . . . . . . . . . . . . . . . . . . . . . . . 1
+ 0          Advanced Ambulatory Care Centre (AACC) . . . . . . . . . . . . . . . . . . . . . . 1
+ 0          Alberta Health Care Insurance Plan (AHCIP) . . . . . . . . . . . . . . . . . . . . 1
+ 0          Alternate Payment Plan (APP) . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+ 0          Business Arrangement (BA)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+ 0          Fee for Service (FFS)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+ 0          Health Service Code (HSC)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+ 0          Personal Health Number (PHN) . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+ 0          Practitioner Identifier (PRAC ID)  . . . . . . . . . . . . . . . . . . . . . . . . 1
+ 0          Regional Health Authority (RHA)  . . . . . . . . . . . . . . . . . . . . . . . . . 1
+ 0          Unique Lifetime Identifier (ULI) . . . . . . . . . . . . . . . . . . . . . . . . . 1
+ 0          Urgent Care Centre (UCC) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+ 0          Workers' Compensation Board (WCB)  . . . . . . . . . . . . . . . . . . . . . . . . 1
+ 0
+ 2        PATIENT REGISTRATION . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+ 0
+ 2        PRACTITIONER REGISTRATION  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+ 0
+ 2        INELIGIBLE SERVICES  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+ 0
+ 2        INCOMPLETE CLAIMS/ADDITIONAL INFORMATION REQUIRED  . . . . . . . . . . . . . . . . . 6
+ 0          Person Data Segment  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+ 0          Base Claim Batch Process . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+ 0          Base Claim Segment . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  10
+ 0
+ 2        SURGICAL PROCEDURES  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  17
+ 0
+ 2        MINOR PROCEDURES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  19
+ 0
+ 2        ANESTHESIA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  20
+ 0
+ 2        CONSULTATIONS/VISITS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  21
+ 0
+ 2        GENERAL ASSESSMENT . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  22
+ 0          Explanatory Codes 60EB to 61EA . . . . . . . . . . . . . . . . . . . . . . . . .  22
+ 0          Explanatory Codes 61F to 63AA  . . . . . . . . . . . . . . . . . . . . . . . . .  23
+ 0          Explanatory Codes 63B to 64AB  . . . . . . . . . . . . . . . . . . . . . . . . .  24
+ 0          Explanatory Codes 64C to 65A . . . . . . . . . . . . . . . . . . . . . . . . . .  24
+ 0          Explanatory Codes 65AA to 66 . . . . . . . . . . . . . . . . . . . . . . . . . .  25
+ 0          Explanatory Codes 66A to 67AB  . . . . . . . . . . . . . . . . . . . . . . . . .  26
+ 0          Explanatory Codes 67AC to 69 . . . . . . . . . . . . . . . . . . . . . . . . . .  27
+10        RG131                    ALBERTA HEALTH CARE INSURANCE PLAN                     Page ii
+ 0
+ 0                                          EXPLANATORY CODES                    As of 2025/03/14
+ 0
+ 0
+ 2                                      TABLE OF CONTENTS (cont'd)
+ 2
+ 0
+ 2        DENTAL ASSESSMENT  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  28
+ 0
+ 2        ADDITIONAL COMPENSATION IN ACCORDANCE WITH GR 2.6  . . . . . . . . . . . . . . . .  29
+ 0
+ 2        ADJUSTMENTS  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  31
+ 0
+ 2        HOSPITAL RECIPROCAL  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  32
+ 0          Adjustments Requested by Home Province . . . . . . . . . . . . . . . . . . . . .  33
+ 0          Adjustments Requested by Alberta RHA/Hospital  . . . . . . . . . . . . . . . . .  35
+ 0
+ 2        ALTERNATE PAYMENT PLAN . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  35
+ 0          Registration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  35
+ 0          Practitioner Registration  . . . . . . . . . . . . . . . . . . . . . . . . . . .  36
+ 0          Ineligible Services  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  36
+ 0          Incomplete Claims / Additional Information Required  . . . . . . . . . . . . . .  36

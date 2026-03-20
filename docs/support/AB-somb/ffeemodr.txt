@@ -1,0 +1,1081 @@
+10       RG122                     ALBERTA HEALTH CARE INSURANCE PLAN
+ 0
+ 0                                        MODIFIER DEFINITIONS
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0                                       Fee Modifier Definitions
+ 0
+ 0                                                As Of
+ 0
+ 0                                            14 March 2025
+10       RG122                     ALBERTA HEALTH CARE INSURANCE PLAN                       Page 1
+ 0
+ 0                                        MODIFIER DEFINITIONS                    As of 2025/03/14
+ 0
+ 0
+ 0
+ 2       AGE  AGE - (Implicit) - Identifies specific services which are payable at
+ 2            different rates depending upon the age of the patient.
+ 0
+ 0            G2     OVER 2 YEARS - (Implicit) - The patient is 2 years of age or older.
+ 0            G65    OVER 65 YEARS - (Implicit) - The patient is 65 years of age or older.
+ 0            G75    OVER 75 YEARS - (Implicit) - The patient is 75 years of age or older
+ 0            G75GP  OVER 75 YEARS- (Implicit) - The patient is 75 years of age or older. This
+ 0                   modifier allows physicians with the skill of GP to be paid for HSC 03.03A
+ 0                   or 03.03AZ at 20% above the GP rate.
+ 0            L1     UNDER 1 YEAR - (Implicit) - The patient is 12 months of age or younger.
+ 0            L10    UNDER 10 YEARS - (Implicit) - The patient has not reached their 10th
+ 0                   birthday.
+ 0            L11    UNDER 11 YEARS - (Implicit) - The patient has not reached their 11th
+ 0                   birthday.
+ 0            L13    UNDER 13 YEARS - (Implicit) - The patient has not reached their 13th
+ 0                   birthday.
+ 0            L30    UNDER 30 DAYS,ROLE OF SURGEON - (Implicit) - The patient is 30 days of age
+ 0                   or younger. Applies only to cardiovascular and thoracic surgery.
+ 0            L4     UNDER 4 YEARS - (Implicit) - The patient has not reached their 4th birthday.
+ 0
+ 2       ANEU ANESTHETIC LISTED RATE UNITS - (Implicit) - This modifier is system derived
+ 2            from the information in the calls field for multiple services of same Health
+ 2            Service Code when the anesthetic role modifier (ANE) is used.
+ 0
+ 0            ANEU   ANESTHETIC LISTED RATE UNITS - (Implicit)
+ 0
+ 2       ANU  ANESTHETIC TIME UNITS - (Implicit) - This modifier is system derived from
+ 2            the information entered in the calls field when the Anesthetic Time role
+ 2            modifier (ANEST) is used.  EACH UNIT REPRESENTS 5 MINUTES. ADDITIONAL 5
+ 2            MINUTE UNITS MAY NOT BE CLAIMED UNLESS A FULL 5 MINUTES HAS ELAPSED.
+ 0
+ 0            ANU    ANESTHETIC TIME UNITS - (Implicit) - For anesthetic claimed on a time
+ 0                   basis, claim the entire elapsed time against the primary procedure code,
+ 0                   even if multiple procedures are done.  (Example:  if procedure A and B take
+ 0                   a combined total of 2 hours, claim 2 hours against procedure A only).  2
+ 0                   hours equals 24 calls.
+ 0
+ 2       ARFC AUTOMATIC RAPID FILM CHANGER - (Explicit) - Increases rate of a procedure
+ 2            with automatic rapid film changer.
+ 0
+ 0            ARFC   AUTO RAPID FILM CHANGER - (Explicit)
+ 0
+10       RG122                     ALBERTA HEALTH CARE INSURANCE PLAN                       Page 2
+ 0
+ 0                                        MODIFIER DEFINITIONS                    As of 2025/03/14
+ 0
+ 0
+ 2       BMI  BMI - (Explicit) - This modifier is used to support the additional
+ 2            payment of 25% for selected procedures, obstetrical services, anesthesia,
+ 2            second qualified surgeon and surgical assistant services for adult patients
+ 2            who meet requirements indicated in the Governing Rules and patients under 18
+ 2            years of age who are above the 97th percentile for BMI on an approved
+ 2            pediatric growth curve.
+ 0
+ 0            BMIABD BMIABD - Body Mass Index, ANESTHETIC BY DEFINITION - (Explicit) -
+ 0                   The physician functions as the Anesthetist and is claiming a Health Service
+ 0                   Code (HSC) which is an anesthetic by definition and does not have modifier
+ 0                   ANE.
+ 0            BMIANE BMIANE - Body Mass Index,  ANESTHETIST - (Explicit) - The physician
+ 0                   functions as the Anesthetist and is claiming the listed anesthetic
+ 0                   benefit.
+ 0            BMIANT BMIANT - Body Mass Index, ANESTHETIST TRC - (Explicit) - The physician
+ 0                   functions as the Anesthetist and is claiming a benefit based on the
+ 0                   duration of the anesthetic.
+ 0            BMIPRO BMIPRO - Body Mass Index, SURGEON/SECOND QUALIFIED SURGEON/SURGICAL
+ 0                   ASSISTANT - (Explicit) - The physician functions as the Surgeon, Second
+ 0                   Qualified Surgeon, or as a Surgical Assistant and is claiming the listed
+ 0                   applicable benefit.
+ 0            BMISRG BMISRG - Body Mass Index, SURGEON/SECOND QUALIFIED SURGEON/SURGICAL
+ 0                   ASSISTANT - (Explicit) - The oral maxillofacial surgeon functions as the
+ 0                   Surgeon, Second Qualified Surgeon, or as a Surgical Assistant and is
+ 0                   claiming the listed applicable benefit. This modifier may only be claimed by
+ 0                   oral maxillofacial surgeons.
+ 0            BMI2AN BMI2AN - Body Mass Index, ANESTHETIST TRC 2 - (Explicit) - The physician
+ 0                   functions as the anesthetist and is claiming anesthetic time premium units
+ 0                   based on the duration of the anesthetic.
+ 0
+ 2       CAGE CORRECTED AGE - (Explicit) - This modifier is used to support the
+ 2            additional payment of 25% for specific general surgery procedures and
+ 2            specific anesthetic services for patients with a "corrected" age of up to 3
+ 2            months.
+ 0
+ 0            CAANE  CORRECTED AGE, ROLE OF ANESTHETIST - (Explicit) -Infants up to 3 months
+ 0                   "corrected age". Applies only to specific anesthetic services that are being
+ 0                   claimed at the listed anesthetist benefit.
+ 0            CAANT  CORRECTED AGE, ROLE OF ANESTHETIST TRC - (Explicit) -Infants up to 3 months
+ 0                   "corrected age". Applies only to specific anesthetic services that are being
+ 0                   claimed on the duration of the anesthetic.
+ 0            CASRG  CORRECTED AGE, ROLE OF SURGEON - (Explicit) - Infants up to 3 months
+ 0                   "corrected age". Applies only to specific general surgery procedures.
+ 0            CA2AN  CORRECTED AGE, ROLE OF ANESTHETIST TRC 2 - (Explicit) -Infants up to 3
+ 0                   months "corrected age". Applies only to specific anesthetic time premium
+ 0                   units based on the duration of the anesthetic.
+ 0
+10       RG122                     ALBERTA HEALTH CARE INSURANCE PLAN                       Page 3
+ 0
+ 0                                        MODIFIER DEFINITIONS                    As of 2025/03/14
+ 0
+ 0
+ 2       CALL CALLS UNITS - (Implicit) - This modifier is system derived from the
+ 2            information entered in the calls field for multiple services.  The calls
+ 2            field indicates the number of services claimed.  The modifier value code
+ 2            indicates what each unit/call represents (time, size, number).
+ 0
+ 0            CALL01 - (Implicit) - This modifier allows payment of an additional percentage for
+ 0                   patients less than 1 year of age.
+ 0            CALL10 - (Implicit) - This modifier allows payment of an additional percentage for
+ 0                   patients less than 10 years of age.
+ 0            CALL13 - (Implicit) - This modifier allows payment of an additional percentage for
+ 0                   the second and subsequent calls for patients less than 13 years of age.
+ 0            CM2.5D PER 2.5cm - (Implicit) - For use by Dentists only.  Per layer, each 2.5 cm
+ 0                   represents 1 unit.
+ 0            COMGER COMPREHENSIVE GERIATRIC ASSESSMENT  PER 1 1/2 HOURS + EACH ADDITIONAL 1/4
+ 0                   HOUR - (Implicit) - First unit represents 1 1/2 hours, each subsequent unit
+ 0                   represents 15 minutes.
+ 0            F2.5B5 PER FACE 2.5 cm or BODY 5 cm - (Implicit) - Each 2.5 cm of the face or 5 cm
+ 0                   of the body involving a single layer represent 1 unit.  For additional
+ 0                   layers requiring suturing, each 2.5 cm of the face or 5 cm of the body
+ 0                   represents 1 unit.
+ 0            H1     PER HOUR - (Implicit) - Each unit represents 60 minutes.
+ 0            H1M15  PER 1 HOUR + EACH ADDITIONAL 1/4 HOUR - (Implicit) - First unit represents
+ 0                   60 minutes, each subsequent unit represents 15 minutes.
+ 0            M05    PER 5 MINUTES - (Implicit) - Each unit represents 5 minutes. Additional
+ 0                   calls for anesthetic may not be claimed unless a full 5 minutes has elapsed.
+ 0            M15    PER 1/4 HOUR - (Implicit) - Each unit represents 15 minutes.
+ 0            M15NPM M15NPM - (Implicit) - This implicit modifier allows physicians with the
+ 0                   implicit skill of NPM to be paid for HSC 08.45 or 08.45Z according to the
+ 0                   rates listed in the Price List
+ 0            M15PDC M15PDC - (Implicit) - This implicit modifier allows physicians with the
+ 0                   implicit skill modifier of PEDC to be paid for HSC 08.45 or 08.45Z
+ 0                   according to the rates listed in the Price List.
+ 0            M15PDG M15PDG - (Implicit) - This implicit modifier allows physicians with the
+ 0                   implicit skill modifier of PDGE to be paid for HSC 08.45 or 08.45Z
+ 0                   according to the rates listed in the Price List.
+ 0            M15PDN M15PDN - (Implicit) - This implicit modifier allows physicians with the
+ 0                   implicit skill modifier of PEDN to be paid for HSC 08.45 or 08.45Z
+ 0                   according to the rates listed in the Price List.
+ 0            M15PDS M15PDS - (Implicit) - This implicit modifier allows physicians with the
+ 0                   implicit skill modifier of PDSG to be paid for HSC 08.45 or 08.45Z
+ 0                   according to the rates listed in the Price List.
+ 0            M15PED M15PED - (Implicit) - This implicit modifier allows physicians with the
+ 0                   implicit skill modifier of PED to be paid for HSC 08.45 or 08.45Z according
+ 0                   to the rates listed in the Price List.
+ 0            M15PSY M15PSY-(Implicit) - This implicit modifier allows physicians with the
+ 0                   implicit skill modifier of PSYC to be paid for HSC 08.45 or 08.45Z
+ 0                   according to the rates listed in the Price List.
+ 0            M30    PER 1/2 HOUR - (Implicit) - Each unit represents 30 minutes.
+ 0            M30M15 PER 1/2 HOUR + EACH ADDITIONAL 1/4 HOUR - (Implicit) - First unit represents
+ 0                   30 minutes, each subsequent unit represents 15 minutes.
+10       RG122                     ALBERTA HEALTH CARE INSURANCE PLAN                       Page 4
+ 0
+ 0                                        MODIFIER DEFINITIONS                    As of 2025/03/14
+ 0
+ 0
+ 0            M35M05 PER 35 MINUTES + EACH ADDITIONAL 5 MINUTES - (Implicit) - First unit
+ 0                   represents 35 minutes, each subsequent unit represents 5 minutes. Additional
+ 0                   calls for anesthetic may not be claimed unless a full 5 minutes has elapsed.
+ 0            M45M15 PER 3/4 HOUR + EACH ADDITIONAL 1/4 HOUR - (Implicit) - First unit represents
+ 0                   45 minutes, each subsequent unit represents 15 minutes.
+ 0            M90M15 Per 90 MINUTES + EACH ADDITIONAL 1/4 HOUR - (Implicit) - First unit
+ 0                   represents 90 minutes, each subsequent unit represents 15 minutes.
+ 0            NBRDAY NUMBER OF DAYS - (Implicit) - Each unit represents 1 day.
+ 0            NBRMON NUMBER OF MONTHS - (Implicit) - Each unit represents 1 month.
+ 0            NBRSER NUMBER OF SERVICES - (Implicit) - Each unit represents 1 service.
+ 0
+ 2       CARE COMPLEX PATIENT CARE - (Explicit) - Used to indicate complex patient care.
+ 0
+ 0            CMXC30 CMXC30 COMPLEX PATIENT CONSULTATION/VISIT - (Explicit) - This modifier is
+ 0                   used to indicate a complex patient consultation or visit requiring that the
+ 0                   physician spend 30 minutes or more on management of the patient's care.
+ 0                          1. May only be claimed for HSCs 03.04A, 03.04AZ, 03.04B, 03.04C,
+ 0                             03.04D, 03.04E, 03.04F, 03.04FA, 03.04FB, 03.04G, 03.04GA,
+ 0                             03.04GB,03.04H, 03.04HA, 03.04HB, 03.04M, 03.08A, 03.08AZ,
+ 0                             03.08B, 03.08BZ, 03.08C, 03.08CV, 03.08F, 03.08H, 03.08K,
+ 0                             03.08NZ and 03.09A.
+ 0                          2. May be claimed with HSC 03.08A, 03.08AZ when claiming prolonged
+ 0                             consultations, i.e. HSCs 03.08I, 03.08IZ, 03.08J, 03.08JZ,
+ 0                             03.08L, 03.08M.
+ 0            CMXV15 CMXV15 COMPLEX PATIENT CONSULTATION/VISIT - (Explicit) - This modifier is
+ 0                   used to indicate a complex patient consultation or visit requiring that the
+ 0                   physician spend 15 minutes or more on management of the patient's care.
+ 0                   Refer to modifier CMXV30 for visits taking 30 minutes or more.
+ 0                   May only be claimed by:
+ 0                   - community medicine, geriatric medicine, occupational medicine, radiation
+ 0                   oncology for HSCs 03.03A, 03.03AZ, 03.03CV, 03.07A, 03.07AZ, 03.07B.
+ 0                   - cardiology, endocrinology/metabolism, hematology, infectious diseases,
+ 0                   internal medicine, medical oncology, nephrology, pediatric cardiology,
+ 0                   pediatrics, rheumatology for HSCs 03.03A, 03.03AZ, 03.03CV, 03.03F, 03.03FV,
+ 0                   03.03FZ, 03.07A, 03.07AZ, 03.07B. Pediatrics may claim for HSC 03.05JK.
+ 0            CMXV20 CMXV20 COMPLEX PATIENT CONSULTATION/VISIT - (Explicit) - This modifier is
+ 0                   used to indicate a complex patient consultation or visit requiring that the
+ 0                   physician spend 20 minutes or more on management of the patient's care.
+ 0                   Refer to modifier CMXV35 for visits taking 35 minutes or more. May be
+ 0                   claimed by groups other than those eligible for the CMXV15, CMXV30
+ 0                   modifiers for HSCs 03.03A, 03.03AZ, 03.03B, 03.03BZ, 03.03C, 03.03CV,
+ 0                   03.03F, 03.03FV, 03.03FZ, 03.07A, 03.07AZ, 03.07B, 03.07C as
+ 0                   appropriate to the physician's specialty.
+ 0                   This modifier may also be claimed by any physician for HSCs 03.05CN,
+ 0                   03.05CR, 03.05DN, 03.05DR, 03.05EN, 03.05ER, 03.05F, 03.05FA, 03.05FB,
+ 0                   03.05FC, 03.05FD, 03.05FE, 03.05FF, 03.05FG, 03.05FH, 03.05FR, 03.05GR,
+ 0                   03.05HR when location and time conditions (above) are met.
+10       RG122                     ALBERTA HEALTH CARE INSURANCE PLAN                       Page 5
+ 0
+ 0                                        MODIFIER DEFINITIONS                    As of 2025/03/14
+ 0
+ 0
+ 0            CMXV30 CMXV30 COMPLEX PATIENT CONSULTATION/VISIT - (Explicit) -
+ 0                   This modifier is used to indicate a complex patient consultation or visit
+ 0                   requiring that the physician spend 30 minutes or more on management of the
+ 0                   patient's care.
+ 0                   May only be claimed by:
+ 0                   - community medicine, geriatric medicine, occupational medicine,
+ 0                   radiation oncology for HSCs 03.03A, 03.03AZ, 03.07A, 03.07AZ, 03.07B.
+ 0                   - cardiology, endocrinology/metabolism, hematology, infectious diseases,
+ 0                   internal medicine, medical oncology, nephrology, pediatric cardiology,
+ 0                   pediatrics, rheumatology for HSCs 03.03A, 03.03AZ, 03.03F, 03.03FZ, 03.07A,
+ 0                   03.07AZ, 03.07B. Pediatrics may claim for HSC 03.05JK.
+ 0            CMXV35 CMXV35 CMXV35 COMPLEX PATIENT CONSULTATION/VISIT - (Explicit) - This
+ 0                   modifier is used to indicate a complex patient consultation or visit
+ 0                   requiring that the physician spend 35 minutes or more on management of the
+ 0                   patient's care. May be claimed by groups other than those eligible for the
+ 0                   CMXV30 modifier for HSCs 03.03A, 03.03AZ, 03.03B, 03.03BZ, 03.03C, 03.03F,
+ 0                   03.03FZ, 03.07A, 03.07AZ, 03.07B, 03.07C as appropriate to the physician's
+ 0                   specialty. This modifier may also be claimed by any physician for
+ 0                   HSCs 03.05CN, 03.05CR, 03.05DN, 03.05DR, 03.05EN, 03.05ER, 03.05F, 03.05FA,
+ 0                   03.05FB, 03.05FC, 03.05FD, 03.05FE, 03.05FF, 03.05FG, 03.05FH, 03.05FR,
+ 0                   03.05GR, 03.05HR when location and time conditions (above) are met.
+ 0            COINPT COMPLEX INPATIENT CARE - (Explicit) - This modifier is used to indicate
+ 0                   management of a complex hospital inpatient, or a long term care (LTC)
+ 0                   patient for palliative care or intercurrent illness when the conditions to
+ 0                   claim HSCs 03.03D or 03.03AR are met.
+ 0                          1. May only be claimed once per patient, per physician,
+ 0                             per day.
+ 0                          2. May only be claimed for the management of complex
+ 0                             hospital inpatients with multi-system disease:
+ 0                             - whose co-morbidities contribute to complicating or increasing
+ 0                               the care required by the claiming physicians involved in the
+ 0                               care of the patient; and
+ 0                             - whose care requires that the physician spend 20 minutes or more
+ 0                               per day on management of the patient's ongoing care.
+ 0                          3. May not be claimed for transfer of care where the receiving
+ 0                             physician requires time to familiarize him/herself with the
+ 0                             patient unless the conditions outlined in (2) above are met.
+ 0
+ 2       CMPD COMPOUND - (Explicit) - Used to indicate a compound fracture as described in
+ 2            GR 6.11.1.
+ 0
+ 0            CMPD   COMPOUND - (Explicit)
+ 0
+ 2       CMPX COMPLEX TIME - (Explicit) - This modifier type is used to indicate a
+ 2            complex patient visit payable in time units by general practitioners only.
+ 0
+10       RG122                     ALBERTA HEALTH CARE INSURANCE PLAN                       Page 6
+ 0
+ 0                                        MODIFIER DEFINITIONS                    As of 2025/03/14
+ 0
+ 0
+ 0            CMGP   CMGP COMPLEX PATIENT VISIT - (Explicit) - This modifier is used to indicate
+ 0                   a complex patient visit requiring that the physician spend 15 minutes
+ 0                   or more on management of the patient's care. EACH ADDITIONAL UNIT
+ 0                   REPRESENTS 10 MINUTES. ADDITIONAL UNITS MAY NOT BE CLAIMED UNLESS A FULL
+ 0                   10 MINUTES HAS ELAPSED. (Example: CMGP03 indicates a general practice
+ 0                   physician has spent a minimum of 35 minutes with the patient and on patient
+ 0                   management activities. The first unit represents 15 minutes and each
+ 0                   subsequent unit represents 10 minutes.) A maximum of 10 calls may be claimed
+ 0                   for HSCs 03.01J, 03.03A, 03.03AZ, 03.03B, 03.03BZ, 03.03C, 03.03N, 03.03NA,
+ 0                   03.03NB, 03.03P, 03.03Q, 03.07A, 03.07AZ, and 03.07B by general
+ 0                   practitioners. A maximum of 1 call (CMGP01) may be claimed for HSC 03.03CV
+ 0                   by general practitioners.
+ 0
+ 2       INCS INCISIONS - (Explicit) - This modifier is to be used for gynecological
+ 2            health service codes only to indicate multiple procedures were performed
+ 2            through a different incision.
+ 0
+ 0            DIFF   DIFFERENT INCISION - (Explicit) - Used to indicate that multiple
+ 0                   gynecological procedures were performed through different incisions. Does
+ 0                   not apply to anesthetic claims.
+ 0
+ 2       LEVL LEVEL - (Implicit) - Calculates the rate payable for consecutive hospital
+ 2            days.  The modifier value code is a combination using "level" for the date
+ 2            range and "skill" for the rate variations.  If the service provider does not
+ 2            have one of the skills listed in this level modifier list, the system
+ 2            defaults to the rates indicated in HD1 and HD2.  The Calls field and the
+ 2            Hospital Admission Date/Originating Encounter Date field must be entered
+ 2            when hospital days are claimed.
+ 0
+ 0            CARDH1 CARDIOLOGY HD1 - (Implicit) - Combination of LEVL HD1 (1-7 days) and skill
+ 0                   Cardiology.
+ 0            CARDH2 CARDIOLOGY HD2 - (Implicit) - Combination of LEVL HD2 (8 and subsequent
+ 0                   days) and skill Cardiology.
+ 0            CLIMH1 CLINICAL IMMUNOLOGY AND ALLERGY HD1 - (Implicit) - Combination of LEVL HD1
+ 0                   (1-7 days) and skill Clinical Immunology and Allergy.
+ 0            CLIMH2 CLINICAL IMMUNOLOGY AND ALLERGY HD2 - (Implicit) - Combination of LEVL HD2
+ 0                   (8 and subsequent days) and skill Clinical Immunology and Allergy.
+ 0            CRCMH1 CRITICAL CARE MEDICINE HD1 - (Implicit) - Combination of LEVL HD1 (1-7 days)
+ 0                   and skill Critical Care Medicine.
+ 0            CRCMH2 CRITICAL CARE MEDICINE  HD2 - (Implicit) - Combination of LEVL HD2 (8 and
+ 0                   subsequent days) and skill Critical Care Medicine.
+ 0            DERMH1 DERMATOLOGY HD1 - (Implicit) - Combination of LEVL HD1 (1-7 days) and skill
+ 0                   Dermatology.
+ 0            DERMH2 DERMATOLOGY HD2 - (Implicit) - Combination of LEVL HD2 (8 and subsequent
+ 0                   days) and skill Dermatology.
+ 0            E/M H1 ENDOCRINOLOGY/METABOLISM HD1 - (Implicit) - Combination of LEVL HD1
+ 0                   (1-7 days) and skill Endocrinology/Metabolism.
+ 0            E/M H2 ENDOCRINOLOGY/METABOLISM HD2 - (Implicit) - Combination of LEVL HD2 (8 and
+ 0                   subsequent days) and skill Endocrinology/Metabolism.
+ 0            GASTH1 GASTROENTEROLOGY HD1 - (Implicit) - Combination of LEVL HD1 (1-7 days) and
+ 0                   skill Gastroenterology.
+10       RG122                     ALBERTA HEALTH CARE INSURANCE PLAN                       Page 7
+ 0
+ 0                                        MODIFIER DEFINITIONS                    As of 2025/03/14
+ 0
+ 0
+ 0            GASTH2 GASTROENTEROLOGY HD2 - (Implicit) - Combination of LEVL HD2 (8 and
+ 0                   subsequent days) and skill Gastroenterology.
+ 0            GNSGH1 GENERAL SURGERY HD1 - (Implicit) - Combination of LEVL HD1 (1-7 days) and
+ 0                   skill General Surgery.
+ 0            GNSGH2 GENERAL SURGERY HD2 - (Implicit) - Combination of LEVL HD2 (8 and subsequent
+ 0                   days) and skill General Surgery.
+ 0            HD1    1 - 7 days - (Implicit)
+ 0            HD2    8 and subsequent days - (Implicit)
+ 0            HEMH1  HEMATOLOGY HD1 - (Implicit) - Combination of LEVL HD1 (1-7 days) and skill
+ 0                   Hematology.
+ 0            HEMH2  HEMATOLOGY HD2 - (Implicit) - Combination of LEVL HD2 (8 and subsequent
+ 0                   days) and skill Hematology.
+ 0            IDISH1 INFECTIOUS DISEASES HD1 - (Implicit) - Combination of LEVL HD1 (1-7 days)
+ 0                   and skill Infectious diseases.
+ 0            IDISH2 INFECTIOUS DISEASES HD2 - (Implicit) - Combination of LEVL HD2 (8 and
+ 0                   subsequent days) and skill Infectious diseases.
+ 0            INMDH1 INTERNAL MEDICINE HD1 - (Implicit) - Combination of LEVL HD1 (1-7 days) and
+ 0                   skill Internal Medicine.
+ 0            INMDH2 INTERNAL MEDICINE HD2 - (Implicit) - Combination of LEVL HD2 (8 and
+ 0                   subsequent days) and skill Internal Medicine.
+ 0            MDGNH1 MEDICAL GENETICS HD1 - (Implicit) - Combination of LEVL HD1 (1-7 days) and
+ 0                   skill Medical Genetics.
+ 0            MDGNH2 MEDICAL GENETICS HD2 - (Implicit) - Combination of LEVL HD2 (8 and
+ 0                   subsequent days) and skill Medical Genetics.
+ 0            MDONH1 MEDICAL ONCOLOGY HD1 - (Implicit) - Combination of LEVL HD1 (1-7 days) and
+ 0                   skill Medical Oncology.
+ 0            MDONH2 MEDICAL ONCOLOGY HD2 - (Implicit) - Combination of LEVL HD2 (8 and
+ 0                   subsequent days) and skill Medical Oncology.
+ 0            NEPHH1 NEPHROLOGY HD1 - (Implicit) - Combination of LEVL HD1 (1-7 days) and skill
+ 0                   Nephrology.
+ 0            NEPHH2 NEPHROLOGY HD2 - (Implicit) - Combination of LEVL HD2 (8 and subsequent
+ 0                   days) and skill Nephrology.
+ 0            NEURH1 NEUROLOGY HD1 - (Implicit) - Combination of LEVL HD1 (1-7 days) and skill
+ 0                   Neurology.
+ 0            NEURH2 NEUROLOGY HD2 - (Implicit) - Combination of LEVL HD2 (8 and subsequent
+ 0                   days) and skill Neurology.
+ 0            NPMH1  NEONATAL PERINATAL MEDICINE HD1 - (Implicit) - Combination of LEVL HD1
+ 0                   (1-7 days) and skill Neonatal Perinatal Medicine.
+ 0            NPMH2  NEONATAL PERINATAL MEDICINE  HD2 - (Implicit) Combination of LEVL HD2 (8
+ 0                   and subsequent days) and skill Neonatal Perinatal Medicine.
+ 0            ORPAH1 ORAL PATHOLOGY HD1 - (Implicit) - Combination of LEVL HD1 (1-7 days) and
+ 0                   skill Oral Pathology
+ 0            ORPAH2 ORAL PATHOLOGY HD2 - (Implicit) - Combination of LEVL HD2 (8 and subsequent
+ 0                   days) and skill Oral Pathology
+ 0            ORSGH1 ORAL SURGERY HD1 - (Implicit) - Combination of LEVL HD1 (1-7 days) and skill
+ 0                   Oral Maxillofacial Surgery
+ 0            ORSGH2 ORAL SURGERY HD2 - (Implicit) - Combination of LEVL HD2 (8 and subsequent
+ 0                   days) and skill Oral Maxillofacial Surgery
+ 0            PDGEH1 PEDIATRIC GASTROENTEROLOGY HD1 - (Implicit) - Combination of LEVL HD1 (1-7
+ 0                   days) and skill Pediatric Gastroenterology.
+ 0            PDGEH2 PEDIATRIC GASTROENTEROLOGY HD2 - (Implicit) - Combination of LEVL HD2
+ 0                   (8 and subsequent days) and skill Pediatric Gastroenterology.
+10       RG122                     ALBERTA HEALTH CARE INSURANCE PLAN                       Page 8
+ 0
+ 0                                        MODIFIER DEFINITIONS                    As of 2025/03/14
+ 0
+ 0
+ 0            PEDCH1 PEDIATRIC CARDIOLOGY HD1 - (Implicit) - Combination of LEVL HD1 (1-7 days)
+ 0                   and skill Pediatric Cardiology.
+ 0            PEDCH2 PEDIATRIC CARDIOLOGY HD2  (Implicit) - Combination of LEVL HD2 (8 and
+ 0                   subsequent days) and skill of Pediatric Cardiology
+ 0            PEDH1  PEDIATRICS HD1 - (Implicit) - Combination of LEVL HD1 (1-7 days) and skill
+ 0                   Pediatrics.
+ 0            PEDH2  PEDIATRICS HD2 - (Implicit) - Combination of LEVL HD2 (8 and subsequent
+ 0                   days) and skill Pediatrics.
+ 0            PEDNH1 PEDIATRIC NEPHROLOGY HD1 - (Implicit) - Combination of LEVL HD1 (1 - 7 days)
+ 0                   and skill Pediatric Nephrology.
+ 0            PEDNH2 PEDIATRIC NEPHROLOGY HD2 - (Implicit) - Combination of LEVL HD2 (8 and
+ 0                   subsequent days) and skill Pediatric Nephrology.
+ 0            PHMDH1 PHYSICAL MEDICINE AND REHABILITATION HD1 - (Implicit) - Combination of LEVL
+ 0                   HD1 (1-7 days) and skill Physical Medicine and Rehabilitation.
+ 0            PHMDH2 PHYSICAL MEDICINE AND REHABILITATION HD2 - (Implicit) - Combination of LEVL
+ 0                   HD2 (8 and subsequent days) and skill Physical Medicine and Rehabilitation.
+ 0            POSGH1 PODIATRIC SURGERY HD1 - (Implicit) - Combination of LEVL HD1 (1-7 days) and
+ 0                   skill Podiatric Surgery.
+ 0            POSGH2 PODIATRIC SURGERY HD2 - (Implicit) - Combination of LEVL HD2 ( 8 and
+ 0                   subsequent days) and skill Podiatric Surgery.
+ 0            RHEUH1 RHEUMATOLOGY HD1 - (Implicit) - Combination of LEVL HD1 (1-7 days) and skill
+ 0                   Rheumatology.
+ 0            RHEUH2 RHEUMATOLOGY HD2 - (Implicit) - Combination of LEVL HD2 (8 and subsequent
+ 0                   days) and skill Rheumatology.
+ 0            RSMDH1 RESPIRATORY MEDICINE HD1 - (Implicit) - Combination of LEVL HD1 (1-7 days)
+ 0                   and skill Respiratory Medicine.
+ 0            RSMDH2 RESPIRATORY MEDICINE - HD2 - (Implicit) - Combination of LEVL HD2 (8 and
+ 0                   subsequent days) and skill Respiratory Medicine.
+ 0
+ 2       LMTS LIMITS - (Explicit) - This modifier is used to override restrictions for a
+ 2            service/procedure.
+ 0
+ 0            DSCH   DISCHARGED - (Explicit) - As stated in GR 5.1.4, indicates payment for a
+ 0                   patient who was discharged from an emergency department, AACC or UCC and
+ 0                   returned the same day.
+ 0            L40    UNDER 40 WEEKS CONCEPTUAL AGE, ROLE OF SURGEON - (Explicit) - Infants under
+ 0                   40 weeks of conceptual age. Applies only to specific general surgery
+ 0                   procedures.
+ 0            L40ANE UNDER 40 WEEKS CONCEPTUAL AGE, ROLE OF ANESTHETIST - (Explicit) - Infants
+ 0                   under 40 weeks of conceptual age. Applies only to specific anesthetic
+ 0                   services. May also be claimed in addition to the time based anesthetic
+ 0                   modifiers (ANEST/2ANES).
+ 0            L44    UNDER 44 WEEKS CONCEPTUAL AGE, ROLE OF SURGEON - (Explicit) - Infants under
+ 0                   44 weeks of conceptual age. Applies only to cardiovascular and thoracic
+ 0                   surgery.
+ 0            L44ANE UNDER 44 WEEKS CONCEPTUAL AGE, ROLE OF ANESTHETIST - (Explicit) - Infants
+ 0                   under 44 weeks of conceptual age. Applies only to specific anesthetic
+ 0                   services. May also be claimed in addition to the time based anesthetic
+ 0                   modifiers (ANEST/2ANES).
+10       RG122                     ALBERTA HEALTH CARE INSURANCE PLAN                       Page 9
+ 0
+ 0                                        MODIFIER DEFINITIONS                    As of 2025/03/14
+ 0
+ 0
+ 0            NEWCON NEW CONDITION FOR OPTOMETRY - (EXPLICIT) - Indicates an Optometrist is
+ 0                   providing optometric services to an eligible resident for a new condition
+ 0                   whose diagnostic code contains the same first three-digit root as a
+ 0                   condition previously billed in the same benefit year.
+ 0            NEWEP  NEW EPISODE FOR OPTOMETRY - (EXPLICIT) - Indicates an Optometrist is
+ 0                   providing optometric services to an eligible resident for a condition that
+ 0                   was previously billed, but the resident incurred a new occurrence of the
+ 0                   condition in the same benefit year.
+ 0            OPHTCO OPHTHALMOLOGY CO-MANAGEMENT -(Explicit) - used to identify ongoing
+ 0                   co-management of eye care for an eligible resident between an Optometrist
+ 0                   and an Ophthalmologist
+ 0            SPCDRG SPECIFIED DRUGS FOR OPTOMETRY  - (EXPLICIT) - Indicates an Optometrist is
+ 0                   providing optometric services as the patient is receiving treatment with
+ 0                   the drug Chloroquine (Aralen), Ethambutol (Myambutol and Servambutol),
+ 0                   Hydroxychloroquine Sulfate (Plaquenil), or Tamoxifen (Novaldex).
+ 0            TOC    TRANSFER OF CARE - (Explicit) - Indicates the care of a hospitalized patient
+ 0                   was transferred to a second physician in the same facility. The physician
+ 0                   receiving the transferred patient must use TOC.
+ 0
+ 2       LVP  LESSER VALUE PROCEDURE - (Explicit) - Indicates that the procedure should be
+ 2            processed at a reduced rate.  IF BASE RATE AMOUNTS ARE EQUAL ON THE HSCS
+ 2            CLAIMED, LVP50 OR LVP75 ARE NOT TO BE USED.
+ 0
+ 0            ADD    ADDITIONALS - (Explicit) - Indicates that the procedure is paid in addition
+ 0                   to a specific procedure at a specified rate.
+ 0            ADD2   ADDITIONAL SECOND CALL - (Explicit) - Used to replace ADD modifier if two of
+ 0                   the same procedures were performed.
+ 0            LVP50  LESSER VALUE PROCEDURE AT 50% - (Explicit) - Indicates the procedure of
+ 0                   lesser value so that the General Rules to pay the second procedure at a
+ 0                   reduced rate can be applied.
+ 0            LVP75  LESSER VALUE PROCEDURE AT 75% - (Explicit) - Indicates the procedure of
+ 0                   lesser value.
+ 0
+ 2       NBPG NUMBER OF PATIENTS IN GROUP - (Explicit) - Used to indicate the number of
+ 2            people in a psychiatric, or teaching group. A two digit numeric character
+ 2            must be added to the modifiers' alpha character, Example: NBPG08. This two
+ 2            digit numeric character represents the number of people participating in the
+ 2            psychiatric or teaching group. Depending on the skill indicated the rate is
+ 2            divided by the number of people to determine the rate per person per 15
+ 2            minutes.
+ 2
+ 2            This modifier will be used in conjunction with the appropriate units
+ 2            modifier that is based on time, and is derived from the calls field used if
+ 2            the visit exceeds 15 minutes.
+ 0
+ 0            NBPG   NUMBER OF PATIENTS IN GROUP - (Explicit) - Used by both, Fee-for-Service and
+ 0                   Mental Health Sessional Practitioners on sessional payments to indicate the
+ 0                   number of people participating in group psychotherapy, or teaching services.
+ 0
+ 0                   Example: NBPG10, divide the rate by the number of people to determine the
+ 0                   rate per patient per 15 minutes.
+ 0
+10       RG122                     ALBERTA HEALTH CARE INSURANCE PLAN                      Page 10
+ 0
+ 0                                        MODIFIER DEFINITIONS                    As of 2025/03/14
+ 0
+ 0
+ 2       NBTR NUMBER OF TRAYS - (Explicit) - Used to indicate that multiple trays were
+ 2            used as described in Governing Rules 14.1, 14.2, 14.3, 14.3.1, 14.3.2 and
+ 2            14.3.3.  This modifier code must have a two digit numeric character attached
+ 2            indicating the number of trays used (Example:  NBTR02).
+ 0
+ 0            NBTR   NUMBER OF TRAYS - (Explicit) - Indicates the number of trays used, system
+ 0                   defaults to one if modifier not used.
+ 0
+ 2       NOFL WITHOUT FLUOROSCOPY - (Explicit) - Used to indicate an xray which usually
+ 2            requires fluoroscopy was performed without the fluoroscopy component.
+ 0
+ 0            NOFLSP WITHOUT FLUOROSCOPY - (Explicit)
+ 0
+ 2       RECO RECONSTRUCTION - (Explicit) - Used to indicate the type of tissue repair or
+ 2            if a procedure was performed through an open incision.
+ 0
+ 0            CMPRSC COMPOSITE TISSUE RESECTION (Explicit) - Used to indicate a composite tissue
+ 0                   resection (including bone).
+ 0            FNCAR  FLAP FUNCTIONAL AREA (Explicit) - Used to indicate a flap in a functional
+ 0                   area.
+ 0            OPEN   OPEN INCISION - (Explicit) - Used to indicate that a procedure was performed
+ 0                   through an open incision, therefore is payable at a modified rate.
+ 0            OPEN2  OPEN SECOND CALL - (Explicit) - Used to replace open modifier if two
+ 0                   of the same procedures were performed.
+ 0            PROSTH PROSTH - PERIPROSTHETIC FRACTURE - (Explicit) - Used to indicate an open
+ 0                   reduction of a periprosthetic fracture of a long bone or closed reduction
+ 0                   with intramedullary nail fixation, when no revision arthroplasty of the same
+ 0                   long bone is performed in the same surgical procedure. Applies only to
+ 0                   the surgical component of a HSC.
+ 0            YGRFTA Y GRAFT ANESTHETIC - (Explicit) - Used to indicate a full Y graft. Applies
+ 0                   only to anesthetic services.
+ 0            2ZPL   FLAP 5-10cm OR DOUBLE Z PLASTY - (Explicit) - Used to indicate a functional
+ 0                   area flap or a double Z plasty.
+ 0            3ZPL   FLAP GREATER THAN 10cm OR TRIPLE Z PLASTY - (Explicit) - Used to indicate a
+ 0                   functional area flap or a triple Z plasty.
+ 0
+ 2       REDO REDO PROCEDURE - (Explicit) - Cardiac, Vascular, and Thoracic surgery as
+ 2            described in GR 6.15, re-operation for specific general surgery or
+ 2            ophthalmology procedures, or orthopedic procedures as listed in GR 6.17.1.
+ 0
+ 0            COMPLT COMPLETE - (Explicit) - Used to indicate a procedure is performed entirely
+ 0                   through a previous incision. Applies to both the surgical and anesthetic
+ 0                   components of a HSC.
+ 0            NUFRAC NON UNION OF FRACTURE - (Explicit) - Used to indicate the open reduction of
+ 0                   a fracture with demonstrated radiographic non-union at least 12 weeks from
+ 0                   the date of the initial fracture. Applies only to the surgical component of
+ 0                   a HSC.
+ 0            ORREDO ORTHOPEDIC REDO - (Explicit) - Used to indicate redo orthopedic surgery on
+ 0                   or relating to the same joint or muscle structure on which the patient has
+ 0                   previously had an orthopedic surgical intervention. Applies only to the
+ 0                   surgical component of a HSC.
+10       RG122                     ALBERTA HEALTH CARE INSURANCE PLAN                      Page 11
+ 0
+ 0                                        MODIFIER DEFINITIONS                    As of 2025/03/14
+ 0
+ 0
+ 0            PART   PARTIAL - (Explicit) - Used to indicate part of a procedure is performed
+ 0                   through a previous incision. Applies to both the surgical and anesthetic
+ 0                   components of a HSC.
+ 0            PDREDO PODIATRIC SURGERY REDO - (Explicit) - Used to indicate redo podiatric
+ 0                   surgery on or relating to the same joint or muscle structure on which the
+ 0                   patient has previously had a podiatric surgical intervention. Applies only
+ 0                   to the surgical component of a HSC.
+ 0            REANE  REANE ANESTHESIA FOR RE-OPERATION - (Explicit) - Used to indicate that for
+ 0                   specific ophthalmology or general surgery re-operations, a specified rate
+ 0                   is paid in addition to the anesthetic benefit payable. Applies only to the
+ 0                   anesthetic component of a HSC.
+ 0            REDO1  FIRST REDO UTILIZING SAME INCISION - (Explicit) - Used to indicate the first
+ 0                   redo utilizing the same incision (whole or partial) according to GR 6.15.4.
+ 0                   Applies only to the surgical component of a HSC.
+ 0            REDO2  REDO2 - SECOND REDO UTILIZING SAME INCISION (Explicit) - Used to indicate
+ 0                   the second redo utilizing the same incision (whole or partial) according to
+ 0                   GR 6.15.4. Applies only to the surgical component of a HSC.
+ 0            REDO3  REDO3 - THIRD REDO UTILIZING SAME INCISION - (Explicit) - Used to indicate
+ 0                   the third redo utilizing the same incision (whole or partial) according to
+ 0                   GR 6.15.4. Applies only to the surgical component of a HSC.
+ 0            REDO4  REDO4 - FOURTH REDO UTILIZING SAME INCISION (Explicit) - Used to indicate
+ 0                   the fourth redo utilizing the same incision (whole or partial) according to
+ 0                   GR 6.15.4. Applies only to the surgical component of a HSC.
+ 0            REDO5  REDO5 - FIFTH REDO UTILIZING SAME INCISION - (Explicit) - Used to indicate
+ 0                   the fifth redo utilizing the same incision (whole or partial) according to
+ 0                   GR 6.15.4. Applies only to the surgical component of a HSC.
+ 0            REOP   REOP RE-OPERATION - (Explicit) - Used to indicate that for specific
+ 0                   ophthalmology or general surgery re-operations, a specified rate is paid in
+ 0                   addition to the procedure benefit payable. Applies only to the surgical
+ 0                   component of a HSC.
+ 0
+ 2       REPT REPEAT - (Explicit) - Indicates the same service was performed previously
+ 2            and therefore this service is payable at a modified rate.
+ 0
+ 0            OPST   OPPOSITE SIDE - (Explicit) - Indicates the service was performed previously
+ 0                   but on the other side of the body.
+ 0            REPT   REPEAT - (Explicit) - Indicates the service was performed previously and
+ 0                   therefore this service is payable at a modified rate.
+ 0
+10       RG122                     ALBERTA HEALTH CARE INSURANCE PLAN                      Page 12
+ 0
+ 0                                        MODIFIER DEFINITIONS                    As of 2025/03/14
+ 0
+ 0
+ 2       ROLE ROLE - (Explicit) - This modifier indicates the capacity in which the
+ 2            service provider is functioning.  This is an explicit modifier, however if
+ 2            no role modifier is identified, the system will assume the service provider
+ 2            functioned as the surgeon.
+ 2
+ 2            The surgical assistant (SA) modifier may not be claimed with the following
+ 2            role modifiers by the same physician for the same service for the same
+ 2            patient during the same encounter.
+ 2            ASIC, MSURG2, MSRGN, MSRGP, SAQS, SSOS, SSCVT, SSST
+ 2
+ 2            The following modifiers are to be used when:
+ 0
+ 0            ANE    ANESTHETIST - (Explicit) - The physician functions as the Anesthetist and
+ 0                   is claiming the listed anesthetic benefit.
+ 0            ANEST  ANESTHETIST TRC - (Explicit) - The physician functions as the Anesthetist
+ 0                   and is claiming a benefit based on the duration of the anesthetic.
+ 0            ASIC   ASSISTANCE INTERVENTIONAL CARDIOLOGIST SECOND SURGEON - (Explicit) - The
+ 0                   physician is an interventional cardiologist providing assistance at a
+ 0                   percutaneous coronary angioplasty or percutaneous closure of ASD.
+ 0            MSRGN  SECOND NEUROSURGEON MICROSURGERY - (Explicit) - A second neurosurgeon
+ 0                   utilizing microsurgical technique to perform a specific surgical procedure.
+ 0            MSRGP  SECOND PLASTIC SURGEON MICROSURGERY - (Explicit) - A second plastic surgeon
+ 0                   utilizing microsurgical technique to perform a specific surgical procedure.
+ 0            MSURG2 2ND MICROSURGERY - (Explicit) - A second surgical specialist utilizing
+ 0                   microsurgical technique to perform a specific surgical procedure.
+ 0            SA     SURGICAL ASSISTANT - (Explicit) - Service provider functions as a surgical
+ 0                   assistant for a surgical procedure. This modifier may be claimed when
+ 0                   hospital regulations or bylaws require an assistant for a particular
+ 0                   surgical procedure.
+ 0            SAQS   SURGICAL ASSISTANT QUALIFIED SECOND SURGEON - (Explicit) - A surgical
+ 0                   specialist provides surgical assistance in unusual circumstances. This
+ 0                   modifier may be claimed when the complexities of a particular surgical
+ 0                   procedure on a particular patient require a second qualified, surgical
+ 0                   specialist assisting. May only be billed when the surgery requires
+ 0                   the assistance of a qualified surgeon who is currently in an active
+ 0                   surgical practice. If the surgery does not require a qualified surgeon,
+ 0                   the SA (Surgical Assistant) modifier should be used.
+ 0            SOSS   SECOND ORAL SURGERY SURGEON - (Explicit) - A qualified oral and
+ 0                   maxillofacial surgeon functions as a second surgeon during complex oral
+ 0                   and maxillofacial surgery.  This modifier may be claimed when the second
+ 0                   surgeon has actively participated in the planning for and performance of the
+ 0                   procedure.  Only the second oral and maxillofacial surgeon's surgical time
+ 0                   may be claimed; time spent in planning the procedure may not be included in
+ 0                   the claimed time.
+ 0            SSCVT  SECOND SURGEON CARDIOVASCULAR OR THORACIC SURGEON - (Explicit) - A
+ 0                   cardiovascular or thoracic surgeon functions as a second surgeon on a
+ 0                   cardiovascular thoracic surgical team.
+10       RG122                     ALBERTA HEALTH CARE INSURANCE PLAN                      Page 13
+ 0
+ 0                                        MODIFIER DEFINITIONS                    As of 2025/03/14
+ 0
+ 0
+ 0            SSOS   SECOND SURGEON ORTHOPEDIC SURGEON - (Explicit) - An orthopedic surgeon
+ 0                   functions as a second surgeon during complex orthopedic surgery. This
+ 0                   modifier may be claimed when the second surgeon has actively participated in
+ 0                   the planning for and performance of the procedure. Only the second
+ 0                   orthopedic surgeon's surgical time may be claimed; time spent in planning
+ 0                   the procedure may not be included in the claimed time. May only be
+ 0                   billed when the surgery requires the assistance of a qualified surgeon
+ 0                   who is currently in an active surgical practice. If the surgery does
+ 0                   not require a qualified surgeon, the SA (Surgical Assistant) modifier
+ 0                   should be used.
+ 0            SSPS   SECOND SURGEON PODIATRIC SURGEON - (Explicit) - A podiatric surgeon
+ 0                   functions as a second surgeon during complex podiatric surgery. This
+ 0                   modifier may be claimed when the second surgeon has actively participated in
+ 0                   the planning for and performance of the procedure. Only the second
+ 0                   podiatric surgeon's surgical time may be claimed; time spent in planning
+ 0                   the procedure may not be included in the claimed time.
+ 0            SSST   SECOND SURGEON SURGICAL TEAM - (Explicit) - A surgical specialist functions
+ 0                   as a second surgeon of a second surgical team.
+ 0            2ANES  ANESTHETIST TRC 2 -(Explicit)- The physician functions as the Anesthetist
+ 0                   and is claiming anesthetic time premium units based on the duration of the
+ 0                   anesthetic.
+ 0
+ 2       SAQU SURGICAL ASSISTANT QUALIFIED SECOND SURGEON UNITS - (Implicit) - This
+ 2            modifier is system derived from the information entered in the calls field
+ 2            when the Surgical Assistant Qualified Second Surgeon role modifier (SAQS) is
+ 2            used. EACH UNIT REPRESENTS 15 MINUTES.
+ 0
+ 0            SAQU   SURGICAL ASSISTANT QUALIFIED SECOND SURGEON UNIT - (Implicit)
+ 0                   Surgical Assistant Qualified Second Surgeons are claimed on a time basis.
+ 0                   Claim the entire elapsed time against the primary procedure, even if
+ 0                   multiple procedures are done. (Example: If procedure A and B take a combined
+ 0                   total of 2 hours, claim 2 hours against procedure A only). For SAQU each
+ 0                   call covers 15 minutes, therefore 2 hours equal 8 calls.
+ 0
+ 2       SAU  SURGICAL ASSIST UNITS - (Implicit) - This modifier is system derived from
+ 2            the information entered in the calls field when the Surgical Assist role
+ 2            modifier (SA) is used.  THE FIRST UNIT REPRESENTS 1 HOUR, EACH SUBSEQUENT
+ 2            UNIT REPRESENTS 15 MINUTES.
+ 0
+ 0            SAU    SURGICAL ASSIST UNITS - (Implicit) - Surgical Assists are claimed on a time
+ 0                   basis.  Claim the entire elapsed time against the primary procedure, even if
+ 0                   multiple procedures are done. (Example:  if procedure A and B take a
+ 0                   combined total of 2 hours, claim 2 hours against procedure A only).  For SAU
+ 0                   the first call covers the first hour, therefore 2 hours equal 5 calls.
+ 0
+10       RG122                     ALBERTA HEALTH CARE INSURANCE PLAN                      Page 14
+ 0
+ 0                                        MODIFIER DEFINITIONS                    As of 2025/03/14
+ 0
+ 0
+ 2       SESU SESSIONAL UNITS (Implicit) - This modifier is used to indicate the duration
+ 2            of a psychiatric service to be paid on a sessional basis.  The modifier is
+ 2            system derived from the information entered in the calls field when skill
+ 2            GNMH or SPMH are used.  EACH UNIT REPRESENTS ONE 15 MINUTE PERIOD.  The
+ 2            skill (GNMH or SPMH) must be used with this modifier to determine amount
+ 2            payable.
+ 0
+ 0            SESU   SESSIONAL UNITS - (Implicit)
+ 0
+ 2       SKLL SKILL - (Implicit) - The SKILL modifier designates the discipline and
+ 2            specialty/accreditation under which the service provider provided the
+ 2            service.  This is an implicit modifier, however if using another skill, it
+ 2            is an explicit modifier and it is derived from the skill field on the claim
+ 2            instead of the default skill.
+ 0
+ 0            ANES   ANESTHETIST - (Implicit)
+ 0            ANPA   ANATOMICAL PATHOLOGY - (Implicit)
+ 0            CARD   CARDIOLOGY - (Implicit)
+ 0            CLIM   CLINICAL IMMUNOLOGY AND ALLERGY - (Implicit)
+ 0            CMSP   COMMUNITY MEDICINE SPECIALIST - (Implicit)
+ 0            CRCM   CRITICAL CARE MEDICINE - (Implicit)
+ 0            CRSG   CARDIAC SURGEON - (Implicit)
+ 0            CTSG   CARDIOVASCULAR AND THORACIC - (Implicit)
+ 0            DERM   DERMATOLOGY - (Implicit)
+ 0            DIRD   DIAGNOSTIC RADIOLOGY - (Implicit)
+ 0            E/M    ENDOCRINOLOGY/METABOLISM - (Implicit)
+ 0            EMSP   EMERGENCY MEDICINE - (Implicit)
+ 0            FTER   FULL TIME EMERGENCY ROOM - (Implicit)
+ 0            GAST   GASTROENTEROLOGY - (Implicit)
+ 0            GNMH   GENERALISTS RATES FOR MENTAL HEALTH PHYSICIANS - (Implicit)
+ 0            GNSG   GENERAL SURGERY - (Implicit)
+ 0            GP     GENERAL PRACTICE - (Implicit)
+ 0            HEM    HEMATOLOGY - (Implicit)
+ 0            HEPA   HEMATOLOGICAL PATHOLOGY - (Implicit)
+ 0            IDIS   INFECTIOUS DISEASES - (Implicit)
+ 0            INMD   INTERNAL MEDICINE - (Implicit)
+ 0            MDBI   MEDICAL BIOCHEMISTRY - (Implicit)
+ 0            MDGN   MEDICAL GENETICS - (Implicit)
+ 0            MDMI   MEDICAL MICROBIOLOGY - (Implicit)
+ 0            MDON   MEDICAL ONCOLOGY - (Implicit)
+ 0            NCMD   NUCLEAR MEDICINE - (Implicit)
+ 0            NEPH   NEPHROLOGY - (Implicit)
+ 0            NEUR   NEUROLOGY - (Implicit)
+ 0            NPM    NEONATAL PERINATAL MEDICINE - (Implicit)
+ 0            NUPA   NEUROPATHOLOGY - (Implicit)
+ 0            NUSG   NEUROSURGERY - (Implicit)
+ 0            OBGY   OBSTETRICS AND GYNECOLOGY - (Implicit)
+ 0            OCMD   OCCUPATIONAL MEDICINE SPECIALTY - (Implicit)
+ 0            OPHT   OPHTHALMOLOGY - (Implicit)
+ 0            ORPA   ORAL PATHOLOGY - (Implicit)
+ 0            ORSG   ORAL SURGERY - (Implicit)
+ 0            ORTH   ORTHOPEDIC - (Implicit)
+10       RG122                     ALBERTA HEALTH CARE INSURANCE PLAN                      Page 15
+ 0
+ 0                                        MODIFIER DEFINITIONS                    As of 2025/03/14
+ 0
+ 0
+ 0            OTOL   OTOLARYNGOLOGY - (Implicit)
+ 0            OVAC   OCULO - VISUAL ASSESSMENT CERTIFICATION - (Implicit)
+ 0            PATH   GENERAL PATHOLOGY - (Implicit)
+ 0            PDGE   PEDIATRIC GASTROENTEROLOGY - (Implicit)
+ 0            PDNR   PEDIATRIC NEUROLOGY - (Implicit)
+ 0            PDSG   PEDIATRIC GENERAL SURGERY - (Implicit)
+ 0            PED    PEDIATRICS - (Implicit)
+ 0            PEDC   PEDIATRIC CARDIOLOGY - (Implicit)
+ 0            PEDN   PEDIATRIC NEPHROLOGY - (Implicit)
+ 0            PHMD   PHYSICAL MEDICINE AND REHABILITATION - (Implicit)
+ 0            PLAS   PLASTIC SURGERY - (Implicit)
+ 0            PODS   PODIATRIC SURGERY - (Implicit)
+ 0            PROS   PROSTHODONTICS - (Implicit)
+ 0            PSYC   PSYCHIATRY - (Implicit)
+ 0            RHEU   RHEUMATOLOGY - (Implicit)
+ 0            ROSP   RADIATION ONCOLOGY - (Implicit)
+ 0            RSMD   RESPIRATORY MEDICINE - (Implicit)
+ 0            SPMH   SPECIALIST RATES FOR MENTAL HEALTH PHYSICIANS - (Implicit)
+ 0            THOR   THORACIC SURGERY - (Implicit)
+ 0            UROL   UROLOGY - (Implicit)
+ 0            VSSG   VASCULAR SURGERY - (Implicit)
+ 0
+ 2       SOSU SECOND ORAL SURGERY SURGEON UNITS - (Implicit) - This modifier is
+ 2            system derived from the information entered in the calls field when the
+ 2            Second Oral Surgery Surgeon role modifier (SOSS) is used.  THE FIRST UNIT
+ 2            (SOSS) REPRESENTS 45 MINUTES; EACH SUBSEQUENT UNIT (SOSU) REPRESENTS
+ 2            15 MINUTES OR THE MAJOR PORTION THEREOF.
+ 0
+ 0            SOSU   SECOND ORAL SURGERY SURGEON UNIT -  (Implicit) - This modifier is system
+ 0                   derived from the information entered in the calls field when the Second Oral
+ 0                   Surgery Surgeon role modifier (SOSS) is used.  THE FIRST UNIT (SOSS)
+ 0                   REPRESENTS 45 MINUTES; EACH SUBSEQUENT UNIT (SOSU) REPRESENTS 15 MINUTES OR
+ 0                   THE MAJOR PORTION THEREOF.
+ 0
+ 2       SSOU SECOND SURGEON ORTHOPEDIC SURGEON UNITS - (Implicit) - This modifier is
+ 2            system derived from the information entered in the calls field when the
+ 2            Second Surgeon Orthopedic Surgeon role modifier (SSOS) is used.  THE FIRST
+ 2            UNIT (SSOS) REPRESENTS 45 MINUTES; EACH SUBSEQUENT UNIT (SSOU) REPRESENTS
+ 2            15 MINUTES OR THE MAJOR PORTION THEREOF.
+ 0
+ 0            SSOU   SECOND SURGEON ORTHOPEDIC SURGEON UNIT -  (Implicit) - An orthopedic surgeon
+ 0                   functioning as a second surgeon during complex orthopedic surgery may claim
+ 0                   for his/her services on a time basis when he/she has actively participated
+ 0                   in the planning for and performance of the procedure. Only the second
+ 0                   orthopedic surgeon's surgical time may be claimed; time spent in planning
+ 0                   the procedure may not be included in the claimed time. The entire surgical
+ 0                   time is to be claimed against the primary procedure even if multiple
+ 0                   procedures are performed. For example, if procedure A and B take a combined
+ 0                   total of 2 hours, claim 2 hours against procedure A only. For SSOU, the
+ 0                   first call covers the first 45 minutes, therefore, 2 hours equals 6 calls.
+ 0
+10       RG122                     ALBERTA HEALTH CARE INSURANCE PLAN                      Page 16
+ 0
+ 0                                        MODIFIER DEFINITIONS                    As of 2025/03/14
+ 0
+ 0
+ 2       SSPU SECOND SURGEON PODIATRIC SURGEON UNITS - (Implicit) - This modifier is
+ 2            system derived from the information entered in the calls field when the
+ 2            Second Surgeon Podiatric Surgeon role modifier (SSPS) is used.  THE FIRST
+ 2            UNIT (SSPS) REPRESENTS 45 MINUTES; EACH SUBSEQUENT UNIT (SSPU) REPRESENTS 15
+ 2            MINUTES OR THE MAJOR PORTION THEREOF.
+ 0
+ 0            SSPU   SECOND SURGEON PODIATRIC SURGEON UNIT -  (Implicit) - A podiatric surgeon
+ 0                   functioning as a second surgeon during complex podiatric surgery may claim
+ 0                   for his/her services on a time basis when he/she has actively participated
+ 0                   in the planning for and performance of the procedure. Only the second
+ 0                   podiatric surgeon's surgical time may be claimed; time spent in planning
+ 0                   the procedure may not be included in the claimed time. The entire surgical
+ 0                   time is to be claimed against the primary procedure even if multiple
+ 0                   procedures are performed. For example, if procedure A and B take a combined
+ 0                   total of 2 hours, claim 2 hours against procedure A only. For SSPU, the
+ 0                   first call covers the first 45 minutes, therefore, 2 hours equals 6 calls.
+ 0
+ 2       SUBD SUBD SUBDIVISION - (Explicit) - This modifier type is used with visit
+ 2            health service codes to indicate during which time period the service
+ 2            recipient/service provider encounter took place. These modifiers are
+ 2            applicable during the evening on weekdays, during the day and evening on
+ 2            weekends and statutory holidays, and during the night on any day. A fee is
+ 2            added to the base rate as indicated by the modifier.
+ 2
+ 2            For home visits and hospice visits, the SUBD modifier should be claimed
+ 2            based on the time at which the encounter commences and the physician
+ 2            responds on an unscheduled basis within a 24 hour period from the time of
+ 2            the call. The time of the initial call as well as time of service must be
+ 2            documented in patient's record.
+ 0
+ 0            BNEV   (Explicit) 1700 - 2200 HOURS - BUNDLED EMERGENCY HOME VISIT WITH A HOSPITAL
+ 0                   ADMISSION AND A HOSPITAL VISIT ON THE SAME DAY
+ 0            BNEVWK (Explicit) 0700 - 2200 HOURS - SATURDAY, SUNDAY, STATUTORY HOLIDAY - BUNDLED
+ 0                   EMERGENCY HOME VISIT WITH A HOSPITAL ADMISSION AND A HOSPITAL VISIT ON THE
+ 0                   SAME DAY
+ 0            BNNTAM (Explicit) 2400 - 0700 HOURS - BUNDLED EMERGENCY HOME VISIT WITH A HOSPITAL
+ 0                   ADMISSION AND A HOSPITAL VISIT ON THE SAME DAY
+ 0            BNNTPM (Explicit) 2200 - 2400 HOURS - BUNDLED EMERGENCY HOME VISIT WITH A HOSPITAL
+ 0                   ADMISSION AND A HOSPITAL VISIT ON THE SAME DAY
+ 0            HAEV   (Explicit) 1700 - 2200 HOURS - HOSPITAL ADMISSION
+ 0            HAEVWK (Explicit) 0700 - 2200 HOURS - SATURDAY, SUNDAY, STATUTORY HOLIDAY HOSPITAL
+ 0                   ADMISSION
+ 0            HANTAM (Explicit) 2400 - 0700 HOURS - HOSPITAL ADMISSION
+ 0            HANTPM (Explicit) 2200 - 2400 HOURS - HOSPITAL ADMISSION
+ 0            OFEV   (Explicit) 1700 - 2200 HOURS - HOME VISIT OR CALLBACK TO CLOSED OFFICE
+ 0            OFEVWK (Explicit) 0700 - 2200 HOURS - HOME VISIT SATURDAY, SUNDAY, STATUTORY
+ 0                   HOLIDAY OR INTERRUPTION OF OFFICE HOURS, EMERGENCY OR CALLBACK TO CLOSED
+ 0                   OFFICE
+ 0            OFNTAM (Explicit) 2400 - 0700 HOURS - HOME VISIT OR CALLBACK TO CLOSED OFFICE
+ 0            OFNTPM (Explicit) 2200 - 2400 HOURS - HOME VISIT OR CALLBACK TO CLOSED OFFICE
+ 0
+10       RG122                     ALBERTA HEALTH CARE INSURANCE PLAN                      Page 17
+ 0
+ 0                                        MODIFIER DEFINITIONS                    As of 2025/03/14
+ 0
+ 0
+ 2       SURC SERVICES UNSCHEDULED - (Explicit) - This modifier type is used for services
+ 2            listed in the GRs to indicate during which time period a service provider
+ 2            provided unscheduled in-patient or out-patient services for a hospital
+ 2            service recipient. A fee is added to the base rate as indicated by the
+ 2            modifier. For visits, refer to the subdivision modifier.
+ 0
+ 0            DEV    (Explicit)  DENTAL WEEKDAY EVENING - Between 1700 and 2200 hours.
+ 0            DNTAM  (Explicit)  DENTAL NIGHT MORNING - Between 2400 and 0700 hours.
+ 0            DNTPM  (Explicit)  DENTAL NIGHT EVENING - Between 2200 and 2400 hours.
+ 0            DWK    (Explicit)  DENTAL WEEKEND AND STATUTORY HOLIDAY - Between 0700 and 2200
+ 0                   hours.
+ 0            EV     (Explicit) WEEKDAY EVENING - Between 1700 and 2200 hours.
+ 0            NTAM   (Explicit) NIGHT MORNING - Between 2400 and 0700 hours.
+ 0            NTPM   (Explicit) NIGHT EVENING - Between 2200 and 2400 hours.
+ 0            PEV    (Explicit) PODIATRIC SURGERY WEEKDAY EVENING - Between 1700 and 2200 hours.
+ 0            PNTAM  (Explicit) PODIATRIC SURGERY NIGHT MORNING - Between 2400 and 0700 hours.
+ 0            PNTPM  (Explicit) PODIATRIC SURGERY NIGHT EVENING - Between 2200 and 2400 hours.
+ 0            PWK    (Explicit) PODIATRIC SURGERY WEEKEND AND STATUTORY HOLIDAY
+ 0                    - Between 0700 and 2200 hours.
+ 0            WK     (Explicit) WEEKEND AND STATUTORY HOLIDAY - Between 0700 and 2200 hours.
+ 0
+ 2       SURT AFTER HOURS TIME PREMIUM - (Explicit) - This modifier type is used to
+ 2            indicate after hours time units for services provided to patients in active
+ 2            treatment hospitals, AACCs, UCCs, nursing homes and auxiliary hospitals.
+ 2            This modifier is payable in 15 minute blocks to a maximum of 4 per hour, per
+ 2            physician. It is to be billed beginning at the time of contact with the
+ 2            patient and may only be claimed for direct patient care time related to the
+ 2            provision of an insured service.  The after-hours time premium units may not
+ 2            be claimed for stand by time, e.g. time spent waiting for results of
+ 2            diagnostic tests. In the event that one 15 minute period covers two time
+ 2            periods, the modifier claimed will be based on the time period where the
+ 2            majority of the 15 minute period was spent. In the event that the time spent
+ 2            with the patient covers more than one time period, additional SURT modifiers
+ 2            may be claimed, each according to the time spent with the patient in that
+ 2            particular time period.
+ 0
+ 0            PNTA   (Explicit) PODIATRIC SURGERY AFTER HOURS TIME PREMIUM ANY DAY NIGHT MORNING
+ 0                   - Between 2400 and 0700 hours
+ 0            PNTP   (Explicit) PODIATRIC SURGERY AFTER HOURS TIME PREMIUM ANY DAY NIGHT EVENING
+ 0                   - Between 2200 and 2400 hours
+ 0            PTEV   (Explicit) PODIATRIC SURGERY AFTER HOURS TIME PREMIUM WEEKDAY EVENING
+ 0                   - Between 1700 and 2200 hours
+ 0            PTST   (Explicit) PODIATRIC SURGERY AFTER HOURS TIME PREMIUM STATUTORY HOLIDAYS
+ 0                   - Between 0700 and 2200 hours
+ 0            PTWK   (Explicit) PODIATRIC SURGERY AFTER HOURS TIME PREMIUM WEEKEND - Between 0700
+ 0                   and 2200 hours
+ 0            TDES   (Explicit) AFTER HOURS TIME PREMIUM DESIGNATED HOLIDAYS - Between 0700 and
+ 0                   2200 hours
+ 0            TEV    (Explicit) AFTER HOURS TIME PREMIUM WEEKDAY EVENING - Between 1700 and
+ 0                   2200 hours
+ 0            TNTA   (Explicit) AFTER HOURS TIME PREMIUM ANY DAY NIGHT MORNING - Between 2400
+ 0                   and 0700 hours
+10       RG122                     ALBERTA HEALTH CARE INSURANCE PLAN                      Page 18
+ 0
+ 0                                        MODIFIER DEFINITIONS                    As of 2025/03/14
+ 0
+ 0
+ 0            TNTP   (Explicit) AFTER HOURS TIME PREMIUM ANY DAY NIGHT EVENING - Between 2200 and
+ 0                   2400 hours
+ 0            TST    (Explicit) AFTER HOURS TIME PREMIUM STATUTORY HOLIDAYS - Between 0700 and
+ 0                   2200 hours
+ 0            TWK    (Explicit) AFTER HOURS TIME PREMIUM WEEKEND - Between 0700 and 2200 hours
+ 0
+ 2       TELE TELEHEALTH - (Explicit) - This modifier is used to indicate telehealth
+ 2            services.
+ 0
+ 0            TELES  TELEHEALTH - (Explicit) - A Medical consultant (other than a radiologist)
+ 0                   may claim the appropriate consultation health service code with modifier
+ 0                   TELES when a patient is referred from another physician, audiologist,
+ 0                   a midwife, chiropractor, podiatrist, dentist, optometrist, physical
+ 0                   therapist or nurse practitioner.
+ 0
+ 0                   Referrals from a non-physician other than an audiologist, midwife,
+ 0                   chiropractor, podiatrist, dentist, optometrist, physical therapist or
+ 0                   nurse practitioner may be claimed under the appropriate non-referred visit
+ 0                   health service code.
+ 0
+ 0                   A Podiatric Surgeon consultant may claim the appropriate consultation
+ 0                   health service code with modifier TELES when a patient is referred from a
+ 0                   Medical practitioner, podiatric surgeon or a podiatrist. Referrals from any
+ 0                   other source may be claimed under the appropriate non-referred visit
+ 0                   health service code.
+ 0
+ 2       TRAY TRAY - (Implicit) - A specified amount is added to the base amount for
+ 2            procedures listed in Governing Rule 14.1 and 14.2.  If more than one
+ 2            tray is used refer to NBTR.
+ 0
+ 0            MAJT   MAJOR TRAY - (Implicit)
+ 0            MINT   MINOR TRAY - (Implicit)
+ 0
+ 2       TSAR TWO SURGEONS SAME ANATOMICAL REGION - (Explicit) - Used to indicate that
+ 2            payment for the 2nd surgeon is to be made according to the Price List.
+ 2            Example:  Health Service Code 14.49H (tumor of the cranial base).  Base rate
+ 2            is payable for the neurosurgical component performed by the neurosurgeon.
+ 2            If the otolaryngological component is performed by a second surgeon,
+ 2            modifier ENT must be applied to Health Service Code 14.49H.
+ 0
+ 0            ENT    OTOLARYNGOLOGY - (Explicit) - Indicates the payment for the
+ 0                   otolaryngological component of the procedure.
+ 0            TSAR   TWO SURGEONS SAME ANATOMICAL REGION - (Explicit) - Payment for the second
+ 0                   surgeon same anatomical region should be processed according to the Price
+ 0                   List.
+ 0
+10       RG122                     ALBERTA HEALTH CARE INSURANCE PLAN                      Page 19
+ 0
+ 0                                        MODIFIER DEFINITIONS                    As of 2025/03/14
+ 0
+ 0
+ 2       UGA  PROCEDURE UNDER GENERAL ANESTHETIC - (Explicit) - Increases payment for
+ 2            services performed under general anesthetic in accordance with restrictions
+ 2            listed in the Governing Rule.
+ 0
+ 0            UGA    PROCEDURE UNDER GENERAL ANESTHETIC - (Explicit) - Replaces base rate for
+ 0                   specific procedures performed under general anesthetic in accordance with
+ 0                   the Governing Rule.
+ 0
+ 2       UNDP UNDISPLACED - (Explicit) - Used to indicate an undisplaced fracture as
+ 2            described in Governing Rule 6.11.2.
+ 0
+ 0            UNDP   UNDISPLACED - (Explicit)
+ 0
+ 2       VANE VARIABLE ANESTHETIC (Implicit) - Indicates a specific rate adjustment for
+ 2            role ANE and/or ANEST with specific HSCs.
+ 0
+ 0            ADDA   ADDITIONS ANESTHETIC (Implicit) - Modifier ADDA is derived from explicit
+ 0                   modifiers ANE and ADD. It indicates the anesthetic rate which is payable in
+ 0                   addition to a specific anesthetic rate for another procedure.
+ 0            AGEG2  AGE ANESTHETIC OVER 2 YEARS - (Implicit) - Modifier AGEG2 is derived from
+ 0                   the implicit modifier G2 and explicit modifier ANE. It adjusts the rate for
+ 0                   role ANE.
+ 0            AGEL10 AGE ANESTHETIC UNDER 10 YEARS - (Implicit) - Modifier AGEL10 is derived
+ 0                   from the implicit modifier L10 and explicit modifier ANE. It adjusts the
+ 0                   rate for role ANE.
+ 0            AGEL4  AGE ANESTHETIC UNDER 4 YEARS - (Implicit) - Modifier AGEL4 is derived from
+ 0                   the implicit modifier L4 and explicit modifier ANE. It adjusts the rate for
+ 0                   role ANE.
+ 0            L30AN  UNDER 30 DAYS, ROLE OF ANE - (Implicit) - Modifier L30AN is derived from the
+ 0                   implicit modifier L30 and explicit modifier ANE. It adjusts the rate for
+ 0                   role ANE.
+ 0            L30AT  UNDER 30 DAYS, ROLE OF ANEST - (Implicit) - Modifier L30AT is derived from
+ 0                   the implicit modifier L30 and explicit modifier ANEST. It adjusts the rate
+ 0                   for role ANEST.
+ 0            L30AT2 UNDER 30 DAYS, ROLE OF ANES2 - (Implicit) - Modifier L30AT2 is derived from
+ 0                   the implicit modifier L30 and explicit modifier 2ANES.  It adjusts the rate
+ 0                   for role 2ANES.
+ 0
+ 2       XRAY XRAY STUDIES - (Explicit) - Used to indicate that an xray was performed with
+ 2            the use of video, stereo, or cine studies or that tomography was used in
+ 2            addition to mammography services.
+ 0
+ 0            CINE   CINE - (Explicit) - Indicates xray involved cine.
+ 0            STEREO STEREO - (Explicit) - Indicates xray involved stereo.
+ 0            TOMO   TOMOGRAPHY - (Explicit) - Indicates tomography is used in addition to
+ 0                   mammography services.
+ 0            VIDEO  VIDEO - (Explicit) - Indicates xray involved video.
+ 0
+10       RG122                     ALBERTA HEALTH CARE INSURANCE PLAN                      Page 20
+ 0
+ 0                                        MODIFIER DEFINITIONS                    As of 2025/03/14
+ 0
+ 0
+ 2       2ANU ANESTHETIC TIME PREMIUM UNITS - (Implicit) - This modifier is system
+ 2            derived from the information entered in the calls field when the Anesthetic
+ 2            time unit premium role modifier (2ANES) is used. EACH UNIT REPRESENTS 5
+ 2            MINUTES.  ADDITIONAL 5 MINUTE UNITS MAY NOT BE CLAIMED UNLESS A FULL 5
+ 2            MINUTES HAS ELASPED.
+ 0
+ 0            2ANU   ANESTHETIC TIME PREMIUM UNITS - (Implicit) - For anesthetic claimed on a
+ 0                   time basis, claim the entire elapsed time against the health service code
+ 0                   which has the 2ANES modifier, even if multiple procedures are done.
+ 0                   (Example: if procedure A and B take a combined total of 2 hours, claim 2
+ 0                   hours against the health service code which has the 2ANES modifier). 2 hours
+ 0                   equals 24 calls.
+ 0
+ 2       2MNU SECOND NEUROSURGEON MICROSURGERY UNITS (Implicit)
+ 0
+ 0            2MNU   SECOND NEUROSURGEON MICROSURGERY UNITS - (Implicit) - This modifier is
+ 0                   system derived from the information entered in the calls field when the
+ 0                   second neurosurgeon microsurgery role modifier (MSRGN) is used.  EACH UNIT
+ 0                   REPRESENTS 1 HOUR.
+ 0
+ 2       2MPU SECOND PLASTIC SURGEON MICROSURGERY UNITS (Implicit)
+ 0
+ 0            2MPU   SECOND PLASTIC SURGEON MICROSURGERY UNITS - (Implicit) - This modifier is
+ 0                   system derived from the information entered in the calls field when the
+ 0                   second plastic surgeon microsurgery role modifier (MSRGP) is used.  EACH
+ 0                   UNIT REPRESENTS 1 HOUR.
+ 0
+ 2       2MSU SECOND MICROSURGERY UNITS (Implicit) - This modifier is system derived from
+ 2            the information entered in the calls field when the second Microsurgery role
+ 2            modifier (MSURG2) is used. EACH UNIT REPRESENTS 1 HOUR.
+ 0
+ 0            2MSU   SECOND MICROSURGERY UNITS - (Implicit)

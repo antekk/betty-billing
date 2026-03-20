@@ -1,0 +1,2222 @@
+1RG121                              ALBERTA HEALTH CARE INSURANCE PLAN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                           Schedule of Anaesthetic Rates Applicable to Podiatry
+
+                                                Price List
+
+                                                   As Of
+
+                                               14 March 2025
+
+1RG121                              ALBERTA HEALTH CARE INSURANCE PLAN                               Page 1
+                           Schedule of Anaesthetic Rates Applicable to Podiatry
+ Generated 2025/03/13                       Part D - Price List                           As of 2025/03/14
+
+
+
+                                   II.  OPERATIONS ON THE NERVOUS SYSTEM
+
+ 17  OPERATIONS ON CRANIAL AND PERIPHERAL NERVES
+
+   17.0  Incision, division, and excision of cranial and peripheral nerves
+
+                             ---------------------- MODIFIER ---------------------
+         HSC      BASE RATE  TYPE CODE   EXPLCT ACTION                      AMOUNT   CAT
+
+         --------------------------------------------------------------------------------------------------
+         17.08AA  0.00       BMI  BMIANE   Y    Increase By                    25%   4
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                112.95
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         17.08AB  0.00       BMI  BMIANE   Y    Increase By                    25%   4
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                142.97
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         17.08AC  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                142.97
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+
+   17.2  Suture of cranial and peripheral nerves
+
+         --------------------------------------------------------------------------------------------------
+         17.2 AB  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+
+   17.3  Freeing of adhesions and decompression of cranial and peripheral
+         nerves
+
+         --------------------------------------------------------------------------------------------------
+         17.34AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+1RG121                              ALBERTA HEALTH CARE INSURANCE PLAN                               Page 2
+                           Schedule of Anaesthetic Rates Applicable to Podiatry
+ Generated 2025/03/13                       Part D - Price List                           As of 2025/03/14
+
+
+                             ---------------------- MODIFIER ---------------------
+         HSC      BASE RATE  TYPE CODE   EXPLCT ACTION                      AMOUNT   CAT
+
+         17.34AA (cont'd)    BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+
+   17.4  Cranial or peripheral nerve graft
+
+         --------------------------------------------------------------------------------------------------
+         17.4 AB  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                294.87
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+
+   17.6  Other cranial or peripheral neuroplasty
+
+         --------------------------------------------------------------------------------------------------
+         17.63AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                223.59
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+
+   17.8  Invasive diagnostic procedures on peripheral nervous system
+
+         --------------------------------------------------------------------------------------------------
+         17.81AA  0.00       BMI  BMIANE   Y    Increase By                    25%   M+
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         17.81AB  0.00       BMI  BMIANE   Y    Increase By                    25%   M+
+                             BMI  BMIANT   Y    Increase By                    25%
+1RG121                              ALBERTA HEALTH CARE INSURANCE PLAN                               Page 3
+                           Schedule of Anaesthetic Rates Applicable to Podiatry
+ Generated 2025/03/13                       Part D - Price List                           As of 2025/03/14
+
+
+                             ---------------------- MODIFIER ---------------------
+         HSC      BASE RATE  TYPE CODE   EXPLCT ACTION                      AMOUNT   CAT
+
+         17.81AB (cont'd)    ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+
+                               XV.  OPERATIONS ON THE MUSCULOSKELETAL SYSTEM
+
+ 89  INCISION, EXCISION, AND DIVISION OF OTHER BONES
+
+   89.0  Sequestrectomy
+
+         --------------------------------------------------------------------------------------------------
+         89.07AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                112.95
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         89.08AB  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+
+   89.1  Other incision of bone without division
+
+         --------------------------------------------------------------------------------------------------
+         89.19AA  0.00       BMI  BMIANE   Y    Increase By                    25%   4
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+1RG121                              ALBERTA HEALTH CARE INSURANCE PLAN                               Page 4
+                           Schedule of Anaesthetic Rates Applicable to Podiatry
+ Generated 2025/03/13                       Part D - Price List                           As of 2025/03/14
+
+
+
+   89.3  Other division of bone
+
+                             ---------------------- MODIFIER ---------------------
+         HSC      BASE RATE  TYPE CODE   EXPLCT ACTION                      AMOUNT   CAT
+
+         --------------------------------------------------------------------------------------------------
+         89.37AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                167.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         89.37AB  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.81
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+
+   89.4  Excision of bunion (bunionectomy)
+
+         --------------------------------------------------------------------------------------------------
+         89.41AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                188.43
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         89.42AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                113.05
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+1RG121                              ALBERTA HEALTH CARE INSURANCE PLAN                               Page 5
+                           Schedule of Anaesthetic Rates Applicable to Podiatry
+ Generated 2025/03/13                       Part D - Price List                           As of 2025/03/14
+
+
+
+   89.5  Local excision of lesion or tissue of bone
+
+                             ---------------------- MODIFIER ---------------------
+         HSC      BASE RATE  TYPE CODE   EXPLCT ACTION                      AMOUNT   CAT
+
+         --------------------------------------------------------------------------------------------------
+         89.57AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                134.04
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         89.57AB  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.81
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         89.57AC  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                134.04
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         89.58AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         89.58AB  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+1RG121                              ALBERTA HEALTH CARE INSURANCE PLAN                               Page 6
+                           Schedule of Anaesthetic Rates Applicable to Podiatry
+ Generated 2025/03/13                       Part D - Price List                           As of 2025/03/14
+
+
+                             ---------------------- MODIFIER ---------------------
+         HSC      BASE RATE  TYPE CODE   EXPLCT ACTION                      AMOUNT   CAT
+
+         89.58AB (cont'd)    ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         89.58AC  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                167.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         89.58AD  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                125.09
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         89.59AA  0.00       BMI  BMIANE   Y    Increase By                    25%   M+
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+
+ 90  OTHER OPERATIONS ON BONES EXCEPT FACIAL BONES
+
+   90.0  Bone graft
+
+         --------------------------------------------------------------------------------------------------
+         90.07AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                196.59
+                             ROLE ANEST    Y    Replace Base                 18.81
+1RG121                              ALBERTA HEALTH CARE INSURANCE PLAN                               Page 7
+                           Schedule of Anaesthetic Rates Applicable to Podiatry
+ Generated 2025/03/13                       Part D - Price List                           As of 2025/03/14
+
+
+                             ---------------------- MODIFIER ---------------------
+         HSC      BASE RATE  TYPE CODE   EXPLCT ACTION                      AMOUNT   CAT
+
+         90.07AA (cont'd)    ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         90.07AB  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         90.08AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+
+   90.6  Removal of internal fixation device
+
+         --------------------------------------------------------------------------------------------------
+         90.6 AB  0.00       BMI  BMIANE   Y    Increase By                    25%   4
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         90.6 AC  0.00       BMI  BMIANE   Y    Increase By                    25%   4
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                113.05
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+1RG121                              ALBERTA HEALTH CARE INSURANCE PLAN                               Page 8
+                           Schedule of Anaesthetic Rates Applicable to Podiatry
+ Generated 2025/03/13                       Part D - Price List                           As of 2025/03/14
+
+
+                             ---------------------- MODIFIER ---------------------
+         HSC      BASE RATE  TYPE CODE   EXPLCT ACTION                      AMOUNT   CAT
+
+         90.6 AC (cont'd)    ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+
+ 91  REDUCTION OF FRACTURE AND DISLOCATION
+
+   91.0  Closed reduction of fracture (without internal fixation)
+
+         --------------------------------------------------------------------------------------------------
+         91.06AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      50%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             UNDP UNDP     Y    Reduce Base To                 50%
+                             CMPD CMPD     Y    Increase Base To              150%
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP50    Y    Reduce Base To                 50%
+         --------------------------------------------------------------------------------------------------
+         91.06AB  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      50%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             UNDP UNDP     Y    Reduce Base To                 50%
+                             CMPD CMPD     Y    Increase Base To              150%
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP50    Y    Reduce Base To                 50%
+         --------------------------------------------------------------------------------------------------
+         91.06AC  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                142.97
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At     100%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+         --------------------------------------------------------------------------------------------------
+         91.06AD  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+1RG121                              ALBERTA HEALTH CARE INSURANCE PLAN                               Page 9
+                           Schedule of Anaesthetic Rates Applicable to Podiatry
+ Generated 2025/03/13                       Part D - Price List                           As of 2025/03/14
+
+
+                             ---------------------- MODIFIER ---------------------
+         HSC      BASE RATE  TYPE CODE   EXPLCT ACTION                      AMOUNT   CAT
+
+         91.06AD (cont'd)    ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Increase By    24.61
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             UNDP UNDP     Y    Reduce Base To                 50%
+                             CMPD CMPD     Y    Increase Base To              150%
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP50    Y    Reduce Base To                 50%
+         --------------------------------------------------------------------------------------------------
+         91.06AE  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      50%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             UNDP UNDP     Y    Reduce Base To                 50%
+                             CMPD CMPD     Y    Increase Base To              150%
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP50    Y    Reduce Base To                 50%
+         --------------------------------------------------------------------------------------------------
+         91.07AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Increase By    24.86
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             UNDP UNDP     Y    Reduce Base To                 50%
+                             CMPD CMPD     Y    Increase Base To              150%
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP50    Y    Reduce Base To                 50%
+         --------------------------------------------------------------------------------------------------
+
+   91.2  Open reduction of fracture (without internal fixation)
+
+         --------------------------------------------------------------------------------------------------
+         91.26AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                134.04
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Increase By    46.11
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+         --------------------------------------------------------------------------------------------------
+         91.26AB  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                134.04
+                             ROLE ANEST    Y    Replace Base                 18.81
+1RG121                              ALBERTA HEALTH CARE INSURANCE PLAN                              Page 10
+                           Schedule of Anaesthetic Rates Applicable to Podiatry
+ Generated 2025/03/13                       Part D - Price List                           As of 2025/03/14
+
+
+                             ---------------------- MODIFIER ---------------------
+         HSC      BASE RATE  TYPE CODE   EXPLCT ACTION                      AMOUNT   CAT
+
+         91.26AB (cont'd)    ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Pay Base At     100%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+         --------------------------------------------------------------------------------------------------
+         91.27AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Increase By    24.61
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+         --------------------------------------------------------------------------------------------------
+
+   91.3  Open reduction of fracture with internal fixation
+
+         --------------------------------------------------------------------------------------------------
+         91.36AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                160.84
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At     100%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+         --------------------------------------------------------------------------------------------------
+         91.36AB  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                178.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At     100%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+         --------------------------------------------------------------------------------------------------
+         91.36AC  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                142.97
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+         --------------------------------------------------------------------------------------------------
+         91.36AD  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+1RG121                              ALBERTA HEALTH CARE INSURANCE PLAN                              Page 11
+                           Schedule of Anaesthetic Rates Applicable to Podiatry
+ Generated 2025/03/13                       Part D - Price List                           As of 2025/03/14
+
+
+                             ---------------------- MODIFIER ---------------------
+         HSC      BASE RATE  TYPE CODE   EXPLCT ACTION                      AMOUNT   CAT
+
+         91.36AD (cont'd)    BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                134.04
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Increase By    46.11
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+         --------------------------------------------------------------------------------------------------
+         91.37AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Increase By    24.61
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+         --------------------------------------------------------------------------------------------------
+
+   91.7  Closed reduction of dislocation of joint
+
+         --------------------------------------------------------------------------------------------------
+         91.77AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      50%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP50    Y    Reduce Base To                 50%
+         --------------------------------------------------------------------------------------------------
+         91.77AB  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Increase By    24.61
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP50    Y    Reduce Base To                 50%
+         --------------------------------------------------------------------------------------------------
+         91.77AC  0.00       BMI  BMIANE   Y    Increase By                    25%   M
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Pay Base At      50%
+1RG121                              ALBERTA HEALTH CARE INSURANCE PLAN                              Page 12
+                           Schedule of Anaesthetic Rates Applicable to Podiatry
+ Generated 2025/03/13                       Part D - Price List                           As of 2025/03/14
+
+
+                             ---------------------- MODIFIER ---------------------
+         HSC      BASE RATE  TYPE CODE   EXPLCT ACTION                      AMOUNT   CAT
+
+         91.77AC (cont'd)    ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP50    Y    Reduce Base To                 50%
+         --------------------------------------------------------------------------------------------------
+
+   91.8  Open reduction of dislocation of joint
+
+         --------------------------------------------------------------------------------------------------
+         91.87AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                186.33
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At     100%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+         --------------------------------------------------------------------------------------------------
+         91.87AB  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                134.04
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Increase By    25.53
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+         --------------------------------------------------------------------------------------------------
+         91.87AC  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Pay Base At     100%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+         --------------------------------------------------------------------------------------------------
+
+ 92  INCISION AND EXCISION OF JOINT STRUCTURE
+
+   92.1  Other arthrotomy
+
+         --------------------------------------------------------------------------------------------------
+         92.16AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                142.97
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+1RG121                              ALBERTA HEALTH CARE INSURANCE PLAN                              Page 13
+                           Schedule of Anaesthetic Rates Applicable to Podiatry
+ Generated 2025/03/13                       Part D - Price List                           As of 2025/03/14
+
+
+                             ---------------------- MODIFIER ---------------------
+         HSC      BASE RATE  TYPE CODE   EXPLCT ACTION                      AMOUNT   CAT
+
+         92.16AA (cont'd)    ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         92.19AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                112.95
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         92.19AB  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                112.95
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         92.19AC  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+
+   92.8  Arthroscopy
+
+         --------------------------------------------------------------------------------------------------
+         92.8 AA  0.00       BMI  BMIANE   Y    Increase By                    25%   M+
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                112.95
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+1RG121                              ALBERTA HEALTH CARE INSURANCE PLAN                              Page 14
+                           Schedule of Anaesthetic Rates Applicable to Podiatry
+ Generated 2025/03/13                       Part D - Price List                           As of 2025/03/14
+
+
+                             ---------------------- MODIFIER ---------------------
+         HSC      BASE RATE  TYPE CODE   EXPLCT ACTION                      AMOUNT   CAT
+
+         92.8 AA (cont'd)    SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+
+ 93  REPAIR AND PLASTIC OPERATIONS ON JOINT STRUCTURES
+
+   93.1  Arthrodesis of foot and ankle
+
+         --------------------------------------------------------------------------------------------------
+         93.12AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                205.54
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         93.14AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                178.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         93.16AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                135.53
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         93.18AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                135.53
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+1RG121                              ALBERTA HEALTH CARE INSURANCE PLAN                              Page 15
+                           Schedule of Anaesthetic Rates Applicable to Podiatry
+ Generated 2025/03/13                       Part D - Price List                           As of 2025/03/14
+
+
+                             ---------------------- MODIFIER ---------------------
+         HSC      BASE RATE  TYPE CODE   EXPLCT ACTION                      AMOUNT   CAT
+
+         --------------------------------------------------------------------------------------------------
+         93.18AB  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                134.04
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Increase By    25.53
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+
+   93.3  Arthroplasty of foot and toe
+
+         --------------------------------------------------------------------------------------------------
+         93.39AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                169.77
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         93.39AB  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.81
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-8           For Each Call Increase By    25.53
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         93.39AC  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                149.07
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+
+   93.4  Arthroplasty of knee and ankle
+
+1RG121                              ALBERTA HEALTH CARE INSURANCE PLAN                              Page 16
+                           Schedule of Anaesthetic Rates Applicable to Podiatry
+ Generated 2025/03/13                       Part D - Price List                           As of 2025/03/14
+
+
+                             ---------------------- MODIFIER ---------------------
+         HSC      BASE RATE  TYPE CODE   EXPLCT ACTION                      AMOUNT   CAT
+
+         --------------------------------------------------------------------------------------------------
+         93.49AB  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                226.10
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         93.49AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                160.84
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+
+   93.9  Other operations on joints
+
+         --------------------------------------------------------------------------------------------------
+         93.91AB  0.00       BMI  BMIANE   Y    Increase By                    25%   M
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+
+ 95  OPERATIONS ON MUSCLES, TENDONS, FASCIA AND BURSA, EXCEPT HAND
+
+   95.0  Incision of muscle, tendon, fascia and bursa
+
+         --------------------------------------------------------------------------------------------------
+         95.01AA  0.00       BMI  BMIANE   Y    Increase By                    25%   4
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.81
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         95.03AA  0.00       BMI  BMIANE   Y    Increase By                    25%   4
+1RG121                              ALBERTA HEALTH CARE INSURANCE PLAN                              Page 17
+                           Schedule of Anaesthetic Rates Applicable to Podiatry
+ Generated 2025/03/13                       Part D - Price List                           As of 2025/03/14
+
+
+                             ---------------------- MODIFIER ---------------------
+         HSC      BASE RATE  TYPE CODE   EXPLCT ACTION                      AMOUNT   CAT
+
+         95.03AA (cont'd)    BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         95.09AA  0.00       BMI  BMIANE   Y    Increase By                    25%   1
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                134.04
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+
+   95.1  Division of muscle, tendon and fascia
+
+         --------------------------------------------------------------------------------------------------
+         95.13AC  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         95.15AB  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                142.97
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         95.15AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                169.57
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-8           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+1RG121                              ALBERTA HEALTH CARE INSURANCE PLAN                              Page 18
+                           Schedule of Anaesthetic Rates Applicable to Podiatry
+ Generated 2025/03/13                       Part D - Price List                           As of 2025/03/14
+
+
+                             ---------------------- MODIFIER ---------------------
+         HSC      BASE RATE  TYPE CODE   EXPLCT ACTION                      AMOUNT   CAT
+
+         95.15AA (cont'd)    SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+
+   95.2  Excision of lesion of muscle, tendon, fascia, and bursa
+
+         --------------------------------------------------------------------------------------------------
+         95.29AB  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+
+   95.5  Suture of muscles, tendon, and fascia
+
+         --------------------------------------------------------------------------------------------------
+         95.54AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                142.97
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         95.54AB  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.81
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Pay Base At      50%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         95.54AC  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                186.34
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Pay Base At      50%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+1RG121                              ALBERTA HEALTH CARE INSURANCE PLAN                              Page 19
+                           Schedule of Anaesthetic Rates Applicable to Podiatry
+ Generated 2025/03/13                       Part D - Price List                           As of 2025/03/14
+
+
+                             ---------------------- MODIFIER ---------------------
+         HSC      BASE RATE  TYPE CODE   EXPLCT ACTION                      AMOUNT   CAT
+
+         95.54AC (cont'd)    SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+
+   95.6  Reconstruction of muscle and tendon
+
+         --------------------------------------------------------------------------------------------------
+         95.65AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                160.83
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         95.65AF  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                162.64
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-4           For Each Call Increase By    70.09
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+
+   95.7  Other plastic operations on muscles, tendon and fascia
+
+         --------------------------------------------------------------------------------------------------
+         95.71AB  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                167.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-6           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         95.75AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                186.33
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+1RG121                              ALBERTA HEALTH CARE INSURANCE PLAN                              Page 20
+                           Schedule of Anaesthetic Rates Applicable to Podiatry
+ Generated 2025/03/13                       Part D - Price List                           As of 2025/03/14
+
+
+                             ---------------------- MODIFIER ---------------------
+         HSC      BASE RATE  TYPE CODE   EXPLCT ACTION                      AMOUNT   CAT
+
+         95.75AA (cont'd)    LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         95.75AB  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                260.88
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         95.76AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                142.97
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-4           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+
+   95.8  Invasive diagnostic procedures on muscle, tendon, fascia and bursa
+
+         --------------------------------------------------------------------------------------------------
+         95.81AA  0.00       BMI  BMIANE   Y    Increase By                    25%   M+
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+
+   95.9  Other operations on muscle, tendon, fascia and bursa
+
+         --------------------------------------------------------------------------------------------------
+         95.91AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         95.96AA  0.00       BMI  BMIANE   Y    Increase By                    25%   M
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+1RG121                              ALBERTA HEALTH CARE INSURANCE PLAN                              Page 21
+                           Schedule of Anaesthetic Rates Applicable to Podiatry
+ Generated 2025/03/13                       Part D - Price List                           As of 2025/03/14
+
+
+                             ---------------------- MODIFIER ---------------------
+         HSC      BASE RATE  TYPE CODE   EXPLCT ACTION                      AMOUNT   CAT
+
+         95.96AA (cont'd)    ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         95.99AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                241.27
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+
+ 96  OTHER OPERATIONS ON THE MUSCULOSKELETAL SYSTEM
+
+   96.1  Amputation of lower limb
+
+         --------------------------------------------------------------------------------------------------
+         96.11AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                113.05
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Increase By    24.02
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         96.12AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.81
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         96.12AB  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                134.04
+                             ROLE ANEST    Y    Replace Base                 18.81
+1RG121                              ALBERTA HEALTH CARE INSURANCE PLAN                              Page 22
+                           Schedule of Anaesthetic Rates Applicable to Podiatry
+ Generated 2025/03/13                       Part D - Price List                           As of 2025/03/14
+
+
+                             ---------------------- MODIFIER ---------------------
+         HSC      BASE RATE  TYPE CODE   EXPLCT ACTION                      AMOUNT   CAT
+
+         96.12AB (cont'd)    ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         96.12AC  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+
+                             XVII.  OPERATIONS ON SKIN AND SUBCUTANEOUS TISSUE
+
+ 98  OPERATIONS ON SKIN AND SUBCUTANEOUS TISSUE
+
+   98.0  Incision of skin and subcutaneous tissue
+
+         --------------------------------------------------------------------------------------------------
+         98.03AA  0.00       BMI  BMIANE   Y    Increase By                    25%   M
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         98.03AB  0.00       BMI  BMIANE   Y    Increase By                    25%   M
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+         --------------------------------------------------------------------------------------------------
+         98.04AA  0.00       BMI  BMIANE   Y    Increase By                    25%   M
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                134.04
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+1RG121                              ALBERTA HEALTH CARE INSURANCE PLAN                              Page 23
+                           Schedule of Anaesthetic Rates Applicable to Podiatry
+ Generated 2025/03/13                       Part D - Price List                           As of 2025/03/14
+
+
+
+   98.1  Excision of skin and subcutaneous tissue
+         NOTE:  Only one benefit may be claimed per operation.
+
+                             ---------------------- MODIFIER ---------------------
+         HSC      BASE RATE  TYPE CODE   EXPLCT ACTION                      AMOUNT   CAT
+
+         --------------------------------------------------------------------------------------------------
+         --------------------------------------------------------------------------------------------------
+         98.11AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                204.96
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         98.12AA  0.00       BMI  BMIANE   Y    Increase By                    25%   M+
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.81
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-3           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         98.12AH  0.00       BMI  BMIANE   Y    Increase By                    25%   4
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+
+        WARTS OR KERATOSES
+
+         --------------------------------------------------------------------------------------------------
+         98.12AJ  0.00       BMI  BMIANE   Y    Increase By                    25%   M
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.81
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         98.12AK  0.00       BMI  BMIANE   Y    Increase By                    25%   M
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+
+   98.2  Suture of skin and subcutaneous tissue
+
+1RG121                              ALBERTA HEALTH CARE INSURANCE PLAN                              Page 24
+                           Schedule of Anaesthetic Rates Applicable to Podiatry
+ Generated 2025/03/13                       Part D - Price List                           As of 2025/03/14
+
+
+                             ---------------------- MODIFIER ---------------------
+         HSC      BASE RATE  TYPE CODE   EXPLCT ACTION                      AMOUNT   CAT
+
+         --------------------------------------------------------------------------------------------------
+         98.22AA  0.00       BMI  BMIANE   Y    Increase By                    25%   M
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+
+   98.4  Free skin graft
+
+         --------------------------------------------------------------------------------------------------
+         98.49AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                142.97
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+
+   98.5  Flap or pedicle graft
+
+         --------------------------------------------------------------------------------------------------
+         98.53AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-5           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+
+   98.7  Other repair and reconstruction of skin and subcutaneous tissue
+
+         --------------------------------------------------------------------------------------------------
+         98.71AA  0.00       BMI  BMIANE   Y    Increase By                    25%   8
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                134.04
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-10          For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+1RG121                              ALBERTA HEALTH CARE INSURANCE PLAN                              Page 25
+                           Schedule of Anaesthetic Rates Applicable to Podiatry
+ Generated 2025/03/13                       Part D - Price List                           As of 2025/03/14
+
+
+
+   98.9  Other operations on skin and subcutaneous tissue
+
+                             ---------------------- MODIFIER ---------------------
+         HSC      BASE RATE  TYPE CODE   EXPLCT ACTION                      AMOUNT   CAT
+
+         --------------------------------------------------------------------------------------------------
+         --------------------------------------------------------------------------------------------------
+         98.96AA  0.00       BMI  BMIANE   Y    Increase By                    25%   M
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         98.96AB  0.00       BMI  BMIANE   Y    Increase By                    25%   7
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.81
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         98.96AC  0.00       BMI  BMIANE   Y    Increase By                    25%   M
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                112.95
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         98.96AD  0.00       BMI  BMIANE   Y    Increase By                    25%   M
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                144.57
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANEU ANEU
+                                  1             For Each Call Pay Base At     100%
+                                  2-2           For Each Call Pay Base At      75%
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+         98.96AE  0.00       BMI  BMIANE   Y    Increase By                    25%   13
+                             BMI  BMIANT   Y    Increase By                    25%
+                             ROLE ANE      Y    Replace Base                111.71
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+1RG121                              ALBERTA HEALTH CARE INSURANCE PLAN                              Page 26
+                           Schedule of Anaesthetic Rates Applicable to Podiatry
+ Generated 2025/03/13                       Part D - Price List                           As of 2025/03/14
+
+
+                             ---------------------- MODIFIER ---------------------
+         HSC      BASE RATE  TYPE CODE   EXPLCT ACTION                      AMOUNT   CAT
+
+         98.96AE (cont'd)    SURC WK       Y    Increase By                  48.94
+                             LVP  LVP75    Y    Reduce Base To                 75%
+         --------------------------------------------------------------------------------------------------
+
+                                XVIII.  PROCEDURES NOT ELSEWHERE CLASSIFIED
+
+ 99  Procedures not elsewhere classified
+
+   99.0  Ill-defined operations
+
+         --------------------------------------------------------------------------------------------------
+         99.09AA  0.00       BMI  BMIANT   Y    Increase By                    25%   8
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+         --------------------------------------------------------------------------------------------------
+         99.09AP  0.00       BMI  BMIANT   Y    Increase By                    25%   8
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+         --------------------------------------------------------------------------------------------------
+         99.09AR  0.00       BMI  BMIANT   Y    Increase By                    25%   8
+                             ROLE ANEST    Y    Replace Base                 18.81
+                             ANU  ANU
+                                  1             For Each Call Pay Base At     100%
+                                  2-150         For Each Call Increase By    18.81
+                             SURC EV       Y    Increase By                  48.94
+                             SURC NTAM     Y    Increase By                 117.41
+                             SURC NTPM     Y    Increase By                 117.41
+                             SURC WK       Y    Increase By                  48.94
+1RG121                              ALBERTA HEALTH CARE INSURANCE PLAN                               Page i
+
+ Generated 2025/03/13                        TABLE OF CONTENTS                            As of 2025/03/14
+
+
+
+
+
+            II.  OPERATIONS ON THE NERVOUS SYSTEM . . . . . . . . . . . . . . . . . . . . . . . 1
+
+              17  OPERATIONS ON CRANIAL AND PERIPHERAL NERVES . . . . . . . . . . . . . . . . . 1
+
+                17.0  Incision, division, and excision of cranial and peripheral nerves . . . . 1
+
+                17.2  Suture of cranial and peripheral nerves . . . . . . . . . . . . . . . . . 1
+
+                17.3  Freeing of adhesions and decompression of cranial and peripheral
+                      nerves  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+
+                17.4  Cranial or peripheral nerve graft . . . . . . . . . . . . . . . . . . . . 2
+
+                17.6  Other cranial or peripheral neuroplasty . . . . . . . . . . . . . . . . . 2
+
+                17.8  Invasive diagnostic procedures on peripheral nervous system . . . . . . . 2
+
+            XV.  OPERATIONS ON THE MUSCULOSKELETAL SYSTEM . . . . . . . . . . . . . . . . . . . 3
+
+              89  INCISION, EXCISION, AND DIVISION OF OTHER BONES . . . . . . . . . . . . . . . 3
+
+                89.0  Sequestrectomy  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+
+                89.1  Other incision of bone without division . . . . . . . . . . . . . . . . . 3
+
+                89.3  Other division of bone  . . . . . . . . . . . . . . . . . . . . . . . . . 4
+
+                89.4  Excision of bunion (bunionectomy) . . . . . . . . . . . . . . . . . . . . 4
+
+                89.5  Local excision of lesion or tissue of bone  . . . . . . . . . . . . . . . 5
+
+              90  OTHER OPERATIONS ON BONES EXCEPT FACIAL BONES . . . . . . . . . . . . . . . . 6
+
+                90.0  Bone graft  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+
+                90.6  Removal of internal fixation device . . . . . . . . . . . . . . . . . . . 7
+
+              91  REDUCTION OF FRACTURE AND DISLOCATION . . . . . . . . . . . . . . . . . . . . 8
+
+                91.0  Closed reduction of fracture (without internal fixation)  . . . . . . . . 8
+
+                91.2  Open reduction of fracture (without internal fixation)  . . . . . . . . . 9
+
+                91.3  Open reduction of fracture with internal fixation . . . . . . . . . . .  10
+
+                91.7  Closed reduction of dislocation of joint  . . . . . . . . . . . . . . .  11
+
+                91.8  Open reduction of dislocation of joint  . . . . . . . . . . . . . . . .  12
+
+              92  INCISION AND EXCISION OF JOINT STRUCTURE  . . . . . . . . . . . . . . . . .  12
+
+                92.1  Other arthrotomy  . . . . . . . . . . . . . . . . . . . . . . . . . . .  12
+
+                92.8  Arthroscopy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  13
+
+              93  REPAIR AND PLASTIC OPERATIONS ON JOINT STRUCTURES . . . . . . . . . . . . .  14
+
+                93.1  Arthrodesis of foot and ankle . . . . . . . . . . . . . . . . . . . . .  14
+
+                93.3  Arthroplasty of foot and toe  . . . . . . . . . . . . . . . . . . . . .  15
+
+                93.4  Arthroplasty of knee and ankle  . . . . . . . . . . . . . . . . . . . .  15
+
+1RG121                              ALBERTA HEALTH CARE INSURANCE PLAN                              Page ii
+
+ Generated 2025/03/13                        TABLE OF CONTENTS                            As of 2025/03/14
+
+
+
+                93.9  Other operations on joints  . . . . . . . . . . . . . . . . . . . . . .  16
+
+              95  OPERATIONS ON MUSCLES, TENDONS, FASCIA AND BURSA, EXCEPT HAND . . . . . . .  16
+
+                95.0  Incision of muscle, tendon, fascia and bursa  . . . . . . . . . . . . .  16
+
+                95.1  Division of muscle, tendon and fascia . . . . . . . . . . . . . . . . .  17
+
+                95.2  Excision of lesion of muscle, tendon, fascia, and bursa . . . . . . . .  18
+
+                95.5  Suture of muscles, tendon, and fascia . . . . . . . . . . . . . . . . .  18
+
+                95.6  Reconstruction of muscle and tendon . . . . . . . . . . . . . . . . . .  19
+
+                95.7  Other plastic operations on muscles, tendon and fascia  . . . . . . . .  19
+
+                95.8  Invasive diagnostic procedures on muscle, tendon, fascia and bursa  . .  20
+
+                95.9  Other operations on muscle, tendon, fascia and bursa  . . . . . . . . .  20
+
+              96  OTHER OPERATIONS ON THE MUSCULOSKELETAL SYSTEM  . . . . . . . . . . . . . .  21
+
+                96.1  Amputation of lower limb  . . . . . . . . . . . . . . . . . . . . . . .  21
+
+            XVII.  OPERATIONS ON SKIN AND SUBCUTANEOUS TISSUE . . . . . . . . . . . . . . . .  22
+
+              98  OPERATIONS ON SKIN AND SUBCUTANEOUS TISSUE  . . . . . . . . . . . . . . . .  22
+
+                98.0  Incision of skin and subcutaneous tissue  . . . . . . . . . . . . . . .  22
+
+            XVII.  OPERATIONS ON SKIN AND SUBCUTANEOUS TISSUE . . . . . . . . . . . . . . . .  22
+
+              98  OPERATIONS ON SKIN AND SUBCUTANEOUS TISSUE  . . . . . . . . . . . . . . . .  22
+
+                98.1  Excision of skin and subcutaneous tissue
+                      NOTE:  Only one benefit may be claimed per operation. . . . . . . . . .  22
+
+                     WARTS OR KERATOSES . . . . . . . . . . . . . . . . . . . . . . . . . . .  23
+
+                98.2  Suture of skin and subcutaneous tissue  . . . . . . . . . . . . . . . .  23
+
+                98.4  Free skin graft . . . . . . . . . . . . . . . . . . . . . . . . . . . .  24
+
+                98.5  Flap or pedicle graft . . . . . . . . . . . . . . . . . . . . . . . . .  24
+
+                98.7  Other repair and reconstruction of skin and subcutaneous tissue . . . .  24
+
+            XVII.  OPERATIONS ON SKIN AND SUBCUTANEOUS TISSUE . . . . . . . . . . . . . . . .  24
+
+              98  OPERATIONS ON SKIN AND SUBCUTANEOUS TISSUE  . . . . . . . . . . . . . . . .  24
+
+                98.9  Other operations on skin and subcutaneous tissue  . . . . . . . . . . .  24
+
+            XVIII.  PROCEDURES NOT ELSEWHERE CLASSIFIED . . . . . . . . . . . . . . . . . . .  26
+
+              99  Procedures not elsewhere classified . . . . . . . . . . . . . . . . . . . .  26
+
+                99.0  Ill-defined operations  . . . . . . . . . . . . . . . . . . . . . . . .  26
+

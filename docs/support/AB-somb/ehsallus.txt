@@ -1,0 +1,386 @@
+NPS001 Time spent in preparation/research related to the care of a complex         N 000000000000NN2024052020801231
+NPS002 Time spent waiting for a Patient who did not attend a scheduled             N 000000000000NN2024052020801231
+NPS003 Any communication, including but not limited to, informal, non-scheduled    N 000000000000NN2024052020801231
+NPS004 Any communication, including but not limited to, informal, non-scheduled    N 000000000000NN2024052020801231
+NPS005 Report writing and other clinical documentation related to the care and     N 000000000000NN2024052020801231
+NPS006 Review of Patient lab results, consultant reports, or other care reports,   N 000000000000NN2024052020801231
+NPS007 Review of Patient lab results, consultant reports, or other care reports    N 000000000000NN2024052020801231
+NP0001 Brief assessment of a patient's condition requiring a minimal history with  N 000000000000NN2019040120801231
+NP0002 Limited assessment of a patient's condition requiring a history             N 000000000000NN2019040120801231
+NP0003 Comprehensive assessment of a patient's condition requiring a               N 000000000000NN2019040120801231
+NP0004 Telephone call directly to patient, to discuss patient                      N 000000000000NN2019040120801231
+NP0005 Nurse Practitioner to patient secure electronic communication.              N 000000000000NN2019040120801231
+NP0006 Nurse practitioner to patient secure videoconference.                       N 000000000000NN2019040120801231
+NP0007 Transfer of care of hospital in-patient, by a nurse                         N 000000000000NN2019040120801231
+NP0008 Comprehensive evaluation including completion of forms to                   N 000000000000NN2019040120801231
+NP0009 Comprehensive geriatric assessment,75 years or older first full             N 000000000000NN2019040120801231
+NP0010 Patient care advice to paramedic - pre hospital patch, assisted             N 000000000000NN2019040120801231
+NP0011 Patient care advice to a pharmacist provided via telephone or other         N 000000000000NN2019040120801231
+NP0012 Nurse Practitioner to physician or podiatric surgeon telephone or           N 000000000000NN2019040120801231
+NP0013 Nurse Practitioner to Physician secure E-Consultation, referring nurse      N 000000000000NN2019040120801231
+NP0014 Formal, scheduled, multiple health discipline team conference, full 15      N 000000000000NN2019040120801231
+NP0015 Formal, scheduled, professional interview relating to the care and          N 000000000000NN2019040120801231
+NP0016 Formal, scheduled family conference relating to a specific patient, by a    N 000000000000NN2019040120801231
+NP0017 Family conference with relative(s) via telephone in connection with the     N 000000000000NN2019040120801231
+NP0018 Brief assessment of a patient's condition requiring a minimal history with  N 000000000000NN2024060320801231
+NP0019 Limited assessment of a patient's condition requiring a history related to  N 000000000000NN2024060320801231
+NP0020 Comprehensive assessment of a patient's condition requiring a complete      N 000000000000NN2024060320801231
+NP0021 Telephone call directly to patient, to discuss patient management/diagnosticN 000000000000NN2024060320801231
+NP0022 Nurse Practitioner to patient secure electronic communication               N 000000000000NN2024060320801231
+NP0023 Nurse practitioner to patient secure videoconference 1700 - 2200 hours      N 000000000000NN2024060320801231
+NP0024 Transfer of care of hospital in-patient, by a nurse practitioner            N 000000000000NN2024060320801231
+NP0025 Comprehensive evaluation including completion of forms to determine capacityN 000000000000NN2024060320801231
+NP0026 Comprehensive geriatric assessment, 75 years or older first full 90 minutes,N 000000000000NN2024060320801231
+NP0027 weekday,  0700 - 2200 hours weekend and statutory holiday.                  N 000000000000NN2024060320801231
+NP0028 Patient care advice to a pharmacist provided via telephone or other         N 000000000000NN2024060320801231
+NP0029 Nurse Practitioner to physician or podiatric surgeon telephone or telehealthN 000000000000NN2024060320801231
+NP0030 Nurse Practitioner to physician or podiatric surgeon telephone or telehealthN 000000000000NN2024060320801231
+NP0031 Formal, scheduled, multiple health discipline team conference,              N 000000000000NN2024060320801231
+NP0032 Formal, scheduled, professional interview relating to the care and treatmentN 000000000000NN2024060320801231
+NP0033 Formal, scheduled family conference relating to a specific patient,         N 000000000000NN2024060320801231
+NP0034 Family conference with relative(s) via telephone in connection with the     N 000000000000NN2024060320801231
+S001   Time spent in preparation/research related to the care of a complex patient N 000000000000NN2020010120801231
+S002   Time spent waiting for a patient who did not attend a scheduled             N 000000000000NN2020010120801231
+S003   Time spent waiting for drop-in patients, per 5 minutes.                     N 000000000000NN2020010120801231
+S004   Any communication, including but not limited to, informal, non-scheduled    N 000000000000NN2020010120801231
+S005   Any communication, including but not limited to, informal, non-scheduled    N 000000000000NN2020010120801231
+S006   Time spent at the Centre waiting for drop in Patients, per 5 minutes.  May  N 000000000000NN2017120120191231
+S006   Second physician at a patient visit, per 5 minutes.                         N 000000000000NN2020010120801231
+S007   Time spent delivering program services to a patient who is a resident of    N 000000000000NN2020010120801231
+S008   Group health education session, per 5 minutes.                              N 000000000000NN2020010120801231
+S009   Report writing and other clinical documentation related to the care and     N 000000000000NN2020010120801231
+S010   Review of patient lab results, consultant reports, or other care reports,   N 000000000000NN2020010120801231
+S011   Review of patient lab results, consultant reports, or other care reports    N 000000000000NN2020010120801231
+S012   Time spent for work related to ARP business, including but not limited to   N 000000000000NN2020010120801231
+03.01KADiagnostic interview and evaluation, unqualified {Chronic pain - non        N 000000000000NN2000080120801231
+03.01KBDiagnostic interview and evaluation, unqualified {Miscellaneous patient     N 000000000000NN2000080120801231
+03.01KCDiagnostic interview and evaluation, unqualified {Cancellation by patient   N 000000000000NN2000080120801231
+03.01KDDiagnostic interview and evaluation, unqualified {Formal scheduled          N 000000000000NN2000080120120630
+03.01KEDiagnostic interview and evaluation, unqualified {Report writing and other  N 000000000000NN2000080120801231
+03.01KFDiagnostic interview and evaluation, unqualified {Specifically for the      N 000000000000NN2000080120801231
+03.01KGDiagnostic interview and evaluation, unqualified {Formal scheduled          N 000000000000NN2000080120801231
+03.01KHDiagnostic interview and evaluation, unqualified {Second and subsequent     N 000000000000NN2000080120120630
+03.01KJDiagnostic interview and evaluation, unqualified {Individual patient        N 000000000000NN2000080120801231
+03.01KKDiagnostic interview and evaluation, unqualified {Day-to-day clinical       N 000000000000NN2000080120120630
+03.01KLDiagnostic interview and evalution, unqualified {Initial Interdisciplinary  N 000000000000NN2001050120801231
+03.01KMDiagnostic interview and evaluation, unqualified {Scheduled meeting with    N 000000000000NN2000080120801231
+03.01KNDiagnostic interview and evaluation, unqualifed {Scheduled meeting with     N 000000000000NN2000080120801231
+03.01KPDiagnostic interview and evaluation, unqualified {Informal contact          N 000000000000NN2000080120801231
+03.01KQDiagnostic interview and evaluation, unqualified {Informal contact          N 000000000000NN2000080120801231
+03.01KRDiagnostic interview and evaluation, unqualified {Informal contact          N 000000000000NN2000080120801231
+03.01KUDiagnostic interview and evaluation, unqualified {Family treatment}         N 000000000000NN2000080120801231
+03.01KVDiagnostic interview and evaluation, unqualified {Patient group treatment,  N 000000000000NN2000080120120630
+03.01KWDiagnostic interview and evaluation, unqualified {Tidying/cleaning up in theN 000000000000NN2000080120120630
+03.01KXDiagnostic interview and evaluation, unqualified {Functional Capacity       N 000000000000NN2000080120801231
+03.01KYDiagnostic interview and evaluation, unqualified {Home assessment}          N 000000000000NN2000080120120630
+03.01KZDiagnostic interview and evaluation, unqualified {Worksite evaluation}      N 000000000000NN2000080120120630
+03.01LADiagnostic interview and evaluation, unqualified {Pudendal nerve block}     N 000000000000NN2000080120801231
+03.01LBDiagnostic interview and evaluation, unqualified {Pudendal nerve stimulator N 000000000000NN2000080120120630
+03.01LCDiagnostic interview and evaluation, unqualified {Prolotherapy procedures   N 000000000000NN2000080120120630
+03.01LDDiagnostic interview and evaluation, unqualified {Pelvic pain mapping per 15N 000000000000NN2000080120120630
+03.01LEDiagnostic interview and evaluation, unqualified {Osteopathic management,   N 000000000000NN2000080120120630
+03.01LFDiagnostic interview and evaluation, unqualified {Injection of Botulinum A  N 000000000000NN2000080120801231
+03.01LPOther diagnostic interview and evaluation {Unscheduled assessment at a LTC  N 000000000000NN2009040120801231
+03.01LQOther diagnostic interview and evaluation {Unscheduled assessment at a LTC  N 000000000000NN2009040120801231
+03.01LROther diagnostic interview and evaluation {Unscheduled assessment at a  LTC N 000000000000NN2009040120801231
+03.01LSOther diagnostic interview and evaluation {Unscheduled assessment at a LTC  N 000000000000NN2009040120801231
+03.01LXDiagnostic interview and evaluation, unqualified {Injection of Botulinum A  N 000000000000NN2009040120801231
+03.01MADiagnostic interview and evaluation, unqualified {Formal Program DevelopmentN 000000000000NN2000080120020131
+03.01MADiagnostic interview and evaluation {Formal scheduled TEAM Program          N 000000000000NN2002020120801231
+03.01MBDiagnostic interview and evaluation, unqualified {Individual time preparing N 000000000000NN2000080120801231
+03.01MCDiagnostic interview and evaluation, unqualified {Quality improvement       N 000000000000NN2000080120801231
+03.01MDDiagnostic interview and evaluation, unqualified {Program evaluation        N 000000000000NN2000080120801231
+03.01MEmeetings/activities}                                                        N 000000000000NN2000080120020131
+03.01MEDiagnostic interview and evaluation, unqualified {Formal scheduled CENTRE   N 000000000000NN2002020120801231
+03.01MFDiagnostic interview and evaluation, unqualified {Professional Development  N 000000000000NN2000080120801231
+03.01MGDiagnostic interview and evaluation, unqualified {Self-directed learning    N 000000000000NN2000080120801231
+03.01MHDiagnostic interview and evaluation, unqualified {Teaching/Presentations to N 000000000000NN2000080120801231
+03.01MJDiagnostic interview and evaluation, unqualified {Teaching/Presentation to  N 000000000000NN2000080120801231
+03.01MKDiagnostic interview and evaluation, unqualified {Teaching/Presentations to N 000000000000NN2000080120801231
+03.01MLDiagnostic interview and evaluation, unqualified {Original research         N 000000000000NN2000080120801231
+03.01MMDiagnostic interview and evaluation, unqualified {Informal contact relating N 000000000000NN2001050120120630
+03.05AAOther diagnostic interview and evaluation {Intrafetal insertion of pigtail  N 000000000000NN2004010120801231
+03.05ABOther diagnostic interview and evaluation {Fetal muscle biopsy}             N 000000000000NN2004010120801231
+03.05ACOther diagnostic interview and evaluation {Bladdercentesis (without pigtail N 000000000000NN2004010120801231
+03.05ADOther diagnostic interview and evaluation {Cephalocentesis}                 N 000000000000NN2004010120801231
+03.05AEOther diagnostic interview and evaluation {Thoracentesis (massive hydrops)} N 000000000000NN2004010120801231
+03.05AFOther diagnostic interview and evaluation {Amnio infustion}                 N 000000000000NN2004010120120630
+03.05AGOther diagnostic interview and evaluation {Drainage of amniotic fluid}      N 000000000000NN2004010120801231
+03.05AHOther diagnostic interview and evaluation {Intramuscular injection into     N 000000000000NN2004010120801231
+03.05AJOther diagnostic interview and evaluation {Cardiocentesis}                  N 000000000000NN2004010120801231
+03.05AKOther diagnostic interview and evaluation {Selective fetal reduction}       N 000000000000NN2004010120801231
+03.05ALOther diagnostic interview and evaluation {Intrauterine occlusion of        N 000000000000NN2004010120801231
+03.05AMOther diagnostic interview and evaluation {Membrane septostomy under generalN 000000000000NN2004010120120630
+03.05AOOther diagnostic interview and evaluation {Allied visit diagnostic          N 000000000000NN2004010120801231
+03.05APOther diagnostic interview and evaluation {Allied consultation}             N 000000000000NN2004010120801231
+03.05AQOther diagnostic interview and evaluation {Multidisciplinary case           N 000000000000NN2004010120801231
+03.05AROther diagnostic interview and evaluation {Referral to another health care  N 000000000000NN2004010120091231
+03.05AROther diagnostic interview and evaluation {Referral to another health care  N 000000000000NN2010010120801231
+03.05ASOther diagnostic interview and evaluation {Professional meeting with        N 000000000000NN2006010120801231
+03.05ATOther diagnostic interview and evaluation {Consultation with other health   N 000000000000NN2006010120801231
+03.05AUOther diagnostic interview and evaluation {Telephone contact with other     N 000000000000NN2006010120801231
+03.05AVOther diagnostic interview and evaluation {Formal scheduled interview with  N 000000000000NN2006010120801231
+03.05AYOther diagnostic interview and evaluation {Advice or counseling related to  N 000000000000NN2006010120801231
+03.05BBOther diagnostic interview and evaluation {Telehealth clinical care with    N 000000000000NN2006010120801231
+03.05BCOther diagnostic interview and evaluation {Telehealth teaching to patients  N 000000000000NN2006010120801231
+03.05BDOther diagnostic interview and evaluation {Misc. patient paperwork review   N 000000000000NN2006010120801231
+03.05BEOther diagnostic interview and evaluation {Group counseling/therapy for     N 000000000000NN2006010120801231
+03.05BFOther diagnostic interview and evaluation {General Health                   N 000000000000NN2006010120801231
+03.05BGOther diagnostic interview and evaluation {Health promotion teaching or     N 000000000000NN2006010120801231
+03.05BHOther diagnostic interview and evaluation {Comprehensive Geriatric          N 000000000000NN2004010120801231
+03.05BJOther diagnostic interview and evaluation {Gestation Ultrasound - age       N 000000000000NN2006010120801231
+03.05BKOther diagnostic interview and evaluation {Limited Obstetrics Ultra Sound}  N 000000000000NN2006010120801231
+03.05BLOther diagnostic interview and evaluation {Resident Clinic - Administrative N 000000000000NN2004010120801231
+03.05BMOther diagnostic interview and evaluation {Emergency visit clinic}          N 000000000000NN2004010120801231
+03.05BNOther diagnostic interview and evaluation {Medication, review of patient}   N 000000000000NN2004010120801231
+03.05BPOther diagnostic interview and evaluation {Medication sweep of home}        N 000000000000NN2004010120120630
+03.05BROther diagnostic interview and evaluation {Cognitive testing e.g. MMSE,     N 000000000000NN2004010120801231
+03.05BSOther diagnostic interview and evaluation {Foot Care}                       N 000000000000NN2004010120801231
+03.05BTOther diagnostic interview and evaluation {Patient Detention for care       N 000000000000NN2004010120120630
+03.05BUOther diagnostic interview and evaluation {Incontinence assessment, teachingN 000000000000NN2004010120120630
+03.05BVOther diagnostic interview and evaluation {Ultra Sound of Bladder}          N 000000000000NN2004010120120630
+03.05BWOther diagnostic interview and evaluation {Ankle/Brachial Index (ABI's)}    N 000000000000NN2004010120120630
+03.05BXOther diagnostic interview and evaluation {Syringing of ears.}              N 000000000000NN2004010120801231
+03.05BYOther diagnostic interview and evaluation {clysis / IV hydration.}          N 000000000000NN2004010120120630
+03.05BZOther diagnostic interview and evaluation {enema / fecal disimpaction.}     N 000000000000NN2004010120801231
+03.05CAOther diagnostic interview and evaluation {Report writing and other         N 000000000000NN2008040120801231
+03.05CBOther diagnostic interview and evaluation {Time related to non-patient desk N 000000000000NN2008040120801231
+03.05CCOther diagnostic interview and evaluation {Professional interview relating  N 000000000000NN2008040120801231
+03.05CDOther diagnostic interview and evaluation {Professional interview relating  N 000000000000NN2008040120801231
+03.05CEOther diagnostic interview and evaluation {Discussion with nurse outside of N 000000000000NN2008040120801231
+03.05CFOther diagnostic interview and evaluation {Miscellaneous patient related    N 000000000000NN2008040120801231
+03.05CGOther diagnostic interview and evaluation {Preparation and/or review of     N 000000000000NN2008040120801231
+03.05CHOther diagnostic interview and evaluation {Formal scheduled professional    N 000000000000NN2008040120801231
+03.05CJOther diagnostic interview and evaluation {Time related to non-patient desk N 000000000000NN2008040120801231
+03.05CKOther diagnostic interview and evaluation {Attendance of a meeting with a   N 000000000000NN2008040120801231
+03.05KAOther diagnostic interview and evaluation {Training/Supervision, of Others  N 000000000000NN2005090120801231
+03.05KBOther diagnostic interview and evaluation {Teleconference contact related   N 000000000000NN2005090120801231
+03.05KCOther diagnostic interview and evaluation {Time related to non-patient desk N 000000000000NN2005090120801231
+03.05KDOther diagnostic interview and evaluation {Self Directed learning such as   N 000000000000NN2005090120801231
+03.05KEOther diagnostic interview and evaluation {Tidying/cleaning up in the rehab N 000000000000NN2005090120801231
+03.05KFOther diagnostic interview and evaluation {Discussion with nurse, submitted N 000000000000NN2005090120801231
+03.05KGOther diagnostic interview and evaluation {Miscellaneous patient related    N 000000000000NN2005090120801231
+03.05KHOther diagnostic interview and evaluation {Preparation and/or review of     N 000000000000NN2005090120801231
+03.05KJOther diagnostic interview and evaluation {Office visit, per 15 minutes}    N 000000000000NN2005090120120630
+03.05KKOther diagnostic interview and evaluation {Physical, per 15 minutes}        N 000000000000NN2005090120120630
+03.05KLOther diagnostic interview and evaluation {Home visit, per 30 minutes}      N 000000000000NN2005090120120630
+03.05KMOther diagnostic interview and evaluation {Prolonged office visit, expected N 000000000000NN2005090120120630
+03.05KNOther diagnostic interview and evaluation {Cancellation by patient or       N 000000000000NN2005090120801231
+03.05KOOther diagnostic interview and evaluation {Direct contact with individual,  N 000000000000NN2005090120801231
+03.05NAOther diagnostic interview and evaluation {Time related to the conception/  N 000000000000NN2003010120801231
+03.05NBOther diagnostic interview and evaluation {Time related to the conception/  N 000000000000NN2003010120801231
+03.05NCOther diagnostic interview and evaluation {Pharmaceutical or other privatelyN 000000000000NN2003010120120630
+03.05NDOther diagnostic interview and evaluation {Medical Supply - Time related to N 000000000000NN2003010120120630
+03.05NEOther diagnostic interview and evaluation {Other - Time related to the      N 000000000000NN2003010120120630
+03.05NFOther diagnostic interview and evaluation {Training/Supervision, of         N 000000000000NN2003010120801231
+03.05NGOther diagnostic interview and evaluation {Training/Supervision, of         N 000000000000NN2003010120801231
+03.05NHOther diagnostic interview and evaluation {Training/Supervision, of         N 000000000000NN2003010120801231
+03.05NJOther diagnostic interview and evaluation {Training/Supervision, of         N 000000000000NN2003010120801231
+03.05NKOther diagnostic interview and evaluation {Training/Supervision, of Other   N 000000000000NN2003010120120630
+03.05NLOther diagnostic interview and evaluation {Time related to the conduct of   N 000000000000NN2003010120120630
+03.05NMOther diagnostic interview and evaluation {Time related to the conduct of   N 000000000000NN2003010120120630
+03.05NNOther diagnostic interview and evaluation {Time related to attendance at    N 000000000000NN2003010120120630
+03.05NPOther diagnostic interview and evaluation {Clinical assessment of patient   N 000000000000NN2002040120801231
+03.05NQOther diagnostic interview and evaluation {Time related to any research     N 000000000000NN2003010120801231
+03.05NROther diagnostic interview and evaluation {Informal rounds/discussions with N 000000000000NN2004010120801231
+03.05NSOther diagnostic interview and evaluation {Multidisciplinary Team case      N 000000000000NN2004010120801231
+03.05NTOther diagnostic interview and evaluation {Administration of                Y 000000000000NN2002040120120630
+03.05NUOther diagnostic interview and evaluation {Video review or supervision of   N 000000000000NN2005070120120630
+03.05NVOther diagnostic interview and evaluation {Telephone contact with 1-800     Y 000000000000NN2002040120120630
+03.05NWOther diagnostic interview and evaluation {Non-Patient specific travel time N 000000000000NN2002040120801231
+03.05SAOther diagnostic interview and evaluation                                   N 000000000000NN1998090120801231
+03.05SBOther diagnostic interview and evaluation                                   N 000000000000NN1998090120801231
+03.05SCOther diagnostic interview and evaluation                                   N 000000000000NN1998090120801231
+03.05SDOther diagnostic interview and evaluation                                   N 000000000000NN1998090120801231
+03.05SEOther diagnostic interview and evaluation                                   N 000000000000NN1998090120801231
+03.05SFOther diagnostic interview and evaluation                                   N 000000000000NN1998090120801231
+03.05SGOther diagnostic interview and evaluation                                   N 000000000000NN1998090120801231
+03.05SHOther diagnostic interview and evaluation                                   N 000000000000NN1998090120801231
+03.05SJOther diagnostic interview and evaluation                                   N 000000000000NN1998090120801231
+03.05SKOther diagnostic interview and evaluation                                   N 000000000000NN1998090120801231
+03.05SLOther diagnostic interview and evaluation                                   N 000000000000NN1998090120801231
+03.05SMOther diagnostic interview and evaluation                                   N 000000000000NN1998090120801231
+03.05SNOther diagnostic interview and evaluation                                   N 000000000000NN1998090120801231
+03.05SPOther diagnostic interview and evaluation {Professional interview relating  N 000000000000NN1998090120801231
+03.05SQOther diagnostic interview and evaluation {Telephone contact advice or      N 000000000000NN1998090120801231
+03.05SROther diagnostic interview and evaluation {Telephone contact advice or      N 000000000000NN1998090120801231
+03.05SSOther diagnostic interview and evaluation {Telephone contact advice or      N 000000000000NN1998090120801231
+03.05STOther diagnostic interview and evaluation {Telephone contact related to     N 000000000000NN1998090120801231
+03.05SUOther diagnostic interview and evaluation {Telephone contact related to any N 000000000000NN1998090120801231
+03.05SVOther diagnostic interview and evaluation {Formal scheduled interview with  N 000000000000NN1998090120801231
+03.05SWOther diagnostic interview and evaluation {Formal scheduled interview with  N 000000000000NN1998090120801231
+03.05SXOther diagnostic interview and evaluation {Formal scheduled interview with  N 000000000000NN1998090120120630
+03.05SYOther diagnostic interview and evaluation {Research and/or document review  N 000000000000NN1998090120801231
+03.05SZOther diagnostic interview and evaluation {Research and/or document review  N 000000000000NN1998090120801231
+03.05TAOther diagnostic interview and evaluation {Form Completions/3rd Party       N 000000000000NN1998090120801231
+03.05TBOther diagnostic interview and evaluation {Prolonged office visit, for      N 000000000000NN1998090120801231
+03.05TCOther diagnostic interview and evaluation                                   N 000000000000NN1998090120801231
+03.05TDOther diagnostic interview and evaluation                                   N 000000000000NN1998090120801231
+03.05TEOther diagnostic interview and evaluation                                   N 000000000000NN1998090120801231
+03.05TFOther diagnostic interview and evaluation                                   N 000000000000NN1998090120120630
+03.05TGOther diagnostic interview and evaluation                                   N 000000000000NN1998090120120630
+03.05THOther diagnostic interview and evaluation                                   N 000000000000NN1998090120801231
+03.05TJOther diagnostic interview and evaluation {Travel Time to visit with a      N 000000000000NN1998090120801231
+03.05TKOther diagnostic interview and evaluation                                   N 000000000000NN1998090120801231
+03.05TLOther diagnostic interview and evaluation {Attendance at meetings related   N 000000000000NN1998090120801231
+03.05TMOther diagnostic interview and evaluation {Travel Time for administration   N 000000000000NN1998090120801231
+03.05TNOther diagnostic interview and evaluation {Time related to non-patient desk N 000000000000NN1998090120801231
+03.05TPOther diagnostic interview and evaluation {Formal scheduled professional    N 000000000000NN1998090120801231
+03.05TQOther diagnostic interview and evaluation                                   N 000000000000NN1998090120801231
+03.05TROther diagnostic interview and evaluation                                   N 000000000000NN1998090120801231
+03.05TSOther diagnostic interview and evaluation                                   N 000000000000NN1998090120801231
+03.05TTOther diagnostic and interview and evaluation                               N 000000000000NN1998090120801231
+03.05TUOther diagnostic interview and evaluation                                   N 000000000000NN1998090120801231
+03.05TVOther diagnosis interview and evaluation {Professional interview relating   N 000000000000NN1998090120801231
+03.05TWOther diagnostic and evaluation or consultation {Non-resident services by   N 000000000000NN1998090120120630
+03.05TXOther diagnostic interview and evalution {Administering of treatment and/or N 000000000000NN1998090120801231
+03.05TYOther diagnostic interview and evaluation {Professional interview relating  N 000000000000NN1999092920801231
+03.05TZOther diagnostic interview and evaluation {Professional interview relating  N 000000000000NN1999092920801231
+03.05UAOther diagnostic interview and evaluation {Professional interview relating  N 000000000000NN1999092920801231
+03.05UBOther diagnostic interview and evaluation {Professional interview relating  N 000000000000NN1999092920801231
+03.05UCOther diagnostic interview and evaluation {Professional interview relating  N 000000000000NN1999092920801231
+03.05UDOther diagnostic interview and evaluation {Professional interview relating  N 000000000000NN1999092920801231
+03.05UEOther diagnostic interview and evaluation {Professional interview relating  N 000000000000NN1999092920120630
+03.05UFOther diagnostic interview and evaluation {Examinations or services         N 000000000000NN1999092920801231
+03.05UGOther diagnostic interview and evaluation {Telephone contact related to     N 000000000000NN1999092920801231
+03.05UHOther diagnostic interview and evaluation {Renewal of prescription over the N 000000000000NN1999092920801231
+03.05UIOther diagnostic interview and evaluation {Transcranial Doppler}            N 000000000000NN2008040120120630
+03.05UJPreparation and/or review of documentation relating to the care and         N 000000000000NN1998090120801231
+03.05UKPreparation and/or review of documentation relating to the care and         N 000000000000NN1998090120801231
+03.05ULAdministrative time for the preparation and faxing of documents relating to N 000000000000NN1998090120801231
+03.05UMAdministration {Continuing Medical Education, related to professional       N 000000000000NN1998090120801231
+03.05UNTelephone contact {Telephone contact with a Medical Health Professional     N 000000000000NN1998090120801231
+03.05UOTelephone Contact {Telephone contact with an Allied Health Professional     N 000000000000NN2006040120801231
+03.05UPOther diagnostic interviews and evaluation {Attendance of a meeting with a  N 000000000000NN2003010120801231
+03.05UQOther diagnostic interview and evaluation {Professional interview relating  N 000000000000NN2000080120801231
+03.05UROther diagnostic interview and evaluation {Professional interview relating  N 000000000000NN2000080120801231
+03.05USOther diagnostic interview and evaluation {Phone calls related to the care  N 000000000000NN2000080120801231
+03.05UTOther diagnostic interview and evaluation {Telephone call with patient, per N 000000000000NN2000080120801231
+03.05UUOther diagnostic interview and evaluation {Chronic Pain - Non Program       N 000000000000NN2000080120801231
+03.05UVOther diagnostic interview and evaluation {Preparation/research related to  N 000000000000NN2000080120801231
+03.05UWOther diagnostic interview and evaluation {Report writing and other         N 000000000000NN2000080120801231
+03.05UXOther diagnostic interview and evaluation {Original research conducted at   N 000000000000NN2000080120801231
+03.05UYOther diagnostic interview and evaluation {Specifically for the             N 000000000000NN2000080120801231
+03.05UZOther diagnostic interview and evaluation {Referral processing by the       N 000000000000NN2000080120801231
+03.05VAOther diagnostic interview and evaluation {Informal/formal discussions      N 000000000000NN2000080120080331
+03.05VAOther diagnostic interview and evaluation {Informal/formal discussions      N 000000000000NN2008040120801231
+03.05VBOther diagnostic interview and evaluation {Informal discussion with         N 000000000000NN2000080120031231
+03.05VBOther diagnostic interview and evaluation {Informal discussion with         N 000000000000NN2004010120801231
+03.05VCOther diagnostic interview and evaluation {Direct contact with a couple     N 000000000000NN2000080120801231
+03.05VDOther diagnostic interview and evaluation {Direct contact with family       N 000000000000NN2000080120801231
+03.05VEOther diagnostic interview and evaluation {Individual treatment includes    N 000000000000NN2000080120801231
+03.05VFOther diagnostic interview and evaluation {Teaching/Presentations to        N 000000000000NN2000080120801231
+03.05VGOther diagnostic interview and evaluation {Teaching/Presentations to        N 000000000000NN2000080120801231
+03.05VHOther diagnostic interview and evaluation { Group treatment, includes       N 000000000000NN2000080120801231
+03.05VJOther diagnostic interview and evaluation { All administrative meetings     N 000000000000NN2000080120801231
+03.05VKOther diagnostic interview and evaluation { Professional Development        N 000000000000NN2000080120801231
+03.05VLOther interview and evaluation { Self Directed learning such as reading     N 000000000000NN2000080120801231
+03.05VMOther diagnostic interview and evaluation {Patient assessment, to be used   N 000000000000NN2000080120801231
+03.05VNOther diagnostic interview and evaluation {Functional Capacity Evaluation   N 000000000000NN2000080120801231
+03.05VPOther diagnostic interview and evaluation {Home visit/assessment- (e.g.     N 000000000000NN2000080120801231
+03.05VQOther diagnostic interview and evaluation {Worksite evaluation to be used byN 000000000000NN2000080120120630
+03.05VROther diagnostic interview and evaluation {Follow-up meeting by Clinical    N 000000000000NN2000080120801231
+03.05VSOther diagnostic interview and evaluation {Formal patient care rounds, per  N 000000000000NN2000080120801231
+03.05VTOther diagnostic interview and evaluation { Program development activities  N 000000000000NN2000080120801231
+03.05VUOther diagnostic interview and evaluation { Quality Improvement Activities, N 000000000000NN2000080120801231
+03.05VVOther diagnostic interview and evaluation {Program Evaluation Activities,   N 000000000000NN2000080120801231
+03.05VWOther diagnostic interview and evaluation {Tidying/cleaning up in the       N 000000000000NN2000080120801231
+03.05VXSetting and evaluating clinic goals                                         N 000000000000NN2001010120801231
+03.05VYClinical Practice Guidelines - Review and implement clinical practice       N 000000000000NN2001010120801231
+03.05VZOther diagnostic interviews and evaluation {Discussion with nurse per 15    N 000000000000NN2003010120801231
+03.05WAOther diagnostic interview and evaluation {Pudendal Nerve stimulator        N 000000000000NN2000080120801231
+03.05WBOther diagnostic interview and evaluation {Prolotherapy procedures, per 15  N 000000000000NN2000080120801231
+03.05WCOther diagnostic interview and evaluation { Pelvic pain mapping, per 15     N 000000000000NN2000080120801231
+03.05WDOther diagnostic interview and evaluation { Osteopathic management,         N 000000000000NN2000080120801231
+03.05WEOther diagnostic interview and evaluation { Pudendal Nerve Block, per 15    N 000000000000NN2000080120801231
+03.05WFOther diagnostic interview and evaluation {All informal discussions,        N 000000000000NN2000080120801231
+03.05WGOther diagnostic interview and evaluation { Injection of Botulinum A Toxin  N 000000000000NN2000080120801231
+03.05WHOther diagnostic interview and evaluation {Conference with patient present, N 000000000000NN2000080120801231
+03.05WJOther diagnostic interview and evaluation {Professional interview relating  N 000000000000NN2000080120801231
+03.05WKOther diagnostic interview and evaluation {Second and subsequent physician  N 000000000000NN2000080120801231
+03.05WLOther diagnostic interview and evaluation {Prolonged office visit for       N 000000000000NN2003010120801231
+03.05WMOther diagnostic interview and evaluation {Informal/formal discussions      N 000000000000NN2000080120801231
+03.05WNOther diagnostic interview and evaluation {Informal discussion with         N 000000000000NN2000080120801231
+03.05WPOther diagnostic interview and evaluation {Miscellaneous patient related    N 000000000000NN2000080120020331
+03.05WPOther diagnostic interview and evaluation {Miscellaneous patient related    N 000000000000NN2002040120801231
+03.05WQOther diagnostic interview and evaluation {Time allotted for patient who    N 000000000000NN2003010120801231
+03.05WROther diagnostic interview and evaluation { Health teaching/counselling to  N 000000000000NN2000080120801231
+03.05WSAdministration {Non-patient specific Unscheduled time by physician, per     N 000000000000NN2001080120801231
+03.05WTPatient Assessment/Evaluation {Time allotted for patient who did not attend N 000000000000NN2001080120801231
+03.05WUOther diagnostic interview and evaluation {Informal rounds/discussions with N 000000000000NN2003010120801231
+03.05WVCase Management/Team Conference {Professional interview relating to care    N 000000000000NN2001050120801231
+03.05WWDiagnostic interview and evaluation, other {Visit with Nurse Practitioner   N 000000000000NN2001050120801231
+03.05WXDiagnostic interview and evaluation, other {Visit with Nurse Practitioner   N 000000000000NN2001050120801231
+03.05WYDiagnostic interview and evaluation, other {Visit with Nurse Practitioner   N 000000000000NN2001050120801231
+03.05WZOther diagnostic interview and evaluation {Service with or about a Non      N 000000000000NN2004010120801231
+03.05XAOther diagnostic interview and evaluation {Medical teaching with medical    N 000000000000NN2002040120801231
+03.05XBOther diagnostic interview and evaluation {Medical teaching with medical    N 000000000000NN2002040120801231
+03.05XCOther diagnostic interview and evaluation {Attending/conducting practice    N 000000000000NN2002040120801231
+03.05XDOther diagnostic interview and evaluation {Attending and evaluation medical N 000000000000NN2002040120801231
+03.05XEOther diagnostic interview and evaluation {Specialty medical teaching       N 000000000000NN2002040120120630
+03.05XFOther diagnostic interview and evaluation {Clinical Skills, teaching,       N 000000000000NN2002040120120630
+03.05XGOther diagnostic interview and evaluation {Attending and participation in   N 000000000000NN2002040120120630
+03.05XHOther diagnostic interview and evaluation {Classroom medical teaching for   N 000000000000NN2002040120801231
+03.05XJOther diagnostic interview and evaluation {Teaching Nurse practitioners,    N 000000000000NN2002040120801231
+03.05XKOther diagnostic interview and evaluation {Preparation and delivery of      N 000000000000NN2002040120801231
+03.05XLOther diagnostic interview and evaluation {Induced Sputum interpretation,   N 000000000000NN2002040120120630
+03.05XMOther diagnostic interview and evaluation {Advance directive formulation,   N 000000000000NN2002040120120630
+03.05XNOther diagnostic interview and evaluation {Drug level monitoring -          N 000000000000NN2002040120120630
+03.05XPOther diagnostic interview and evaluation {Bronchoscopy suite management,   N 000000000000NN2002040120801231
+03.05XQOther diagnostic interview and evaluation {Sleep laboratory management,     N 000000000000NN2002040120801231
+03.05XROther diagnostic interview and evaluation {Pulmonary function laboratory    N 000000000000NN2002040120120630
+03.05XSOther diagnostic interview and evaluation {Bronchoscopy with lymph node     N 000000000000NN2002040120801231
+03.05XTOther diagnostic interview and evaluation {New patient intake per 15        N 000000000000NN2003010120120630
+03.05XUOther diagnostic interview and evaluation {Visit with alternate care        N 000000000000NN2004010120801231
+03.05XVOther diagnostic interview and evaluation {Clinical patient assessment,     N 000000000000NN2004010120801231
+03.05XWDiagnostic interview and evaluation, other {Visit with Alternate Care       N 000000000000NN2004010120060511
+03.05XXOther diagnostic interview and evaluation {Cardiac Magnetic Resonance       N 000000000000NN2004010120120630
+03.05XYOther diagnostic interview and evaluation {Report writing and other         N 000000000000NN2008040120801231
+03.05XZOther diagnostic interview and evaluation {Population-based review of       N 000000000000NN2005070120801231
+03.05YAOther diagnostic interview and evaluation {Kaofeed tube, insertion or       N 000000000000NN2002040120801231
+03.05YBOther diagnostic interview and evaluation {Nasojejual tube, insertion or    N 000000000000NN2002040120801231
+03.05YCOther diagnostic interview and evaluation {Endoclip application for         N 000000000000NN2002040120801231
+03.05YDOther diagnostic interview and evaluation {Endoloop application for         N 000000000000NN2002040120120630
+03.05YEOther diagnostic interview and evaluation {Endoloop application for mucosal N 000000000000NN2002040120120630
+03.05YFOther diagnostic interview and evaluation {Endoloop application for polyp   N 000000000000NN2002040120120630
+03.05YGOther diagnostic interview and evaluation {Biliary/pancreatic stent         N 000000000000NN2002040120801231
+03.05YHOther diagnostic interview and evaluation {Esophageal/duodenal/colonic stentN 000000000000NN2002040120120630
+03.05YJOther diagnostic interview and evaluation {Gluing for hemostasis, per 15    N 000000000000NN2002040120120630
+03.05YKOther diagnostic interview and evaluation {Percutaneous endoscopic          N 000000000000NN2002040120120630
+03.05YLOther diagnostic interview and evaluation {Percutaneous endoscopic jejunal  N 000000000000NN2002040120120630
+03.05YNOther diagnostic interview and evaluation {Photodynamic therapy, per 15     N 000000000000NN2002040120801231
+03.05YPOther diagnostic interview and evaluation {Endoscopic ultrasound - radial   N 000000000000NN2002040120120630
+03.05YQOther diagnostic interview and evaluation {Endoscopic ultrasound - linear   N 000000000000NN2002040120120630
+03.05YROther diagnostic interview and evaluation {Endoscopic ultrasound - with     N 000000000000NN2002040120120630
+03.05YSOther diagnostic interview and evaluation {Endoscopic procedure requiring   N 000000000000NN2002040120120630
+03.05YTOther diagnostic interview and evaluation {Removal of all current pre and   N 000000000000NN2002040120120630
+03.05YUOther diagnostic interview and evaluation {Endoscopic banking for           N 000000000000NN2002040120120630
+03.05YVOther diagnostic interview and evaluation {Multidisciplinary Team case      N 000000000000NN2002040120801231
+03.05YWOther diagnostic interview and evaluation {Telephone contact with another   N 000000000000NN2002040120801231
+03.05YXOther diagnostic interview and evaluation {EEG-video telemetry,             N 000000000000NN2002040120801231
+03.05YYOther diagnostic interview and evaluation {EEG-video telemetry Assessment.  N 000000000000NN2002040120801231
+03.05YZOther diagnostic interview and evaluation {SEEG-video telemetry,            N 000000000000NN2002040120801231
+03.05ZAOther diagnostic interview and evaluation {SEEG telemetry assessment.       N 000000000000NN2002040120801231
+03.05ZBOther diagnostic interview and evaluation {Preparation and/or review of     N 000000000000NN2002040120801231
+03.05ZCOther diagnostic interview and evaluation {Case management discussions aboutN 000000000000NN2003010120120630
+03.05ZDOther diagnostic interview and evaluation {Inpatient case management        N 000000000000NN2003010120120630
+03.05ZEOther diagnostic interview and evaluation {Discussions with the hepatitis   N 000000000000NN2003010120120630
+03.05ZFOther diagnostic interview and evaluation {Multidisciplinary liver          N 000000000000NN2003010120120630
+03.05ZGOther diagnostic interview and evaluation {Single Fibre EMG - per 15        N 000000000000NN2003010120120630
+03.05ZHOther diagnostic interview and evaluation {Complex studies involving        N 000000000000NN2003010120120630
+03.05ZJOther diagnostic interview and evaluation {Phrenic nerve studies with       N 000000000000NN2003010120120630
+03.05ZKOther diagnostic interview and evaluation {Brachytherapy - Additional wait  N 000000000000NN2003010120120630
+03.05ZLOther diagnostic interview and evaluation {Administrative meetings -        N 000000000000NN2003040120801231
+03.05ZMOther diagnostic interview and evaluation {Reviewing Objectives - Meetings  N 000000000000NN2003040120801231
+03.05ZNOther diagnostic interview and evaluation {Program Infrastructure -         N 000000000000NN2003040120801231
+03.05ZPOther diagnostic interview and evaluation {Orientation - Program            N 000000000000NN2003040120801231
+03.05ZQOther diagnostic interview and evaluation {General Case Discussion -        N 000000000000NN2003040120801231
+03.05ZROther diagnostic interview and evaluation {Travel time for "Out Reach"      N 000000000000NN2002070120801231
+03.05ZSOther diagnostic interview and evaluation {Telehealth Clinical Care, per 15 N 000000000000NN2002070120801231
+03.05ZTOther diagnostic interview and evaluation {Telehealth Case Conference       N 000000000000NN2002070120801231
+03.05ZUOther diagnostic interview and evaluation {Telehealth teaching, per 15      N 000000000000NN2002070120801231
+03.05ZVOther diagnostic interview and evaluation {Telehealth Administration, per   N 000000000000NN2002070120801231
+03.05ZW Other diagnostic interview and evaluation {Court preparation time, per 15  N 000000000000NN2002070120801231
+03.05ZXOther diagnostic interview and evaluation {Court waiting/presentation time, N 000000000000NN2002070120801231
+03.05ZYOther diagnostic interview and evaluation {Professional interview           N 000000000000NN2004010120801231
+03.05ZZOther diagnostic interview and evaluation {Advice or counselling related to N 000000000000NN2004010120801231

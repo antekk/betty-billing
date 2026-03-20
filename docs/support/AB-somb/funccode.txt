@@ -1,0 +1,96 @@
+AACCAdvanced Ambulatory Care Ctr  2007100120801231
+AEORExam/Lab/Surg/Elec/Othr/Resp  1800010120801231
+AIEOExam/Lab/Surg/Imag/Elec/Othr  1800010120801231
+AIERExam/Lab/Surg/Imag/Elec/Resp  1800010120801231
+AIORExam/Lab/Surg/Imag/Othr/Resp  1800010120801231
+CEORExam/Lab/Elec/Othr/Resp       1800010120801231
+CIEOExam/Lab/Imag/Elec/Othr       1800010120801231
+CIERExam/Lab/Imag/Elec/Resp       1800010120801231
+CIORExam/Lab/Imag/Othr/Resp       1800010120801231
+CLABClinical Laboratory           1800010120801231
+CLNCClinic                        1800010120801231
+CSEOExam/Lab/Surg/Elec/Othr       1800010120801231
+CSERExam/Lab/Surg/Elec/Resp       1800010120801231
+CSIEExam/Lab/Surg/Imag/Elec       1800010120801231
+CSIOExam/Lab/Surg/Imag/Othr       1800010120801231
+CSIRExam/Lab/Surg/Imag/Resp       1800010120801231
+CSORExam/Lab/Surg/Othr/Resp       1800010120801231
+D/N Day/Night Care                1800010120801231
+DIMGDiagnostic Imaging            1800010120801231
+EALLExm/Lab/Srg/Imag/Elec/Othr/Res1800010120801231
+ECDTExam/Lab/Imag/Elec/Othr/Resp  1800010120801231
+ECEOExam/Lab/Elec/Othr            1800010120801231
+ECERExam/Lab/Elec/Resp            1800010120801231
+ECIEExam/Lab/Imag/Elec            1800010120801231
+ECIOExam/Lab/Imag/Othr            1800010120801231
+ECIRExam/Lab/Imag/Resp            1800010120801231
+ECORExam/Lab/Othr/Resp            1800010120801231
+EEORExam/Elec/Othr/Resp           1800010120801231
+EIEOExam/Imag/Elec/Othr           1800010120801231
+EIERExam/Imag/Elec/Resp           1800010120801231
+EIORExam/Imag/Othr/Resp           1800010120801231
+ELECElectrodiagnosis              1800010120801231
+EMRGEmergency                     1800010120801231
+ESCEExam/Surg/Lab/Elec            1800010120801231
+ESCIExam/Surg/Lab/Imag            1800010120801231
+ESCOExam/Surg/Lab/Othr            1800010120801231
+ESCRExam/Surg/Lab/Resp            1800010120801231
+ESDTExam/Surg/Imag/Elec/Othr/Resp 1800010120801231
+ESEOExam/Surg/Elec/Othr           1800010120801231
+ESERExam/Surg/Elec/Resp           1800010120801231
+ESIEExam/Surg/Imag/Elec           1800010120801231
+ESIOExam/Surg/Imag/Othr           1800010120801231
+ESIRExam/Surg/Imag/Resp           1800010120801231
+ESORExam/Surg/Othr/Resp           1800010120801231
+EXCEExam/Lab/Elec                 1800010120801231
+EXCIExam/Lab/Imag                 1800010120801231
+EXCOExam/Lab/Othr                 1800010120801231
+EXCRExam/Lab/Resp                 1800010120801231
+EXDIExam/Imag                     1800010120801231
+EXDTExam/Imag/Elec/Othr/Resp      1800010120801231
+EXEDExam/Elec                     1800010120801231
+EXEOExam/Elec/Othr                1800010120801231
+EXERExam/Elec/Resp                1800010120801231
+EXHBExmination Rm/Hyperbaric Chbr 1999060120801231
+EXIEExam/Imag/Elec                1800010120801231
+EXIOExam/Imag/Othr                1800010120801231
+EXIRExam/Imag/Resp                1800010120801231
+EXODExam/Othr                     1800010120801231
+EXORExam/Othr/Resp                1800010120801231
+EXRMExamination Room              1800010120801231
+EXRTExam/Resp                     1800010120801231
+EXSEExam/Surg/Elec                1800010120801231
+EXSIExam/Surg/Imag                1800010120801231
+EXSOExam/Surg/Othr                1800010120801231
+EXSRExam/Surg/Resp                1800010120801231
+FCC Family Care Clinic            2012040120801231
+HBOCHyperbaric Oxygen Chamber     1800010120801231
+ICN1ICU Neonatal - Level 1        1800010120801231
+ICN2ICU Neonatal - level 2        1800010120801231
+ICN3ICU Neonatal - Level 3        1800010120801231
+ICO1ICU Obstetrics - Level 1      1800010120801231
+ICO2ICU Obstetrics - Level 2      1800010120801231
+ICO3ICU Obstetrics - Level 3      1800010120801231
+ICU1Intensive Care Unit - Level 1 1800010120801231
+ICU2Intensive Care Unit - Level 2 1800010120801231
+ICU3Intensive Care Unit - Level 3 1800010120801231
+LBERClinical Lab/Examination Room 1800010120801231
+LSSEClin Lab/Surg Suite/Exam Room 1800010120801231
+LTC Long Term Care                1800010120801231
+MED Medical                       1800010120801231
+OLABOther Diagnostic Laboratory   1800010120801231
+PCLNLPCI Clinic                   2001010120801231
+PEMGPediatric Emergency           1800010120801231
+PHYSPhysical Therapy              1800010120801231
+POOLPool Area                     2001010120801231
+PRGRPatient Room/Group Room       2011120120801231
+RDONRadiation Oncology            1800010120801231
+RESPRespiratory Therapy           1800010120801231
+SEORExam/Surg/Elec/Othr/Resp      1800010120801231
+SGSUSurgical Suite/Examination Rm 1800010120801231
+SIEOExam/Surg/Imag/Elec/Othr      1800010120801231
+SIERExam/Surg/Imag/Elec/Resp      1800010120801231
+SIORExam/Surg/Imag/Othr/Resp      1800010120801231
+SURGSurgical                      1800010120801231
+UCC Urgent Care Center            2007100120801231
+XERMExercise Room                 2001010120801231
