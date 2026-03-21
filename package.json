@@ -8,7 +8,6 @@
   ],
   "scripts": {
     "dev:api": "bun run --filter @betty/api dev",
-    "dev:mobile": "bun run --filter @betty/mobile start",
     "typecheck": "bun run --filter '*' typecheck",
     "db:generate": "bun run --filter @betty/api db:generate",
     "db:migrate": "bun run --filter @betty/api db:migrate",
@@ -29,7 +28,6 @@
     "eslint-plugin-prettier": "^5.2.0",
     "eslint-plugin-react": "^7.37.0",
     "eslint-plugin-react-hooks": "^5.0.0",
-    "eslint-plugin-react-native": "5.0.0",
     "globals": "^15.12.0",
     "prettier": "^3.3.0",
     "typescript-eslint": "^8.15.0"

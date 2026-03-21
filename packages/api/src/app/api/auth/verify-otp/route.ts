@@ -16,6 +16,7 @@ const WELCOME_MESSAGE = `Hi, I'm Betty — your billing assistant. I know Albert
 What can I help with?`;
 
 export async function POST(request: NextRequest) {
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   const body = await request.json();
   const parsed = verifySchema.safeParse(body);
 

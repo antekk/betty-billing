@@ -1,6 +1,8 @@
+"use client";
+
 import { useState, useEffect, useCallback } from "react";
 
-import { setTokens, clearTokens, getAccessToken, API_BASE } from "./api";
+import { setTokens, clearTokens, getAccessToken } from "@/lib/client-auth";
 
 interface AuthState {
   isAuthenticated: boolean;
@@ -22,17 +24,17 @@ export function useAuth() {
     isLoading: true,
   });
 
-  const checkAuth = useCallback(async () => {
-    const token = await getAccessToken();
+  const checkAuth = useCallback(() => {
+    const token = getAccessToken();
     setState({ isAuthenticated: !!token, isLoading: false });
   }, []);
 
   useEffect(() => {
-    void checkAuth();
+    checkAuth();
   }, [checkAuth]);
 
   const requestOtp = useCallback(async (phone: string) => {
-    const res = await fetch(`${API_BASE}/api/auth/request-otp`, {
+    const res = await fetch("/api/auth/request-otp", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ phone }),
@@ -45,7 +47,7 @@ export function useAuth() {
   }, []);
 
   const verifyOtp = useCallback(async (phone: string, code: string): Promise<VerifyOtpResponse> => {
-    const res = await fetch(`${API_BASE}/api/auth/verify-otp`, {
+    const res = await fetch("/api/auth/verify-otp", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ phone, code }),
@@ -57,14 +59,14 @@ export function useAuth() {
     }
 
     const data = (await res.json()) as VerifyOtpResponse;
-    await setTokens(data.accessToken, data.refreshToken);
+    setTokens(data.accessToken, data.refreshToken);
     setState({ isAuthenticated: true, isLoading: false });
 
     return data;
   }, []);
 
-  const logout = useCallback(async () => {
-    await clearTokens();
+  const logout = useCallback(() => {
+    clearTokens();
     setState({ isAuthenticated: false, isLoading: false });
   }, []);
 
