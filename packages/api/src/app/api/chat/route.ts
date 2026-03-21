@@ -12,6 +12,7 @@ export async function POST(request: NextRequest) {
   const auth = await authenticate(request);
   if (isAuthError(auth)) return auth;
 
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   const body = await request.json();
   const parsed = chatSchema.safeParse(body);
 

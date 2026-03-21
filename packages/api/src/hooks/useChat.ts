@@ -1,6 +1,8 @@
+"use client";
+
 import { useState, useCallback } from "react";
 
-import { apiFetch, API_BASE, getAccessToken } from "./api";
+import { apiFetch, getAccessToken } from "@/lib/client-auth";
 
 export interface TimelineEntry {
   id: string;
@@ -64,7 +66,6 @@ export function useChat() {
   }, []);
 
   const sendMessage = useCallback(async (message: string) => {
-    // Add optimistic inbound entry
     const tempEntry: TimelineEntry = {
       id: `temp-${Date.now()}`,
       type: "message",
@@ -85,8 +86,8 @@ export function useChat() {
     }));
 
     try {
-      const token = await getAccessToken();
-      const response = await fetch(`${API_BASE}/api/chat`, {
+      const token = getAccessToken();
+      const response = await fetch("/api/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -108,11 +109,10 @@ export function useChat() {
         const { done, value } = await reader.read();
         if (done) break;
 
-        buffer += decoder.decode(value as Uint8Array, { stream: true });
+        buffer += decoder.decode(value, { stream: true });
 
-        // Parse SSE events from buffer
         const events = buffer.split("\n\n");
-        buffer = events.pop() ?? ""; // Keep incomplete event in buffer
+        buffer = events.pop() ?? "";
 
         for (const eventStr of events) {
           if (!eventStr.trim()) continue;
@@ -146,7 +146,6 @@ export function useChat() {
               }
 
               case "widget": {
-                // Add widget entry
                 const widgetPayload = parsed as SseWidgetPayload;
                 const widgetEntry: TimelineEntry = {
                   id: `widget-${Date.now()}`,
@@ -167,7 +166,6 @@ export function useChat() {
               }
 
               case "done":
-                // Add final message entry
                 if (fullText.trim()) {
                   const messageEntry: TimelineEntry = {
                     id: `msg-${Date.now()}`,
@@ -228,7 +226,6 @@ export function useChat() {
       throw new Error(data.error ?? "Failed to confirm claim");
     }
 
-    // Update the widget's status in the local state
     setState((prev) => ({
       ...prev,
       entries: prev.entries.map((entry) => {
