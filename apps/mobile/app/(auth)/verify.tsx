@@ -1,3 +1,4 @@
+import { router, useLocalSearchParams } from "expo-router";
 import { useState } from "react";
 import {
   View,
@@ -9,7 +10,8 @@ import {
   KeyboardAvoidingView,
   Platform,
 } from "react-native";
-import { router, useLocalSearchParams } from "expo-router";
+
+import { Colors } from "../../constants/colors";
 import { useAuth } from "../../services/auth";
 
 export default function VerifyScreen() {
@@ -56,7 +58,7 @@ export default function VerifyScreen() {
           value={code}
           onChangeText={setCode}
           placeholder="000000"
-          placeholderTextColor="#CCC"
+          placeholderTextColor={Colors.disabled}
           keyboardType="number-pad"
           maxLength={6}
           autoFocus
@@ -65,7 +67,9 @@ export default function VerifyScreen() {
 
         <TouchableOpacity
           style={[styles.button, isLoading && styles.buttonDisabled]}
-          onPress={handleVerify}
+          onPress={() => {
+            void handleVerify();
+          }}
           disabled={isLoading}
         >
           <Text style={styles.buttonText}>{isLoading ? "Verifying..." : "Verify"}</Text>
@@ -78,7 +82,7 @@ export default function VerifyScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#FFF",
+    backgroundColor: Colors.white,
   },
   content: {
     flex: 1,
@@ -92,17 +96,17 @@ const styles = StyleSheet.create({
   },
   backText: {
     fontSize: 17,
-    color: "#007AFF",
+    color: Colors.primary,
   },
   title: {
     fontSize: 32,
     fontWeight: "700",
-    color: "#1A1A1A",
+    color: Colors.textPrimary,
     textAlign: "center",
   },
   subtitle: {
     fontSize: 17,
-    color: "#666",
+    color: Colors.textSecondary,
     textAlign: "center",
     marginTop: 4,
     marginBottom: 32,
@@ -113,12 +117,12 @@ const styles = StyleSheet.create({
     letterSpacing: 12,
     paddingVertical: 16,
     borderBottomWidth: 2,
-    borderBottomColor: "#007AFF",
-    color: "#1A1A1A",
+    borderBottomColor: Colors.primary,
+    color: Colors.textPrimary,
     marginBottom: 24,
   },
   button: {
-    backgroundColor: "#007AFF",
+    backgroundColor: Colors.primary,
     borderRadius: 12,
     paddingVertical: 16,
     alignItems: "center",
@@ -127,7 +131,7 @@ const styles = StyleSheet.create({
     opacity: 0.6,
   },
   buttonText: {
-    color: "#FFF",
+    color: Colors.white,
     fontSize: 17,
     fontWeight: "600",
   },

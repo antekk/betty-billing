@@ -25,7 +25,7 @@ setupSchedules()
     console.log("Done.");
     process.exit(0);
   })
-  .catch((err) => {
+  .catch((err: unknown) => {
     console.error("Failed to set up schedules:", err);
     process.exit(1);
   });

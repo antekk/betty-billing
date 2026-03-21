@@ -1,6 +1,7 @@
+import { eq, ilike, or, sql, and, gte, lte } from "drizzle-orm";
+
 import { db } from "@/db";
 import { feeCodes } from "@/db/schema";
-import { eq, ilike, or, sql, and, gte, lte } from "drizzle-orm";
 
 export interface FeeCodeSearchResult {
   code: string;
@@ -58,7 +59,7 @@ export async function searchFeeCodes(query: string, limit = 20): Promise<FeeCode
 export async function getFeeCode(code: string): Promise<FeeCodeSearchResult | null> {
   const today = new Date().toISOString().slice(0, 10);
 
-  const [result] = await db
+  const results = await db
     .select()
     .from(feeCodes)
     .where(
@@ -71,7 +72,7 @@ export async function getFeeCode(code: string): Promise<FeeCodeSearchResult | nu
     .orderBy(sql`${feeCodes.effectiveDate} DESC`)
     .limit(1);
 
-  return result || null;
+  return results.at(0) ?? null;
 }
 
 /**

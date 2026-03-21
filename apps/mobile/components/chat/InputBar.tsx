@@ -8,6 +8,8 @@ import {
   Platform,
 } from "react-native";
 
+import { Colors } from "../../constants/colors";
+
 interface Props {
   onSend: (message: string) => void;
   disabled?: boolean;
@@ -37,20 +39,20 @@ export function InputBar({ onSend, disabled }: Props) {
           value={text}
           onChangeText={setText}
           placeholder={disabled ? "Betty is typing..." : "Message Betty..."}
-          placeholderTextColor="#999"
+          placeholderTextColor={Colors.textTertiary}
           multiline
           maxLength={5000}
           editable={!disabled}
           returnKeyType="send"
           onSubmitEditing={handleSend}
-          blurOnSubmit={false}
+          submitBehavior="newline"
         />
         <TouchableOpacity
           style={[styles.sendButton, (!text.trim() || disabled) && styles.sendButtonDisabled]}
           onPress={handleSend}
           disabled={!text.trim() || disabled}
         >
-          <SendIcon color={text.trim() && !disabled ? "#007AFF" : "#CCC"} />
+          <SendIcon color={text.trim() && !disabled ? Colors.primary : Colors.disabled} />
         </TouchableOpacity>
       </View>
     </KeyboardAvoidingView>
@@ -73,20 +75,20 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     paddingVertical: 8,
     borderTopWidth: 1,
-    borderTopColor: "#E5E5E5",
-    backgroundColor: "#FFF",
+    borderTopColor: Colors.border,
+    backgroundColor: Colors.white,
   },
   input: {
     flex: 1,
     minHeight: 36,
     maxHeight: 120,
-    backgroundColor: "#F5F5F5",
+    backgroundColor: Colors.inputBackground,
     borderRadius: 20,
     paddingHorizontal: 16,
     paddingTop: 8,
     paddingBottom: 8,
     fontSize: 16,
-    color: "#1A1A1A",
+    color: Colors.textPrimary,
   },
   sendButton: {
     marginLeft: 8,
@@ -112,9 +114,9 @@ const styles = StyleSheet.create({
     borderLeftWidth: 5,
     borderRightWidth: 5,
     borderBottomWidth: 8,
-    borderLeftColor: "transparent",
-    borderRightColor: "transparent",
-    borderBottomColor: "#FFF",
+    borderLeftColor: Colors.transparent,
+    borderRightColor: Colors.transparent,
+    borderBottomColor: Colors.white,
     marginTop: -2,
   },
 });

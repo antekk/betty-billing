@@ -1,4 +1,7 @@
 import { View, Text, StyleSheet } from "react-native";
+
+import { Colors } from "../../constants/colors";
+
 import type { TimelineEntry } from "../../services/chat";
 
 interface Props {
@@ -63,11 +66,11 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
   },
   inboundBubble: {
-    backgroundColor: "#007AFF",
+    backgroundColor: Colors.primary,
     borderBottomRightRadius: 4,
   },
   outboundBubble: {
-    backgroundColor: "#F0F0F0",
+    backgroundColor: Colors.bubbleAssistant,
     borderBottomLeftRadius: 4,
   },
   text: {
@@ -75,10 +78,10 @@ const styles = StyleSheet.create({
     lineHeight: 22,
   },
   inboundText: {
-    color: "#FFFFFF",
+    color: Colors.white,
   },
   outboundText: {
-    color: "#1A1A1A",
+    color: Colors.textPrimary,
   },
   systemContainer: {
     alignItems: "center",
@@ -87,14 +90,14 @@ const styles = StyleSheet.create({
   },
   systemText: {
     fontSize: 13,
-    color: "#999",
+    color: Colors.textTertiary,
     textAlign: "center",
     fontStyle: "italic",
   },
   cursor: {
     width: 2,
     height: 16,
-    backgroundColor: "#999",
+    backgroundColor: Colors.textTertiary,
     marginLeft: 2,
     opacity: 0.6,
   },

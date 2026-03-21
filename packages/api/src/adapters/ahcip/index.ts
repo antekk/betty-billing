@@ -1,8 +1,9 @@
-import type { AHCIPAdapter } from "./interface";
 import { MockAHCIPAdapter } from "./mock";
 
+import type { AHCIPAdapter } from "./interface";
+
 export function createAHCIPAdapter(): AHCIPAdapter {
-  const mode = process.env.AHCIP_ADAPTER || "mock";
+  const mode = process.env.AHCIP_ADAPTER ?? "mock";
 
   switch (mode) {
     case "mock":

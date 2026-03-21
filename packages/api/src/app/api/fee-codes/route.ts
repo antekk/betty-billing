@@ -1,4 +1,5 @@
-import { NextRequest, NextResponse } from "next/server";
+import { type NextRequest, NextResponse } from "next/server";
+
 import { searchFeeCodes, getFeeCode, getFeeCodesByCategory } from "@/services/fee-code.service";
 
 /**

@@ -1,5 +1,6 @@
-import { NextRequest, NextResponse } from "next/server";
-import { verifyAccessToken, type TokenPayload } from "@/lib/auth";
+import { type NextRequest, NextResponse } from "next/server";
+
+import { verifyAccessToken } from "@/lib/auth";
 
 export interface AuthenticatedRequest {
   userId: string;

@@ -1,8 +1,9 @@
-import type { Tool } from "@anthropic-ai/sdk/resources/messages";
+import { createClaimTool, handleCreateClaim } from "./create-claim";
+import { dateResolutionTool, handleDateResolution } from "./date-resolution";
 import { feeCodeLookupTool, handleFeeCodeLookup } from "./fee-lookup";
 import { phnValidationTool, handlePhnValidation } from "./phn-validation";
-import { dateResolutionTool, handleDateResolution } from "./date-resolution";
-import { createClaimTool, handleCreateClaim } from "./create-claim";
+
+import type { Tool } from "@anthropic-ai/sdk/resources/messages";
 
 export const tools: Tool[] = [
   feeCodeLookupTool,

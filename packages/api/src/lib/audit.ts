@@ -26,8 +26,8 @@ export async function auditLog(
     userId,
     action,
     resourceType,
-    resourceId: resourceId || null,
-    metadata: metadata || null,
-    ipAddress: ipAddress || null,
+    resourceId: resourceId ?? null,
+    metadata: metadata ?? null,
+    ipAddress: ipAddress ?? null,
   });
 }

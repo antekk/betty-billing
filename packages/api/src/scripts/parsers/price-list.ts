@@ -100,7 +100,7 @@ export function parsePriceList(content: string): {
  * Get current prices (end_date >= today), latest effective per code.
  */
 export function getCurrentPrices(prices: PriceRecord[], asOf?: string): Map<string, PriceRecord> {
-  const today = asOf || new Date().toISOString().slice(0, 10);
+  const today = asOf ?? new Date().toISOString().slice(0, 10);
   const byCode = new Map<string, PriceRecord>();
 
   for (const price of prices) {

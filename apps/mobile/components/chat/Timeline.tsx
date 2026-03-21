@@ -1,8 +1,11 @@
 import { useRef, useCallback } from "react";
-import { FlatList, View, StyleSheet } from "react-native";
+import { FlatList, StyleSheet } from "react-native";
+
 import { MessageBubble, StreamingBubble } from "./MessageBubble";
 import { TypingIndicator } from "./TypingIndicator";
+import { Colors } from "../../constants/colors";
 import { WidgetRenderer } from "../widgets/WidgetRenderer";
+
 import type { TimelineEntry } from "../../services/chat";
 
 interface Props {
@@ -18,7 +21,7 @@ export function Timeline({
   entries,
   isStreaming,
   streamingText,
-  onLoadMore,
+  onLoadMore: _onLoadMore,
   onConfirmClaim,
   onWidgetAction,
 }: Props) {
@@ -81,7 +84,7 @@ export function Timeline({
 const styles = StyleSheet.create({
   list: {
     flex: 1,
-    backgroundColor: "#FFF",
+    backgroundColor: Colors.white,
   },
   content: {
     paddingVertical: 16,

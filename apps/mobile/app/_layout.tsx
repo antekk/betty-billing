@@ -1,8 +1,10 @@
-import { useEffect } from "react";
 import { Stack, router } from "expo-router";
 import { StatusBar } from "expo-status-bar";
-import { useAuth } from "../services/auth";
+import { useEffect } from "react";
 import { View, ActivityIndicator, StyleSheet } from "react-native";
+
+import { Colors } from "../constants/colors";
+import { useAuth } from "../services/auth";
 
 export default function RootLayout() {
   const { isAuthenticated, isLoading } = useAuth();
@@ -18,7 +20,7 @@ export default function RootLayout() {
   if (isLoading) {
     return (
       <View style={styles.loading}>
-        <ActivityIndicator size="large" color="#007AFF" />
+        <ActivityIndicator size="large" color={Colors.primary} />
       </View>
     );
   }
@@ -36,6 +38,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#FFF",
+    backgroundColor: Colors.white,
   },
 });

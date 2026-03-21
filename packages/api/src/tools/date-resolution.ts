@@ -1,4 +1,5 @@
 import * as chrono from "chrono-node";
+
 import type { Tool } from "@anthropic-ai/sdk/resources/messages";
 
 export const dateResolutionTool: Tool = {
@@ -21,10 +22,10 @@ export const dateResolutionTool: Tool = {
   },
 };
 
-export async function handleDateResolution(input: {
+export function handleDateResolution(input: {
   expression: string;
   reference_date?: string;
-}): Promise<string> {
+}): string {
   const refDate = input.reference_date ? new Date(input.reference_date) : new Date();
 
   const parsed = chrono.parseDate(input.expression, refDate);

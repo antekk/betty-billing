@@ -3,15 +3,16 @@ export interface SmsProvider {
 }
 
 class MockSmsProvider implements SmsProvider {
-  async sendOtp(phone: string, code: string): Promise<void> {
+  sendOtp(phone: string, code: string): Promise<void> {
     console.log(`\n========================================`);
     console.log(`  OTP for ${phone}: ${code}`);
     console.log(`========================================\n`);
+    return Promise.resolve();
   }
 }
 
 export function createSmsProvider(): SmsProvider {
-  const provider = process.env.SMS_PROVIDER || "mock";
+  const provider = process.env.SMS_PROVIDER ?? "mock";
 
   switch (provider) {
     case "mock":

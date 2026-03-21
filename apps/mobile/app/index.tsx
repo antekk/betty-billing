@@ -1,7 +1,10 @@
 import { useEffect, useCallback } from "react";
-import { View, Text, StyleSheet, SafeAreaView } from "react-native";
-import { Timeline } from "../components/chat/Timeline";
+import { View, Text, StyleSheet } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+
 import { InputBar } from "../components/chat/InputBar";
+import { Timeline } from "../components/chat/Timeline";
+import { Colors } from "../constants/colors";
 import { useChat } from "../services/chat";
 
 export default function ChatScreen() {
@@ -9,8 +12,8 @@ export default function ChatScreen() {
     useChat();
 
   useEffect(() => {
-    loadTimeline();
-  }, []);
+    void loadTimeline();
+  }, [loadTimeline]);
 
   const handleSend = useCallback(
     async (message: string) => {
@@ -25,14 +28,14 @@ export default function ChatScreen() {
 
   const handleLoadMore = useCallback(() => {
     if (entries.length > 0) {
-      loadTimeline(entries[0].createdAt);
+      void loadTimeline(entries[0].createdAt);
     }
   }, [entries, loadTimeline]);
 
   const handleWidgetAction = useCallback(
     (action: string, payload?: Record<string, unknown>) => {
       if (action === "send_message" && payload?.message) {
-        sendMessage(payload.message as string);
+        void sendMessage(payload.message as string);
       }
       // Other actions can be handled here
     },
@@ -59,7 +62,12 @@ export default function ChatScreen() {
         onWidgetAction={handleWidgetAction}
       />
 
-      <InputBar onSend={handleSend} disabled={isStreaming} />
+      <InputBar
+        onSend={(text) => {
+          void handleSend(text);
+        }}
+        disabled={isStreaming}
+      />
     </SafeAreaView>
   );
 }
@@ -67,13 +75,13 @@ export default function ChatScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#FFF",
+    backgroundColor: Colors.white,
   },
   header: {
     paddingHorizontal: 16,
     paddingVertical: 12,
     borderBottomWidth: 1,
-    borderBottomColor: "#F0F0F0",
+    borderBottomColor: Colors.separator,
   },
   headerContent: {
     flexDirection: "row",
@@ -83,7 +91,7 @@ const styles = StyleSheet.create({
     width: 36,
     height: 36,
     borderRadius: 18,
-    backgroundColor: "#007AFF",
+    backgroundColor: Colors.primary,
     justifyContent: "center",
     alignItems: "center",
     marginRight: 10,
@@ -92,11 +100,11 @@ const styles = StyleSheet.create({
     width: 16,
     height: 16,
     borderRadius: 8,
-    backgroundColor: "#FFF",
+    backgroundColor: Colors.white,
   },
   headerName: {
     fontSize: 18,
     fontWeight: "600",
-    color: "#1A1A1A",
+    color: Colors.textPrimary,
   },
 });

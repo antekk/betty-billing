@@ -1,4 +1,5 @@
 import { validatePhn } from "@betty/shared";
+
 import type { Tool } from "@anthropic-ai/sdk/resources/messages";
 
 export const phnValidationTool: Tool = {
@@ -17,7 +18,7 @@ export const phnValidationTool: Tool = {
   },
 };
 
-export async function handlePhnValidation(input: { phn: string }): Promise<string> {
+export function handlePhnValidation(input: { phn: string }): string {
   const result = validatePhn(input.phn);
   return JSON.stringify(result);
 }

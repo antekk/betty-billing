@@ -1,8 +1,9 @@
-import { NextRequest, NextResponse } from "next/server";
-import { authenticate, isAuthError } from "@/middleware/auth";
+import { eq, and, lt, ne, desc } from "drizzle-orm";
+import { type NextRequest, NextResponse } from "next/server";
+
 import { db } from "@/db";
 import { timelineEntries } from "@/db/schema";
-import { eq, and, lt, ne, desc } from "drizzle-orm";
+import { authenticate, isAuthError } from "@/middleware/auth";
 
 export async function GET(request: NextRequest) {
   const auth = await authenticate(request);
@@ -10,7 +11,7 @@ export async function GET(request: NextRequest) {
 
   const { searchParams } = new URL(request.url);
   const before = searchParams.get("before");
-  const limit = Math.min(parseInt(searchParams.get("limit") || "50", 10), 100);
+  const limit = Math.min(parseInt(searchParams.get("limit") ?? "50", 10), 100);
   const includeFiltered = searchParams.get("include_filtered") === "true";
 
   const conditions = [eq(timelineEntries.userId, auth.userId)];

@@ -1,12 +1,12 @@
 import { Queue, Worker, type Job } from "bullmq";
-import IORedis from "ioredis";
+import Redis from "ioredis";
 
-let connection: IORedis | null = null;
+let connection: Redis | null = null;
 
-function getConnection(): IORedis {
+function getConnection(): Redis {
   if (!connection) {
-    const redisUrl = process.env.REDIS_URL || "redis://localhost:6379";
-    connection = new IORedis(redisUrl, { maxRetriesPerRequest: null });
+    const redisUrl = process.env.REDIS_URL ?? "redis://localhost:6379";
+    connection = new Redis(redisUrl, { maxRetriesPerRequest: null });
   }
   return connection;
 }
