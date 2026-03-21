@@ -1,12 +1,14 @@
-import { db } from "@/db";
-import { claims, timelineEntries } from "@/db/schema";
-import { getFeeCode } from "@/services/fee-code.service";
 import { validatePhn } from "@betty/shared";
-import { encrypt, getLastFour } from "@/lib/encryption";
-import { auditLog } from "@/lib/audit";
 import { eq } from "drizzle-orm";
+
 import type { Tool } from "@anthropic-ai/sdk/resources/messages";
 import type { ClaimConfirmationData } from "@betty/shared";
+
+import { db } from "@/db";
+import { claims, timelineEntries } from "@/db/schema";
+import { auditLog } from "@/lib/audit";
+import { encrypt } from "@/lib/encryption";
+import { getFeeCode } from "@/services/fee-code.service";
 
 export const createClaimTool: Tool = {
   name: "create_claim",
@@ -91,18 +93,18 @@ export async function handleCreateClaim(
   });
 
   const expectedFee = feeCode.baseFee;
-  const encryptedPhn = encrypt(phnResult.formatted!);
-  const phnLast4 = phnResult.last4!;
+  const encryptedPhn = encrypt(phnResult.formatted ?? "");
+  const phnLast4 = phnResult.last4 ?? "";
 
   // Create timeline entry with claim confirmation widget
   const widgetData: ClaimConfirmationData = {
     type: "claim_confirmation",
     claimId: "", // will be set after claim insert
-    patientName: input.patient_name || null,
+    patientName: input.patient_name ?? null,
     phnLast4,
     feeCode: input.fee_code,
     feeCodeDescription: feeCode.description,
-    modifier: input.modifier || null,
+    modifier: input.modifier ?? null,
     serviceDate: input.service_date,
     serviceDateFormatted: formattedDate,
     expectedFee,
@@ -132,12 +134,12 @@ export async function handleCreateClaim(
       timelineEntryId: entry.id,
       status: "pending_confirmation",
       feeCode: input.fee_code,
-      modifier: input.modifier || null,
+      modifier: input.modifier ?? null,
       phn: encryptedPhn,
       phnLast4,
-      patientName: input.patient_name || null,
+      patientName: input.patient_name ?? null,
       serviceDate: input.service_date,
-      diagnosticCode: input.diagnostic_code || null,
+      diagnosticCode: input.diagnostic_code ?? null,
       expectedFee,
     })
     .returning({ id: claims.id });

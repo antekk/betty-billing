@@ -9,8 +9,9 @@ import {
   index,
   pgEnum,
 } from "drizzle-orm/pg-core";
-import { users } from "./users";
+
 import { timelineEntries } from "./timeline-entries";
+import { users } from "./users";
 
 export const claimStatusEnum = pgEnum("claim_status", [
   "pending_confirmation",

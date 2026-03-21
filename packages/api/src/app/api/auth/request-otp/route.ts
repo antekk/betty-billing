@@ -1,9 +1,10 @@
-import { NextRequest, NextResponse } from "next/server";
+import { and, eq, gte } from "drizzle-orm";
+import { type NextRequest, NextResponse } from "next/server";
+import { z } from "zod";
+
 import { db } from "@/db";
 import { otpCodes } from "@/db/schema";
 import { createSmsProvider } from "@/lib/sms";
-import { z } from "zod";
-import { and, eq, gt, gte } from "drizzle-orm";
 
 const requestSchema = z.object({
   phone: z.string().regex(/^\+1\d{10}$/, "Phone must be in E.164 format (+1XXXXXXXXXX)"),

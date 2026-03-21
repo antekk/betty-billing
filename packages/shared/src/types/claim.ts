@@ -39,9 +39,9 @@ export interface ActionCardData {
   title: string;
   body: string;
   claimId?: string;
-  actions: Array<{
+  actions: {
     label: string;
     action: string; // e.g., "view_claim", "add_diagnostic_code", "send_message"
     payload?: Record<string, unknown>;
-  }>;
+  }[];
 }

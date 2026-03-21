@@ -1,17 +1,18 @@
 import Anthropic from "@anthropic-ai/sdk";
+import { eq, desc, and, ne } from "drizzle-orm";
+
 import type {
   MessageParam,
   ContentBlockParam,
   ToolResultBlockParam,
   ToolUseBlock,
-  TextBlock,
 } from "@anthropic-ai/sdk/resources/messages";
+import type { WidgetData } from "@betty/shared";
+
 import { db } from "@/db";
 import { timelineEntries, users } from "@/db/schema";
-import { eq, desc, and, ne } from "drizzle-orm";
 import { buildSystemPrompt } from "@/prompts/system";
 import { tools, executeTool } from "@/tools";
-import type { WidgetData } from "@betty/shared";
 
 const MAX_TOOL_ITERATIONS = 5;
 const CONTEXT_WINDOW_SIZE = 50;
@@ -52,11 +53,6 @@ export async function processMessage(
   // 2. Load user context
   const [user] = await db.select().from(users).where(eq(users.id, userId)).limit(1);
 
-  if (!user) {
-    onEvent({ type: "error", data: { message: "User not found" } });
-    return;
-  }
-
   // 3. Load conversation history
   const history = await db
     .select()
@@ -80,7 +76,7 @@ export async function processMessage(
 
   // 4. Call Claude with tool loop
   let fullResponseText = "";
-  let widgets: WidgetData[] = [];
+  const widgets: WidgetData[] = [];
   let currentMessages = [...messages];
   let iterations = 0;
 
@@ -95,7 +91,7 @@ export async function processMessage(
       tools,
     });
 
-    let toolUseBlocks: ToolUseBlock[] = [];
+    const toolUseBlocks: ToolUseBlock[] = [];
     let textContent = "";
 
     for await (const event of stream) {
@@ -133,7 +129,7 @@ export async function processMessage(
 
       // Check if the tool created a widget
       try {
-        const parsed = JSON.parse(result);
+        const parsed = JSON.parse(result) as { widget?: WidgetData };
         if (parsed.widget) {
           widgets.push(parsed.widget);
           onEvent({ type: "widget", data: parsed.widget });

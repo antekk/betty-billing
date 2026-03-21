@@ -1,4 +1,5 @@
-import { useState, useCallback, useRef } from "react";
+import { useState, useCallback } from "react";
+
 import { apiFetch, API_BASE, getAccessToken } from "./api";
 
 export interface TimelineEntry {
@@ -19,13 +20,30 @@ interface ChatState {
   streamingText: string;
 }
 
+interface TimelineResponse {
+  entries: TimelineEntry[];
+  hasMore: boolean;
+}
+
+interface ApiErrorBody {
+  error?: string;
+}
+
+interface SseDeltaPayload {
+  text: string;
+}
+
+interface SseWidgetPayload {
+  type: string;
+  [key: string]: unknown;
+}
+
 export function useChat() {
   const [state, setState] = useState<ChatState>({
     entries: [],
     isStreaming: false,
     streamingText: "",
   });
-  const abortRef = useRef<AbortController | null>(null);
 
   const loadTimeline = useCallback(async (before?: string) => {
     const params = new URLSearchParams();
@@ -35,7 +53,7 @@ export function useChat() {
     const res = await apiFetch(`/api/timeline?${params}`);
     if (!res.ok) throw new Error("Failed to load timeline");
 
-    const data = await res.json();
+    const data = (await res.json()) as TimelineResponse;
 
     setState((prev) => ({
       ...prev,
@@ -86,15 +104,15 @@ export function useChat() {
       let buffer = "";
       let fullText = "";
 
-      while (true) {
+      for (;;) {
         const { done, value } = await reader.read();
         if (done) break;
 
-        buffer += decoder.decode(value, { stream: true });
+        buffer += decoder.decode(value as Uint8Array, { stream: true });
 
         // Parse SSE events from buffer
         const events = buffer.split("\n\n");
-        buffer = events.pop() || ""; // Keep incomplete event in buffer
+        buffer = events.pop() ?? ""; // Keep incomplete event in buffer
 
         for (const eventStr of events) {
           if (!eventStr.trim()) continue;
@@ -114,26 +132,29 @@ export function useChat() {
           if (!eventType || !eventData) continue;
 
           try {
-            const parsed = JSON.parse(eventData);
+            const parsed: unknown = JSON.parse(eventData);
 
             switch (eventType) {
-              case "delta":
-                fullText += parsed.text;
+              case "delta": {
+                const delta = parsed as SseDeltaPayload;
+                fullText += delta.text;
                 setState((prev) => ({
                   ...prev,
                   streamingText: fullText,
                 }));
                 break;
+              }
 
-              case "widget":
+              case "widget": {
                 // Add widget entry
+                const widgetPayload = parsed as SseWidgetPayload;
                 const widgetEntry: TimelineEntry = {
                   id: `widget-${Date.now()}`,
                   type: "widget",
                   direction: "outbound",
                   content: null,
-                  widgetType: parsed.type,
-                  widgetData: parsed,
+                  widgetType: widgetPayload.type,
+                  widgetData: widgetPayload,
                   visibility: "default",
                   importanceFlag: false,
                   createdAt: new Date().toISOString(),
@@ -143,6 +164,7 @@ export function useChat() {
                   entries: [...prev.entries, widgetEntry],
                 }));
                 break;
+              }
 
               case "done":
                 // Add final message entry
@@ -202,15 +224,15 @@ export function useChat() {
     });
 
     if (!res.ok) {
-      const data = await res.json();
-      throw new Error(data.error || "Failed to confirm claim");
+      const data = (await res.json()) as ApiErrorBody;
+      throw new Error(data.error ?? "Failed to confirm claim");
     }
 
     // Update the widget's status in the local state
     setState((prev) => ({
       ...prev,
       entries: prev.entries.map((entry) => {
-        if (entry.widgetData && (entry.widgetData as Record<string, unknown>).claimId === claimId) {
+        if (entry.widgetData?.claimId === claimId) {
           return {
             ...entry,
             widgetData: {

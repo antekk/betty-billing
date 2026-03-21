@@ -1,7 +1,8 @@
-import { NextRequest } from "next/server";
+import { type NextRequest } from "next/server";
+import { z } from "zod";
+
 import { authenticate, isAuthError } from "@/middleware/auth";
 import { processMessage } from "@/services/conversation.service";
-import { z } from "zod";
 
 const chatSchema = z.object({
   message: z.string().min(1).max(5000),
@@ -32,7 +33,7 @@ export async function POST(request: NextRequest) {
           const data = `event: ${event.type}\ndata: ${JSON.stringify(event.data)}\n\n`;
           controller.enqueue(encoder.encode(data));
         });
-      } catch (error) {
+      } catch (_error) {
         const errorData = `event: error\ndata: ${JSON.stringify({
           message: "An unexpected error occurred",
         })}\n\n`;

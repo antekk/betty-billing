@@ -1,5 +1,5 @@
-import { ClaimConfirmation } from "./ClaimConfirmation";
-import { ActionCard } from "./ActionCard";
+import { ActionCard, type ActionCardData } from "./ActionCard";
+import { ClaimConfirmation, type ClaimConfirmationData } from "./ClaimConfirmation";
 
 interface Props {
   widgetType: string;
@@ -11,9 +11,14 @@ interface Props {
 export function WidgetRenderer({ widgetType, widgetData, onConfirmClaim, onAction }: Props) {
   switch (widgetType) {
     case "claim_confirmation":
-      return <ClaimConfirmation data={widgetData as any} onConfirm={onConfirmClaim} />;
+      return (
+        <ClaimConfirmation
+          data={widgetData as unknown as ClaimConfirmationData}
+          onConfirm={onConfirmClaim}
+        />
+      );
     case "action_card":
-      return <ActionCard data={widgetData as any} onAction={onAction} />;
+      return <ActionCard data={widgetData as unknown as ActionCardData} onAction={onAction} />;
     default:
       return null;
   }

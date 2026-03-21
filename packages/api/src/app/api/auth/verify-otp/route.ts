@@ -1,9 +1,10 @@
-import { NextRequest, NextResponse } from "next/server";
+import { and, eq, gt } from "drizzle-orm";
+import { type NextRequest, NextResponse } from "next/server";
+import { z } from "zod";
+
 import { db } from "@/db";
 import { otpCodes, users, timelineEntries } from "@/db/schema";
 import { signAccessToken, signRefreshToken } from "@/lib/auth";
-import { z } from "zod";
-import { and, eq, gt } from "drizzle-orm";
 
 const verifySchema = z.object({
   phone: z.string().regex(/^\+1\d{10}$/),
@@ -25,7 +26,7 @@ export async function POST(request: NextRequest) {
   const { phone, code } = parsed.data;
 
   // Find valid, unused OTP
-  const [otp] = await db
+  const otpRows = await db
     .select()
     .from(otpCodes)
     .where(
@@ -38,6 +39,7 @@ export async function POST(request: NextRequest) {
     )
     .limit(1);
 
+  const otp = otpRows.at(0);
   if (!otp) {
     return NextResponse.json({ error: "Invalid or expired code" }, { status: 401 });
   }
@@ -46,7 +48,8 @@ export async function POST(request: NextRequest) {
   await db.update(otpCodes).set({ used: true }).where(eq(otpCodes.id, otp.id));
 
   // Upsert user
-  const [existingUser] = await db.select().from(users).where(eq(users.phone, phone)).limit(1);
+  const existingUserRows = await db.select().from(users).where(eq(users.phone, phone)).limit(1);
+  const existingUser = existingUserRows.at(0);
 
   let userId: string;
   let isNewUser = false;

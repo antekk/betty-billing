@@ -23,6 +23,7 @@ export default tseslint.config(
       "**/drizzle/**",
       "**/*.config.js",
       "**/*.config.mjs",
+      "**/next-env.d.ts",
     ],
   },
 
@@ -131,6 +132,7 @@ export default tseslint.config(
     rules: {
       ...nextPlugin.configs.recommended.rules,
       ...nextPlugin.configs["core-web-vitals"].rules,
+      "@next/next/no-html-link-for-pages": "off",
       // Drizzle - enforce delete/update with where clauses
       "drizzle/enforce-delete-with-where": "error",
       "drizzle/enforce-update-with-where": "error",

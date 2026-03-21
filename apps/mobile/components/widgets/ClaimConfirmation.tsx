@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { View, Text, TouchableOpacity, StyleSheet, ActivityIndicator } from "react-native";
 
-interface ClaimConfirmationData {
+import { Colors } from "../../constants/colors";
+
+export interface ClaimConfirmationData {
   claimId: string;
   patientName: string | null;
   phnLast4: string;
@@ -27,7 +29,7 @@ export function ClaimConfirmation({ data, onConfirm }: Props) {
     setIsConfirming(true);
     try {
       await onConfirm(data.claimId);
-    } catch (error) {
+    } catch (_error) {
       setIsConfirming(false);
     }
   };
@@ -77,11 +79,13 @@ export function ClaimConfirmation({ data, onConfirm }: Props) {
       ) : (
         <TouchableOpacity
           style={styles.confirmButton}
-          onPress={handleConfirm}
+          onPress={() => {
+            void handleConfirm();
+          }}
           disabled={isConfirming}
         >
           {isConfirming ? (
-            <ActivityIndicator color="#FFF" />
+            <ActivityIndicator color={Colors.white} />
           ) : (
             <Text style={styles.confirmButtonText}>Confirm</Text>
           )}
@@ -93,14 +97,14 @@ export function ClaimConfirmation({ data, onConfirm }: Props) {
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: "#FFF",
+    backgroundColor: Colors.white,
     borderRadius: 16,
     borderWidth: 1,
-    borderColor: "#E5E5E5",
+    borderColor: Colors.border,
     padding: 16,
     marginHorizontal: 16,
     marginVertical: 8,
-    shadowColor: "#000",
+    shadowColor: Colors.black,
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.05,
     shadowRadius: 4,
@@ -109,7 +113,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 15,
     fontWeight: "600",
-    color: "#666",
+    color: Colors.textSecondary,
     marginBottom: 12,
     textTransform: "uppercase",
     letterSpacing: 0.5,
@@ -120,52 +124,52 @@ const styles = StyleSheet.create({
     alignItems: "flex-start",
     paddingVertical: 6,
     borderBottomWidth: 1,
-    borderBottomColor: "#F5F5F5",
+    borderBottomColor: Colors.inputBackground,
   },
   label: {
     fontSize: 14,
-    color: "#999",
+    color: Colors.textTertiary,
     width: 80,
   },
   value: {
     fontSize: 15,
     fontWeight: "500",
-    color: "#1A1A1A",
+    color: Colors.textPrimary,
     flex: 1,
     textAlign: "right",
   },
   description: {
     fontSize: 13,
-    color: "#666",
+    color: Colors.textSecondary,
     textAlign: "right",
     marginTop: 2,
   },
   fee: {
     fontSize: 17,
     fontWeight: "700",
-    color: "#1A1A1A",
+    color: Colors.textPrimary,
   },
   confirmButton: {
-    backgroundColor: "#34C759",
+    backgroundColor: Colors.successGreen,
     borderRadius: 12,
     paddingVertical: 14,
     alignItems: "center",
     marginTop: 16,
   },
   confirmButtonText: {
-    color: "#FFF",
+    color: Colors.white,
     fontSize: 17,
     fontWeight: "600",
   },
   confirmedBadge: {
-    backgroundColor: "#E8F5E9",
+    backgroundColor: Colors.successBackground,
     borderRadius: 12,
     paddingVertical: 14,
     alignItems: "center",
     marginTop: 16,
   },
   confirmedText: {
-    color: "#34C759",
+    color: Colors.successGreen,
     fontSize: 17,
     fontWeight: "600",
   },

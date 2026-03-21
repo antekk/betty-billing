@@ -1,9 +1,10 @@
+import { eq, inArray } from "drizzle-orm";
+
+import { createAHCIPAdapter, type AHCIPClaimInput } from "@/adapters/ahcip";
 import { db } from "@/db";
 import { claims, batchSubmissions, timelineEntries, users } from "@/db/schema";
-import { eq, inArray } from "drizzle-orm";
-import { createAHCIPAdapter, type AHCIPClaimInput } from "@/adapters/ahcip";
-import { decrypt } from "@/lib/encryption";
 import { auditLog } from "@/lib/audit";
+import { decrypt } from "@/lib/encryption";
 
 /**
  * Collect all staged claims and submit them in a batch to AHCIP.
@@ -47,7 +48,7 @@ export async function processBatchSubmission(): Promise<{
     phn: decrypt(claim.phn),
     serviceDate: claim.serviceDate,
     diagnosticCode: claim.diagnosticCode,
-    practitionerId: userMap.get(claim.userId)?.ahcipPractitionerId || "UNKNOWN",
+    practitionerId: userMap.get(claim.userId)?.ahcipPractitionerId ?? "UNKNOWN",
   }));
 
   // Update claims to submitted status
@@ -89,13 +90,13 @@ export async function processBatchSubmission(): Promise<{
         .update(claims)
         .set({
           status: "rejected",
-          rejectionReason: result.rejectionReason || "Unknown reason",
+          rejectionReason: result.rejectionReason ?? "Unknown reason",
           updatedAt: new Date(),
         })
         .where(eq(claims.id, result.claimId));
 
       // Create proactive timeline entry for rejected claims
-      await createRejectionNotification(claim, result.rejectionReason || "Unknown reason");
+      await createRejectionNotification(claim, result.rejectionReason ?? "Unknown reason");
     }
 
     await auditLog(claim.userId, "claim_submitted", "claim", claim.id, {

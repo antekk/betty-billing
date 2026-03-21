@@ -10,12 +10,14 @@
 
 import { readFileSync } from "fs";
 import { resolve } from "path";
+
 import { drizzle } from "drizzle-orm/postgres-js";
 import postgres from "postgres";
-import { feeCodes } from "../db/schema/fee-codes";
+
 import { parseHealthServiceCodes, getCurrentCodes } from "./parsers/health-service-codes";
-import { parsePriceList, getCurrentPrices } from "./parsers/price-list";
 import { parseModifiers, getCurrentModifiers } from "./parsers/modifiers";
+import { parsePriceList, getCurrentPrices } from "./parsers/price-list";
+import { feeCodes } from "../db/schema/fee-codes";
 
 const sombDir = process.argv[2] || resolve(process.cwd(), "docs/support/AB-somb");
 
@@ -56,7 +58,7 @@ async function main() {
     if (!modifierMap.has(mod.code)) {
       modifierMap.set(mod.code, []);
     }
-    modifierMap.get(mod.code)!.push({
+    modifierMap.get(mod.code)?.push({
       code: mod.code,
       description: mod.description,
       type: mod.type,
@@ -129,7 +131,7 @@ async function main() {
   // Print some stats
   const categories = new Map<string, number>();
   for (const fc of feeCodeRecords) {
-    categories.set(fc.category, (categories.get(fc.category) || 0) + 1);
+    categories.set(fc.category, (categories.get(fc.category) ?? 0) + 1);
   }
   console.log("\nBy category:");
   for (const [cat, count] of [...categories.entries()].sort((a, b) => b[1] - a[1])) {
@@ -168,7 +170,7 @@ function categorizeCode(code: string): string {
   return "Other";
 }
 
-main().catch((err) => {
+main().catch((err: unknown) => {
   console.error("Import failed:", err);
   process.exit(1);
 });

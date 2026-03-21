@@ -1,14 +1,16 @@
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 
-interface ActionCardData {
+import { Colors } from "../../constants/colors";
+
+export interface ActionCardData {
   title: string;
   body: string;
   claimId?: string;
-  actions: Array<{
+  actions: {
     label: string;
     action: string;
     payload?: Record<string, unknown>;
-  }>;
+  }[];
 }
 
 interface Props {
@@ -50,12 +52,12 @@ export function ActionCard({ data, onAction }: Props) {
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: "#FFF",
+    backgroundColor: Colors.white,
     borderRadius: 16,
     borderWidth: 1,
-    borderColor: "#FFD4D4",
+    borderColor: Colors.errorBorder,
     borderLeftWidth: 4,
-    borderLeftColor: "#FF3B30",
+    borderLeftColor: Colors.errorRed,
     padding: 16,
     marginHorizontal: 16,
     marginVertical: 8,
@@ -69,17 +71,17 @@ const styles = StyleSheet.create({
     width: 8,
     height: 8,
     borderRadius: 4,
-    backgroundColor: "#FF3B30",
+    backgroundColor: Colors.errorRed,
     marginRight: 8,
   },
   title: {
     fontSize: 16,
     fontWeight: "600",
-    color: "#1A1A1A",
+    color: Colors.textPrimary,
   },
   body: {
     fontSize: 15,
-    color: "#666",
+    color: Colors.textSecondary,
     lineHeight: 20,
     marginBottom: 16,
   },
@@ -94,19 +96,19 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   primaryAction: {
-    backgroundColor: "#007AFF",
+    backgroundColor: Colors.primary,
   },
   secondaryAction: {
-    backgroundColor: "#F0F0F0",
+    backgroundColor: Colors.separator,
   },
   actionText: {
     fontSize: 15,
     fontWeight: "500",
   },
   primaryActionText: {
-    color: "#FFF",
+    color: Colors.white,
   },
   secondaryActionText: {
-    color: "#007AFF",
+    color: Colors.primary,
   },
 });

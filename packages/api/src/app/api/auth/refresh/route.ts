@@ -1,11 +1,12 @@
-import { NextRequest, NextResponse } from "next/server";
+import { type NextRequest, NextResponse } from "next/server";
+
 import { signAccessToken, verifyRefreshToken } from "@/lib/auth";
 
 export async function POST(request: NextRequest) {
-  const body = await request.json();
-  const { refreshToken } = body;
+  const body = (await request.json()) as Record<string, unknown>;
+  const refreshToken = body.refreshToken;
 
-  if (!refreshToken) {
+  if (typeof refreshToken !== "string" || !refreshToken) {
     return NextResponse.json({ error: "Missing refresh token" }, { status: 400 });
   }
 

@@ -1,4 +1,5 @@
-import { NextRequest, NextResponse } from "next/server";
+import { type NextRequest, NextResponse } from "next/server";
+
 import { getFeeCode } from "@/services/fee-code.service";
 
 export async function GET(

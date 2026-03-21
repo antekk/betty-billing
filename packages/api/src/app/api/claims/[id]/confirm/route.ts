@@ -1,9 +1,10 @@
-import { NextRequest, NextResponse } from "next/server";
-import { authenticate, isAuthError } from "@/middleware/auth";
+import { eq, and } from "drizzle-orm";
+import { type NextRequest, NextResponse } from "next/server";
+
 import { db } from "@/db";
 import { claims, timelineEntries } from "@/db/schema";
-import { eq, and } from "drizzle-orm";
 import { auditLog } from "@/lib/audit";
+import { authenticate, isAuthError } from "@/middleware/auth";
 
 export async function POST(request: NextRequest, { params }: { params: Promise<{ id: string }> }) {
   const auth = await authenticate(request);
@@ -12,12 +13,13 @@ export async function POST(request: NextRequest, { params }: { params: Promise<{
   const { id } = await params;
 
   // Find the claim
-  const [claim] = await db
+  const claimRows = await db
     .select()
     .from(claims)
     .where(and(eq(claims.id, id), eq(claims.userId, auth.userId)))
     .limit(1);
 
+  const claim = claimRows.at(0);
   if (!claim) {
     return NextResponse.json({ error: "Claim not found" }, { status: 404 });
   }
@@ -40,12 +42,13 @@ export async function POST(request: NextRequest, { params }: { params: Promise<{
 
   // Update the widget data to reflect confirmed status
   if (claim.timelineEntryId) {
-    const [entry] = await db
+    const entryRows = await db
       .select()
       .from(timelineEntries)
       .where(eq(timelineEntries.id, claim.timelineEntryId))
       .limit(1);
 
+    const entry = entryRows.at(0);
     if (entry?.widgetData) {
       const widgetData = entry.widgetData as Record<string, unknown>;
       widgetData.status = "staged";

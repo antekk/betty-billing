@@ -1,10 +1,11 @@
+import { randomUUID } from "crypto";
+
 import type {
   AHCIPAdapter,
   AHCIPClaimInput,
   AHCIPBatchResponse,
   AHCIPClaimResult,
 } from "./interface";
-import { randomUUID } from "crypto";
 
 const REJECTION_REASONS = [
   {

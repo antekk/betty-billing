@@ -1,6 +1,6 @@
 import * as SecureStore from "expo-secure-store";
 
-const API_BASE = process.env.EXPO_PUBLIC_API_URL || "http://localhost:3000";
+const API_BASE = (process.env.EXPO_PUBLIC_API_URL as string | undefined) ?? "http://localhost:3000";
 
 const TOKEN_KEY = "betty_access_token";
 const REFRESH_KEY = "betty_refresh_token";
@@ -32,7 +32,7 @@ async function refreshAccessToken(): Promise<string | null> {
 
     if (!res.ok) return null;
 
-    const data = await res.json();
+    const data = (await res.json()) as { accessToken: string };
     await SecureStore.setItemAsync(TOKEN_KEY, data.accessToken);
     return data.accessToken;
   } catch {
@@ -41,7 +41,7 @@ async function refreshAccessToken(): Promise<string | null> {
 }
 
 export async function apiFetch(path: string, options: RequestInit = {}): Promise<Response> {
-  let token = await getAccessToken();
+  const token = await getAccessToken();
 
   const headers: Record<string, string> = {
     "Content-Type": "application/json",
@@ -49,7 +49,7 @@ export async function apiFetch(path: string, options: RequestInit = {}): Promise
   };
 
   if (token) {
-    headers["Authorization"] = `Bearer ${token}`;
+    headers.Authorization = `Bearer ${token}`;
   }
 
   let res = await fetch(`${API_BASE}${path}`, { ...options, headers });
@@ -58,7 +58,7 @@ export async function apiFetch(path: string, options: RequestInit = {}): Promise
   if (res.status === 401 && token) {
     const newToken = await refreshAccessToken();
     if (newToken) {
-      headers["Authorization"] = `Bearer ${newToken}`;
+      headers.Authorization = `Bearer ${newToken}`;
       res = await fetch(`${API_BASE}${path}`, { ...options, headers });
     }
   }

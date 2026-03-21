@@ -1,5 +1,6 @@
-import { searchFeeCodes, getFeeCode } from "@/services/fee-code.service";
 import type { Tool } from "@anthropic-ai/sdk/resources/messages";
+
+import { searchFeeCodes, getFeeCode } from "@/services/fee-code.service";
 
 export const feeCodeLookupTool: Tool = {
   name: "fee_code_lookup",

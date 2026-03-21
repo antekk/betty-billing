@@ -1,4 +1,5 @@
 import { pgTable, uuid, text, jsonb, boolean, timestamp, index, pgEnum } from "drizzle-orm/pg-core";
+
 import { users } from "./users";
 
 export const timelineEntryTypeEnum = pgEnum("timeline_entry_type", [

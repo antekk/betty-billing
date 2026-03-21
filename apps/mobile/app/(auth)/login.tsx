@@ -1,3 +1,4 @@
+import { router } from "expo-router";
 import { useState } from "react";
 import {
   View,
@@ -9,7 +10,8 @@ import {
   KeyboardAvoidingView,
   Platform,
 } from "react-native";
-import { router } from "expo-router";
+
+import { Colors } from "../../constants/colors";
 import { useAuth } from "../../services/auth";
 
 export default function LoginScreen() {
@@ -58,7 +60,7 @@ export default function LoginScreen() {
               value={phone}
               onChangeText={setPhone}
               placeholder="(403) 555-0123"
-              placeholderTextColor="#999"
+              placeholderTextColor={Colors.textTertiary}
               keyboardType="phone-pad"
               autoFocus
               maxLength={14}
@@ -67,7 +69,9 @@ export default function LoginScreen() {
 
           <TouchableOpacity
             style={[styles.button, isLoading && styles.buttonDisabled]}
-            onPress={handleSendCode}
+            onPress={() => {
+              void handleSendCode();
+            }}
             disabled={isLoading}
           >
             <Text style={styles.buttonText}>{isLoading ? "Sending..." : "Send Code"}</Text>
@@ -81,7 +85,7 @@ export default function LoginScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#FFF",
+    backgroundColor: Colors.white,
   },
   content: {
     flex: 1,
@@ -91,12 +95,12 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 40,
     fontWeight: "700",
-    color: "#1A1A1A",
+    color: Colors.textPrimary,
     textAlign: "center",
   },
   subtitle: {
     fontSize: 17,
-    color: "#666",
+    color: Colors.textSecondary,
     textAlign: "center",
     marginTop: 4,
     marginBottom: 48,
@@ -107,30 +111,30 @@ const styles = StyleSheet.create({
   label: {
     fontSize: 15,
     fontWeight: "500",
-    color: "#666",
+    color: Colors.textSecondary,
     marginBottom: 4,
   },
   phoneRow: {
     flexDirection: "row",
     alignItems: "center",
     borderWidth: 1,
-    borderColor: "#E5E5E5",
+    borderColor: Colors.border,
     borderRadius: 12,
     paddingHorizontal: 16,
   },
   prefix: {
     fontSize: 17,
-    color: "#999",
+    color: Colors.textTertiary,
     marginRight: 8,
   },
   input: {
     flex: 1,
     fontSize: 17,
     paddingVertical: 14,
-    color: "#1A1A1A",
+    color: Colors.textPrimary,
   },
   button: {
-    backgroundColor: "#007AFF",
+    backgroundColor: Colors.primary,
     borderRadius: 12,
     paddingVertical: 16,
     alignItems: "center",
@@ -140,7 +144,7 @@ const styles = StyleSheet.create({
     opacity: 0.6,
   },
   buttonText: {
-    color: "#FFF",
+    color: Colors.white,
     fontSize: 17,
     fontWeight: "600",
   },

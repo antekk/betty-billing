@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
 import { View, Animated, StyleSheet } from "react-native";
 
+import { Colors } from "../../constants/colors";
+
 export function TypingIndicator() {
   const dot1 = useRef(new Animated.Value(0)).current;
   const dot2 = useRef(new Animated.Value(0)).current;
@@ -38,7 +40,7 @@ export function TypingIndicator() {
       a2.stop();
       a3.stop();
     };
-  }, []);
+  }, [dot1, dot2, dot3]);
 
   const dotStyle = (anim: Animated.Value) => ({
     opacity: anim.interpolate({
@@ -74,7 +76,7 @@ const styles = StyleSheet.create({
   },
   bubble: {
     flexDirection: "row",
-    backgroundColor: "#F0F0F0",
+    backgroundColor: Colors.bubbleAssistant,
     borderRadius: 18,
     borderBottomLeftRadius: 4,
     paddingHorizontal: 16,
@@ -85,6 +87,6 @@ const styles = StyleSheet.create({
     width: 8,
     height: 8,
     borderRadius: 4,
-    backgroundColor: "#999",
+    backgroundColor: Colors.textTertiary,
   },
 });
