@@ -6,7 +6,6 @@ PROJECT_ID="${GCP_PROJECT_ID:?Set GCP_PROJECT_ID}"
 REGION="${GCP_REGION:-northamerica-northeast1}"   # Montreal (good for Canadian health data)
 SERVICE_NAME="betty-api"
 DB_INSTANCE="betty-db"
-REDIS_INSTANCE="betty-redis"
 IMAGE="$REGION-docker.pkg.dev/$PROJECT_ID/betty/$SERVICE_NAME"
 
 echo "==> Deploying Betty to project: $PROJECT_ID  region: $REGION"
@@ -16,10 +15,9 @@ echo "==> Enabling GCP APIs..."
 gcloud services enable \
   run.googleapis.com \
   sqladmin.googleapis.com \
-  redis.googleapis.com \
   artifactregistry.googleapis.com \
   secretmanager.googleapis.com \
-  vpcaccess.googleapis.com \
+  cloudbuild.googleapis.com \
   --project "$PROJECT_ID"
 
 # ── 2. Artifact Registry repo (container images) ────────────────────
@@ -57,29 +55,7 @@ gcloud sql users set-password betty \
 DB_CONNECTION=$(gcloud sql instances describe "$DB_INSTANCE" \
   --format='value(connectionName)' --project="$PROJECT_ID")
 
-# ── 4. Memorystore (Redis) ──────────────────────────────────────────
-echo "==> Creating Memorystore Redis instance..."
-gcloud redis instances describe "$REDIS_INSTANCE" \
-  --region="$REGION" --project="$PROJECT_ID" 2>/dev/null \
-|| gcloud redis instances create "$REDIS_INSTANCE" \
-  --size=1 \
-  --region="$REGION" \
-  --tier=basic \
-  --project="$PROJECT_ID"
-
-REDIS_HOST=$(gcloud redis instances describe "$REDIS_INSTANCE" \
-  --region="$REGION" --format='value(host)' --project="$PROJECT_ID")
-
-# ── 5. VPC Connector (Cloud Run → Redis) ────────────────────────────
-echo "==> Creating VPC connector..."
-gcloud compute networks vpc-access connectors describe betty-connector \
-  --region="$REGION" --project="$PROJECT_ID" 2>/dev/null \
-|| gcloud compute networks vpc-access connectors create betty-connector \
-  --region="$REGION" \
-  --range="10.8.0.0/28" \
-  --project="$PROJECT_ID"
-
-# ── 6. Secrets ───────────────────────────────────────────────────────
+# ── 4. Secrets ───────────────────────────────────────────────────────
 echo "==> Storing secrets..."
 store_secret() {
   local name="$1" value="$2"
@@ -90,15 +66,13 @@ store_secret() {
   fi
 }
 
-DATABASE_URL="postgresql://betty:${DB_PASSWORD}@localhost:5432/betty"  # via Cloud SQL Proxy sidecar
-REDIS_URL="redis://${REDIS_HOST}:6379"
+DATABASE_URL="postgresql://betty:${DB_PASSWORD}@/betty?host=/cloudsql/${DB_CONNECTION}"
 JWT_SECRET="${JWT_SECRET:-$(openssl rand -base64 32)}"
 JWT_REFRESH_SECRET="${JWT_REFRESH_SECRET:-$(openssl rand -base64 32)}"
 ENCRYPTION_KEY="${ENCRYPTION_KEY:-$(openssl rand -hex 32)}"
 ANTHROPIC_API_KEY="${ANTHROPIC_API_KEY:?Set ANTHROPIC_API_KEY}"
 
 store_secret betty-database-url   "$DATABASE_URL"
-store_secret betty-redis-url      "$REDIS_URL"
 store_secret betty-jwt-secret     "$JWT_SECRET"
 store_secret betty-jwt-refresh    "$JWT_REFRESH_SECRET"
 store_secret betty-encryption-key "$ENCRYPTION_KEY"
@@ -107,20 +81,20 @@ store_secret betty-anthropic-key  "$ANTHROPIC_API_KEY"
 # Grant Cloud Run access to secrets
 PROJECT_NUMBER=$(gcloud projects describe "$PROJECT_ID" --format='value(projectNumber)')
 SA="${PROJECT_NUMBER}-compute@developer.gserviceaccount.com"
-for secret in betty-database-url betty-redis-url betty-jwt-secret betty-jwt-refresh betty-encryption-key betty-anthropic-key; do
+for secret in betty-database-url betty-jwt-secret betty-jwt-refresh betty-encryption-key betty-anthropic-key; do
   gcloud secrets add-iam-policy-binding "$secret" \
     --member="serviceAccount:$SA" \
     --role="roles/secretmanager.secretAccessor" \
     --project="$PROJECT_ID" --quiet
 done
 
-# ── 7. Build & push container ───────────────────────────────────────
+# ── 5. Build & push container ───────────────────────────────────────
 echo "==> Building and pushing container image..."
 gcloud builds submit . \
   --tag "$IMAGE" \
   --project "$PROJECT_ID"
 
-# ── 8. Deploy to Cloud Run ──────────────────────────────────────────
+# ── 6. Deploy to Cloud Run ──────────────────────────────────────────
 echo "==> Deploying to Cloud Run..."
 gcloud run deploy "$SERVICE_NAME" \
   --image "$IMAGE" \
@@ -128,10 +102,8 @@ gcloud run deploy "$SERVICE_NAME" \
   --region "$REGION" \
   --allow-unauthenticated \
   --add-cloudsql-instances="$DB_CONNECTION" \
-  --vpc-connector=betty-connector \
   --set-secrets="\
 DATABASE_URL=betty-database-url:latest,\
-REDIS_URL=betty-redis-url:latest,\
 JWT_SECRET=betty-jwt-secret:latest,\
 JWT_REFRESH_SECRET=betty-jwt-refresh:latest,\
 ENCRYPTION_KEY=betty-encryption-key:latest,\
@@ -143,23 +115,20 @@ ANTHROPIC_API_KEY=betty-anthropic-key:latest" \
   --max-instances=3 \
   --project "$PROJECT_ID"
 
-# ── 9. Run migrations ───────────────────────────────────────────────
+# ── 7. Run migrations ───────────────────────────────────────────────
 echo "==> Running database migrations..."
 gcloud run jobs create betty-migrate \
   --image "$IMAGE" \
   --region "$REGION" \
   --add-cloudsql-instances="$DB_CONNECTION" \
-  --vpc-connector=betty-connector \
-  --set-secrets="\
-DATABASE_URL=betty-database-url:latest" \
+  --set-secrets="DATABASE_URL=betty-database-url:latest" \
   --command="node" \
   --args="node_modules/.bin/drizzle-kit,migrate" \
   --project "$PROJECT_ID" 2>/dev/null \
 || gcloud run jobs update betty-migrate \
   --image "$IMAGE" \
   --region "$REGION" \
-  --set-secrets="\
-DATABASE_URL=betty-database-url:latest" \
+  --set-secrets="DATABASE_URL=betty-database-url:latest" \
   --project "$PROJECT_ID"
 
 gcloud run jobs execute betty-migrate --region "$REGION" --project "$PROJECT_ID" --wait
@@ -169,7 +138,7 @@ URL=$(gcloud run services describe "$SERVICE_NAME" \
   --region "$REGION" --format='value(status.url)' --project "$PROJECT_ID")
 
 echo ""
-echo "✅ Betty deployed successfully!"
+echo "Betty deployed successfully!"
 echo "   URL: $URL"
 echo ""
 echo "Next steps:"

@@ -1,19 +1,17 @@
 # Deploying Betty to GCP
 
-Simple Cloud Run deployment with managed Postgres and Redis.
+Simple Cloud Run deployment with managed Postgres. No Redis needed for demo — the
+BullMQ worker is a separate process and isn't required to use the app.
 
 ## Architecture
 
 ```
 Internet → Cloud Run (betty-api) → Cloud SQL (Postgres 16)
-                                 → Memorystore (Redis 7)
 ```
 
 - **Cloud Run** — serverless container, scales to zero when idle
-- **Cloud SQL** — managed Postgres (db-f1-micro for demo)
-- **Memorystore** — managed Redis for BullMQ job queue
-- **Secret Manager** — stores all credentials
-- **VPC Connector** — connects Cloud Run to Redis on private network
+- **Cloud SQL** — managed Postgres (db-f1-micro, cheapest tier)
+- **Secret Manager** — stores credentials
 
 ## Prerequisites
 
@@ -41,11 +39,10 @@ The script is idempotent — safe to re-run. First deploy takes ~10 minutes (Clo
 |---------|------|
 | Cloud Run (idle) | $0 |
 | Cloud SQL db-f1-micro | ~$9/mo |
-| Memorystore 1GB Basic | ~$35/mo |
-| VPC Connector | ~$7/mo |
-| **Total (idle)** | **~$51/mo** |
+| Secret Manager | < $0.10/mo |
+| **Total (idle)** | **~$9/mo** |
 
-Scale to zero isn't possible for Cloud SQL/Memorystore, so delete resources when not demoing.
+Cloud SQL can't scale to zero, so delete it when not demoing to avoid charges.
 
 ## Tear Down
 
@@ -55,12 +52,10 @@ export GCP_REGION=northamerica-northeast1
 
 gcloud run services delete betty-api --region $GCP_REGION --project $GCP_PROJECT_ID --quiet
 gcloud run jobs delete betty-migrate --region $GCP_REGION --project $GCP_PROJECT_ID --quiet
-gcloud redis instances delete betty-redis --region $GCP_REGION --project $GCP_PROJECT_ID --quiet
 gcloud sql instances delete betty-db --project $GCP_PROJECT_ID --quiet
-gcloud compute networks vpc-access connectors delete betty-connector --region $GCP_REGION --project $GCP_PROJECT_ID --quiet
 
 # Delete secrets
-for s in betty-database-url betty-redis-url betty-jwt-secret betty-jwt-refresh betty-encryption-key betty-anthropic-key; do
+for s in betty-database-url betty-jwt-secret betty-jwt-refresh betty-encryption-key betty-anthropic-key; do
   gcloud secrets delete $s --project $GCP_PROJECT_ID --quiet
 done
 ```
