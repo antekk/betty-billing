@@ -8,31 +8,34 @@ import { createWorker } from "./queue";
 
 import type { Job } from "bullmq";
 
+import { createLogger } from "@/lib/logger";
 import { processBatchSubmission } from "@/services/batch.service";
 
+const log = createLogger({ module: "worker" });
+
 async function processJob(job: Job): Promise<void> {
-  console.log(`Processing job: ${job.name} (${job.id})`);
+  log.info({ jobName: job.name, jobId: job.id }, "Processing job");
 
   switch (job.name) {
     case "batch-submit": {
       const result = await processBatchSubmission();
-      console.log(`Batch result:`, result);
+      log.info({ jobId: job.id, ...result }, "Batch job result");
       break;
     }
 
     default:
-      console.warn(`Unknown job type: ${job.name}`);
+      log.warn({ jobName: job.name }, "Unknown job type");
   }
 }
 
 const worker = createWorker(processJob);
 
 worker.on("completed", (job) => {
-  console.log(`Job ${job.id} completed`);
+  log.info({ jobId: job.id }, "Job completed");
 });
 
 worker.on("failed", (job, err) => {
-  console.error(`Job ${job?.id} failed:`, err.message);
+  log.error({ jobId: job?.id, err: err.message }, "Job failed");
 });
 
-console.log("Betty worker started. Waiting for jobs...");
+log.info("Betty worker started, waiting for jobs");

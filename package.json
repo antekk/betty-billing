@@ -1,24 +1,5 @@
 {
   "name": "betty-billing",
-  "private": true,
-  "type": "module",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
-  "scripts": {
-    "dev:api": "bun run --filter @betty/api dev",
-    "typecheck": "bun run --filter '*' typecheck",
-    "db:generate": "bun run --filter @betty/api db:generate",
-    "db:migrate": "bun run --filter @betty/api db:migrate",
-    "db:seed": "bun run --filter @betty/api db:seed",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
-    "test": "bun run --filter '*' test",
-    "check": "bun run lint && bun run format:check && bun run typecheck"
-  },
   "devDependencies": {
     "@eslint/js": "^9.15.0",
     "@next/eslint-plugin-next": "^15.0.0",
@@ -35,5 +16,24 @@
     "prettier": "^3.3.0",
     "typescript-eslint": "^8.15.0",
     "vitest": "^4.1.2"
-  }
+  },
+  "private": true,
+  "scripts": {
+    "dev:api": "bun run --filter @betty/api dev",
+    "typecheck": "bun run --filter '*' typecheck",
+    "db:generate": "bun run --filter @betty/api db:generate",
+    "db:migrate": "bun run --filter @betty/api db:migrate",
+    "db:seed": "bun run --filter @betty/api db:seed",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "bun run --filter '*' test",
+    "check": "bun run lint && bun run format:check && bun run typecheck"
+  },
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
 }

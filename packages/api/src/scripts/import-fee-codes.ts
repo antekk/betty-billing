@@ -14,21 +14,24 @@ import { resolve } from "path";
 import { drizzle } from "drizzle-orm/postgres-js";
 import postgres from "postgres";
 
+import { feeCodes } from "../db/schema/fee-codes";
+import { createLogger } from "../lib/logger";
 import { parseHealthServiceCodes, getCurrentCodes } from "./parsers/health-service-codes";
 import { parseModifiers, getCurrentModifiers } from "./parsers/modifiers";
 import { parsePriceList, getCurrentPrices } from "./parsers/price-list";
-import { feeCodes } from "../db/schema/fee-codes";
+
+const log = createLogger({ module: "import-fee-codes" });
 
 const sombDir = process.argv[2] || resolve(process.cwd(), "docs/support/AB-somb");
 
 function readFile(filename: string): string {
   const path = resolve(sombDir, filename);
-  console.log(`Reading ${path}...`);
+  log.info({ path }, "Reading file");
   return readFileSync(path, "utf-8");
 }
 
 async function main() {
-  console.log(`\nImporting SOMB data from: ${sombDir}\n`);
+  log.info({ sombDir }, "Importing SOMB data");
 
   // Parse all source files
   const hsContent = readFile("ehsmedbc.txt");
@@ -36,20 +39,20 @@ async function main() {
   const modContent = readFile("efeemodr.txt");
 
   const allCodes = parseHealthServiceCodes(hsContent);
-  console.log(`Parsed ${allCodes.length} total health service code records`);
+  log.info({ count: allCodes.length }, "Parsed health service code records");
 
   const currentCodes = getCurrentCodes(allCodes);
-  console.log(`Found ${currentCodes.length} currently active codes`);
+  log.info({ count: currentCodes.length }, "Found currently active codes");
 
   const { prices } = parsePriceList(pcContent);
-  console.log(`Parsed ${prices.length} price records`);
+  log.info({ count: prices.length }, "Parsed price records");
 
   const currentPrices = getCurrentPrices(prices);
-  console.log(`Found ${currentPrices.size} current prices`);
+  log.info({ count: currentPrices.size }, "Found current prices");
 
   const allModifiers = parseModifiers(modContent);
   const currentMods = getCurrentModifiers(allModifiers);
-  console.log(`Found ${currentMods.length} current modifiers`);
+  log.info({ count: currentMods.length }, "Found current modifiers");
 
   // Build modifier lookup
   const modifierMap = new Map<string, { code: string; description: string; type: string }[]>();
@@ -91,19 +94,19 @@ async function main() {
     };
   });
 
-  console.log(`\nPrepared ${feeCodeRecords.length} fee code records for import`);
+  log.info({ count: feeCodeRecords.length }, "Prepared fee code records for import");
 
   // Database import
   const connectionString = process.env.DATABASE_URL;
   if (!connectionString) {
-    console.error("DATABASE_URL not set. Set it in .env or environment.");
+    log.error("DATABASE_URL not set. Set it in .env or environment.");
     process.exit(1);
   }
 
   const client = postgres(connectionString, { max: 1 });
   const db = drizzle(client);
 
-  console.log("Importing to database...");
+  log.info("Importing to database");
 
   // Batch insert in chunks of 500
   const BATCH_SIZE = 500;
@@ -126,17 +129,15 @@ async function main() {
     process.stdout.write(`\r  Imported ${imported}/${feeCodeRecords.length}`);
   }
 
-  console.log(`\n\nDone! Imported ${imported} fee codes.`);
+  log.info({ imported }, "Import complete");
 
-  // Print some stats
+  // Print category stats
   const categories = new Map<string, number>();
   for (const fc of feeCodeRecords) {
     categories.set(fc.category, (categories.get(fc.category) ?? 0) + 1);
   }
-  console.log("\nBy category:");
-  for (const [cat, count] of [...categories.entries()].sort((a, b) => b[1] - a[1])) {
-    console.log(`  ${cat}: ${count}`);
-  }
+  const categoryStats = Object.fromEntries([...categories.entries()].sort((a, b) => b[1] - a[1]));
+  log.info({ categories: categoryStats }, "Import by category");
 
   await client.end();
 }
@@ -171,6 +172,6 @@ function categorizeCode(code: string): string {
 }
 
 main().catch((err: unknown) => {
-  console.error("Import failed:", err);
+  log.error({ err }, "Import failed");
   process.exit(1);
 });

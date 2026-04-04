@@ -1,12 +1,14 @@
+import { createLogger } from "@/lib/logger";
+
+const log = createLogger({ module: "sms" });
+
 export interface SmsProvider {
   sendOtp(phone: string, code: string): Promise<void>;
 }
 
 class MockSmsProvider implements SmsProvider {
   sendOtp(phone: string, code: string): Promise<void> {
-    console.log(`\n========================================`);
-    console.log(`  OTP for ${phone}: ${code}`);
-    console.log(`========================================\n`);
+    log.debug({ phone, code }, "Mock OTP sent");
     return Promise.resolve();
   }
 }

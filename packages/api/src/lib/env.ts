@@ -1,5 +1,9 @@
 import { z } from "zod";
 
+import { createLogger } from "@/lib/logger";
+
+const log = createLogger({ module: "env" });
+
 const envSchema = z.object({
   DATABASE_URL: z.string().url(),
   REDIS_URL: z.string().url().optional(),
@@ -22,7 +26,7 @@ export function getEnv(): Env {
   if (!_env) {
     const result = envSchema.safeParse(process.env);
     if (!result.success) {
-      console.error("Invalid environment variables:", result.error.flatten().fieldErrors);
+      log.error({ errors: result.error.flatten().fieldErrors }, "Invalid environment variables");
       throw new Error("Invalid environment variables");
     }
     _env = result.data;

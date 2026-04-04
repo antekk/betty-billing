@@ -5,6 +5,9 @@ import { db } from "@/db";
 import { claims, batchSubmissions, timelineEntries, users } from "@/db/schema";
 import { auditLog } from "@/lib/audit";
 import { decrypt } from "@/lib/encryption";
+import { createLogger } from "@/lib/logger";
+
+const log = createLogger({ module: "batch" });
 
 /**
  * Collect all staged claims and submit them in a batch to AHCIP.
@@ -18,11 +21,11 @@ export async function processBatchSubmission(): Promise<{
   const stagedClaims = await db.select().from(claims).where(eq(claims.status, "staged"));
 
   if (stagedClaims.length === 0) {
-    console.log("No staged claims to submit");
+    log.info("No staged claims to submit");
     return { total: 0, accepted: 0, rejected: 0 };
   }
 
-  console.log(`Processing batch of ${stagedClaims.length} claims`);
+  log.info({ claimCount: stagedClaims.length }, "Processing batch submission");
 
   // Get user practitioner IDs
   const userIds = [...new Set(stagedClaims.map((c) => c.userId))];
@@ -119,8 +122,9 @@ export async function processBatchSubmission(): Promise<{
     })
     .where(eq(batchSubmissions.id, batch.id));
 
-  console.log(
-    `Batch complete: ${accepted} accepted, ${rejected} rejected out of ${stagedClaims.length}`
+  log.info(
+    { total: stagedClaims.length, accepted, rejected, batchId: batch.id },
+    "Batch submission complete"
   );
 
   return { total: stagedClaims.length, accepted, rejected };
