@@ -5,9 +5,8 @@ beforeAll(() => {
   process.env.JWT_REFRESH_SECRET = "test-jwt-refresh-secret-at-least-32-chars!!";
 });
 
-const { signAccessToken, signRefreshToken, verifyAccessToken, verifyRefreshToken } = await import(
-  "./auth"
-);
+const { signAccessToken, signRefreshToken, verifyAccessToken, verifyRefreshToken } =
+  await import("./auth");
 
 describe("JWT auth", () => {
   const userId = "user-123";

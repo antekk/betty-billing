@@ -1,5 +1,6 @@
-import { describe, expect, test, beforeAll } from "bun:test";
 import { randomBytes } from "crypto";
+
+import { describe, expect, test, beforeAll } from "bun:test";
 
 // Set a valid 64-char hex ENCRYPTION_KEY before importing
 const testKey = randomBytes(32).toString("hex");

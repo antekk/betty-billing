@@ -1,0 +1,112 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    name: Lint / Format / Typecheck
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.3.11
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Lint
+        run: bun run lint
+
+      - name: Format check
+        run: bun run format:check
+
+      - name: Typecheck
+        run: bun run typecheck
+
+  test:
+    name: Unit tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.3.11
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Run unit tests
+        run: bun run test
+
+  smoke:
+    name: E2E smoke tests
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: betty
+          POSTGRES_PASSWORD: betty
+          POSTGRES_DB: betty
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+
+    env:
+      DATABASE_URL: postgres://betty:betty@localhost:5432/betty
+      JWT_SECRET: ci-jwt-secret-at-least-32-chars-long!!
+      JWT_REFRESH_SECRET: ci-jwt-refresh-secret-at-least-32-chars!!
+      # Deterministic 32-byte hex key for CI (not a real secret)
+      ENCRYPTION_KEY: 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef
+      ANTHROPIC_API_KEY: dummy-key-not-used-in-smoke-test
+      SMS_PROVIDER: mock
+      AHCIP_ADAPTER: mock
+      NEXT_TELEMETRY_DISABLED: "1"
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.3.11
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Sync database schema
+        working-directory: packages/api
+        run: bunx drizzle-kit push --force
+
+      - name: Build Next.js app
+        working-directory: packages/api
+        run: bun run build
+
+      - name: Start API server
+        working-directory: packages/api
+        run: bun run start &
+        env:
+          PORT: "3000"
+
+      - name: Run smoke tests
+        run: bun run packages/api/scripts/smoke-test.ts
+        env:
+          SMOKE_BASE_URL: http://localhost:3000

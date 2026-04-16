@@ -3,7 +3,6 @@ import tseslint from "typescript-eslint";
 import prettier from "eslint-plugin-prettier/recommended";
 import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
-import reactNative from "eslint-plugin-react-native";
 import nextPlugin from "@next/eslint-plugin-next";
 import importX from "eslint-plugin-import-x";
 import drizzle from "eslint-plugin-drizzle";
@@ -17,9 +16,6 @@ export default tseslint.config(
       "**/dist/**",
       "**/build/**",
       "**/.next/**",
-      "**/.expo/**",
-      "**/ios/**",
-      "**/android/**",
       "**/drizzle/**",
       "**/*.config.js",
       "**/*.config.mjs",
@@ -87,16 +83,18 @@ export default tseslint.config(
     },
   },
 
-  // React Native (apps/mobile)
+  // Next.js API (packages/api)
   {
-    files: ["apps/mobile/**/*.ts", "apps/mobile/**/*.tsx"],
+    files: ["packages/api/**/*.ts", "packages/api/**/*.tsx"],
     plugins: {
+      "@next/next": nextPlugin,
       react,
       "react-hooks": reactHooks,
-      "react-native": reactNative,
+      drizzle,
     },
     languageOptions: {
       globals: {
+        ...globals.node,
         ...globals.browser,
       },
     },
@@ -109,39 +107,36 @@ export default tseslint.config(
       ...react.configs.recommended.rules,
       ...react.configs["jsx-runtime"].rules,
       ...reactHooks.configs.recommended.rules,
-      "react-native/no-unused-styles": "error",
-      "react-native/no-inline-styles": "warn",
-      "react-native/no-color-literals": "warn",
-      // React Native specific relaxations
-      "react/prop-types": "off",
-    },
-  },
-
-  // Next.js API (packages/api)
-  {
-    files: ["packages/api/**/*.ts", "packages/api/**/*.tsx"],
-    plugins: {
-      "@next/next": nextPlugin,
-      drizzle,
-    },
-    languageOptions: {
-      globals: {
-        ...globals.node,
-      },
-    },
-    rules: {
       ...nextPlugin.configs.recommended.rules,
       ...nextPlugin.configs["core-web-vitals"].rules,
       "@next/next/no-html-link-for-pages": "off",
+      "react/prop-types": "off",
       // Drizzle - enforce delete/update with where clauses
       "drizzle/enforce-delete-with-where": "error",
       "drizzle/enforce-update-with-where": "error",
     },
   },
 
+  // Test files - relax strict type-aware rules (JSON.parse returns any, mock objects, etc.)
+  {
+    files: ["**/*.test.ts", "**/*.test.tsx"],
+    rules: {
+      "@typescript-eslint/no-unsafe-assignment": "off",
+      "@typescript-eslint/no-unsafe-member-access": "off",
+      "@typescript-eslint/no-unsafe-call": "off",
+      "@typescript-eslint/no-unsafe-return": "off",
+      "@typescript-eslint/no-unsafe-argument": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/no-floating-promises": "off",
+      "@typescript-eslint/require-await": "off",
+      "@typescript-eslint/no-empty-function": "off",
+    },
+  },
+
   // Shared library (packages/shared) - stricter rules
   {
     files: ["packages/shared/**/*.ts"],
+    ignores: ["packages/shared/**/*.test.ts"],
     rules: {
       // Require explicit return types for better documentation
       "@typescript-eslint/explicit-function-return-type": [

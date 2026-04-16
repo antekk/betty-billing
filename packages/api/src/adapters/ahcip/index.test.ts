@@ -1,7 +1,8 @@
 import { describe, expect, test, beforeEach } from "bun:test";
 
-import { createAHCIPAdapter } from "./index";
 import { MockAHCIPAdapter } from "./mock";
+
+import { createAHCIPAdapter } from "./index";
 
 describe("createAHCIPAdapter", () => {
   beforeEach(() => {
@@ -21,6 +22,6 @@ describe("createAHCIPAdapter", () => {
 
   test("throws for unknown adapter type", () => {
     process.env.AHCIP_ADAPTER = "hlink";
-    expect(() => createAHCIPAdapter()).toThrow('Unknown AHCIP adapter: hlink');
+    expect(() => createAHCIPAdapter()).toThrow("Unknown AHCIP adapter: hlink");
   });
 });

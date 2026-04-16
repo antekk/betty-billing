@@ -8,7 +8,11 @@ mock.module("postgres", () => ({
 mock.module("drizzle-orm/postgres-js", () => ({
   drizzle: () => ({
     insert: () => ({ values: () => ({ returning: async () => [] }) }),
-    select: () => ({ from: () => ({ where: () => ({ limit: async () => [], orderBy: () => ({ limit: async () => [] }) }) }) }),
+    select: () => ({
+      from: () => ({
+        where: () => ({ limit: async () => [], orderBy: () => ({ limit: async () => [] }) }),
+      }),
+    }),
     update: () => ({ set: () => ({ where: async () => {} }) }),
   }),
 }));
@@ -40,9 +44,7 @@ describe("executeTool", () => {
   });
 
   test("dispatches resolve_date to date resolution handler", async () => {
-    const result = JSON.parse(
-      await executeTool("resolve_date", { expression: "today" }, "user-1")
-    );
+    const result = JSON.parse(await executeTool("resolve_date", { expression: "today" }, "user-1"));
     expect(result.resolved).toBe(true);
   });
 
@@ -52,9 +54,7 @@ describe("executeTool", () => {
   });
 
   test("dispatches fee_code_lookup", async () => {
-    const result = JSON.parse(
-      await executeTool("fee_code_lookup", { query: "03.01AA" }, "user-1")
-    );
+    const result = JSON.parse(await executeTool("fee_code_lookup", { query: "03.01AA" }, "user-1"));
     // With mocked service returning empty, should report not found
     expect(result.found).toBe(false);
   });

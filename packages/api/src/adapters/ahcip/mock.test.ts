@@ -1,7 +1,8 @@
 import { describe, expect, test } from "bun:test";
 
-import type { AHCIPClaimInput } from "./interface";
 import { MockAHCIPAdapter } from "./mock";
+
+import type { AHCIPClaimInput } from "./interface";
 
 describe("MockAHCIPAdapter", () => {
   const adapter = new MockAHCIPAdapter();
