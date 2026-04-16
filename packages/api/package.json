@@ -13,6 +13,7 @@
     "format:check": "prettier --check .",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
+    "test": "bun test",
     "db:seed": "bun run src/scripts/import-fee-codes.ts"
   },
   "dependencies": {
