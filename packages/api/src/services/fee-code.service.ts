@@ -7,6 +7,7 @@ export interface FeeCodeSearchResult {
   code: string;
   description: string;
   baseFee: string;
+  modifiers: unknown;
   category: string;
   rulesNotes: string | null;
   effectiveDate: string;

@@ -7,6 +7,7 @@ export type AuditAction =
   | "claim_confirmed"
   | "claim_submitted"
   | "claim_viewed"
+  | "claim_update_proposed"
   | "fee_code_searched"
   | "login"
   | "otp_requested";

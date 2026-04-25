@@ -35,6 +35,7 @@ export type Visibility = (typeof VISIBILITY)[keyof typeof VISIBILITY];
 
 export const WIDGET_TYPE = {
   CLAIM_CONFIRMATION: "claim_confirmation",
+  CLAIM_UPDATE_CONFIRMATION: "claim_update_confirmation",
   ACTION_CARD: "action_card",
   REPORT: "report",
 } as const;

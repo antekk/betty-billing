@@ -1,7 +1,11 @@
 import type { TimelineEntryType, Direction, Visibility, WidgetType } from "../constants";
-import type { ClaimConfirmationData, ActionCardData } from "./claim";
+import type {
+  ClaimConfirmationData,
+  ClaimUpdateConfirmationData,
+  ActionCardData,
+} from "./claim";
 
-export type WidgetData = ClaimConfirmationData | ActionCardData;
+export type WidgetData = ClaimConfirmationData | ClaimUpdateConfirmationData | ActionCardData;
 
 export interface TimelineEntry {
   id: string;
