@@ -14,6 +14,7 @@ export const visibilityEnum = pgEnum("visibility", ["default", "filtered", "inte
 
 export const widgetTypeEnum = pgEnum("widget_type", [
   "claim_confirmation",
+  "claim_update_confirmation",
   "action_card",
   "report",
 ]);

@@ -43,6 +43,7 @@ export async function handleFeeCodeLookup(input: {
         code: result.code,
         description: result.description,
         baseFee: result.baseFee,
+        modifiers: result.modifiers,
         category: result.category,
         rulesNotes: result.rulesNotes,
       });
@@ -65,6 +66,7 @@ export async function handleFeeCodeLookup(input: {
         code: r.code,
         description: r.description,
         baseFee: r.baseFee,
+        modifiers: r.modifiers,
         category: r.category,
       })),
     });

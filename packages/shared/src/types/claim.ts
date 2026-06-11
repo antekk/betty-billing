@@ -34,6 +34,39 @@ export interface ClaimConfirmationData {
   status: ClaimStatus;
 }
 
+export type ClaimUpdatableField =
+  | "fee_code"
+  | "modifier"
+  | "diagnostic_code"
+  | "service_date"
+  | "patient_name";
+
+export interface ClaimUpdateChange {
+  field: ClaimUpdatableField;
+  label: string;
+  before: string | null;
+  after: string | null;
+}
+
+export interface ClaimUpdateConfirmationData {
+  type: "claim_update_confirmation";
+  claimId: string;
+  changes: ClaimUpdateChange[];
+  current: {
+    feeCode: string;
+    feeCodeDescription: string;
+    modifier: string | null;
+    diagnosticCode: string | null;
+    serviceDate: string;
+    serviceDateFormatted: string;
+    patientName: string | null;
+    phnLast4: string;
+    expectedFee: string;
+  };
+  reason: string | null;
+  status: ClaimStatus;
+}
+
 export interface ActionCardData {
   type: "action_card";
   title: string;
