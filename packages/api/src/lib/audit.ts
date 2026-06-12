@@ -11,6 +11,7 @@ export type AuditAction =
   | "claim_update_applied"
   | "claim_cancelled"
   | "fee_code_searched"
+  | "billing_reminder_sent"
   | "login"
   | "otp_requested";
 

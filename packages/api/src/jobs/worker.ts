@@ -10,6 +10,7 @@ import { setupSchedules } from "./scheduler";
 import type { Job } from "bullmq";
 
 import { processBatchSubmission } from "@/services/batch.service";
+import { sendBillingReminders } from "@/services/engagement.service";
 
 async function processJob(job: Job): Promise<void> {
   console.log(`Processing job: ${job.name} (${job.id})`);
@@ -18,6 +19,12 @@ async function processJob(job: Job): Promise<void> {
     case "batch-submit": {
       const result = await processBatchSubmission();
       console.log(`Batch result:`, result);
+      break;
+    }
+
+    case "billing-reminder": {
+      const result = await sendBillingReminders();
+      console.log(`Billing reminder result:`, result);
       break;
     }
 

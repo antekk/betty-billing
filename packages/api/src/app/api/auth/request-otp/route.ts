@@ -39,14 +39,23 @@ export async function POST(request: NextRequest) {
   const code = Math.floor(100000 + Math.random() * 900000).toString();
   const expiresAt = new Date(Date.now() + 5 * 60 * 1000); // 5 min
 
+  // Send before storing so a failed send doesn't consume a rate-limit slot
+  try {
+    const sms = createSmsProvider();
+    await sms.sendOtp(phone, code);
+  } catch (err) {
+    console.error("OTP SMS send failed:", err);
+    return NextResponse.json(
+      { error: "We couldn't send your code right now — please try again in a moment." },
+      { status: 502 }
+    );
+  }
+
   await db.insert(otpCodes).values({
     phone,
     code,
     expiresAt,
   });
-
-  const sms = createSmsProvider();
-  await sms.sendOtp(phone, code);
 
   return NextResponse.json({ success: true });
 }

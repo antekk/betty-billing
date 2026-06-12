@@ -7,6 +7,7 @@ import { InputBar } from "@/components/InputBar";
 import { Timeline } from "@/components/Timeline";
 import { useAuth } from "@/hooks/useAuth";
 import { useChat } from "@/hooks/useChat";
+import { usePushNotifications } from "@/hooks/usePushNotifications";
 import { getAccessToken } from "@/lib/client-auth";
 
 export default function ChatPage() {
@@ -24,6 +25,7 @@ export default function ChatPage() {
     cancelClaim,
     applyClaimUpdate,
   } = useChat();
+  const push = usePushNotifications();
   const [timelineLoaded, setTimelineLoaded] = useState(false);
 
   useEffect(() => {
@@ -76,6 +78,21 @@ export default function ChatPage() {
         </div>
         <h1 className="text-lg font-semibold text-text-primary">Betty</h1>
         <div className="flex-1" />
+        {(push.status === "available" || push.status === "subscribed") && (
+          <button
+            onClick={() => {
+              void (push.status === "subscribed" ? push.unsubscribe() : push.subscribe());
+            }}
+            className={`text-sm ${push.status === "subscribed" ? "text-primary" : "text-text-tertiary"} active:text-text-secondary`}
+            title={
+              push.status === "subscribed"
+                ? "Notifications are on — tap to turn off"
+                : "Get notified when a claim needs your attention"
+            }
+          >
+            {push.status === "subscribed" ? "Alerts on" : "Alerts"}
+          </button>
+        )}
         <button
           onClick={() => {
             void setShowFiltered(!showFiltered);

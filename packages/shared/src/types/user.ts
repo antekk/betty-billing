@@ -8,7 +8,7 @@ export interface User {
   billingPreferences: Record<string, unknown> | null;
   ahcipPractitionerId: string | null;
   subscriptionStatus: SubscriptionStatus;
-  pushToken: string | null;
+  lastBillingReminderAt: Date | null;
   createdAt: Date;
   updatedAt: Date;
 }

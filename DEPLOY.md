@@ -20,7 +20,17 @@ The build produces two images (see `cloudbuild.yaml`):
 - `betty-jobs` — full source with bun; used by the `betty-migrate` job, and is
   the image to use for the BullMQ worker (`bun run src/jobs/worker.ts`) once
   you add a Redis instance (e.g. Memorystore) and set `REDIS_URL`. The worker
-  registers its own hourly batch schedule on boot.
+  registers its own schedules on boot (hourly batch submission, daily
+  billing-gap reminders).
+
+Optional production env (set as Cloud Run env vars / secrets):
+
+- Real SMS: `SMS_PROVIDER=twilio`, `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN`,
+  `TWILIO_PHONE_NUMBER`
+- Web push: `VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT`
+  (generate with `bunx web-push generate-vapid-keys`); set on both the api
+  service and the worker
+- `BILLING_REMINDER_DAYS` — billing-gap nudge threshold (default 7)
 
 ## Prerequisites
 

@@ -29,7 +29,15 @@ bun run dev:api                         # Next.js app on :3000
 bun run dev:worker                      # BullMQ batch worker (schedules itself)
 ```
 
-Auth uses SMS OTP. With `SMS_PROVIDER=mock` (the default) the code is printed to the API server console — watch the logs after requesting a code.
+Auth uses SMS OTP. With `SMS_PROVIDER=mock` (the default) the code is printed to the API server console — watch the logs after requesting a code. For real SMS, set `SMS_PROVIDER=twilio` plus `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN`, and `TWILIO_PHONE_NUMBER`.
+
+### Push notifications (optional)
+
+Betty sends a web push when a claim needs attention or after a long billing gap — never for routine events. Generate VAPID keys with `bunx web-push generate-vapid-keys` and set `VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY`, and `VAPID_SUBJECT`. The "Alerts" button appears in the header automatically when keys are configured. Note: browsers require HTTPS (or localhost) for push.
+
+### Proactive check-ins
+
+The worker runs a daily job that nudges physicians who haven't billed in `BILLING_REMINDER_DAYS` (default 7) — once per quiet period, then Betty stays silent until they bill again.
 
 ## Development
 

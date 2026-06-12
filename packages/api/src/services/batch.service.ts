@@ -5,6 +5,7 @@ import { db } from "@/db";
 import { claims, batchSubmissions, timelineEntries, users } from "@/db/schema";
 import { auditLog } from "@/lib/audit";
 import { decrypt } from "@/lib/encryption";
+import { sendPushToUser } from "@/lib/push";
 
 /**
  * Collect all staged claims and submit them in a batch to AHCIP.
@@ -164,5 +165,12 @@ async function createRejectionNotification(
     },
     visibility: "default",
     importanceFlag: true,
+  });
+
+  // The one notification worth interrupting for (PRD Flow 5): a claim needs
+  // the physician's attention. Best-effort — never blocks batch processing.
+  await sendPushToUser(claim.userId, {
+    title: "Betty",
+    body: `Your ${serviceDateFormatted} claim (${claim.feeCode}) hit a snag — tap to fix it.`,
   });
 }

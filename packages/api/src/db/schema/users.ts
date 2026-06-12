@@ -1,4 +1,4 @@
-import { pgTable, uuid, varchar, text, jsonb, timestamp, pgEnum } from "drizzle-orm/pg-core";
+import { pgTable, uuid, varchar, jsonb, timestamp, pgEnum } from "drizzle-orm/pg-core";
 
 export const subscriptionStatusEnum = pgEnum("subscription_status", ["free", "active"]);
 
@@ -10,7 +10,8 @@ export const users = pgTable("users", {
   billingPreferences: jsonb("billing_preferences"),
   ahcipPractitionerId: varchar("ahcip_practitioner_id", { length: 20 }),
   subscriptionStatus: subscriptionStatusEnum("subscription_status").notNull().default("free"),
-  pushToken: text("push_token"),
+  // When Betty last nudged this user about a billing gap (proactive engagement)
+  lastBillingReminderAt: timestamp("last_billing_reminder_at", { withTimezone: true }),
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
 });

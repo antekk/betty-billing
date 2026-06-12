@@ -17,8 +17,16 @@ export async function setupSchedules(): Promise<void> {
     { name: "batch-submit" }
   );
 
+  // Billing-gap reminders daily at 17:00 (after typical clinic hours)
+  await queue.upsertJobScheduler(
+    "billing-reminder-daily",
+    { pattern: "0 17 * * *" },
+    { name: "billing-reminder" }
+  );
+
   console.log("Job schedules configured:");
   console.log("  - batch-submit: every hour");
+  console.log("  - billing-reminder: daily at 17:00");
 }
 
 if (import.meta.main) {
