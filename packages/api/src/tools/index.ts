@@ -54,7 +54,7 @@ export async function executeTool(
     case "get_claim":
       return handleGetClaim(input as Parameters<typeof handleGetClaim>[0], userId);
     case "list_claims":
-      return handleListClaims(input as Parameters<typeof handleListClaims>[0], userId);
+      return handleListClaims(input, userId);
     default:
       return JSON.stringify({ error: `Unknown tool: ${name}` });
   }

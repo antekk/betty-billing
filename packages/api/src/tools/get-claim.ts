@@ -19,10 +19,7 @@ export const getClaimTool: Tool = {
   },
 };
 
-export async function handleGetClaim(
-  input: { claim_id: string },
-  userId: string
-): Promise<string> {
+export async function handleGetClaim(input: { claim_id: string }, userId: string): Promise<string> {
   try {
     const claim = await getClaimForUser(input.claim_id, userId);
     if (!claim) {

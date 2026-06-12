@@ -29,7 +29,7 @@ export async function getClaimForUser(
   claimId: string,
   userId: string
 ): Promise<ClaimSummary | null> {
-  const [row] = await db
+  const rows = await db
     .select({
       id: claims.id,
       status: claims.status,
@@ -51,6 +51,7 @@ export async function getClaimForUser(
     .where(and(eq(claims.id, claimId), eq(claims.userId, userId)))
     .limit(1);
 
+  const row = rows.at(0);
   if (!row) return null;
   // Strip userId from the returned shape
   const { userId: _userId, ...rest } = row;

@@ -1,9 +1,5 @@
 import type { TimelineEntryType, Direction, Visibility, WidgetType } from "../constants";
-import type {
-  ClaimConfirmationData,
-  ClaimUpdateConfirmationData,
-  ActionCardData,
-} from "./claim";
+import type { ClaimConfirmationData, ClaimUpdateConfirmationData, ActionCardData } from "./claim";
 
 export type WidgetData = ClaimConfirmationData | ClaimUpdateConfirmationData | ActionCardData;
 

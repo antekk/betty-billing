@@ -1,5 +1,3 @@
-import { eq } from "drizzle-orm";
-
 import type { Tool } from "@anthropic-ai/sdk/resources/messages";
 import type {
   ClaimUpdateConfirmationData,
@@ -47,8 +45,7 @@ export const updateClaimTool: Tool = {
       },
       modifier: {
         type: "string",
-        description:
-          "New modifier code, or empty string to clear (omit to leave unchanged)",
+        description: "New modifier code, or empty string to clear (omit to leave unchanged)",
       },
       diagnostic_code: {
         type: "string",
@@ -90,6 +87,12 @@ function normalizeOptional(input: string | undefined): string | null | undefined
   return input;
 }
 
+// Empty string clears the field; undefined leaves it unchanged.
+function resolveField(input: string | undefined, current: string | null): string | null {
+  const normalized = normalizeOptional(input);
+  return normalized === undefined ? current : normalized;
+}
+
 export async function handleUpdateClaim(
   input: {
     claim_id: string;
@@ -120,17 +123,10 @@ export async function handleUpdateClaim(
   // Resolve proposed values
   const proposed = {
     feeCode: input.fee_code ?? claim.feeCode,
-    modifier:
-      normalizeOptional(input.modifier) === undefined ? claim.modifier : normalizeOptional(input.modifier)!,
-    diagnosticCode:
-      normalizeOptional(input.diagnostic_code) === undefined
-        ? claim.diagnosticCode
-        : normalizeOptional(input.diagnostic_code)!,
+    modifier: resolveField(input.modifier, claim.modifier),
+    diagnosticCode: resolveField(input.diagnostic_code, claim.diagnosticCode),
     serviceDate: input.service_date ?? claim.serviceDate,
-    patientName:
-      normalizeOptional(input.patient_name) === undefined
-        ? claim.patientName
-        : normalizeOptional(input.patient_name)!,
+    patientName: resolveField(input.patient_name, claim.patientName),
   };
 
   // Validate proposed fee code if changed
@@ -162,11 +158,7 @@ export async function handleUpdateClaim(
 
   // Compute diff
   const changes: ClaimUpdateChange[] = [];
-  const push = (
-    field: ClaimUpdatableField,
-    before: string | null,
-    after: string | null
-  ) => {
+  const push = (field: ClaimUpdatableField, before: string | null, after: string | null) => {
     if ((before ?? null) !== (after ?? null)) {
       changes.push({ field, label: FIELD_LABELS[field], before, after });
     }

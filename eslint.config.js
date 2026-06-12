@@ -3,7 +3,6 @@ import tseslint from "typescript-eslint";
 import prettier from "eslint-plugin-prettier/recommended";
 import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
-import reactNative from "eslint-plugin-react-native";
 import nextPlugin from "@next/eslint-plugin-next";
 import importX from "eslint-plugin-import-x";
 import drizzle from "eslint-plugin-drizzle";
@@ -17,9 +16,6 @@ export default tseslint.config(
       "**/dist/**",
       "**/build/**",
       "**/.next/**",
-      "**/.expo/**",
-      "**/ios/**",
-      "**/android/**",
       "**/drizzle/**",
       "**/*.config.js",
       "**/*.config.mjs",
@@ -87,13 +83,12 @@ export default tseslint.config(
     },
   },
 
-  // React Native (apps/mobile)
+  // React components (packages/api frontend)
   {
-    files: ["apps/mobile/**/*.ts", "apps/mobile/**/*.tsx"],
+    files: ["packages/api/**/*.tsx"],
     plugins: {
       react,
       "react-hooks": reactHooks,
-      "react-native": reactNative,
     },
     languageOptions: {
       globals: {
@@ -109,10 +104,6 @@ export default tseslint.config(
       ...react.configs.recommended.rules,
       ...react.configs["jsx-runtime"].rules,
       ...reactHooks.configs.recommended.rules,
-      "react-native/no-unused-styles": "error",
-      "react-native/no-inline-styles": "warn",
-      "react-native/no-color-literals": "warn",
-      // React Native specific relaxations
       "react/prop-types": "off",
     },
   },
@@ -153,6 +144,21 @@ export default tseslint.config(
         },
       ],
       "@typescript-eslint/explicit-module-boundary-types": "error",
+    },
+  },
+
+  // Test files — JSON.parse results and bun mock.module idioms trip the
+  // strict type-checked rules without adding safety to assertions
+  {
+    files: ["**/*.test.ts", "**/*.test.tsx"],
+    rules: {
+      "@typescript-eslint/no-unsafe-assignment": "off",
+      "@typescript-eslint/no-unsafe-member-access": "off",
+      "@typescript-eslint/no-unsafe-return": "off",
+      "@typescript-eslint/no-unsafe-argument": "off",
+      "@typescript-eslint/no-floating-promises": "off",
+      "@typescript-eslint/require-await": "off",
+      "@typescript-eslint/no-empty-function": "off",
     },
   },
 

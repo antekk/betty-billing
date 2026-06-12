@@ -35,12 +35,12 @@ The script is idempotent — safe to re-run. First deploy takes ~10 minutes (Clo
 
 ## Estimated Cost (demo/idle)
 
-| Service | Cost |
-|---------|------|
-| Cloud Run (idle) | $0 |
-| Cloud SQL db-f1-micro | ~$9/mo |
-| Secret Manager | < $0.10/mo |
-| **Total (idle)** | **~$9/mo** |
+| Service               | Cost       |
+| --------------------- | ---------- |
+| Cloud Run (idle)      | $0         |
+| Cloud SQL db-f1-micro | ~$9/mo     |
+| Secret Manager        | < $0.10/mo |
+| **Total (idle)**      | **~$9/mo** |
 
 Cloud SQL can't scale to zero, so delete it when not demoing to avoid charges.
 

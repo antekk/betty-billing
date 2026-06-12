@@ -83,7 +83,7 @@ async function main() {
       code: hsc.code,
       description,
       baseFee,
-      modifiers: null as unknown, // modifiers are global, not per-code in SOMB
+      modifiers: null, // modifiers are global, not per-code in SOMB
       category,
       rulesNotes: null as string | null,
       effectiveDate: hsc.effectiveDate,
