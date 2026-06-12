@@ -12,8 +12,18 @@ import { getAccessToken } from "@/lib/client-auth";
 export default function ChatPage() {
   const router = useRouter();
   const { isAuthenticated, isLoading: authLoading, logout } = useAuth();
-  const { entries, isStreaming, streamingText, loadTimeline, sendMessage, confirmClaim } =
-    useChat();
+  const {
+    entries,
+    isStreaming,
+    streamingText,
+    showFiltered,
+    setShowFiltered,
+    loadTimeline,
+    sendMessage,
+    confirmClaim,
+    cancelClaim,
+    applyClaimUpdate,
+  } = useChat();
   const [timelineLoaded, setTimelineLoaded] = useState(false);
 
   useEffect(() => {
@@ -66,6 +76,15 @@ export default function ChatPage() {
         </div>
         <h1 className="text-lg font-semibold text-text-primary">Betty</h1>
         <div className="flex-1" />
+        <button
+          onClick={() => {
+            void setShowFiltered(!showFiltered);
+          }}
+          className={`text-sm ${showFiltered ? "text-primary" : "text-text-tertiary"} active:text-text-secondary`}
+          title="Show routine system events (batch submissions, confirmations)"
+        >
+          {showFiltered ? "Hide activity" : "All activity"}
+        </button>
         <button onClick={logout} className="text-sm text-text-tertiary active:text-text-secondary">
           Sign out
         </button>
@@ -77,6 +96,8 @@ export default function ChatPage() {
         isStreaming={isStreaming}
         streamingText={streamingText}
         onConfirmClaim={confirmClaim}
+        onCancelClaim={cancelClaim}
+        onApplyClaimUpdate={applyClaimUpdate}
         onWidgetAction={handleWidgetAction}
       />
 

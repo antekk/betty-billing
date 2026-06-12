@@ -14,6 +14,8 @@ interface TimelineProps {
   isStreaming: boolean;
   streamingText: string;
   onConfirmClaim: (claimId: string) => Promise<void>;
+  onCancelClaim: (claimId: string) => Promise<void>;
+  onApplyClaimUpdate: (claimId: string, timelineEntryId: string) => Promise<void>;
   onWidgetAction: (payload: string) => void;
 }
 
@@ -22,6 +24,8 @@ export function Timeline({
   isStreaming,
   streamingText,
   onConfirmClaim,
+  onCancelClaim,
+  onApplyClaimUpdate,
   onWidgetAction,
 }: TimelineProps) {
   const bottomRef = useRef<HTMLDivElement>(null);
@@ -41,6 +45,8 @@ export function Timeline({
                 widgetType={entry.widgetType}
                 widgetData={entry.widgetData}
                 onConfirmClaim={onConfirmClaim}
+                onCancelClaim={onCancelClaim}
+                onApplyClaimUpdate={onApplyClaimUpdate}
                 onWidgetAction={onWidgetAction}
               />
             );

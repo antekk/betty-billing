@@ -3,7 +3,8 @@ import { and, desc, eq, gte, lte } from "drizzle-orm";
 import type { ClaimStatus } from "@betty/shared";
 
 import { db } from "@/db";
-import { claims } from "@/db/schema";
+import { claims, timelineEntries } from "@/db/schema";
+import { auditLog } from "@/lib/audit";
 
 export interface ClaimSummary {
   id: string;
@@ -100,4 +101,83 @@ export async function listClaimsForUser(
     .limit(Math.min(opts.limit ?? 25, 100));
 
   return rows;
+}
+
+// A claim can be cancelled any time before it reaches AHCIP
+const CANCELLABLE_STATUSES = new Set<ClaimStatus>([
+  "pending_confirmation",
+  "staged",
+  "rejected",
+  "needs_attention",
+]);
+
+export type CancelClaimResult =
+  | { cancelled: true; claim: ClaimSummary }
+  | { cancelled: false; error: string };
+
+/**
+ * Cancel a claim that hasn't been submitted to AHCIP yet. Updates the original
+ * confirmation widget and logs a timeline system event + audit entry.
+ */
+export async function cancelClaimForUser(
+  claimId: string,
+  userId: string
+): Promise<CancelClaimResult> {
+  const claim = await getClaimForUser(claimId, userId);
+  if (!claim) {
+    return { cancelled: false, error: "Claim not found" };
+  }
+
+  if (!CANCELLABLE_STATUSES.has(claim.status)) {
+    return {
+      cancelled: false,
+      error: `Claim cannot be cancelled — current status is "${claim.status}"`,
+    };
+  }
+
+  const now = new Date();
+  await db
+    .update(claims)
+    .set({ status: "cancelled", resolvedAt: now, updatedAt: now })
+    .where(and(eq(claims.id, claimId), eq(claims.userId, userId)));
+
+  // Reflect the cancellation on the original confirmation widget
+  const claimRows = await db
+    .select({ timelineEntryId: claims.timelineEntryId })
+    .from(claims)
+    .where(eq(claims.id, claimId))
+    .limit(1);
+  const timelineEntryId = claimRows.at(0)?.timelineEntryId;
+  if (timelineEntryId) {
+    const entryRows = await db
+      .select()
+      .from(timelineEntries)
+      .where(eq(timelineEntries.id, timelineEntryId))
+      .limit(1);
+    const entry = entryRows.at(0);
+    if (entry?.widgetData) {
+      const widgetData = { ...(entry.widgetData as Record<string, unknown>), status: "cancelled" };
+      await db
+        .update(timelineEntries)
+        .set({ widgetData })
+        .where(eq(timelineEntries.id, timelineEntryId));
+    }
+  }
+
+  await db.insert(timelineEntries).values({
+    userId,
+    type: "system_event",
+    direction: "system",
+    content: `Claim cancelled — ${claim.feeCode} for PHN ...${claim.phnLast4} on ${claim.serviceDate}.`,
+    visibility: "filtered",
+    importanceFlag: false,
+  });
+
+  await auditLog(userId, "claim_cancelled", "claim", claimId, {
+    feeCode: claim.feeCode,
+    phnLast4: claim.phnLast4,
+    previousStatus: claim.status,
+  });
+
+  return { cancelled: true, claim: { ...claim, status: "cancelled", resolvedAt: now } };
 }

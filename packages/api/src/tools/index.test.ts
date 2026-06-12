@@ -53,4 +53,17 @@ describe("executeTool", () => {
     // With mocked service returning empty, should report not found
     expect(result.found).toBe(false);
   });
+
+  test("dispatches cancel_claim", async () => {
+    const result = JSON.parse(
+      await executeTool(
+        "cancel_claim",
+        { claim_id: "00000000-0000-0000-0000-000000000000" },
+        "user-1"
+      )
+    );
+    // With mocked DB returning no rows, the claim can't be found
+    expect(result.cancelled).toBe(false);
+    expect(result.error).toContain("not found");
+  });
 });

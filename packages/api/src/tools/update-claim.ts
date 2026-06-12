@@ -1,3 +1,5 @@
+import { eq } from "drizzle-orm";
+
 import type { Tool } from "@anthropic-ai/sdk/resources/messages";
 import type {
   ClaimUpdateConfirmationData,
@@ -129,8 +131,9 @@ export async function handleUpdateClaim(
     patientName: resolveField(input.patient_name, claim.patientName),
   };
 
-  // Validate proposed fee code if changed
+  // Validate proposed fee code if changed; the expected fee follows the fee code
   let proposedFeeCodeDescription: string;
+  let proposedExpectedFee = claim.expectedFee;
   if (proposed.feeCode !== claim.feeCode) {
     const fc = await getFeeCode(proposed.feeCode);
     if (!fc) {
@@ -140,6 +143,7 @@ export async function handleUpdateClaim(
       });
     }
     proposedFeeCodeDescription = fc.description;
+    proposedExpectedFee = fc.baseFee;
   } else {
     const fc = await getFeeCode(claim.feeCode);
     proposedFeeCodeDescription = fc?.description ?? "";
@@ -189,7 +193,7 @@ export async function handleUpdateClaim(
       serviceDateFormatted: formatServiceDate(proposed.serviceDate),
       patientName: proposed.patientName,
       phnLast4: claim.phnLast4,
-      expectedFee: claim.expectedFee,
+      expectedFee: proposedExpectedFee,
     },
     reason: input.reason ?? null,
     status: claim.status,
@@ -208,6 +212,11 @@ export async function handleUpdateClaim(
       importanceFlag: false,
     })
     .returning({ id: timelineEntries.id });
+
+  // Stamp the widget with its own entry id so the client can reference the
+  // proposal when applying it
+  widgetData.timelineEntryId = entry.id;
+  await db.update(timelineEntries).set({ widgetData }).where(eq(timelineEntries.id, entry.id));
 
   await auditLog(userId, "claim_update_proposed", "claim", claim.id, {
     changes: changes.map((c) => ({ field: c.field, before: c.before, after: c.after })),

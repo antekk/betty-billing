@@ -54,6 +54,8 @@ describe("buildSystemPrompt", () => {
     expect(prompt).toContain("validate_phn");
     expect(prompt).toContain("resolve_date");
     expect(prompt).toContain("create_claim");
+    expect(prompt).toContain("update_claim");
+    expect(prompt).toContain("cancel_claim");
   });
 
   test("includes voice guidelines about asking one question at a time", () => {

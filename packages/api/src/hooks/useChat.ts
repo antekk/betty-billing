@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useRef } from "react";
 
 import { apiFetch, getAccessToken } from "@/lib/client-auth";
 
@@ -46,11 +46,15 @@ export function useChat() {
     isStreaming: false,
     streamingText: "",
   });
+  const [showFiltered, setShowFilteredState] = useState(false);
+  // Ref so loadTimeline doesn't change identity when the toggle flips
+  const showFilteredRef = useRef(false);
 
   const loadTimeline = useCallback(async (before?: string) => {
     const params = new URLSearchParams();
     if (before) params.set("before", before);
     params.set("limit", "50");
+    if (showFilteredRef.current) params.set("include_filtered", "true");
 
     const res = await apiFetch(`/api/timeline?${params}`);
     if (!res.ok) throw new Error("Failed to load timeline");
@@ -64,6 +68,15 @@ export function useChat() {
 
     return data.hasMore;
   }, []);
+
+  const setShowFiltered = useCallback(
+    async (value: boolean) => {
+      showFilteredRef.current = value;
+      setShowFilteredState(value);
+      await loadTimeline();
+    },
+    [loadTimeline]
+  );
 
   const sendMessage = useCallback(async (message: string) => {
     const tempEntry: TimelineEntry = {
@@ -216,37 +229,66 @@ export function useChat() {
     }
   }, []);
 
-  const confirmClaim = useCallback(async (claimId: string) => {
-    const res = await apiFetch(`/api/claims/${claimId}/confirm`, {
-      method: "POST",
-    });
+  const confirmClaim = useCallback(
+    async (claimId: string) => {
+      const res = await apiFetch(`/api/claims/${claimId}/confirm`, {
+        method: "POST",
+      });
 
-    if (!res.ok) {
-      const data = (await res.json()) as ApiErrorBody;
-      throw new Error(data.error ?? "Failed to confirm claim");
-    }
+      if (!res.ok) {
+        const data = (await res.json()) as ApiErrorBody;
+        throw new Error(data.error ?? "Failed to confirm claim");
+      }
 
-    setState((prev) => ({
-      ...prev,
-      entries: prev.entries.map((entry) => {
-        if (entry.widgetData?.claimId === claimId) {
-          return {
-            ...entry,
-            widgetData: {
-              ...entry.widgetData,
-              status: "staged",
-            },
-          };
-        }
-        return entry;
-      }),
-    }));
-  }, []);
+      // Refetch so the widget status and Betty's acknowledgement appear
+      await loadTimeline();
+    },
+    [loadTimeline]
+  );
+
+  const cancelClaim = useCallback(
+    async (claimId: string) => {
+      const res = await apiFetch(`/api/claims/${claimId}/cancel`, {
+        method: "POST",
+      });
+
+      if (!res.ok) {
+        const data = (await res.json()) as ApiErrorBody;
+        throw new Error(data.error ?? "Failed to cancel claim");
+      }
+
+      // Refetch so the widget and system event reflect server state
+      await loadTimeline();
+    },
+    [loadTimeline]
+  );
+
+  const applyClaimUpdate = useCallback(
+    async (claimId: string, timelineEntryId: string) => {
+      const res = await apiFetch(`/api/claims/${claimId}/apply-update`, {
+        method: "POST",
+        body: JSON.stringify({ timelineEntryId }),
+      });
+
+      if (!res.ok) {
+        const data = (await res.json()) as ApiErrorBody;
+        throw new Error(data.error ?? "Failed to apply claim update");
+      }
+
+      // Refetch — the proposal widget and the original claim widget both changed
+      await loadTimeline();
+    },
+    [loadTimeline]
+  );
 
   return {
     ...state,
+    showFiltered,
+    setShowFiltered,
     loadTimeline,
     sendMessage,
     confirmClaim,
+    cancelClaim,
+    applyClaimUpdate,
   };
 }

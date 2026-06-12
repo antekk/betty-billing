@@ -18,11 +18,14 @@ interface ClaimConfirmationData {
 interface ClaimConfirmationProps {
   data: ClaimConfirmationData;
   onConfirm: (claimId: string) => Promise<void>;
+  onCancel?: (claimId: string) => Promise<void>;
 }
 
-export function ClaimConfirmation({ data, onConfirm }: ClaimConfirmationProps) {
+export function ClaimConfirmation({ data, onConfirm, onCancel }: ClaimConfirmationProps) {
   const [isLoading, setIsLoading] = useState(false);
-  const isConfirmed = data.status === "staged";
+  const [isCancelling, setIsCancelling] = useState(false);
+  const isCancelled = data.status === "cancelled";
+  const isPending = data.status === "pending_confirmation";
 
   async function handleConfirm() {
     setIsLoading(true);
@@ -33,11 +36,25 @@ export function ClaimConfirmation({ data, onConfirm }: ClaimConfirmationProps) {
     }
   }
 
+  async function handleCancel() {
+    if (!onCancel) return;
+    setIsCancelling(true);
+    try {
+      await onCancel(data.claimId);
+    } finally {
+      setIsCancelling(false);
+    }
+  }
+
   return (
     <div className="mx-4 my-1 overflow-hidden rounded-xl border border-border bg-white shadow-sm">
       <div className="border-b border-separator px-4 py-3">
         <h3 className="text-sm font-semibold text-text-primary">
-          {isConfirmed ? "Claim Submitted" : "Claim Ready to Submit"}
+          {isCancelled
+            ? "Claim Cancelled"
+            : isPending
+              ? "Claim Ready to Submit"
+              : "Claim Submitted"}
         </h3>
       </div>
 
@@ -63,7 +80,34 @@ export function ClaimConfirmation({ data, onConfirm }: ClaimConfirmationProps) {
       </div>
 
       <div className="border-t border-separator px-4 py-3">
-        {isConfirmed ? (
+        {isCancelled ? (
+          <div className="flex items-center justify-center rounded-lg bg-border py-2 text-sm font-medium text-text-secondary">
+            Cancelled
+          </div>
+        ) : isPending ? (
+          <div className="space-y-2">
+            <button
+              onClick={() => {
+                void handleConfirm();
+              }}
+              disabled={isLoading || isCancelling}
+              className="w-full rounded-lg bg-success py-2.5 text-sm font-semibold text-white transition-opacity active:opacity-80 disabled:opacity-60"
+            >
+              {isLoading ? "Confirming..." : "Confirm & Stage"}
+            </button>
+            {onCancel && (
+              <button
+                onClick={() => {
+                  void handleCancel();
+                }}
+                disabled={isLoading || isCancelling}
+                className="w-full py-1 text-xs font-medium text-text-tertiary active:text-text-secondary disabled:opacity-60"
+              >
+                {isCancelling ? "Cancelling..." : "Cancel this claim"}
+              </button>
+            )}
+          </div>
+        ) : (
           <div className="flex items-center justify-center gap-1.5 rounded-lg bg-success-bg py-2 text-sm font-medium text-success">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -79,16 +123,6 @@ export function ClaimConfirmation({ data, onConfirm }: ClaimConfirmationProps) {
             </svg>
             Confirmed
           </div>
-        ) : (
-          <button
-            onClick={() => {
-              void handleConfirm();
-            }}
-            disabled={isLoading}
-            className="w-full rounded-lg bg-success py-2.5 text-sm font-semibold text-white transition-opacity active:opacity-80 disabled:opacity-60"
-          >
-            {isLoading ? "Confirming..." : "Confirm & Stage"}
-          </button>
         )}
       </div>
     </div>
