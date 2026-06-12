@@ -1,15 +1,15 @@
 /**
  * Parser for AHCIP Health Service Codes extract files (ehsmedbc.txt).
  *
- * Fixed-width format:
+ * Fixed-width format (115 chars per line, CRLF endings):
  * - Chars 0-6:    Fee code (7 chars, left-justified, space-padded)
- * - Chars 7-86:   Description (80 chars, may include {qualifier})
- * - Char 87:      Callable flag (Y/N)
- * - Char 88:      Space
- * - Chars 89-100: Age range (12 digits, e.g., "050000074999" = ages 50-74.999)
- * - Chars 101-102: Two Y/N flags
- * - Chars 103-110: Effective date (YYYYMMDD)
- * - Chars 111-118: End date (YYYYMMDD)
+ * - Chars 7-82:   Description (76 chars, may include {qualifier})
+ * - Char 83:      Callable flag (Y/N)
+ * - Char 84:      Space
+ * - Chars 85-96:  Age range (12 digits, e.g., "050000074999" = ages 50-74.999)
+ * - Chars 97-98:  Two Y/N flags
+ * - Chars 99-106: Effective date (YYYYMMDD)
+ * - Chars 107-114: End date (YYYYMMDD)
  */
 
 export interface HealthServiceCode {
@@ -29,16 +29,16 @@ function parseDate(yyyymmdd: string): string {
 }
 
 export function parseHealthServiceCodes(content: string): HealthServiceCode[] {
-  const lines = content.split("\n").filter((l) => l.trim().length > 0);
+  const lines = content.split(/\r?\n/).filter((l) => l.trim().length > 0);
   const results: HealthServiceCode[] = [];
 
   for (const line of lines) {
-    if (line.length < 119) continue;
+    if (line.length < 115) continue;
 
     const code = line.slice(0, 7).trim();
     if (!code) continue;
 
-    const rawDescription = line.slice(7, 87).trim();
+    const rawDescription = line.slice(7, 83).trim();
 
     // Extract qualifier from {braces} if present
     let description = rawDescription;
@@ -49,9 +49,9 @@ export function parseHealthServiceCodes(content: string): HealthServiceCode[] {
       qualifier = braceMatch[2].trim();
     }
 
-    const callable = line.charAt(87) === "Y";
-    const effectiveDate = parseDate(line.slice(103, 111));
-    const endDate = parseDate(line.slice(111, 119));
+    const callable = line.charAt(83) === "Y";
+    const effectiveDate = parseDate(line.slice(99, 107));
+    const endDate = parseDate(line.slice(107, 115));
 
     results.push({
       code,

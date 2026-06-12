@@ -23,7 +23,7 @@ function parseDate(yyyymmdd: string): string {
 }
 
 export function parseDiagnosticCodes(content: string): DiagnosticCode[] {
-  const lines = content.split("\n").filter((l) => l.trim().length > 0);
+  const lines = content.split(/\r?\n/).filter((l) => l.trim().length > 0);
   const results: DiagnosticCode[] = [];
 
   for (const line of lines) {
