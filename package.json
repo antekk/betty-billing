@@ -8,6 +8,7 @@
   ],
   "scripts": {
     "dev:api": "bun run --filter @betty/api dev",
+    "dev:worker": "bun run --filter @betty/api worker",
     "typecheck": "bun run --filter '*' typecheck",
     "db:generate": "bun run --filter @betty/api db:generate",
     "db:migrate": "bun run --filter @betty/api db:migrate",
@@ -22,6 +23,7 @@
   "devDependencies": {
     "@eslint/js": "^9.15.0",
     "@next/eslint-plugin-next": "^15.0.0",
+    "@types/bun": "^1.3.14",
     "eslint": "^9.15.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-drizzle": "^0.2.3",

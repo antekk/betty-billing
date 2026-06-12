@@ -1,0 +1,11 @@
+# Builds two images from the same Dockerfile:
+#   - runner (default target): the Next.js app served by Cloud Run
+#   - worker target: full source + bun, used for migrations and the BullMQ worker
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args: ["build", "--target", "runner", "-t", "${_IMAGE}", "."]
+  - name: gcr.io/cloud-builders/docker
+    args: ["build", "--target", "worker", "-t", "${_IMAGE_JOBS}", "."]
+images:
+  - "${_IMAGE}"
+  - "${_IMAGE_JOBS}"

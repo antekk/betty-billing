@@ -69,6 +69,16 @@ export async function POST(request: NextRequest, { params }: { params: Promise<{
     importanceFlag: false,
   });
 
+  // Betty acknowledges the confirmation (PRD Flow 3: "Done — submitted.")
+  await db.insert(timelineEntries).values({
+    userId: auth.userId,
+    type: "message",
+    direction: "outbound",
+    content: "Done — submitted. Anything else?",
+    visibility: "default",
+    importanceFlag: false,
+  });
+
   await auditLog(auth.userId, "claim_confirmed", "claim", id, {
     feeCode: claim.feeCode,
     phnLast4: claim.phnLast4,

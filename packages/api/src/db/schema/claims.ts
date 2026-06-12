@@ -20,6 +20,7 @@ export const claimStatusEnum = pgEnum("claim_status", [
   "accepted",
   "rejected",
   "needs_attention",
+  "cancelled",
 ]);
 
 export const claims = pgTable(

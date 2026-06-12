@@ -47,8 +47,7 @@ export const updateClaimTool: Tool = {
       },
       modifier: {
         type: "string",
-        description:
-          "New modifier code, or empty string to clear (omit to leave unchanged)",
+        description: "New modifier code, or empty string to clear (omit to leave unchanged)",
       },
       diagnostic_code: {
         type: "string",
@@ -90,6 +89,12 @@ function normalizeOptional(input: string | undefined): string | null | undefined
   return input;
 }
 
+// Empty string clears the field; undefined leaves it unchanged.
+function resolveField(input: string | undefined, current: string | null): string | null {
+  const normalized = normalizeOptional(input);
+  return normalized === undefined ? current : normalized;
+}
+
 export async function handleUpdateClaim(
   input: {
     claim_id: string;
@@ -120,21 +125,15 @@ export async function handleUpdateClaim(
   // Resolve proposed values
   const proposed = {
     feeCode: input.fee_code ?? claim.feeCode,
-    modifier:
-      normalizeOptional(input.modifier) === undefined ? claim.modifier : normalizeOptional(input.modifier)!,
-    diagnosticCode:
-      normalizeOptional(input.diagnostic_code) === undefined
-        ? claim.diagnosticCode
-        : normalizeOptional(input.diagnostic_code)!,
+    modifier: resolveField(input.modifier, claim.modifier),
+    diagnosticCode: resolveField(input.diagnostic_code, claim.diagnosticCode),
     serviceDate: input.service_date ?? claim.serviceDate,
-    patientName:
-      normalizeOptional(input.patient_name) === undefined
-        ? claim.patientName
-        : normalizeOptional(input.patient_name)!,
+    patientName: resolveField(input.patient_name, claim.patientName),
   };
 
-  // Validate proposed fee code if changed
+  // Validate proposed fee code if changed; the expected fee follows the fee code
   let proposedFeeCodeDescription: string;
+  let proposedExpectedFee = claim.expectedFee;
   if (proposed.feeCode !== claim.feeCode) {
     const fc = await getFeeCode(proposed.feeCode);
     if (!fc) {
@@ -144,6 +143,7 @@ export async function handleUpdateClaim(
       });
     }
     proposedFeeCodeDescription = fc.description;
+    proposedExpectedFee = fc.baseFee;
   } else {
     const fc = await getFeeCode(claim.feeCode);
     proposedFeeCodeDescription = fc?.description ?? "";
@@ -162,11 +162,7 @@ export async function handleUpdateClaim(
 
   // Compute diff
   const changes: ClaimUpdateChange[] = [];
-  const push = (
-    field: ClaimUpdatableField,
-    before: string | null,
-    after: string | null
-  ) => {
+  const push = (field: ClaimUpdatableField, before: string | null, after: string | null) => {
     if ((before ?? null) !== (after ?? null)) {
       changes.push({ field, label: FIELD_LABELS[field], before, after });
     }
@@ -197,7 +193,7 @@ export async function handleUpdateClaim(
       serviceDateFormatted: formatServiceDate(proposed.serviceDate),
       patientName: proposed.patientName,
       phnLast4: claim.phnLast4,
-      expectedFee: claim.expectedFee,
+      expectedFee: proposedExpectedFee,
     },
     reason: input.reason ?? null,
     status: claim.status,
@@ -216,6 +212,11 @@ export async function handleUpdateClaim(
       importanceFlag: false,
     })
     .returning({ id: timelineEntries.id });
+
+  // Stamp the widget with its own entry id so the client can reference the
+  // proposal when applying it
+  widgetData.timelineEntryId = entry.id;
+  await db.update(timelineEntries).set({ widgetData }).where(eq(timelineEntries.id, entry.id));
 
   await auditLog(userId, "claim_update_proposed", "claim", claim.id, {
     changes: changes.map((c) => ({ field: c.field, before: c.before, after: c.after })),

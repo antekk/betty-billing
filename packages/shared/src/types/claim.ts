@@ -51,6 +51,10 @@ export interface ClaimUpdateChange {
 export interface ClaimUpdateConfirmationData {
   type: "claim_update_confirmation";
   claimId: string;
+  /** Timeline entry holding this proposal — needed to apply it server-side. */
+  timelineEntryId?: string;
+  /** True once the physician has applied this proposal. */
+  applied?: boolean;
   changes: ClaimUpdateChange[];
   current: {
     feeCode: string;

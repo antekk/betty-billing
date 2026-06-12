@@ -1,13 +1,13 @@
 /**
  * Parser for AHCIP Fee Modifiers extract file (efeemodr.txt).
  *
- * Fixed-width format:
+ * Fixed-width format (102 chars per line, CRLF endings):
  * - Chars 0-4:    Modifier code (5 chars, e.g., "ADD  ", "ANE  ")
  * - Char 5:       Space
- * - Chars 6-85:   Description (80 chars)
- * - Chars 86-89:  Type (4 chars, e.g., "LVP ", "ROLE")
- * - Chars 90-97:  Effective date (YYYYMMDD)
- * - Chars 98-105: End date (YYYYMMDD)
+ * - Chars 6-81:   Description (76 chars)
+ * - Chars 82-85:  Type (4 chars, e.g., "LVP ", "ROLE")
+ * - Chars 86-93:  Effective date (YYYYMMDD)
+ * - Chars 94-101: End date (YYYYMMDD)
  */
 
 export interface FeeModifier {
@@ -26,19 +26,19 @@ function parseDate(yyyymmdd: string): string {
 }
 
 export function parseModifiers(content: string): FeeModifier[] {
-  const lines = content.split("\n").filter((l) => l.trim().length > 0);
+  const lines = content.split(/\r?\n/).filter((l) => l.trim().length > 0);
   const results: FeeModifier[] = [];
 
   for (const line of lines) {
-    if (line.length < 106) continue;
+    if (line.length < 102) continue;
 
     const code = line.slice(0, 5).trim();
     if (!code) continue;
 
-    const description = line.slice(6, 86).trim();
-    const type = line.slice(86, 90).trim();
-    const effectiveDate = parseDate(line.slice(90, 98));
-    const endDate = parseDate(line.slice(98, 106));
+    const description = line.slice(6, 82).trim();
+    const type = line.slice(82, 86).trim();
+    const effectiveDate = parseDate(line.slice(86, 94));
+    const endDate = parseDate(line.slice(94, 102));
 
     results.push({ code, description, type, effectiveDate, endDate });
   }

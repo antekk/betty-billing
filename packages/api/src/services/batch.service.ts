@@ -115,7 +115,7 @@ export async function processBatchSubmission(): Promise<{
     .set({
       status: batchStatus,
       completedAt: new Date(),
-      responseData: response as unknown as Record<string, unknown>,
+      responseData: response,
     })
     .where(eq(batchSubmissions.id, batch.id));
 

@@ -7,6 +7,8 @@ REGION="${GCP_REGION:-northamerica-northeast1}"   # Montreal (good for Canadian 
 SERVICE_NAME="betty-api"
 DB_INSTANCE="betty-db"
 IMAGE="$REGION-docker.pkg.dev/$PROJECT_ID/betty/$SERVICE_NAME"
+# Full-source image (bun + drizzle-kit) for migrations and the BullMQ worker
+IMAGE_JOBS="$REGION-docker.pkg.dev/$PROJECT_ID/betty/betty-jobs"
 
 echo "==> Deploying Betty to project: $PROJECT_ID  region: $REGION"
 
@@ -88,10 +90,11 @@ for secret in betty-database-url betty-jwt-secret betty-jwt-refresh betty-encryp
     --project="$PROJECT_ID" --quiet
 done
 
-# ── 5. Build & push container ───────────────────────────────────────
-echo "==> Building and pushing container image..."
+# ── 5. Build & push containers ───────────────────────────────────────
+echo "==> Building and pushing container images..."
 gcloud builds submit . \
-  --tag "$IMAGE" \
+  --config cloudbuild.yaml \
+  --substitutions="_IMAGE=$IMAGE,_IMAGE_JOBS=$IMAGE_JOBS" \
   --project "$PROJECT_ID"
 
 # ── 6. Deploy to Cloud Run ──────────────────────────────────────────
@@ -116,19 +119,23 @@ ANTHROPIC_API_KEY=betty-anthropic-key:latest" \
   --project "$PROJECT_ID"
 
 # ── 7. Run migrations ───────────────────────────────────────────────
+# Uses the jobs image: full source with drizzle-kit, committed migrations,
+# and drizzle.config.ts (the runtime image only has the pruned standalone build)
 echo "==> Running database migrations..."
 gcloud run jobs create betty-migrate \
-  --image "$IMAGE" \
+  --image "$IMAGE_JOBS" \
   --region "$REGION" \
   --add-cloudsql-instances="$DB_CONNECTION" \
   --set-secrets="DATABASE_URL=betty-database-url:latest" \
-  --command="node" \
-  --args="node_modules/.bin/drizzle-kit,migrate" \
+  --command="bun" \
+  --args="run,db:migrate" \
   --project "$PROJECT_ID" 2>/dev/null \
 || gcloud run jobs update betty-migrate \
-  --image "$IMAGE" \
+  --image "$IMAGE_JOBS" \
   --region "$REGION" \
   --set-secrets="DATABASE_URL=betty-database-url:latest" \
+  --command="bun" \
+  --args="run,db:migrate" \
   --project "$PROJECT_ID"
 
 gcloud run jobs execute betty-migrate --region "$REGION" --project "$PROJECT_ID" --wait

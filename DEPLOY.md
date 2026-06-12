@@ -1,7 +1,8 @@
 # Deploying Betty to GCP
 
 Simple Cloud Run deployment with managed Postgres. No Redis needed for demo — the
-BullMQ worker is a separate process and isn't required to use the app.
+BullMQ worker is a separate process and isn't required to use the app (claims
+simply stay `staged` until a worker runs).
 
 ## Architecture
 
@@ -12,6 +13,14 @@ Internet → Cloud Run (betty-api) → Cloud SQL (Postgres 16)
 - **Cloud Run** — serverless container, scales to zero when idle
 - **Cloud SQL** — managed Postgres (db-f1-micro, cheapest tier)
 - **Secret Manager** — stores credentials
+
+The build produces two images (see `cloudbuild.yaml`):
+
+- `betty-api` — the Next.js standalone runtime served by Cloud Run
+- `betty-jobs` — full source with bun; used by the `betty-migrate` job, and is
+  the image to use for the BullMQ worker (`bun run src/jobs/worker.ts`) once
+  you add a Redis instance (e.g. Memorystore) and set `REDIS_URL`. The worker
+  registers its own hourly batch schedule on boot.
 
 ## Prerequisites
 
@@ -35,12 +44,12 @@ The script is idempotent — safe to re-run. First deploy takes ~10 minutes (Clo
 
 ## Estimated Cost (demo/idle)
 
-| Service | Cost |
-|---------|------|
-| Cloud Run (idle) | $0 |
-| Cloud SQL db-f1-micro | ~$9/mo |
-| Secret Manager | < $0.10/mo |
-| **Total (idle)** | **~$9/mo** |
+| Service               | Cost       |
+| --------------------- | ---------- |
+| Cloud Run (idle)      | $0         |
+| Cloud SQL db-f1-micro | ~$9/mo     |
+| Secret Manager        | < $0.10/mo |
+| **Total (idle)**      | **~$9/mo** |
 
 Cloud SQL can't scale to zero, so delete it when not demoing to avoid charges.
 

@@ -1,3 +1,4 @@
+import { cancelClaimTool, handleCancelClaim } from "./cancel-claim";
 import { createClaimTool, handleCreateClaim } from "./create-claim";
 import { dateResolutionTool, handleDateResolution } from "./date-resolution";
 import { diagCodeLookupTool, handleDiagCodeLookup } from "./diag-code-lookup";
@@ -16,6 +17,7 @@ export const tools: Tool[] = [
   dateResolutionTool,
   createClaimTool,
   updateClaimTool,
+  cancelClaimTool,
   getClaimTool,
   listClaimsTool,
 ];
@@ -27,6 +29,7 @@ export type ToolName =
   | "resolve_date"
   | "create_claim"
   | "update_claim"
+  | "cancel_claim"
   | "get_claim"
   | "list_claims";
 
@@ -51,10 +54,12 @@ export async function executeTool(
       return handleCreateClaim(input as Parameters<typeof handleCreateClaim>[0], userId);
     case "update_claim":
       return handleUpdateClaim(input as Parameters<typeof handleUpdateClaim>[0], userId);
+    case "cancel_claim":
+      return handleCancelClaim(input as Parameters<typeof handleCancelClaim>[0], userId);
     case "get_claim":
       return handleGetClaim(input as Parameters<typeof handleGetClaim>[0], userId);
     case "list_claims":
-      return handleListClaims(input as Parameters<typeof handleListClaims>[0], userId);
+      return handleListClaims(input, userId);
     default:
       return JSON.stringify({ error: `Unknown tool: ${name}` });
   }

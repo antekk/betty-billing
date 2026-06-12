@@ -8,18 +8,17 @@ mock.module("postgres", () => ({
 mock.module("drizzle-orm/postgres-js", () => ({
   drizzle: () => ({
     insert: () => ({ values: () => ({ returning: async () => [] }) }),
-    select: () => ({ from: () => ({ where: () => ({ limit: async () => [], orderBy: () => ({ limit: async () => [] }) }) }) }),
+    select: () => ({
+      from: () => ({
+        where: () => ({ limit: async () => [], orderBy: () => ({ limit: async () => [] }) }),
+      }),
+    }),
     update: () => ({ set: () => ({ where: async () => {} }) }),
   }),
 }));
 
 mock.module("@/lib/audit", () => ({
   auditLog: async () => {},
-}));
-
-mock.module("@/lib/encryption", () => ({
-  encrypt: (v: string) => `encrypted:${v}`,
-  decrypt: (v: string) => v.replace("encrypted:", ""),
 }));
 
 // Mock fee-code service to avoid DB calls
@@ -40,9 +39,7 @@ describe("executeTool", () => {
   });
 
   test("dispatches resolve_date to date resolution handler", async () => {
-    const result = JSON.parse(
-      await executeTool("resolve_date", { expression: "today" }, "user-1")
-    );
+    const result = JSON.parse(await executeTool("resolve_date", { expression: "today" }, "user-1"));
     expect(result.resolved).toBe(true);
   });
 
@@ -52,10 +49,21 @@ describe("executeTool", () => {
   });
 
   test("dispatches fee_code_lookup", async () => {
-    const result = JSON.parse(
-      await executeTool("fee_code_lookup", { query: "03.01AA" }, "user-1")
-    );
+    const result = JSON.parse(await executeTool("fee_code_lookup", { query: "03.01AA" }, "user-1"));
     // With mocked service returning empty, should report not found
     expect(result.found).toBe(false);
+  });
+
+  test("dispatches cancel_claim", async () => {
+    const result = JSON.parse(
+      await executeTool(
+        "cancel_claim",
+        { claim_id: "00000000-0000-0000-0000-000000000000" },
+        "user-1"
+      )
+    );
+    // With mocked DB returning no rows, the claim can't be found
+    expect(result.cancelled).toBe(false);
+    expect(result.error).toContain("not found");
   });
 });

@@ -15,7 +15,7 @@ function getSecret(envKey: string): Uint8Array {
 }
 
 export async function signAccessToken(userId: string, phone: string): Promise<string> {
-  return new SignJWT({ phone } as TokenPayload)
+  return new SignJWT({ phone })
     .setProtectedHeader({ alg: "HS256" })
     .setSubject(userId)
     .setIssuedAt()
@@ -24,7 +24,7 @@ export async function signAccessToken(userId: string, phone: string): Promise<st
 }
 
 export async function signRefreshToken(userId: string, phone: string): Promise<string> {
-  return new SignJWT({ phone } as TokenPayload)
+  return new SignJWT({ phone })
     .setProtectedHeader({ alg: "HS256" })
     .setSubject(userId)
     .setIssuedAt()

@@ -23,6 +23,7 @@ export function buildSystemPrompt(context: {
 - **resolve_date** — Convert relative dates ("Monday", "yesterday") to ISO format.
 - **create_claim** — Generate a confirmation widget for a new claim. Only call after validating fee code, PHN, and date.
 - **update_claim** — Propose changes to an existing claim. Generates a diff confirmation widget showing before → after. Use this for fixing rejected claims or correcting staged claims. Nothing is mutated until the physician taps Confirm.
+- **cancel_claim** — Cancel a claim that hasn't been submitted yet (pending, staged, rejected, or needs attention). Use when the physician asks to cancel, discard, or drop a claim. Confirm you have the right claim (get_claim/list_claims) before cancelling — this takes effect immediately.
 - **get_claim** — Fetch the current state of one claim by ID. Use before proposing an update or when answering "what's on that claim?" type questions.
 - **list_claims** — List the physician's claims, optionally filtered by status, date range, or PHN last-4. Use for "what's outstanding?" or "what did I bill yesterday?" questions.
 

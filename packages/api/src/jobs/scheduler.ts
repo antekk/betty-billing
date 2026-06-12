@@ -1,12 +1,13 @@
 #!/usr/bin/env bun
 /**
- * Schedule recurring jobs. Run once to set up schedules:
+ * Schedule recurring jobs. The worker calls setupSchedules() on boot, so this
+ * only needs to be run standalone to (re)configure schedules without a worker:
  *   bun run packages/api/src/jobs/scheduler.ts
  */
 
 import { getQueue } from "./queue";
 
-async function setupSchedules() {
+export async function setupSchedules(): Promise<void> {
   const queue = getQueue();
 
   // Batch submission every hour
@@ -20,12 +21,14 @@ async function setupSchedules() {
   console.log("  - batch-submit: every hour");
 }
 
-setupSchedules()
-  .then(() => {
-    console.log("Done.");
-    process.exit(0);
-  })
-  .catch((err: unknown) => {
-    console.error("Failed to set up schedules:", err);
-    process.exit(1);
-  });
+if (import.meta.main) {
+  setupSchedules()
+    .then(() => {
+      console.log("Done.");
+      process.exit(0);
+    })
+    .catch((err: unknown) => {
+      console.error("Failed to set up schedules:", err);
+      process.exit(1);
+    });
+}

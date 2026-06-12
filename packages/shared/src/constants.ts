@@ -5,6 +5,7 @@ export const CLAIM_STATUS = {
   ACCEPTED: "accepted",
   REJECTED: "rejected",
   NEEDS_ATTENTION: "needs_attention",
+  CANCELLED: "cancelled",
 } as const;
 
 export type ClaimStatus = (typeof CLAIM_STATUS)[keyof typeof CLAIM_STATUS];

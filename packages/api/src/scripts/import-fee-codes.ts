@@ -14,12 +14,16 @@ import { resolve } from "path";
 import { drizzle } from "drizzle-orm/postgres-js";
 import postgres from "postgres";
 
+import { parseDiagnosticCodes } from "./parsers/diagnostic-codes";
 import { parseHealthServiceCodes, getCurrentCodes } from "./parsers/health-service-codes";
 import { parseModifiers, getCurrentModifiers } from "./parsers/modifiers";
 import { parsePriceList, getCurrentPrices } from "./parsers/price-list";
+import { diagnosticCodes } from "../db/schema/diagnostic-codes";
 import { feeCodes } from "../db/schema/fee-codes";
 
-const sombDir = process.argv[2] || resolve(process.cwd(), "docs/support/AB-somb");
+// Default to the repo-root docs dir regardless of cwd (this script lives at
+// packages/api/src/scripts)
+const sombDir = process.argv[2] || resolve(import.meta.dir, "../../../../docs/support/AB-somb");
 
 function readFile(filename: string): string {
   const path = resolve(sombDir, filename);
@@ -83,7 +87,7 @@ async function main() {
       code: hsc.code,
       description,
       baseFee,
-      modifiers: null as unknown, // modifiers are global, not per-code in SOMB
+      modifiers: null, // modifiers are global, not per-code in SOMB
       category,
       rulesNotes: null as string | null,
       effectiveDate: hsc.effectiveDate,
@@ -127,6 +131,49 @@ async function main() {
   }
 
   console.log(`\n\nDone! Imported ${imported} fee codes.`);
+
+  // Diagnostic codes (ICD-9 — AHCIP claims require ICD-9)
+  const diagContent = readFile("diagcode.txt");
+  const allDiag = parseDiagnosticCodes(diagContent);
+  const today = new Date().toISOString().slice(0, 10);
+  // Keep currently active entries, latest effective per code
+  const diagByCode = new Map<string, (typeof allDiag)[number]>();
+  for (const dc of allDiag) {
+    if (dc.endDate < today || dc.effectiveDate > today) continue;
+    const existing = diagByCode.get(dc.code);
+    if (!existing || dc.effectiveDate > existing.effectiveDate) {
+      diagByCode.set(dc.code, dc);
+    }
+  }
+  const diagRecords = [...diagByCode.values()].map((dc) => ({
+    code: dc.code,
+    codeSystem: "icd9" as const,
+    description: dc.description,
+    enabled: true,
+    category: null,
+    effectiveDate: dc.effectiveDate,
+    endDate: dc.endDate,
+  }));
+
+  console.log(`\nImporting ${diagRecords.length} diagnostic codes...`);
+  let diagImported = 0;
+  for (let i = 0; i < diagRecords.length; i += BATCH_SIZE) {
+    const batch = diagRecords.slice(i, i + BATCH_SIZE);
+    await db
+      .insert(diagnosticCodes)
+      .values(batch)
+      .onConflictDoUpdate({
+        target: [diagnosticCodes.code, diagnosticCodes.codeSystem],
+        set: {
+          description: diagnosticCodes.description,
+          effectiveDate: diagnosticCodes.effectiveDate,
+          endDate: diagnosticCodes.endDate,
+        },
+      });
+    diagImported += batch.length;
+    process.stdout.write(`\r  Imported ${diagImported}/${diagRecords.length}`);
+  }
+  console.log(`\nDone! Imported ${diagImported} diagnostic codes.`);
 
   // Print some stats
   const categories = new Map<string, number>();
