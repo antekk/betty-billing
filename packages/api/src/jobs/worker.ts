@@ -5,6 +5,7 @@
  */
 
 import { createWorker } from "./queue";
+import { setupSchedules } from "./scheduler";
 
 import type { Job } from "bullmq";
 
@@ -24,6 +25,10 @@ async function processJob(job: Job): Promise<void> {
       console.warn(`Unknown job type: ${job.name}`);
   }
 }
+
+// Ensure recurring job schedules exist — makes the worker self-sufficient in
+// deployment (no separate scheduler invocation needed)
+await setupSchedules();
 
 const worker = createWorker(processJob);
 
