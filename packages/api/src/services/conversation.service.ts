@@ -11,6 +11,7 @@ import type { WidgetData } from "@betty/shared";
 
 import { db } from "@/db";
 import { timelineEntries, users } from "@/db/schema";
+import { getEnv } from "@/lib/env";
 import { buildSystemPrompt } from "@/prompts/system";
 import { tools, executeTool } from "@/tools";
 
@@ -75,6 +76,7 @@ export async function processMessage(
   });
 
   // 4. Call Claude with tool loop
+  const model = getEnv().ANTHROPIC_MODEL;
   let fullResponseText = "";
   const widgets: WidgetData[] = [];
   let currentMessages = [...messages];
@@ -84,7 +86,7 @@ export async function processMessage(
     iterations++;
 
     const stream = anthropic.messages.stream({
-      model: "claude-sonnet-4-20250514",
+      model,
       max_tokens: 2048,
       system: systemPrompt,
       messages: currentMessages,

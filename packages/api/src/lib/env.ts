@@ -6,6 +6,7 @@ const envSchema = z.object({
   JWT_SECRET: z.string().min(16),
   JWT_REFRESH_SECRET: z.string().min(16),
   ANTHROPIC_API_KEY: z.string().startsWith("sk-ant-"),
+  ANTHROPIC_MODEL: z.string().min(1).default("claude-sonnet-4-6"),
   ENCRYPTION_KEY: z.string().length(64),
   SMS_PROVIDER: z.enum(["mock", "twilio"]).default("mock"),
   // Twilio (optional for v1)
