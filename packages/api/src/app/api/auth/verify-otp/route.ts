@@ -5,11 +5,15 @@ import { z } from "zod";
 import { db } from "@/db";
 import { otpCodes, users, timelineEntries } from "@/db/schema";
 import { signAccessToken, signRefreshToken } from "@/lib/auth";
+import { rateLimit } from "@/lib/rate-limit";
 
 const verifySchema = z.object({
   phone: z.string().regex(/^\+1\d{10}$/),
   code: z.string().length(6),
 });
+
+// Cap verification attempts per phone so a 6-digit code can't be brute-forced.
+const VERIFY_RATE_LIMIT = { limit: 5, windowMs: 10 * 60 * 1000 };
 
 const WELCOME_MESSAGE = `Hi, I'm Betty — your billing assistant. I know Alberta fee codes inside and out. Ask me anything, or when you're ready, I can start handling your claims too.
 
@@ -25,6 +29,14 @@ export async function POST(request: NextRequest) {
   }
 
   const { phone, code } = parsed.data;
+
+  const rl = await rateLimit(`verify-otp:${phone}`, VERIFY_RATE_LIMIT);
+  if (!rl.allowed) {
+    return NextResponse.json(
+      { error: "Too many attempts. Please request a new code and wait a few minutes." },
+      { status: 429, headers: { "Retry-After": Math.ceil(rl.retryAfterMs / 1000).toString() } }
+    );
+  }
 
   // Find valid, unused OTP
   const otpRows = await db

@@ -11,6 +11,7 @@ import type { WidgetData } from "@betty/shared";
 
 import { db } from "@/db";
 import { timelineEntries, users } from "@/db/schema";
+import { getEnv } from "@/lib/env";
 import { buildSystemPrompt } from "@/prompts/system";
 import { tools, executeTool } from "@/tools";
 
@@ -35,10 +36,15 @@ interface ConversationEvent {
  * 5. Stream text deltas and widget data back to the caller
  * 6. Save Betty's response as outbound timeline entry
  */
+interface ProcessMessageDeps {
+  executeTool: typeof executeTool;
+}
+
 export async function processMessage(
   userId: string,
   messageText: string,
-  onEvent: (event: ConversationEvent) => void
+  onEvent: (event: ConversationEvent) => void,
+  deps: ProcessMessageDeps = { executeTool }
 ): Promise<void> {
   // 1. Save inbound message
   await db.insert(timelineEntries).values({
@@ -51,7 +57,13 @@ export async function processMessage(
   });
 
   // 2. Load user context
-  const [user] = await db.select().from(users).where(eq(users.id, userId)).limit(1);
+  const userRows = await db.select().from(users).where(eq(users.id, userId)).limit(1);
+  if (userRows.length === 0) {
+    // userId comes from a verified token, so this is unexpected — fail loudly
+    // rather than dereferencing undefined below.
+    throw new Error(`User not found: ${userId}`);
+  }
+  const user = userRows[0];
 
   // 3. Load conversation history
   const history = await db
@@ -75,6 +87,7 @@ export async function processMessage(
   });
 
   // 4. Call Claude with tool loop
+  const model = getEnv().ANTHROPIC_MODEL;
   let fullResponseText = "";
   const widgets: WidgetData[] = [];
   let currentMessages = [...messages];
@@ -84,7 +97,7 @@ export async function processMessage(
     iterations++;
 
     const stream = anthropic.messages.stream({
-      model: "claude-sonnet-4-20250514",
+      model,
       max_tokens: 2048,
       system: systemPrompt,
       messages: currentMessages,
@@ -121,7 +134,7 @@ export async function processMessage(
     const toolResults: ToolResultBlockParam[] = [];
 
     for (const toolUse of toolUseBlocks) {
-      const result = await executeTool(
+      const result = await deps.executeTool(
         toolUse.name,
         toolUse.input as Record<string, unknown>,
         userId

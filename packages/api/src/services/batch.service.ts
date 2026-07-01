@@ -1,6 +1,6 @@
 import { eq, inArray } from "drizzle-orm";
 
-import { createAHCIPAdapter, type AHCIPClaimInput } from "@/adapters/ahcip";
+import { createAHCIPAdapter, type AHCIPAdapter, type AHCIPClaimInput } from "@/adapters/ahcip";
 import { db } from "@/db";
 import { claims, batchSubmissions, timelineEntries, users } from "@/db/schema";
 import { auditLog } from "@/lib/audit";
@@ -9,7 +9,9 @@ import { decrypt } from "@/lib/encryption";
 /**
  * Collect all staged claims and submit them in a batch to AHCIP.
  */
-export async function processBatchSubmission(): Promise<{
+export async function processBatchSubmission(
+  adapter: AHCIPAdapter = createAHCIPAdapter()
+): Promise<{
   total: number;
   accepted: number;
   rejected: number;
@@ -63,7 +65,6 @@ export async function processBatchSubmission(): Promise<{
     );
 
   // Submit to AHCIP
-  const adapter = createAHCIPAdapter();
   const response = await adapter.submitBatch(ahcipClaims);
 
   // Process results
@@ -106,9 +107,9 @@ export async function processBatchSubmission(): Promise<{
     });
   }
 
-  // Update batch status
-  const batchStatus =
-    rejected === 0 ? "completed" : accepted === 0 ? "completed" : "partial_failure";
+  // Update batch status: any rejection makes the batch a partial failure
+  // (including the all-rejected case — "completed" would wrongly imply success).
+  const batchStatus = rejected === 0 ? "completed" : "partial_failure";
 
   await db
     .update(batchSubmissions)

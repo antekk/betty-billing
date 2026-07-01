@@ -1,6 +1,7 @@
 import { type NextRequest } from "next/server";
 import { z } from "zod";
 
+import { rateLimit } from "@/lib/rate-limit";
 import { authenticate, isAuthError } from "@/middleware/auth";
 import { processMessage } from "@/services/conversation.service";
 
@@ -8,9 +9,28 @@ const chatSchema = z.object({
   message: z.string().min(1).max(5000),
 });
 
+// Each message can fan out to several Claude calls, so cap per-user throughput.
+const CHAT_RATE_LIMIT = { limit: 20, windowMs: 60 * 1000 };
+
 export async function POST(request: NextRequest) {
   const auth = await authenticate(request);
   if (isAuthError(auth)) return auth;
+
+  const rl = await rateLimit(`chat:${auth.userId}`, CHAT_RATE_LIMIT);
+  if (!rl.allowed) {
+    return new Response(
+      JSON.stringify({
+        error: "You're sending messages too quickly. Give me a moment to catch up.",
+      }),
+      {
+        status: 429,
+        headers: {
+          "Content-Type": "application/json",
+          "Retry-After": Math.ceil(rl.retryAfterMs / 1000).toString(),
+        },
+      }
+    );
+  }
 
   // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   const body = await request.json();
