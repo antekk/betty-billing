@@ -10,9 +10,19 @@ export async function GET(request: NextRequest) {
   if (isAuthError(auth)) return auth;
 
   const { searchParams } = new URL(request.url);
-  const before = searchParams.get("before");
-  const limit = Math.min(parseInt(searchParams.get("limit") ?? "50", 10), 100);
   const includeFiltered = searchParams.get("include_filtered") === "true";
+
+  const beforeParam = searchParams.get("before");
+  let before: Date | null = null;
+  if (beforeParam) {
+    before = new Date(beforeParam);
+    if (isNaN(before.getTime())) {
+      return NextResponse.json({ error: "Invalid 'before' timestamp" }, { status: 400 });
+    }
+  }
+
+  const limitRaw = parseInt(searchParams.get("limit") ?? "50", 10);
+  const limit = Number.isFinite(limitRaw) ? Math.min(Math.max(limitRaw, 1), 100) : 50;
 
   const conditions = [eq(timelineEntries.userId, auth.userId)];
 
@@ -25,7 +35,7 @@ export async function GET(request: NextRequest) {
   }
 
   if (before) {
-    conditions.push(lt(timelineEntries.createdAt, new Date(before)));
+    conditions.push(lt(timelineEntries.createdAt, before));
   }
 
   const entries = await db

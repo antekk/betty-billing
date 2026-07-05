@@ -1,3 +1,5 @@
+import { todayInAlberta } from "../../lib/dates";
+
 /**
  * Parser for AHCIP Health Service Codes extract files (ehsmedbc.txt).
  *
@@ -71,7 +73,7 @@ export function parseHealthServiceCodes(content: string): HealthServiceCode[] {
  * When multiple versions exist for the same code, take the latest effective one.
  */
 export function getCurrentCodes(codes: HealthServiceCode[], asOf?: string): HealthServiceCode[] {
-  const today = asOf ?? new Date().toISOString().slice(0, 10);
+  const today = asOf ?? todayInAlberta();
 
   // Filter active codes
   const active = codes.filter((c) => c.endDate >= today && c.effectiveDate <= today);

@@ -11,6 +11,7 @@
 import { readFileSync } from "fs";
 import { resolve } from "path";
 
+import { sql } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/postgres-js";
 import postgres from "postgres";
 
@@ -20,6 +21,7 @@ import { parseModifiers, getCurrentModifiers } from "./parsers/modifiers";
 import { parsePriceList, getCurrentPrices } from "./parsers/price-list";
 import { diagnosticCodes } from "../db/schema/diagnostic-codes";
 import { feeCodes } from "../db/schema/fee-codes";
+import { todayInAlberta } from "../lib/dates";
 
 // Default to the repo-root docs dir regardless of cwd (this script lives at
 // packages/api/src/scripts)
@@ -84,7 +86,9 @@ async function main() {
     const category = categorizeCode(hsc.code);
 
     return {
-      code: hsc.code,
+      // SOMB pads short codes internally ("E  1"); store the collapsed form
+      // ("E1") — it's what physicians type and what lookups normalize to.
+      code: hsc.code.replace(/\s+/g, ""),
       description,
       baseFee,
       modifiers: null, // modifiers are global, not per-code in SOMB
@@ -109,33 +113,39 @@ async function main() {
 
   console.log("Importing to database...");
 
-  // Batch insert in chunks of 500
+  // Batch insert in chunks of 500, atomically per table — a mid-import crash
+  // must not leave a half-updated fee schedule live.
   const BATCH_SIZE = 500;
   let imported = 0;
 
-  for (let i = 0; i < feeCodeRecords.length; i += BATCH_SIZE) {
-    const batch = feeCodeRecords.slice(i, i + BATCH_SIZE);
-    await db
-      .insert(feeCodes)
-      .values(batch)
-      .onConflictDoUpdate({
-        target: [feeCodes.code, feeCodes.effectiveDate],
-        set: {
-          description: feeCodes.description,
-          baseFee: feeCodes.baseFee,
-          category: feeCodes.category,
-        },
-      });
-    imported += batch.length;
-    process.stdout.write(`\r  Imported ${imported}/${feeCodeRecords.length}`);
-  }
+  await db.transaction(async (tx) => {
+    for (let i = 0; i < feeCodeRecords.length; i += BATCH_SIZE) {
+      const batch = feeCodeRecords.slice(i, i + BATCH_SIZE);
+      await tx
+        .insert(feeCodes)
+        .values(batch)
+        .onConflictDoUpdate({
+          target: [feeCodes.code, feeCodes.effectiveDate],
+          // Must reference excluded.* — naming the target column sets it to
+          // itself and re-imports silently keep stale values.
+          set: {
+            description: sql`excluded.description`,
+            baseFee: sql`excluded.base_fee`,
+            category: sql`excluded.category`,
+            endDate: sql`excluded.end_date`,
+          },
+        });
+      imported += batch.length;
+      process.stdout.write(`\r  Imported ${imported}/${feeCodeRecords.length}`);
+    }
+  });
 
   console.log(`\n\nDone! Imported ${imported} fee codes.`);
 
   // Diagnostic codes (ICD-9 — AHCIP claims require ICD-9)
   const diagContent = readFile("diagcode.txt");
   const allDiag = parseDiagnosticCodes(diagContent);
-  const today = new Date().toISOString().slice(0, 10);
+  const today = todayInAlberta();
   // Keep currently active entries, latest effective per code
   const diagByCode = new Map<string, (typeof allDiag)[number]>();
   for (const dc of allDiag) {
@@ -157,22 +167,24 @@ async function main() {
 
   console.log(`\nImporting ${diagRecords.length} diagnostic codes...`);
   let diagImported = 0;
-  for (let i = 0; i < diagRecords.length; i += BATCH_SIZE) {
-    const batch = diagRecords.slice(i, i + BATCH_SIZE);
-    await db
-      .insert(diagnosticCodes)
-      .values(batch)
-      .onConflictDoUpdate({
-        target: [diagnosticCodes.code, diagnosticCodes.codeSystem],
-        set: {
-          description: diagnosticCodes.description,
-          effectiveDate: diagnosticCodes.effectiveDate,
-          endDate: diagnosticCodes.endDate,
-        },
-      });
-    diagImported += batch.length;
-    process.stdout.write(`\r  Imported ${diagImported}/${diagRecords.length}`);
-  }
+  await db.transaction(async (tx) => {
+    for (let i = 0; i < diagRecords.length; i += BATCH_SIZE) {
+      const batch = diagRecords.slice(i, i + BATCH_SIZE);
+      await tx
+        .insert(diagnosticCodes)
+        .values(batch)
+        .onConflictDoUpdate({
+          target: [diagnosticCodes.code, diagnosticCodes.codeSystem],
+          set: {
+            description: sql`excluded.description`,
+            effectiveDate: sql`excluded.effective_date`,
+            endDate: sql`excluded.end_date`,
+          },
+        });
+      diagImported += batch.length;
+      process.stdout.write(`\r  Imported ${diagImported}/${diagRecords.length}`);
+    }
+  });
   console.log(`\nDone! Imported ${diagImported} diagnostic codes.`);
 
   // Print some stats

@@ -5,6 +5,7 @@ export const batchStatusEnum = pgEnum("batch_status", [
   "submitted",
   "completed",
   "partial_failure",
+  "failed",
 ]);
 
 export const batchSubmissions = pgTable("batch_submissions", {

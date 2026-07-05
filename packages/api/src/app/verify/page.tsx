@@ -66,6 +66,7 @@ function VerifyForm() {
           <input
             type="text"
             inputMode="numeric"
+            aria-label="6-digit verification code"
             autoComplete="one-time-code"
             autoFocus
             maxLength={6}

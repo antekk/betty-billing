@@ -73,9 +73,7 @@ export function ClaimConfirmation({ data, onConfirm, onCancel }: ClaimConfirmati
         <Row label="Date" value={data.serviceDateFormatted ?? data.serviceDate} />
         <div className="flex items-center justify-between pt-1">
           <span className="text-text-secondary">Expected Fee</span>
-          <span className="text-lg font-bold text-text-primary">
-            ${Number(data.expectedFee).toFixed(2)}
-          </span>
+          <span className="text-lg font-bold text-text-primary">{formatFee(data.expectedFee)}</span>
         </div>
       </div>
 
@@ -127,6 +125,11 @@ export function ClaimConfirmation({ data, onConfirm, onCancel }: ClaimConfirmati
       </div>
     </div>
   );
+}
+
+function formatFee(value: number | string): string {
+  const fee = Number(value);
+  return Number.isFinite(fee) ? `$${fee.toFixed(2)}` : "—";
 }
 
 function Row({ label, value }: { label: string; value: string }) {

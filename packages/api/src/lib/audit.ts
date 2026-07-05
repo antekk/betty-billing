@@ -10,9 +10,11 @@ export type AuditAction =
   | "claim_update_proposed"
   | "claim_update_applied"
   | "claim_cancelled"
+  | "claim_needs_attention"
   | "fee_code_searched"
   | "login"
-  | "otp_requested";
+  | "otp_requested"
+  | "session_revoked";
 
 /**
  * Create an audit log entry. Append-only — entries are never updated or deleted.

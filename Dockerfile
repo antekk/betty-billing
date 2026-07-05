@@ -16,8 +16,8 @@ WORKDIR /app/packages/api
 # Dummy env so route modules can be imported during page-data collection.
 # Real values are injected at runtime by the deployment platform.
 RUN DATABASE_URL=postgres://build:build@localhost:5432/build \
-    JWT_SECRET=build-time-dummy-secret \
-    JWT_REFRESH_SECRET=build-time-dummy-secret \
+    JWT_SECRET=build-time-dummy-jwt-secret-32-chars!! \
+    JWT_REFRESH_SECRET=build-time-dummy-refresh-secret-32ch!! \
     ANTHROPIC_API_KEY=sk-ant-build-dummy \
     ENCRYPTION_KEY=0000000000000000000000000000000000000000000000000000000000000000 \
     bun run build
@@ -28,8 +28,9 @@ WORKDIR /app
 
 ENV NODE_ENV=production
 
-COPY --from=builder /app /app
+COPY --from=builder --chown=bun:bun /app /app
 
+USER bun
 WORKDIR /app/packages/api
 CMD ["bun", "run", "src/jobs/worker.ts"]
 
@@ -41,10 +42,11 @@ ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
 
 # Monorepo standalone output nests the server under the workspace path
-COPY --from=builder /app/packages/api/.next/standalone ./
-COPY --from=builder /app/packages/api/.next/static ./packages/api/.next/static
-COPY --from=builder /app/packages/api/public ./packages/api/public
+COPY --from=builder --chown=node:node /app/packages/api/.next/standalone ./
+COPY --from=builder --chown=node:node /app/packages/api/.next/static ./packages/api/.next/static
+COPY --from=builder --chown=node:node /app/packages/api/public ./packages/api/public
 
+USER node
 EXPOSE 3000
 ENV PORT=3000
 ENV HOSTNAME=0.0.0.0

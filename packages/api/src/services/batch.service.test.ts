@@ -1,6 +1,6 @@
 import { describe, expect, test, beforeEach } from "bun:test";
 
-import { processBatchSubmission } from "./batch.service";
+import { processBatchSubmission, reconcileStuckClaims } from "./batch.service";
 
 import type { AHCIPAdapter, AHCIPBatchResponse, AHCIPClaimInput } from "@/adapters/ahcip";
 
@@ -102,9 +102,9 @@ describe("processBatchSubmission", () => {
     expect(tl.content as string).toContain("invalid diagnostic code");
     expect((tl.widgetData as { body: string }).body).toBe("Invalid diagnostic code");
 
-    // Claim status transitions: bulk submitted, then accepted / rejected.
+    // Claim status transitions: bulk claimed as submitting, then accepted / rejected.
     const claimUpdates = dbState.updates.filter((u) => u.table === claims);
-    expect(claimUpdates.find((u) => u.set.status === "submitted")).toBeDefined();
+    expect(claimUpdates.find((u) => u.set.status === "submitting")).toBeDefined();
     expect(claimUpdates.find((u) => u.set.status === "accepted")).toBeDefined();
     const rejectedUpdate = claimUpdates.find((u) => u.set.status === "rejected");
     expect(rejectedUpdate?.set.rejectionReason).toBe("Invalid diagnostic code");
@@ -137,5 +137,88 @@ describe("processBatchSubmission", () => {
     expect(result).toEqual({ total: 2, accepted: 0, rejected: 2 });
     const batchUpdate = dbState.updates.find((u) => u.table === batchSubmissions);
     expect(batchUpdate?.set.status).toBe("partial_failure");
+  });
+
+  test("adapter failure: claims released back to staged, batch marked failed, error rethrown", async () => {
+    setSelect(claims, [makeStagedClaim({ id: "c1" })]);
+    setSelect(users, [{ id: "user-1", ahcipPractitionerId: "PRAC-123" }]);
+
+    const adapter: AHCIPAdapter = {
+      submitBatch: () => Promise.reject(new Error("AHCIP unreachable")),
+    };
+
+    let thrown: unknown;
+    try {
+      await processBatchSubmission(adapter);
+    } catch (error) {
+      thrown = error;
+    }
+    expect((thrown as Error).message).toBe("AHCIP unreachable");
+
+    const claimUpdates = dbState.updates.filter((u) => u.table === claims);
+    // Claimed as submitting, then released back to staged (never "submitted").
+    expect(claimUpdates.find((u) => u.set.status === "submitting")).toBeDefined();
+    const release = claimUpdates.find((u) => u.set.status === "staged");
+    expect(release).toBeDefined();
+    expect(release?.set.submittedAt).toBeNull();
+    expect(claimUpdates.find((u) => u.set.status === "accepted")).toBeUndefined();
+
+    const batchUpdate = dbState.updates.find((u) => u.table === batchSubmissions);
+    expect(batchUpdate?.set.status).toBe("failed");
+  });
+
+  test("claim whose user has no practitioner ID is held, never sent to AHCIP", async () => {
+    setSelect(claims, [makeStagedClaim({ id: "c1" })]);
+    setSelect(users, [{ id: "user-1", ahcipPractitionerId: null }]);
+
+    const { adapter, calls } = makeAdapter({ batchId: "b", submittedAt: "t", results: [] });
+
+    const result = await processBatchSubmission(adapter);
+
+    expect(result).toEqual({ total: 0, accepted: 0, rejected: 0 });
+    expect(calls).toHaveLength(0);
+
+    const claimUpdates = dbState.updates.filter((u) => u.table === claims);
+    const held = claimUpdates.find((u) => u.set.status === "needs_attention");
+    expect(held).toBeDefined();
+    expect(held?.set.rejectionReason as string).toContain("practitioner ID");
+
+    // The physician gets a visible notification card.
+    const tl = dbState.inserts.find((i) => i.table === timelineEntries);
+    expect(tl?.values.widgetType).toBe("action_card");
+    expect(tl?.values.importanceFlag).toBe(true);
+
+    // No batch row is created for an empty submittable set.
+    expect(dbState.inserts.find((i) => i.table === batchSubmissions)).toBeUndefined();
+  });
+});
+
+describe("reconcileStuckClaims", () => {
+  test("stuck submitting claims go to needs_attention with a notification and audit entry", async () => {
+    const stuck = makeStagedClaim({ id: "stuck-1", status: "submitting" });
+    setSelect(claims, [stuck]);
+
+    const count = await reconcileStuckClaims();
+
+    expect(count).toBe(1);
+    const update = dbState.updates.find((u) => u.table === claims);
+    expect(update?.set.status).toBe("needs_attention");
+    expect(update?.set.rejectionReason as string).toContain("interrupted");
+
+    const tl = dbState.inserts.find((i) => i.table === timelineEntries);
+    expect(tl?.values.widgetType).toBe("action_card");
+
+    const audit = dbState.inserts.find((i) => i.table === auditLogs);
+    expect(audit?.values.action).toBe("claim_needs_attention");
+  });
+
+  test("no stuck claims: no writes", async () => {
+    setSelect(claims, []);
+
+    const count = await reconcileStuckClaims();
+
+    expect(count).toBe(0);
+    expect(dbState.updates.filter((u) => u.table === claims)).toHaveLength(1);
+    expect(dbState.inserts).toHaveLength(0);
   });
 });

@@ -2,6 +2,7 @@ import { Queue, Worker, type Job } from "bullmq";
 import Redis from "ioredis";
 
 let connection: Redis | null = null;
+let queue: Queue | null = null;
 
 function getConnection(): Redis {
   if (!connection) {
@@ -14,7 +15,8 @@ function getConnection(): Redis {
 export const QUEUE_NAME = "betty-jobs";
 
 export function getQueue(): Queue {
-  return new Queue(QUEUE_NAME, { connection: getConnection() });
+  queue ??= new Queue(QUEUE_NAME, { connection: getConnection() });
+  return queue;
 }
 
 export function createWorker(processor: (job: Job) => Promise<void>): Worker {
@@ -22,4 +24,16 @@ export function createWorker(processor: (job: Job) => Promise<void>): Worker {
     connection: getConnection(),
     concurrency: 1,
   });
+}
+
+/** Close the shared queue and Redis connection (for graceful shutdown). */
+export async function closeQueue(): Promise<void> {
+  if (queue) {
+    await queue.close();
+    queue = null;
+  }
+  if (connection) {
+    await connection.quit();
+    connection = null;
+  }
 }

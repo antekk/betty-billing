@@ -66,7 +66,7 @@ export function ClaimUpdateConfirmation({ data, onApply }: ClaimUpdateConfirmati
         <div className="flex items-center justify-between pt-1">
           <span className="text-text-secondary">Expected Fee</span>
           <span className="text-lg font-bold text-text-primary">
-            ${Number(data.current.expectedFee).toFixed(2)}
+            {formatFee(data.current.expectedFee)}
           </span>
         </div>
       </div>
@@ -102,4 +102,9 @@ export function ClaimUpdateConfirmation({ data, onApply }: ClaimUpdateConfirmati
       </div>
     </div>
   );
+}
+
+function formatFee(value: number | string): string {
+  const fee = Number(value);
+  return Number.isFinite(fee) ? `$${fee.toFixed(2)}` : "\u2014";
 }

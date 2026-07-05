@@ -31,14 +31,29 @@ export async function POST(request: NextRequest, { params }: { params: Promise<{
     );
   }
 
-  // Transition to staged
-  await db
+  // Transition to staged. Status-guarded so a concurrent confirm/cancel can't
+  // be double-applied — zero matched rows means we lost the race.
+  const updated = await db
     .update(claims)
     .set({
       status: "staged",
       updatedAt: new Date(),
     })
-    .where(eq(claims.id, id));
+    .where(
+      and(
+        eq(claims.id, id),
+        eq(claims.userId, auth.userId),
+        eq(claims.status, "pending_confirmation")
+      )
+    )
+    .returning({ id: claims.id });
+
+  if (updated.length === 0) {
+    return NextResponse.json(
+      { error: "Claim was already processed — refresh to see its current status" },
+      { status: 409 }
+    );
+  }
 
   // Update the widget data to reflect confirmed status
   if (claim.timelineEntryId) {

@@ -32,8 +32,15 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-  const body = await request.json();
+  let body: unknown;
+  try {
+    body = await request.json();
+  } catch {
+    return new Response(JSON.stringify({ error: "Invalid request body" }), {
+      status: 400,
+      headers: { "Content-Type": "application/json" },
+    });
+  }
   const parsed = chatSchema.safeParse(body);
 
   if (!parsed.success) {
@@ -54,7 +61,9 @@ export async function POST(request: NextRequest) {
           const data = `event: ${event.type}\ndata: ${JSON.stringify(event.data)}\n\n`;
           controller.enqueue(encoder.encode(data));
         });
-      } catch (_error) {
+      } catch (error) {
+        // Without this log the whole failure class is invisible in production.
+        console.error("Chat processing error:", error);
         const errorData = `event: error\ndata: ${JSON.stringify({
           message: "An unexpected error occurred",
         })}\n\n`;

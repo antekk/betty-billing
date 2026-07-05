@@ -32,7 +32,4 @@ npm-debug.log*
 data/*.csv
 data/*.xlsx
 
-# Drizzle
-drizzle/
-
 *.local.json

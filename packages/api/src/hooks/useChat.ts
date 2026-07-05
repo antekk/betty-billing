@@ -2,7 +2,7 @@
 
 import { useState, useCallback, useRef } from "react";
 
-import { apiFetch, getAccessToken } from "@/lib/client-auth";
+import { apiFetch } from "@/lib/client-auth";
 
 export interface TimelineEntry {
   id: string;
@@ -20,6 +20,23 @@ interface ChatState {
   entries: TimelineEntry[];
   isStreaming: boolean;
   streamingText: string;
+  /** User-visible failure from send/confirm/cancel/apply — shown as a banner. */
+  error: string | null;
+}
+
+/** Error carrying the HTTP status so callers can tell auth failures apart. */
+export class ApiError extends Error {
+  constructor(
+    message: string,
+    public readonly status: number
+  ) {
+    super(message);
+  }
+}
+
+function newLocalId(prefix: string): string {
+  // Date.now() alone collides when two SSE widgets land in the same ms
+  return `${prefix}-${crypto.randomUUID()}`;
 }
 
 interface TimelineResponse {
@@ -45,6 +62,7 @@ export function useChat() {
     entries: [],
     isStreaming: false,
     streamingText: "",
+    error: null,
   });
   const [showFiltered, setShowFilteredState] = useState(false);
   // Ref so loadTimeline doesn't change identity when the toggle flips
@@ -57,7 +75,7 @@ export function useChat() {
     if (showFilteredRef.current) params.set("include_filtered", "true");
 
     const res = await apiFetch(`/api/timeline?${params}`);
-    if (!res.ok) throw new Error("Failed to load timeline");
+    if (!res.ok) throw new ApiError("Failed to load timeline", res.status);
 
     const data = (await res.json()) as TimelineResponse;
 
@@ -78,9 +96,13 @@ export function useChat() {
     [loadTimeline]
   );
 
+  const clearError = useCallback(() => {
+    setState((prev) => ({ ...prev, error: null }));
+  }, []);
+
   const sendMessage = useCallback(async (message: string) => {
     const tempEntry: TimelineEntry = {
-      id: `temp-${Date.now()}`,
+      id: newLocalId("temp"),
       type: "message",
       direction: "inbound",
       content: message,
@@ -96,20 +118,26 @@ export function useChat() {
       entries: [...prev.entries, tempEntry],
       isStreaming: true,
       streamingText: "",
+      error: null,
     }));
 
     try {
-      const token = getAccessToken();
-      const response = await fetch("/api/chat", {
+      // apiFetch refreshes an expired access token on 401 — chat must not be
+      // the one path that silently bricks after 15 minutes.
+      const response = await apiFetch("/api/chat", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
         body: JSON.stringify({ message }),
       });
 
-      if (!response.ok) throw new Error("Chat request failed");
+      if (!response.ok) {
+        let serverError: string | undefined;
+        try {
+          serverError = ((await response.json()) as ApiErrorBody).error;
+        } catch {
+          // Non-JSON error body — fall through to the generic message
+        }
+        throw new Error(serverError ?? "Your message didn't send. Please try again.");
+      }
 
       const reader = response.body?.getReader();
       if (!reader) throw new Error("No response body");
@@ -161,7 +189,7 @@ export function useChat() {
               case "widget": {
                 const widgetPayload = parsed as SseWidgetPayload;
                 const widgetEntry: TimelineEntry = {
-                  id: `widget-${Date.now()}`,
+                  id: newLocalId("widget"),
                   type: "widget",
                   direction: "outbound",
                   content: null,
@@ -181,7 +209,7 @@ export function useChat() {
               case "done":
                 if (fullText.trim()) {
                   const messageEntry: TimelineEntry = {
-                    id: `msg-${Date.now()}`,
+                    id: newLocalId("msg"),
                     type: "message",
                     direction: "outbound",
                     content: fullText,
@@ -206,13 +234,16 @@ export function useChat() {
                 }
                 break;
 
-              case "error":
+              case "error": {
+                const payload = parsed as { message?: string };
                 setState((prev) => ({
                   ...prev,
                   isStreaming: false,
                   streamingText: "",
+                  error: payload.message ?? "Something went wrong. Please try again.",
                 }));
                 break;
+              }
             }
           } catch {
             // Skip malformed events
@@ -224,65 +255,89 @@ export function useChat() {
         ...prev,
         isStreaming: false,
         streamingText: "",
+        error:
+          error instanceof Error ? error.message : "Your message didn't send. Please try again.",
       }));
-      throw error;
     }
   }, []);
 
   const confirmClaim = useCallback(
     async (claimId: string) => {
-      const res = await apiFetch(`/api/claims/${claimId}/confirm`, {
-        method: "POST",
-      });
+      try {
+        const res = await apiFetch(`/api/claims/${claimId}/confirm`, {
+          method: "POST",
+        });
 
-      if (!res.ok) {
-        const data = (await res.json()) as ApiErrorBody;
-        throw new Error(data.error ?? "Failed to confirm claim");
+        if (!res.ok) {
+          const data = (await res.json()) as ApiErrorBody;
+          throw new Error(data.error ?? "Failed to confirm claim");
+        }
+
+        // Refetch so the widget status and Betty's acknowledgement appear
+        await loadTimeline();
+      } catch (error) {
+        // Money-adjacent action: the physician must see why nothing happened
+        setState((prev) => ({
+          ...prev,
+          error: error instanceof Error ? error.message : "Failed to confirm claim",
+        }));
       }
-
-      // Refetch so the widget status and Betty's acknowledgement appear
-      await loadTimeline();
     },
     [loadTimeline]
   );
 
   const cancelClaim = useCallback(
     async (claimId: string) => {
-      const res = await apiFetch(`/api/claims/${claimId}/cancel`, {
-        method: "POST",
-      });
+      try {
+        const res = await apiFetch(`/api/claims/${claimId}/cancel`, {
+          method: "POST",
+        });
 
-      if (!res.ok) {
-        const data = (await res.json()) as ApiErrorBody;
-        throw new Error(data.error ?? "Failed to cancel claim");
+        if (!res.ok) {
+          const data = (await res.json()) as ApiErrorBody;
+          throw new Error(data.error ?? "Failed to cancel claim");
+        }
+
+        // Refetch so the widget and system event reflect server state
+        await loadTimeline();
+      } catch (error) {
+        setState((prev) => ({
+          ...prev,
+          error: error instanceof Error ? error.message : "Failed to cancel claim",
+        }));
       }
-
-      // Refetch so the widget and system event reflect server state
-      await loadTimeline();
     },
     [loadTimeline]
   );
 
   const applyClaimUpdate = useCallback(
     async (claimId: string, timelineEntryId: string) => {
-      const res = await apiFetch(`/api/claims/${claimId}/apply-update`, {
-        method: "POST",
-        body: JSON.stringify({ timelineEntryId }),
-      });
+      try {
+        const res = await apiFetch(`/api/claims/${claimId}/apply-update`, {
+          method: "POST",
+          body: JSON.stringify({ timelineEntryId }),
+        });
 
-      if (!res.ok) {
-        const data = (await res.json()) as ApiErrorBody;
-        throw new Error(data.error ?? "Failed to apply claim update");
+        if (!res.ok) {
+          const data = (await res.json()) as ApiErrorBody;
+          throw new Error(data.error ?? "Failed to apply claim update");
+        }
+
+        // Refetch — the proposal widget and the original claim widget both changed
+        await loadTimeline();
+      } catch (error) {
+        setState((prev) => ({
+          ...prev,
+          error: error instanceof Error ? error.message : "Failed to apply claim update",
+        }));
       }
-
-      // Refetch — the proposal widget and the original claim widget both changed
-      await loadTimeline();
     },
     [loadTimeline]
   );
 
   return {
     ...state,
+    clearError,
     showFiltered,
     setShowFiltered,
     loadTimeline,

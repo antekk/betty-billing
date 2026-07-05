@@ -3,9 +3,12 @@ import { type NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 
 import { db } from "@/db";
-import { otpCodes, users, timelineEntries } from "@/db/schema";
+import { otpCodes, users, timelineEntries, sessions } from "@/db/schema";
+import { auditLog } from "@/lib/audit";
 import { signAccessToken, signRefreshToken } from "@/lib/auth";
+import { otpCodeMatches } from "@/lib/otp";
 import { rateLimit } from "@/lib/rate-limit";
+import { getClientIp } from "@/lib/request";
 
 const verifySchema = z.object({
   phone: z.string().regex(/^\+1\d{10}$/),
@@ -38,27 +41,31 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  // Find valid, unused OTP
-  const otpRows = await db
+  // Load unexpired, unused codes for this phone; the hash comparison happens
+  // here (constant-time), not in the WHERE clause.
+  const candidateRows = await db
     .select()
     .from(otpCodes)
     .where(
-      and(
-        eq(otpCodes.phone, phone),
-        eq(otpCodes.code, code),
-        eq(otpCodes.used, false),
-        gt(otpCodes.expiresAt, new Date())
-      )
+      and(eq(otpCodes.phone, phone), eq(otpCodes.used, false), gt(otpCodes.expiresAt, new Date()))
     )
-    .limit(1);
+    .limit(5);
 
-  const otp = otpRows.at(0);
+  const otp = candidateRows.find((row) => otpCodeMatches(code, row.codeHash));
   if (!otp) {
     return NextResponse.json({ error: "Invalid or expired code" }, { status: 401 });
   }
 
-  // Mark OTP as used
-  await db.update(otpCodes).set({ used: true }).where(eq(otpCodes.id, otp.id));
+  // Atomic redeem: the used=false guard means two concurrent requests with the
+  // same code can't both succeed.
+  const redeemed = await db
+    .update(otpCodes)
+    .set({ used: true })
+    .where(and(eq(otpCodes.id, otp.id), eq(otpCodes.used, false)))
+    .returning({ id: otpCodes.id });
+  if (redeemed.length === 0) {
+    return NextResponse.json({ error: "Invalid or expired code" }, { status: 401 });
+  }
 
   // Upsert user
   const existingUserRows = await db.select().from(users).where(eq(users.phone, phone)).limit(1);
@@ -70,24 +77,49 @@ export async function POST(request: NextRequest) {
   if (existingUser) {
     userId = existingUser.id;
   } else {
-    const [newUser] = await db.insert(users).values({ phone }).returning({ id: users.id });
-    userId = newUser.id;
-    isNewUser = true;
+    // Two first-time verifications can race on the phone unique constraint —
+    // ON CONFLICT DO NOTHING makes the loser fall through to a re-read.
+    const inserted = await db
+      .insert(users)
+      .values({ phone })
+      .onConflictDoNothing({ target: users.phone })
+      .returning({ id: users.id });
+    const newUser = inserted.at(0);
 
-    // Seed welcome message for new users
-    await db.insert(timelineEntries).values({
-      userId,
-      type: "message",
-      direction: "outbound",
-      content: WELCOME_MESSAGE,
-      visibility: "default",
-      importanceFlag: false,
-    });
+    if (newUser) {
+      userId = newUser.id;
+      isNewUser = true;
+
+      // Seed welcome message for new users
+      await db.insert(timelineEntries).values({
+        userId,
+        type: "message",
+        direction: "outbound",
+        content: WELCOME_MESSAGE,
+        visibility: "default",
+        importanceFlag: false,
+      });
+    } else {
+      const raceRows = await db.select().from(users).where(eq(users.phone, phone)).limit(1);
+      const raceUser = raceRows.at(0);
+      if (!raceUser) {
+        return NextResponse.json({ error: "Could not create account" }, { status: 500 });
+      }
+      userId = raceUser.id;
+    }
   }
+
+  await auditLog(userId, "login", "user", userId, { isNewUser }, getClientIp(request));
+
+  // A server-side session row backs the refresh token (rotation/revocation)
+  const [session] = await db
+    .insert(sessions)
+    .values({ userId, expiresAt: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000) })
+    .returning({ id: sessions.id });
 
   const [accessToken, refreshToken] = await Promise.all([
     signAccessToken(userId, phone),
-    signRefreshToken(userId, phone),
+    signRefreshToken(userId, phone, session.id),
   ]);
 
   return NextResponse.json({

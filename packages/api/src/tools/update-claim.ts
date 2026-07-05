@@ -10,6 +10,7 @@ import type {
 import { db } from "@/db";
 import { timelineEntries } from "@/db/schema";
 import { auditLog } from "@/lib/audit";
+import { formatIsoDate } from "@/lib/dates";
 import { getClaimForUser } from "@/services/claim.service";
 import { getFeeCode } from "@/services/fee-code.service";
 
@@ -73,14 +74,7 @@ export const updateClaimTool: Tool = {
 };
 
 function formatServiceDate(iso: string): string {
-  const d = new Date(iso);
-  if (isNaN(d.getTime())) return iso;
-  return d.toLocaleDateString("en-CA", {
-    weekday: "long",
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-  });
+  return formatIsoDate(iso);
 }
 
 function normalizeOptional(input: string | undefined): string | null | undefined {

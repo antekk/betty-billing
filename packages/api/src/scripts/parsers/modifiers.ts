@@ -1,3 +1,5 @@
+import { todayInAlberta } from "../../lib/dates";
+
 /**
  * Parser for AHCIP Fee Modifiers extract file (efeemodr.txt).
  *
@@ -47,7 +49,7 @@ export function parseModifiers(content: string): FeeModifier[] {
 }
 
 export function getCurrentModifiers(modifiers: FeeModifier[], asOf?: string): FeeModifier[] {
-  const today = asOf ?? new Date().toISOString().slice(0, 10);
+  const today = asOf ?? todayInAlberta();
 
   const active = modifiers.filter((m) => m.endDate >= today && m.effectiveDate <= today);
 

@@ -16,6 +16,7 @@ import { users } from "./users";
 export const claimStatusEnum = pgEnum("claim_status", [
   "pending_confirmation",
   "staged",
+  "submitting",
   "submitted",
   "accepted",
   "rejected",

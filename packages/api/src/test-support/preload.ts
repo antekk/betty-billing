@@ -15,8 +15,8 @@ import { afterEach, mock } from "bun:test";
 import { fakeDb, resetDb, FakeAnthropic, resetAnthropic } from "./fakes";
 
 process.env.DATABASE_URL ??= "postgres://mock:mock@localhost:5432/mock";
-process.env.JWT_SECRET ??= "test-jwt-secret-0123456789";
-process.env.JWT_REFRESH_SECRET ??= "test-jwt-refresh-secret-0123456789";
+process.env.JWT_SECRET ??= "test-jwt-secret-at-least-32-chars-long!!";
+process.env.JWT_REFRESH_SECRET ??= "test-jwt-refresh-secret-at-least-32-chars!!";
 process.env.ANTHROPIC_API_KEY ??= "sk-ant-test-key";
 process.env.ANTHROPIC_MODEL ??= "claude-sonnet-4-6";
 process.env.ENCRYPTION_KEY ??= "0".repeat(64);

@@ -11,6 +11,7 @@ const { signAccessToken, signRefreshToken, verifyAccessToken, verifyRefreshToken
 describe("JWT auth", () => {
   const userId = "user-123";
   const phone = "+14035551234";
+  const sessionId = "session-123";
 
   describe("access tokens", () => {
     test("sign and verify round-trip", async () => {
@@ -30,17 +31,18 @@ describe("JWT auth", () => {
     });
 
     test("rejects token signed with refresh secret", async () => {
-      const token = await signRefreshToken(userId, phone);
+      const token = await signRefreshToken(userId, phone, sessionId);
       expect(verifyAccessToken(token)).rejects.toThrow();
     });
   });
 
   describe("refresh tokens", () => {
-    test("sign and verify round-trip", async () => {
-      const token = await signRefreshToken(userId, phone);
+    test("sign and verify round-trip carries the session jti", async () => {
+      const token = await signRefreshToken(userId, phone, sessionId);
       const payload = await verifyRefreshToken(token);
       expect(payload.sub).toBe(userId);
       expect(payload.phone).toBe(phone);
+      expect(payload.jti).toBe(sessionId);
     });
 
     test("rejects token signed with access secret", async () => {

@@ -10,11 +10,18 @@ import { getQueue } from "./queue";
 export async function setupSchedules(): Promise<void> {
   const queue = getQueue();
 
-  // Batch submission every hour
+  // Batch submission every hour. Retries are safe: on an AHCIP error the
+  // batch releases its claims back to `staged` before rethrowing.
   await queue.upsertJobScheduler(
     "batch-submit-hourly",
     { every: 60 * 60 * 1000 }, // every hour
-    { name: "batch-submit" }
+    {
+      name: "batch-submit",
+      opts: {
+        attempts: 3,
+        backoff: { type: "exponential", delay: 60_000 },
+      },
+    }
   );
 
   console.log("Job schedules configured:");

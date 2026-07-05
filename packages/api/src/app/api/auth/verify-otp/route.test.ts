@@ -5,6 +5,7 @@ import { POST } from "./route";
 import type { NextRequest } from "next/server";
 
 import { otpCodes, users, timelineEntries } from "@/db/schema";
+import { hashOtpCode } from "@/lib/otp";
 import { rateLimit, resetRateLimitStore } from "@/lib/rate-limit";
 import { dbState, setSelect, setInsertReturn } from "@/test-support/fakes";
 
@@ -24,7 +25,9 @@ function makeRequest(body: unknown): NextRequest {
 
 beforeEach(() => {
   resetRateLimitStore();
-  setSelect(otpCodes, [{ id: "otp1" }]);
+  // Codes are stored hashed; the route compares hashes in JS, so the fixture
+  // must carry the real hash of the submitted code.
+  setSelect(otpCodes, [{ id: "otp1", codeHash: hashOtpCode(VALID_BODY.code) }]);
 });
 
 describe("POST /api/auth/verify-otp", () => {
@@ -99,7 +102,20 @@ describe("POST /api/auth/verify-otp", () => {
     const json = (await res.json()) as { isNewUser: boolean; accessToken: string };
     expect(json.isNewUser).toBe(false);
     expect(json.accessToken.split(".")).toHaveLength(3);
-    // No new user, no welcome entry.
+    // No new user, no welcome entry (the only insert is the login audit row).
+    expect(dbState.inserts.filter((i) => i.table === users)).toHaveLength(0);
+    expect(dbState.inserts.filter((i) => i.table === timelineEntries)).toHaveLength(0);
+  });
+
+  test("returns 401 when the submitted code does not hash-match any stored code", async () => {
+    setSelect(otpCodes, [{ id: "otp1", codeHash: hashOtpCode("999999") }]);
+
+    const res = await POST(makeRequest(VALID_BODY));
+
+    expect(res.status).toBe(401);
+    // The code comparison happens in JS, so this is a real credential check:
+    // deleting it would fail this test.
+    expect(dbState.updates).toHaveLength(0);
     expect(dbState.inserts).toHaveLength(0);
   });
 });

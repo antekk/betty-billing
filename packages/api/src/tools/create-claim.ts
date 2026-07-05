@@ -7,6 +7,7 @@ import type { ClaimConfirmationData } from "@betty/shared";
 import { db } from "@/db";
 import { claims, timelineEntries } from "@/db/schema";
 import { auditLog } from "@/lib/audit";
+import { daysBetweenIso, formatIsoDate, todayInAlberta } from "@/lib/dates";
 import { encrypt } from "@/lib/encryption";
 import { getFeeCode } from "@/services/fee-code.service";
 
@@ -75,22 +76,30 @@ export async function handleCreateClaim(
     });
   }
 
-  // Validate service date
-  const serviceDate = new Date(input.service_date);
-  if (isNaN(serviceDate.getTime())) {
+  // Validate service date: civil YYYY-MM-DD, not in the future (AHCIP rejects
+  // future-dated claims), warn past the 90-day claim-back period.
+  if (
+    !/^\d{4}-\d{2}-\d{2}$/.test(input.service_date) ||
+    isNaN(Date.parse(`${input.service_date}T00:00:00Z`))
+  ) {
     return JSON.stringify({
       created: false,
-      error: `Invalid service date: "${input.service_date}"`,
+      error: `Invalid service date: "${input.service_date}" — use YYYY-MM-DD.`,
     });
   }
+  const todayIso = todayInAlberta();
+  if (input.service_date > todayIso) {
+    return JSON.stringify({
+      created: false,
+      error: `Service date ${input.service_date} is in the future (today in Alberta is ${todayIso}). Claims cannot be submitted for future dates.`,
+    });
+  }
+  const claimBackWarning =
+    daysBetweenIso(todayIso, input.service_date) > 90
+      ? "This service date is more than 90 days ago — Alberta's standard claim-back period is 90 days, so AHCIP may reject it."
+      : undefined;
 
-  // Format service date for display
-  const formattedDate = serviceDate.toLocaleDateString("en-CA", {
-    weekday: "long",
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-  });
+  const formattedDate = formatIsoDate(input.service_date);
 
   const expectedFee = feeCode.baseFee;
   const encryptedPhn = encrypt(phnResult.formatted ?? "");
@@ -102,7 +111,8 @@ export async function handleCreateClaim(
     claimId: "", // will be set after claim insert
     patientName: input.patient_name ?? null,
     phnLast4,
-    feeCode: input.fee_code,
+    // Canonical code from the schedule, not the user's raw spelling
+    feeCode: feeCode.code,
     feeCodeDescription: feeCode.description,
     modifier: input.modifier ?? null,
     serviceDate: input.service_date,
@@ -133,7 +143,7 @@ export async function handleCreateClaim(
       userId,
       timelineEntryId: entry.id,
       status: "pending_confirmation",
-      feeCode: input.fee_code,
+      feeCode: feeCode.code,
       modifier: input.modifier ?? null,
       phn: encryptedPhn,
       phnLast4,
@@ -150,7 +160,7 @@ export async function handleCreateClaim(
 
   // Audit log
   await auditLog(userId, "claim_created", "claim", claim.id, {
-    feeCode: input.fee_code,
+    feeCode: feeCode.code,
     phnLast4,
     serviceDate: input.service_date,
   });
@@ -160,5 +170,6 @@ export async function handleCreateClaim(
     claimId: claim.id,
     timelineEntryId: entry.id,
     widget: widgetData,
+    warning: claimBackWarning,
   });
 }

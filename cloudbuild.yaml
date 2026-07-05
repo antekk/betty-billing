@@ -9,3 +9,4 @@ steps:
 images:
   - "${_IMAGE}"
   - "${_IMAGE_JOBS}"
+timeout: 1800s

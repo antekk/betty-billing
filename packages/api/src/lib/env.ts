@@ -1,19 +1,24 @@
 import { z } from "zod";
 
-const envSchema = z.object({
-  DATABASE_URL: z.string().url(),
-  REDIS_URL: z.string().url().optional(),
-  JWT_SECRET: z.string().min(16),
-  JWT_REFRESH_SECRET: z.string().min(16),
-  ANTHROPIC_API_KEY: z.string().startsWith("sk-ant-"),
-  ANTHROPIC_MODEL: z.string().min(1).default("claude-sonnet-4-6"),
-  ENCRYPTION_KEY: z.string().length(64),
-  SMS_PROVIDER: z.enum(["mock", "twilio"]).default("mock"),
-  // Twilio (optional for v1)
-  TWILIO_ACCOUNT_SID: z.string().optional(),
-  TWILIO_AUTH_TOKEN: z.string().optional(),
-  TWILIO_PHONE_NUMBER: z.string().optional(),
-});
+const envSchema = z
+  .object({
+    DATABASE_URL: z.string().url(),
+    REDIS_URL: z.string().url().optional(),
+    JWT_SECRET: z.string().min(32),
+    JWT_REFRESH_SECRET: z.string().min(32),
+    ANTHROPIC_API_KEY: z.string().startsWith("sk-ant-"),
+    ANTHROPIC_MODEL: z.string().min(1).default("claude-sonnet-4-6"),
+    ENCRYPTION_KEY: z.string().length(64),
+    SMS_PROVIDER: z.enum(["mock", "twilio"]).default("mock"),
+    // Twilio (optional for v1)
+    TWILIO_ACCOUNT_SID: z.string().optional(),
+    TWILIO_AUTH_TOKEN: z.string().optional(),
+    TWILIO_PHONE_NUMBER: z.string().optional(),
+  })
+  .refine((env) => env.JWT_SECRET !== env.JWT_REFRESH_SECRET, {
+    message: "JWT_SECRET and JWT_REFRESH_SECRET must be different values",
+    path: ["JWT_REFRESH_SECRET"],
+  });
 
 export type Env = z.infer<typeof envSchema>;
 
