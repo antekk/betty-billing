@@ -28,8 +28,9 @@ WORKDIR /app
 
 ENV NODE_ENV=production
 
-COPY --from=builder /app /app
+COPY --from=builder --chown=bun:bun /app /app
 
+USER bun
 WORKDIR /app/packages/api
 CMD ["bun", "run", "src/jobs/worker.ts"]
 
@@ -41,10 +42,11 @@ ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
 
 # Monorepo standalone output nests the server under the workspace path
-COPY --from=builder /app/packages/api/.next/standalone ./
-COPY --from=builder /app/packages/api/.next/static ./packages/api/.next/static
-COPY --from=builder /app/packages/api/public ./packages/api/public
+COPY --from=builder --chown=node:node /app/packages/api/.next/standalone ./
+COPY --from=builder --chown=node:node /app/packages/api/.next/static ./packages/api/.next/static
+COPY --from=builder --chown=node:node /app/packages/api/public ./packages/api/public
 
+USER node
 EXPOSE 3000
 ENV PORT=3000
 ENV HOSTNAME=0.0.0.0
