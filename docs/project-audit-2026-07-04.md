@@ -1,5 +1,10 @@
 # Betty Billing — Project Audit
 
+> **Remediation status (2026-07-05):** the findings below have been addressed on
+> this branch — see the "Remediation record" section at the end of this
+> document for the finding-by-finding outcome. The audit text itself is kept
+> as written, describing the code as it was at commit `ab1cfef`.
+
 **Date:** 2026-07-04
 **Scope:** Full repository at commit `ab1cfef` — application code (`packages/api`, `packages/shared`), data layer, LLM integration, frontend, tests, CI, and deployment (`Dockerfile`, `cloudbuild.yaml`, `deploy.sh`, `docker-compose.yml`).
 **Method:** Five parallel deep-review passes (security, backend correctness, data layer, frontend, infrastructure/CI/tests), every finding verified against the actual code; the highest-severity findings were independently re-verified a second time. Local run of the full CI suite.
@@ -234,3 +239,40 @@ Existing tests are genuinely good (streaming order, tool-loop feedback, real enc
 **Next (1–2 weeks):** 5. Fix seed upsert to use `excluded.*` and add `endDate` to the set-list (H5). 6. Alberta timezone for all date resolution (H6). 7. Leading-assistant-message guard in conversation history (H7). 8. Error surfacing in the UI + route `sendMessage` through `apiFetch` (H8). 9. Deploy ordering (migrate before traffic), URL-encode DB password, stop rotating it every deploy (H4); fix `.dockerignore` anchoring (H9). 10. Refresh-token rotation/revocation, httpOnly cookie storage (H1).
 
 **Ongoing hardening:** 11. Route-level tests for confirm/cancel/apply-update; make the fake DB honor WHERE, or add a real-Postgres CI job. 12. OTP bundle (CSPRNG, request-otp rate limit, atomic redeem, hashed + purged codes). 13. Auth/PHN audit-log events with IPs; encrypt patient names or document the decision. 14. Tool-input zod validation; log (don't discard) chat-route errors; worker error listener + graceful shutdown.
+
+---
+
+## Remediation record (2026-07-05)
+
+Implemented on this branch, one commit per area. All CI checks pass after each commit (lint, format, typecheck, 103 tests, build).
+
+### Critical — all fixed
+
+- **C1 (OTP codes in logs / no real SMS):** Twilio provider implemented; `SMS_PROVIDER=mock` now refuses to start in production unless `ALLOW_MOCK_SMS=true` is set explicitly, and `deploy.sh` warns loudly when it is. OTP codes are additionally stored as SHA-256 hashes (a DB leak exposes nothing) and generated with `crypto.randomInt`.
+- **C2 (no migrations):** `drizzle/` un-ignored, initial migration + journal committed; regenerated once mid-branch (nothing had shipped) so the schema changes below live in two clean migrations.
+- **C3 (batch marks submitted before AHCIP, no recovery):** claims are claimed atomically (transaction + `FOR UPDATE SKIP LOCKED`) into a new `submitting` state; on adapter failure they release back to `staged`, the batch is marked `failed`, and the job retries (BullMQ retry policy added). `reconcileStuckClaims()` moves claims stranded in `submitting` to `needs_attention` with a notification — never auto-resubmitted, which could double-bill.
+- **C4 (unguarded state transitions):** every claim transition (batch, confirm, cancel, apply-update) is a status-guarded `UPDATE … RETURNING` with a row-count check; lost races return 409/errors instead of overwriting state. Claims from users with no practitioner ID are held as `needs_attention` instead of being submitted as `"UNKNOWN"`.
+
+### High — all fixed
+
+- **H1 (non-revocable 30-day tokens):** new `sessions` table; refresh tokens carry a `jti`, rotate on every use (inheriting absolute expiry), replay of a rotated token revokes all the user's sessions, and `/api/auth/logout` revokes server-side. Client refresh is single-flight. (Tokens remain in localStorage — moving to httpOnly cookies is noted as follow-up.)
+- **H2 (per-instance rate limits):** `deploy.sh` accepts `REDIS_URL` and wires it into the service; without it, the deploy summary states the limitation. request-otp additionally gained per-IP + per-phone limits backed by a DB cap that survives restarts.
+- **H3 (worker never deployed):** batch submission now runs in production as the `betty-batch` Cloud Run Job on an hourly Cloud Scheduler trigger (new one-shot `src/jobs/run-batch.ts`); the BullMQ worker remains for local/compose use and gained an error listener + graceful shutdown.
+- **H4 (deploy ordering / password):** migrations run before the new revision takes traffic; the DB password is hex (URL-safe) and created once, never rotated on re-runs.
+- **H5 (seed upsert no-op):** `onConflictDoUpdate` uses `excluded.*` and includes `end_date`; imports are transactional per table.
+- **H6 (UTC dates):** all civil-date computation goes through `lib/dates.ts` (America/Edmonton); `resolve_date` resolves in Alberta's clock; widget formatting can't day-shift; `create_claim` blocks future dates and warns past the 90-day claim-back period. Verified at the 01:00 UTC boundary.
+- **H7 (history starts with assistant → API 400):** leading non-user messages are dropped after consolidation.
+- **H8 (silent frontend failures):** error banner state in `useChat` for send/confirm/cancel/apply failures (server reasons surfaced, dismissible); `sendMessage` goes through the refreshing `apiFetch`; timeline load only redirects to login on a real 401, with a retry banner otherwise.
+- **H9 (.dockerignore anchoring):** patterns prefixed with `**/`.
+
+### Medium/low — fixed in passing
+
+Atomic OTP redeem + prior-code invalidation + expired-row purge; first-login upsert race (ON CONFLICT DO NOTHING); JWT algorithm/issuer/audience pinning; 32-char distinct JWT secrets enforced (CI/Docker dummies updated); auth + OTP + session events audit-logged with client IP; zod validation on model-supplied tool inputs; tool exceptions become correctable tool errors instead of killing the SSE turn; chat route logs errors (was `catch (_error)`) and 400s malformed JSON; timeline validates `before`/`limit`; `list_claims` clamps LLM limits; `get_claim` no longer leaks driver errors to the model; final tool-loop iteration skips execution (no orphaned side effects); fee codes stored canonically ("E 1" → "E1", claims store the schedule's code); batch results sync the confirmation widget (rejected claims no longer show "staged" forever); `/api/health` probes the DB; Docker images run as non-root; queue singleton; widget React keys use `randomUUID`; pinch-zoom re-enabled; aria-labels on OTP/chat inputs; `$NaN` fee rendering guarded; auto-scroll only while pinned to bottom; Cloud Build timeout.
+
+### Known follow-ups (not addressed here)
+
+- Move tokens from localStorage to httpOnly cookies (H1 residual; requires reworking all client fetches + CSRF strategy).
+- Encrypt patient names at rest / define a retention & erasure strategy (M4, L2).
+- Route-level tests for confirm/cancel/apply-update and a real-Postgres CI job (the WHERE-blind fake still can't catch guarded-update regressions — the new guards are verified by construction and by the batch-service tests, not by SQL execution).
+- Duplicate-claim guard (same patient/code/date), trigram index + rate limit for the unauthenticated fee-code search, pg_trgm, `noUncheckedIndexedAccess`, dependency upgrades (@anthropic-ai/sdk 0.39, drizzle 0.38).
+- Confirm with real samples whether Alberta PHNs carry a Luhn check digit.
