@@ -131,6 +131,18 @@ export async function processMessage(
       break;
     }
 
+    // Final iteration: executing tools now would create side effects (even
+    // real claims) whose results Claude never sees — skip them and close out
+    // with something the physician can act on instead.
+    if (iterations >= MAX_TOOL_ITERATIONS) {
+      const fallback =
+        "I couldn't finish that in one go — could you rephrase, or break it into smaller steps?";
+      const separator = fullResponseText.trim() ? "\n\n" : "";
+      fullResponseText += separator + fallback;
+      onEvent({ type: "delta", data: { text: separator + fallback } });
+      break;
+    }
+
     // Execute tools and build tool results
     const toolResults: ToolResultBlockParam[] = [];
 
@@ -223,7 +235,16 @@ function timelineToMessages(entries: (typeof timelineEntries.$inferSelect)[]): M
   }
 
   // Ensure messages alternate properly (Claude requires user/assistant alternation)
-  return consolidateMessages(messages);
+  const consolidated = consolidateMessages(messages);
+
+  // The API rejects a conversation whose first message isn't user-role, and a
+  // fixed-size window can open on outbound/system entries (e.g. a proactive
+  // rejection notification) — drop those leading entries.
+  while (consolidated.length > 0 && consolidated[0].role !== "user") {
+    consolidated.shift();
+  }
+
+  return consolidated;
 }
 
 /**

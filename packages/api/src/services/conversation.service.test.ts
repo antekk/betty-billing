@@ -134,11 +134,15 @@ describe("processMessage", () => {
     await processMessage("user-1", "loop forever", onEvent, { executeTool: exec.fn });
 
     expect(anthropicState.callCount).toBe(MAX_TOOL_ITERATIONS);
-    expect(exec.calls).toHaveLength(MAX_TOOL_ITERATIONS);
+    // The final iteration must NOT execute tools — their results would be
+    // discarded, leaving side effects (even created claims) Betty never saw.
+    expect(exec.calls).toHaveLength(MAX_TOOL_ITERATIONS - 1);
 
     const doneEvents = events.filter((e) => e.type === "done");
     expect(doneEvents).toHaveLength(1);
     expect(events[events.length - 1].type).toBe("done");
+    // The physician gets an actionable close-out, not silence.
+    expect((doneEvents[0].data as { text: string }).text).toContain("smaller steps");
   });
 
   test("throws when the authenticated user no longer exists", async () => {

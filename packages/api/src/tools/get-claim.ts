@@ -50,9 +50,9 @@ export async function handleGetClaim(input: { claim_id: string }, userId: string
       },
     });
   } catch (error) {
-    return JSON.stringify({
-      error: "Failed to fetch claim",
-      details: error instanceof Error ? error.message : "Unknown error",
-    });
+    // Log the real error; driver messages must not reach the model (it may
+    // echo them to the physician).
+    console.error("get_claim failed:", error);
+    return JSON.stringify({ error: "Failed to fetch claim" });
   }
 }

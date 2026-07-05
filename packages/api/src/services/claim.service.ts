@@ -60,6 +60,12 @@ export async function getClaimForUser(
   return rest;
 }
 
+// The limit can come from the LLM — clamp junk (negative, NaN) to sane bounds.
+function clampLimit(limit: number | undefined): number {
+  if (limit === undefined || !Number.isFinite(limit)) return 25;
+  return Math.min(Math.max(Math.floor(limit), 1), 100);
+}
+
 interface ListClaimsOptions {
   status?: ClaimStatus;
   serviceDateFrom?: string; // ISO YYYY-MM-DD
@@ -98,7 +104,7 @@ export async function listClaimsForUser(
     .from(claims)
     .where(and(...filters))
     .orderBy(desc(claims.serviceDate))
-    .limit(Math.min(opts.limit ?? 25, 100));
+    .limit(clampLimit(opts.limit));
 
   return rows;
 }
