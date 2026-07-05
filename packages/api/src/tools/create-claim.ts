@@ -102,7 +102,8 @@ export async function handleCreateClaim(
     claimId: "", // will be set after claim insert
     patientName: input.patient_name ?? null,
     phnLast4,
-    feeCode: input.fee_code,
+    // Canonical code from the schedule, not the user's raw spelling
+    feeCode: feeCode.code,
     feeCodeDescription: feeCode.description,
     modifier: input.modifier ?? null,
     serviceDate: input.service_date,
@@ -133,7 +134,7 @@ export async function handleCreateClaim(
       userId,
       timelineEntryId: entry.id,
       status: "pending_confirmation",
-      feeCode: input.fee_code,
+      feeCode: feeCode.code,
       modifier: input.modifier ?? null,
       phn: encryptedPhn,
       phnLast4,
@@ -150,7 +151,7 @@ export async function handleCreateClaim(
 
   // Audit log
   await auditLog(userId, "claim_created", "claim", claim.id, {
-    feeCode: input.fee_code,
+    feeCode: feeCode.code,
     phnLast4,
     serviceDate: input.service_date,
   });
