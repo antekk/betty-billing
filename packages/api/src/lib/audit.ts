@@ -10,6 +10,7 @@ export type AuditAction =
   | "claim_update_proposed"
   | "claim_update_applied"
   | "claim_cancelled"
+  | "claim_needs_attention"
   | "fee_code_searched"
   | "login"
   | "otp_requested";

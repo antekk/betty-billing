@@ -80,7 +80,9 @@ export async function POST(request: NextRequest, { params }: { params: Promise<{
   const newStatus = wasRejected ? "staged" : claim.status;
   const now = new Date();
 
-  await db
+  // Status-guarded on the status we validated: if the claim moved (e.g. the
+  // batch job just picked it up), zero rows match and nothing is overwritten.
+  const updated = await db
     .update(claims)
     .set({
       feeCode: proposal.current.feeCode,
@@ -94,7 +96,17 @@ export async function POST(request: NextRequest, { params }: { params: Promise<{
       resolvedAt: wasRejected ? now : claim.resolvedAt,
       updatedAt: now,
     })
-    .where(eq(claims.id, claim.id));
+    .where(
+      and(eq(claims.id, claim.id), eq(claims.userId, auth.userId), eq(claims.status, claim.status))
+    )
+    .returning({ id: claims.id });
+
+  if (updated.length === 0) {
+    return NextResponse.json(
+      { error: "Claim changed while applying the update — please try again" },
+      { status: 409 }
+    );
+  }
 
   // Mark the proposal widget as applied
   const appliedProposal: ClaimUpdateConfirmationData = {

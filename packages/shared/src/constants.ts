@@ -1,6 +1,7 @@
 export const CLAIM_STATUS = {
   PENDING_CONFIRMATION: "pending_confirmation",
   STAGED: "staged",
+  SUBMITTING: "submitting",
   SUBMITTED: "submitted",
   ACCEPTED: "accepted",
   REJECTED: "rejected",

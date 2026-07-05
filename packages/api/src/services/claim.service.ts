@@ -1,4 +1,4 @@
-import { and, desc, eq, gte, lte } from "drizzle-orm";
+import { and, desc, eq, gte, inArray, lte } from "drizzle-orm";
 
 import type { ClaimStatus } from "@betty/shared";
 
@@ -135,19 +135,33 @@ export async function cancelClaimForUser(
     };
   }
 
+  // Status-guarded write: if the claim changed state since the read above
+  // (e.g. the batch job picked it up), zero rows match and we must not cancel.
   const now = new Date();
-  await db
+  const updatedRows = await db
     .update(claims)
     .set({ status: "cancelled", resolvedAt: now, updatedAt: now })
-    .where(and(eq(claims.id, claimId), eq(claims.userId, userId)));
+    .where(
+      and(
+        eq(claims.id, claimId),
+        eq(claims.userId, userId),
+        inArray(claims.status, [...CANCELLABLE_STATUSES])
+      )
+    )
+    .returning({ timelineEntryId: claims.timelineEntryId });
+
+  if (updatedRows.length === 0) {
+    const current = await getClaimForUser(claimId, userId);
+    return {
+      cancelled: false,
+      error: current
+        ? `Claim cannot be cancelled — current status is "${current.status}"`
+        : "Claim not found",
+    };
+  }
 
   // Reflect the cancellation on the original confirmation widget
-  const claimRows = await db
-    .select({ timelineEntryId: claims.timelineEntryId })
-    .from(claims)
-    .where(eq(claims.id, claimId))
-    .limit(1);
-  const timelineEntryId = claimRows.at(0)?.timelineEntryId;
+  const timelineEntryId = updatedRows.at(0)?.timelineEntryId;
   if (timelineEntryId) {
     const entryRows = await db
       .select()

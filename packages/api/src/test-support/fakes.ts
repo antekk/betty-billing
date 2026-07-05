@@ -23,6 +23,12 @@ interface DbState {
   selectByTable: Map<unknown, Row[]>;
   /** Rows returned by `insert(table).values(...).returning()`, keyed by table. */
   insertReturnByTable: Map<unknown, Row[]>;
+  /**
+   * Rows returned by `update(table)...returning()`, keyed by table. When a
+   * table has no explicit entry, the fake falls back to the table's select
+   * rows — the WHERE-blind approximation of "the guarded update matched".
+   */
+  updateReturnByTable: Map<unknown, Row[]>;
   inserts: { table: unknown; values: Row }[];
   updates: { table: unknown; set: Row }[];
   deletes: { table: unknown }[];
@@ -32,6 +38,7 @@ interface DbState {
 export const dbState: DbState = {
   selectByTable: new Map(),
   insertReturnByTable: new Map(),
+  updateReturnByTable: new Map(),
   inserts: [],
   updates: [],
   deletes: [],
@@ -46,9 +53,14 @@ export function setInsertReturn(table: unknown, rows: Row[]): void {
   dbState.insertReturnByTable.set(table, rows);
 }
 
+export function setUpdateReturn(table: unknown, rows: Row[]): void {
+  dbState.updateReturnByTable.set(table, rows);
+}
+
 export function resetDb(): void {
   dbState.selectByTable.clear();
   dbState.insertReturnByTable.clear();
+  dbState.updateReturnByTable.clear();
   dbState.inserts = [];
   dbState.updates = [];
   dbState.deletes = [];
@@ -56,16 +68,28 @@ export function resetDb(): void {
 }
 
 // A chainable, awaitable select node. It resolves to `rows` whether the caller
-// awaits after `.where(...)`, after `.where(...).limit(n)`, or after
-// `.where(...).orderBy(...).limit(n)` — covering every shape used in the app.
+// awaits after `.where(...)`, after `.where(...).limit(n)`, after
+// `.where(...).orderBy(...).limit(n)`, or after `.where(...).for(...)` —
+// covering every shape used in the app.
 function selectChain(rows: Row[]): Record<string, unknown> {
   return {
     where: () => selectChain(rows),
     orderBy: () => selectChain(rows),
     offset: () => selectChain(rows),
+    for: () => selectChain(rows),
     limit: () => Promise.resolve(rows),
     then: (resolve: (v: Row[]) => unknown, reject?: (e: unknown) => unknown) =>
       Promise.resolve(rows).then(resolve, reject),
+  };
+}
+
+// Awaitable update tail supporting both `await ...where(...)` and
+// `await ...where(...).returning(...)`.
+function updateTail(ret: Row[]): Record<string, unknown> {
+  return {
+    returning: () => Promise.resolve(ret),
+    then: (resolve: (v: undefined) => unknown, reject?: (e: unknown) => unknown) =>
+      Promise.resolve(undefined).then(resolve, reject),
   };
 }
 
@@ -92,10 +116,10 @@ export const fakeDb = {
   update: (table: unknown) => ({
     set: (set: Row) => {
       dbState.updates.push({ table, set });
+      const ret = dbState.updateReturnByTable.get(table) ?? dbState.selectByTable.get(table) ?? [];
       return {
-        where: () => Promise.resolve(),
-        then: (resolve: (v: undefined) => unknown, reject?: (e: unknown) => unknown) =>
-          Promise.resolve(undefined).then(resolve, reject),
+        where: () => updateTail(ret),
+        ...updateTail(ret),
       };
     },
   }),
@@ -103,6 +127,9 @@ export const fakeDb = {
     dbState.deletes.push({ table });
     return { where: () => Promise.resolve() };
   },
+  // Real transactions can't be simulated here; the callback just runs against
+  // the same fake, which matches how the app uses tx (query building only).
+  transaction: (cb: (tx: unknown) => Promise<unknown>): Promise<unknown> => cb(fakeDb),
 };
 
 // ---------------------------------------------------------------------------
