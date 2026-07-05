@@ -28,10 +28,19 @@ export async function signAccessToken(userId: string, phone: string): Promise<st
     .sign(getSecret("JWT_SECRET"));
 }
 
-export async function signRefreshToken(userId: string, phone: string): Promise<string> {
+/**
+ * Refresh tokens carry a jti pointing at a sessions row, so they can be
+ * rotated on use and revoked server-side (logout, theft response).
+ */
+export async function signRefreshToken(
+  userId: string,
+  phone: string,
+  sessionId: string
+): Promise<string> {
   return new SignJWT({ phone })
     .setProtectedHeader({ alg: "HS256" })
     .setSubject(userId)
+    .setJti(sessionId)
     .setIssuer(ISSUER)
     .setAudience(AUDIENCE)
     .setIssuedAt()

@@ -6,3 +6,4 @@ export * from "./fee-codes";
 export * from "./diagnostic-codes";
 export * from "./audit-logs";
 export * from "./otp-codes";
+export * from "./sessions";

@@ -3,7 +3,7 @@ import { type NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 
 import { db } from "@/db";
-import { otpCodes, users, timelineEntries } from "@/db/schema";
+import { otpCodes, users, timelineEntries, sessions } from "@/db/schema";
 import { auditLog } from "@/lib/audit";
 import { signAccessToken, signRefreshToken } from "@/lib/auth";
 import { otpCodeMatches } from "@/lib/otp";
@@ -111,9 +111,15 @@ export async function POST(request: NextRequest) {
 
   await auditLog(userId, "login", "user", userId, { isNewUser }, getClientIp(request));
 
+  // A server-side session row backs the refresh token (rotation/revocation)
+  const [session] = await db
+    .insert(sessions)
+    .values({ userId, expiresAt: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000) })
+    .returning({ id: sessions.id });
+
   const [accessToken, refreshToken] = await Promise.all([
     signAccessToken(userId, phone),
-    signRefreshToken(userId, phone),
+    signRefreshToken(userId, phone, session.id),
   ]);
 
   return NextResponse.json({

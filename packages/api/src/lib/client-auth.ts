@@ -16,7 +16,23 @@ export function clearTokens(): void {
   localStorage.removeItem(REFRESH_KEY);
 }
 
-async function refreshAccessToken(): Promise<string | null> {
+export function getRefreshToken(): string | null {
+  if (typeof window === "undefined") return null;
+  return localStorage.getItem(REFRESH_KEY);
+}
+
+// Single-flight: refresh tokens rotate on use, so two concurrent refreshes
+// would invalidate each other — every caller shares one in-flight attempt.
+let refreshInFlight: Promise<string | null> | null = null;
+
+function refreshAccessToken(): Promise<string | null> {
+  refreshInFlight ??= doRefresh().finally(() => {
+    refreshInFlight = null;
+  });
+  return refreshInFlight;
+}
+
+async function doRefresh(): Promise<string | null> {
   const refreshToken = localStorage.getItem(REFRESH_KEY);
   if (!refreshToken) return null;
 
@@ -29,8 +45,11 @@ async function refreshAccessToken(): Promise<string | null> {
 
     if (!res.ok) return null;
 
-    const data = (await res.json()) as { accessToken: string };
+    const data = (await res.json()) as { accessToken: string; refreshToken?: string };
     localStorage.setItem(TOKEN_KEY, data.accessToken);
+    if (data.refreshToken) {
+      localStorage.setItem(REFRESH_KEY, data.refreshToken);
+    }
     return data.accessToken;
   } catch {
     return null;

@@ -13,7 +13,8 @@ export type AuditAction =
   | "claim_needs_attention"
   | "fee_code_searched"
   | "login"
-  | "otp_requested";
+  | "otp_requested"
+  | "session_revoked";
 
 /**
  * Create an audit log entry. Append-only — entries are never updated or deleted.

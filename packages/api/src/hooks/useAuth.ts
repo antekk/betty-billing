@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 
-import { setTokens, clearTokens, getAccessToken } from "@/lib/client-auth";
+import { setTokens, clearTokens, getAccessToken, getRefreshToken } from "@/lib/client-auth";
 
 interface AuthState {
   isAuthenticated: boolean;
@@ -66,6 +66,18 @@ export function useAuth() {
   }, []);
 
   const logout = useCallback(() => {
+    // Revoke the session server-side so the refresh token dies with the
+    // login, not just this browser's copy of it.
+    const refreshToken = getRefreshToken();
+    if (refreshToken) {
+      void fetch("/api/auth/logout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ refreshToken }),
+      }).catch(() => {
+        // Local logout proceeds regardless
+      });
+    }
     clearTokens();
     setState({ isAuthenticated: false, isLoading: false });
   }, []);
