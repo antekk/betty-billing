@@ -29,13 +29,24 @@ export function Timeline({
   onWidgetAction,
 }: TimelineProps) {
   const bottomRef = useRef<HTMLDivElement>(null);
+  // Follow new content only while the user is pinned near the bottom —
+  // yanking the viewport mid-scrollback makes long answers unreadable.
+  const pinnedToBottom = useRef(true);
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (pinnedToBottom.current) {
+      bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    }
   }, [entries, streamingText, isStreaming]);
 
   return (
-    <div className="flex-1 overflow-y-auto">
+    <div
+      className="flex-1 overflow-y-auto"
+      onScroll={(e) => {
+        const el = e.currentTarget;
+        pinnedToBottom.current = el.scrollHeight - el.scrollTop - el.clientHeight < 120;
+      }}
+    >
       <div className="py-4">
         {entries.map((entry) => {
           if (entry.type === "widget" && entry.widgetType && entry.widgetData) {

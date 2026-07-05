@@ -6,7 +6,7 @@ import { useEffect, useState, useCallback } from "react";
 import { InputBar } from "@/components/InputBar";
 import { Timeline } from "@/components/Timeline";
 import { useAuth } from "@/hooks/useAuth";
-import { useChat } from "@/hooks/useChat";
+import { ApiError, useChat } from "@/hooks/useChat";
 import { getAccessToken } from "@/lib/client-auth";
 
 export default function ChatPage() {
@@ -16,6 +16,8 @@ export default function ChatPage() {
     entries,
     isStreaming,
     streamingText,
+    error,
+    clearError,
     showFiltered,
     setShowFiltered,
     loadTimeline,
@@ -25,6 +27,7 @@ export default function ChatPage() {
     applyClaimUpdate,
   } = useChat();
   const [timelineLoaded, setTimelineLoaded] = useState(false);
+  const [loadFailed, setLoadFailed] = useState(false);
 
   useEffect(() => {
     if (authLoading) return;
@@ -39,9 +42,18 @@ export default function ChatPage() {
     if (!token) return;
 
     loadTimeline()
-      .then(() => setTimelineLoaded(true))
-      .catch(() => {
-        router.replace("/login");
+      .then(() => {
+        setTimelineLoaded(true);
+        setLoadFailed(false);
+      })
+      .catch((err: unknown) => {
+        // Only an auth failure means the session is gone; a flaky network
+        // must not dump a logged-in physician back to the OTP screen.
+        if (err instanceof ApiError && err.status === 401) {
+          router.replace("/login");
+        } else {
+          setLoadFailed(true);
+        }
       });
   }, [isAuthenticated, timelineLoaded, loadTimeline, router]);
 
@@ -91,6 +103,14 @@ export default function ChatPage() {
       </header>
 
       {/* Messages */}
+      {loadFailed && (
+        <div className="flex items-center justify-between gap-2 border-b border-border bg-error-bg px-4 py-2 text-sm text-error">
+          <span>Couldn&apos;t load your conversation.</span>
+          <button onClick={() => setLoadFailed(false)} className="shrink-0 font-semibold underline">
+            Retry
+          </button>
+        </div>
+      )}
       <Timeline
         entries={entries}
         isStreaming={isStreaming}
@@ -100,6 +120,21 @@ export default function ChatPage() {
         onApplyClaimUpdate={applyClaimUpdate}
         onWidgetAction={handleWidgetAction}
       />
+
+      {/* Errors from send/confirm/cancel — the physician must never wonder
+          whether a claim went through */}
+      {error && (
+        <div className="flex items-start justify-between gap-2 border-t border-border bg-error-bg px-4 py-2 text-sm text-error">
+          <span>{error}</span>
+          <button
+            onClick={clearError}
+            className="shrink-0 font-semibold"
+            aria-label="Dismiss error"
+          >
+            ✕
+          </button>
+        </div>
+      )}
 
       {/* Input */}
       <InputBar onSend={handleSend} disabled={isStreaming} />

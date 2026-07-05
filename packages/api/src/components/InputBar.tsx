@@ -43,6 +43,7 @@ export function InputBar({ onSend, disabled }: InputBarProps) {
     >
       <textarea
         ref={textareaRef}
+        aria-label="Message Betty"
         rows={1}
         maxLength={5000}
         placeholder={disabled ? "Betty is typing..." : "Message Betty..."}
