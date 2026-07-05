@@ -1,5 +1,5 @@
 {
-  "id": "bac79271-9c83-4e49-9f48-d73739f7f69b",
+  "id": "1b026683-436e-4c60-b2de-5f14a5751cc2",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
@@ -696,9 +696,9 @@
           "primaryKey": false,
           "notNull": true
         },
-        "code": {
-          "name": "code",
-          "type": "varchar(6)",
+        "code_hash": {
+          "name": "code_hash",
+          "type": "varchar(64)",
           "primaryKey": false,
           "notNull": true
         },
@@ -800,6 +800,7 @@
       "values": [
         "pending_confirmation",
         "staged",
+        "submitting",
         "submitted",
         "accepted",
         "rejected",
@@ -814,7 +815,8 @@
         "pending",
         "submitted",
         "completed",
-        "partial_failure"
+        "partial_failure",
+        "failed"
       ]
     },
     "public.diagnostic_code_system": {

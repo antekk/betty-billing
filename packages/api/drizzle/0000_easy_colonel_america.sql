@@ -3,8 +3,8 @@ CREATE TYPE "public"."direction" AS ENUM('inbound', 'outbound', 'system');--> st
 CREATE TYPE "public"."timeline_entry_type" AS ENUM('message', 'widget', 'system_event');--> statement-breakpoint
 CREATE TYPE "public"."visibility" AS ENUM('default', 'filtered', 'internal');--> statement-breakpoint
 CREATE TYPE "public"."widget_type" AS ENUM('claim_confirmation', 'claim_update_confirmation', 'action_card', 'report');--> statement-breakpoint
-CREATE TYPE "public"."claim_status" AS ENUM('pending_confirmation', 'staged', 'submitted', 'accepted', 'rejected', 'needs_attention', 'cancelled');--> statement-breakpoint
-CREATE TYPE "public"."batch_status" AS ENUM('pending', 'submitted', 'completed', 'partial_failure');--> statement-breakpoint
+CREATE TYPE "public"."claim_status" AS ENUM('pending_confirmation', 'staged', 'submitting', 'submitted', 'accepted', 'rejected', 'needs_attention', 'cancelled');--> statement-breakpoint
+CREATE TYPE "public"."batch_status" AS ENUM('pending', 'submitted', 'completed', 'partial_failure', 'failed');--> statement-breakpoint
 CREATE TYPE "public"."diagnostic_code_system" AS ENUM('icd9', 'icd10');--> statement-breakpoint
 CREATE TABLE "users" (
 	"id" uuid PRIMARY KEY DEFAULT gen_random_uuid() NOT NULL,
@@ -99,7 +99,7 @@ CREATE TABLE "audit_logs" (
 CREATE TABLE "otp_codes" (
 	"id" uuid PRIMARY KEY DEFAULT gen_random_uuid() NOT NULL,
 	"phone" varchar(20) NOT NULL,
-	"code" varchar(6) NOT NULL,
+	"code_hash" varchar(64) NOT NULL,
 	"expires_at" timestamp with time zone NOT NULL,
 	"used" boolean DEFAULT false NOT NULL,
 	"created_at" timestamp with time zone DEFAULT now() NOT NULL

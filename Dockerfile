@@ -16,8 +16,8 @@ WORKDIR /app/packages/api
 # Dummy env so route modules can be imported during page-data collection.
 # Real values are injected at runtime by the deployment platform.
 RUN DATABASE_URL=postgres://build:build@localhost:5432/build \
-    JWT_SECRET=build-time-dummy-secret \
-    JWT_REFRESH_SECRET=build-time-dummy-secret \
+    JWT_SECRET=build-time-dummy-jwt-secret-32-chars!! \
+    JWT_REFRESH_SECRET=build-time-dummy-refresh-secret-32ch!! \
     ANTHROPIC_API_KEY=sk-ant-build-dummy \
     ENCRYPTION_KEY=0000000000000000000000000000000000000000000000000000000000000000 \
     bun run build

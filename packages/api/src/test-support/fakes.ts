@@ -106,10 +106,17 @@ export const fakeDb = {
       const ret = dbState.insertReturnByTable.get(table) ?? [
         { id: `gen-${dbState.inserts.length}` },
       ];
+      const tail = () => ({
+        returning: () => Promise.resolve(ret),
+        then: (resolve: (v: undefined) => unknown, reject?: (e: unknown) => unknown) =>
+          Promise.resolve(undefined).then(resolve, reject),
+      });
       return {
         returning: () => Promise.resolve(ret),
         then: (resolve: (v: undefined) => unknown, reject?: (e: unknown) => unknown) =>
           Promise.resolve(undefined).then(resolve, reject),
+        onConflictDoNothing: tail,
+        onConflictDoUpdate: tail,
       };
     },
   }),
@@ -119,7 +126,9 @@ export const fakeDb = {
       const ret = dbState.updateReturnByTable.get(table) ?? dbState.selectByTable.get(table) ?? [];
       return {
         where: () => updateTail(ret),
-        ...updateTail(ret),
+        returning: () => Promise.resolve(ret),
+        then: (resolve: (v: undefined) => unknown, reject?: (e: unknown) => unknown) =>
+          Promise.resolve(undefined).then(resolve, reject),
       };
     },
   }),
