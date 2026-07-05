@@ -2,6 +2,7 @@ import { eq, ilike, or, and, gte, lte, isNull, sql } from "drizzle-orm";
 
 import { db } from "@/db";
 import { diagnosticCodes } from "@/db/schema";
+import { todayInAlberta } from "@/lib/dates";
 
 export type DiagnosticCodeSystem = "icd9" | "icd10";
 
@@ -29,7 +30,7 @@ export async function searchDiagnosticCodes(
   query: string,
   { system, enabledOnly = true, limit = 20 }: SearchOptions = {}
 ): Promise<DiagnosticCodeResult[]> {
-  const today = new Date().toISOString().slice(0, 10);
+  const today = todayInAlberta();
   const activeRow = and(
     lte(diagnosticCodes.effectiveDate, today),
     or(isNull(diagnosticCodes.endDate), gte(diagnosticCodes.endDate, today))
@@ -69,7 +70,7 @@ export async function getDiagnosticCode(
   code: string,
   system?: DiagnosticCodeSystem
 ): Promise<DiagnosticCodeResult | null> {
-  const today = new Date().toISOString().slice(0, 10);
+  const today = todayInAlberta();
   const activeRow = and(
     lte(diagnosticCodes.effectiveDate, today),
     or(isNull(diagnosticCodes.endDate), gte(diagnosticCodes.endDate, today))

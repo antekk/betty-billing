@@ -21,6 +21,7 @@ import { parseModifiers, getCurrentModifiers } from "./parsers/modifiers";
 import { parsePriceList, getCurrentPrices } from "./parsers/price-list";
 import { diagnosticCodes } from "../db/schema/diagnostic-codes";
 import { feeCodes } from "../db/schema/fee-codes";
+import { todayInAlberta } from "../lib/dates";
 
 // Default to the repo-root docs dir regardless of cwd (this script lives at
 // packages/api/src/scripts)
@@ -144,7 +145,7 @@ async function main() {
   // Diagnostic codes (ICD-9 — AHCIP claims require ICD-9)
   const diagContent = readFile("diagcode.txt");
   const allDiag = parseDiagnosticCodes(diagContent);
-  const today = new Date().toISOString().slice(0, 10);
+  const today = todayInAlberta();
   // Keep currently active entries, latest effective per code
   const diagByCode = new Map<string, (typeof allDiag)[number]>();
   for (const dc of allDiag) {

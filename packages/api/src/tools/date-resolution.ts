@@ -2,6 +2,13 @@ import * as chrono from "chrono-node";
 
 import type { Tool } from "@anthropic-ai/sdk/resources/messages";
 
+import {
+  albertaUtcOffsetMinutes,
+  daysBetweenIso,
+  formatIsoDate,
+  isoDateInAlberta,
+} from "@/lib/dates";
+
 export const dateResolutionTool: Tool = {
   name: "resolve_date",
   description:
@@ -22,13 +29,32 @@ export const dateResolutionTool: Tool = {
   },
 };
 
+/** A bare YYYY-MM-DD reference means that civil date in Alberta, not UTC midnight. */
+function referenceInstant(reference?: string): Date {
+  if (!reference) return new Date();
+  if (/^\d{4}-\d{2}-\d{2}$/.test(reference)) {
+    return new Date(`${reference}T12:00:00-07:00`);
+  }
+  return new Date(reference);
+}
+
 export function handleDateResolution(input: {
   expression: string;
   reference_date?: string;
 }): string {
-  const refDate = input.reference_date ? new Date(input.reference_date) : new Date();
+  const refDate = referenceInstant(input.reference_date);
+  if (isNaN(refDate.getTime())) {
+    return JSON.stringify({
+      resolved: false,
+      error: `Could not understand reference date "${input.reference_date ?? ""}".`,
+    });
+  }
 
-  const parsed = chrono.parseDate(input.expression, refDate);
+  // Resolve relative expressions in Alberta's clock, not the server's.
+  const parsed = chrono.parseDate(input.expression, {
+    instant: refDate,
+    timezone: albertaUtcOffsetMinutes(refDate),
+  });
 
   if (!parsed) {
     return JSON.stringify({
@@ -37,22 +63,18 @@ export function handleDateResolution(input: {
     });
   }
 
-  const isoDate = parsed.toISOString().slice(0, 10);
-  const formatted = parsed.toLocaleDateString("en-CA", {
-    weekday: "long",
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-  });
+  const isoDate = isoDateInAlberta(parsed);
+  const todayIso = isoDateInAlberta(refDate);
+  const formatted = formatIsoDate(isoDate);
 
   // Sanity check: date shouldn't be more than 90 days in the past (claim-back period)
-  const daysDiff = Math.floor((refDate.getTime() - parsed.getTime()) / (1000 * 60 * 60 * 24));
+  const daysDiff = daysBetweenIso(todayIso, isoDate);
   let warning: string | undefined;
   if (daysDiff > 90) {
     warning =
       "This date is more than 90 days ago. Alberta's standard claim-back period is 90 days — this claim may be rejected.";
   }
-  if (parsed > refDate) {
+  if (isoDate > todayIso) {
     warning = "This date is in the future. Claims cannot be submitted for future dates.";
   }
 

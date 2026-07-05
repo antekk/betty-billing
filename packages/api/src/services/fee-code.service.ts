@@ -2,6 +2,7 @@ import { eq, ilike, or, sql, and, gte, lte } from "drizzle-orm";
 
 import { db } from "@/db";
 import { feeCodes } from "@/db/schema";
+import { todayInAlberta } from "@/lib/dates";
 
 export interface FeeCodeSearchResult {
   code: string;
@@ -18,7 +19,7 @@ export interface FeeCodeSearchResult {
  * Search fee codes by text query (searches code and description).
  */
 export async function searchFeeCodes(query: string, limit = 20): Promise<FeeCodeSearchResult[]> {
-  const today = new Date().toISOString().slice(0, 10);
+  const today = todayInAlberta();
 
   // Try exact code match first
   const exactMatch = await db
@@ -58,7 +59,7 @@ export async function searchFeeCodes(query: string, limit = 20): Promise<FeeCode
  * Look up a specific fee code by exact code.
  */
 export async function getFeeCode(code: string): Promise<FeeCodeSearchResult | null> {
-  const today = new Date().toISOString().slice(0, 10);
+  const today = todayInAlberta();
 
   const results = await db
     .select()
@@ -83,7 +84,7 @@ export async function getFeeCodesByCategory(
   category: string,
   limit = 50
 ): Promise<FeeCodeSearchResult[]> {
-  const today = new Date().toISOString().slice(0, 10);
+  const today = todayInAlberta();
 
   return db
     .select()

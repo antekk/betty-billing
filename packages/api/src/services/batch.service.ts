@@ -4,6 +4,7 @@ import { createAHCIPAdapter, type AHCIPAdapter, type AHCIPClaimInput } from "@/a
 import { db } from "@/db";
 import { claims, batchSubmissions, timelineEntries, users } from "@/db/schema";
 import { auditLog } from "@/lib/audit";
+import { formatIsoDate } from "@/lib/dates";
 import { decrypt } from "@/lib/encryption";
 
 /** A batch normally completes in seconds; anything in `submitting` this long was interrupted. */
@@ -303,7 +304,7 @@ async function createRejectionNotification(
   claim: typeof claims.$inferSelect,
   rejectionReason: string
 ): Promise<void> {
-  const serviceDateFormatted = new Date(claim.serviceDate).toLocaleDateString("en-CA", {
+  const serviceDateFormatted = formatIsoDate(claim.serviceDate, {
     weekday: "long",
     month: "short",
     day: "numeric",

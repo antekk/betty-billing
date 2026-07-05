@@ -11,6 +11,7 @@ import type { WidgetData } from "@betty/shared";
 
 import { db } from "@/db";
 import { timelineEntries, users } from "@/db/schema";
+import { todayInAlberta } from "@/lib/dates";
 import { getEnv } from "@/lib/env";
 import { buildSystemPrompt } from "@/prompts/system";
 import { tools, executeTool } from "@/tools";
@@ -81,7 +82,7 @@ export async function processMessage(
 
   // Build system prompt
   const systemPrompt = buildSystemPrompt({
-    currentDate: new Date().toISOString().slice(0, 10),
+    currentDate: todayInAlberta(),
     userName: user.name,
     practitionerId: user.ahcipPractitionerId,
   });
